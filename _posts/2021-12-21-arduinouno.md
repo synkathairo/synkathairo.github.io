@@ -75,7 +75,7 @@ It is also important to note the way that breadboards are wired. Supposedly, bre
 <!-- ![breadboard](http://wiring.org.co/learning/tutorials/breadboard/imgs/breadboard-02.jpg){: width="400"} -->
 ![breadboardwiring](https://cdn.sciencebuddies.org/G3Y7h5sApJ0v4eZPgHvycJ6-sRA=/300x469/-/https/www.sciencebuddies.org/Files/7326/6/breadboard-row-connections.png){: width="300"}
 
-This was just a very elementary demonstration of how circuitry could be incorporated with hardware and software, and our humble [ATMega328P](https://store-usa.arduino.cc/products/arduino-uno-rev3/) micrcontroller is sufficient to work with this circuitry!
+This was just a very elementary demonstration of how circuitry could be incorporated with hardware and software, and our humble [ATMega328P](https://store-usa.arduino.cc/products/arduino-uno-rev3/) [microcontroller](https://www.microchip.com/en-us/product/ATmega328P) is sufficient to work with this circuitry!
 
 --------
 
