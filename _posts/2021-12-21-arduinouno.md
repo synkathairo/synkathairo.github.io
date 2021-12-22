@@ -8,7 +8,7 @@ I recently decided to obtain an [Arduino Uno R3](https://www.arduino.cc/en/uploa
 
 ![Arduino Uno R3](https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-01.jpg){: width="150" }
 
-Having obtained the hardware, the next step was to set up a development environment. The Arduino website provided two options for my computer: I could use the Arduino IDE, or use the Arduino command-line utility (`arduino-cli`). In theory, everything that could be done in the official IDE could be done using the command-line utility. I counterintuitively decided to try using the command-line utility first. I was able to download it for macOS using Homebrew (`brew install arduino-cli`). Then, I decided to use VS Code to install the official [Arduino extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino) made by Microsoft.
+Having obtained the hardware, the next step was to set up a development environment. The [Arduino website](https://www.arduino.cc/en/software) provided two options for my computer: I could use the Arduino IDE, or use the Arduino command-line utility (`arduino-cli`). In theory, everything that could be done in the official IDE could be done using the command-line utility. I counterintuitively decided to try using the command-line utility first. I was able to download it for macOS using Homebrew (`brew install arduino-cli`). Then, I decided to use VS Code to install the official [Arduino extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino) made by Microsoft.
 
 The extension did not work with `arduino-cli` out the box. It did not immediately detect the plugged in device (although it was detected by running `arduino-cli board list` in the shell). Several settings had to be set to allow the device to work: `"arduino.commandPath": "arduino-cli", "arduino.enableUSBDetection": true, "arduino.useArduinoCli": true, "arduino.path": "/opt/homebrew/bin/"`.
 
@@ -40,6 +40,8 @@ void loop() {
     delay(1000);
 }
 ```
+
+Later I was also able to use the VS Code extension and its [board configuration settings](https://maker.pro/arduino/tutorial/how-to-use-visual-studio-code-for-arduino) to upload code from the IDE directly.
 
 As you might notice from the example code, the Arduino language is a customized dialect of C++.
 
