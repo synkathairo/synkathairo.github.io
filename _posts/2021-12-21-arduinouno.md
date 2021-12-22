@@ -64,15 +64,16 @@ Another interesting feature of this simple circuit is to note that the LEDs used
 
 ![circuit_cartoon](https://cdn.sparkfun.com/assets/6/e/8/3/c/51f93d85757b7f2049270817.png){: width="250"}
 
-Or, if we were to follow the standard circuitry schematic, it would be [similar to this](http://www.electronicshobbyprojects.com/basic-circuits/simplest-led-circuit.html) (albeit with different numerical values for voltage and resistance etc):
+Or, if we were to follow the standard circuitry schematic, it would be [similar to this](https://circuitdigest.com/electronic-circuits/simplle-led-circuit-diagram) <!--(http://www.electronicshobbyprojects.com/basic-circuits/simplest-led-circuit.html)--> (albeit with different numerical values for voltage and resistance etc):
 
-![LED_circuitDiagram](http://www.electronicshobbyprojects.com/wp-content/uploads/2016/01/Project1SimpleLED-2.png){: width="250"}
+![LED_circuitDiagram](https://circuitdigest.com/sites/default/files/circuitdiagram/simple-led-ckt_0.png){: width="250"}
 
 Nominally/conventionally, 'current' flows from positive to negative, that is, from our anode side to our cathode side (in actuality it is more like the electrons 'flow' from the negative to the positive side). Our current works out to be a little less than 5V/1000Ω = 5mA (unknown resistance of the LED itself).
 
-It is also important to note the way that breadboards are wired. Supposedly, breadboards are named as such due to the [historic usage of actual bread cutting boards for prototyping circuits](https://en.wikipedia.org/wiki/Breadboard#Evolution). The wiring pattern of breadboards follows [this pattern](http://wiring.org.co/learning/tutorials/breadboard/):
+It is also important to note the way that breadboards are wired. Supposedly, breadboards are named as such due to the [historic usage of actual bread cutting boards for prototyping circuits](https://en.wikipedia.org/wiki/Breadboard#Evolution). The wiring pattern of breadboards follows [this pattern](https://www.sciencebuddies.org/science-fair-projects/references/how-to-use-a-breadboard), where each slot in the rows are connected as each slot in a side column: <!-- (http://wiring.org.co/learning/tutorials/breadboard/): -->
 
-![breadboard](http://wiring.org.co/learning/tutorials/breadboard/imgs/breadboard-02.jpg){: width="400"}
+<!-- ![breadboard](http://wiring.org.co/learning/tutorials/breadboard/imgs/breadboard-02.jpg){: width="400"} -->
+![breadboardwiring](https://cdn.sciencebuddies.org/G3Y7h5sApJ0v4eZPgHvycJ6-sRA=/300x469/-/https/www.sciencebuddies.org/Files/7326/6/breadboard-row-connections.png){: width="300"}
 
 This was just a very elementary demonstration of how circuitry could be incorporated with hardware and software, and our humble [ATMega328P](https://store-usa.arduino.cc/products/arduino-uno-rev3/) micrcontroller is sufficient to work with this circuitry!
 
