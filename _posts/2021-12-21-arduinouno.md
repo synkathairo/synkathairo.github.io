@@ -15,7 +15,6 @@ The extension did not work with `arduino-cli` out the box. It did not immediatel
 
 To make a project, the next step was to run `arduino-cli new BareMinimum` in the shell, where `BareMinimum` was my project title. This also works if you manually make a folder and then make a file called `BareMinimum.ino` within it. Within it you can put at a minimum the [following code](https://www.arduino.cc/en/Tutorial/BuiltInExamples/BareMinimum):
 ```cpp
-{% highlight cpp %}
 void setup() {
   // put your setup code here, to run once:
 
@@ -25,13 +24,12 @@ void loop() {
   // put your main code here, to run repeatedly:
 
 }
-{% endhighlight %}
 ```
 
 After saving the code the next step was to ensure the interface with the actual Uno device. First I could run `arduino-cli board list` to identify the FQBN (fully qualified board name) for my board. The next step was to search for available 'cores' that would work with the board. The next step was to run ` arduino-cli board listall uno`. Following that I ran `arduino-cli core install arduino:avr`. I could now compile by running `arduino-cli compile --fqbn arduino:avr:uno MyFirstSketch` and then I could upload with `arduino-cli upload -p /dev/location --fqbn arduino:avr:uno MyFirstSketch` where `/dev/location/` would be subsituted by the appropriate `/dev` entry copied from the output of `arduino-cli board list`. 
 
 After doing all this... the code was uploaded! Nothing of significance happened other than the light from the default LED remaining on. However, by creating [another project](https://create.arduino.cc/projecthub/B45i/getting-started-with-arduino-cli-7652a5) it would be possible to observe a blinking effect. 
-```C
+```cpp
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
 }
