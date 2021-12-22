@@ -2,7 +2,6 @@
 layout: post
 title:  Got an Arduino Uno R3
 date:   2021-12-21 17:43:00 -0500
-render_with_liquid: false
 categories: 
 ---
 I recently decided to obtain an [Arduino Uno R3](https://www.arduino.cc/en/uploads/Main/Arduino_Uno_Rev3-schematic.pdf), which, if we are to trust its online reputation, is supposed to be a promising platform for prototyping hardware development. The device came in a start kit box with some other provided components such as resistors, a breadbox, a USB cable, LCD display, wires, LEDs, a tri-state 8-bit shift register, and a variety of sensors. It is fair to say that the kit promised a good decent variety of components for a beginner to dive into Arduino hardware experimentation. 
@@ -26,7 +25,7 @@ void loop() {
 }
 ```
 
-After saving the code the next step was to ensure the interface with the actual Uno device. First I could run `arduino-cli board list` to identify the FQBN (fully qualified board name) for my board. The next step was to search for available 'cores' that would work with the board. The next step was to run ` arduino-cli board listall uno`. Following that I ran `arduino-cli core install arduino:avr`. I could now compile by running `arduino-cli compile --fqbn arduino:avr:uno MyFirstSketch` and then I could upload with `arduino-cli upload -p /dev/location --fqbn arduino:avr:uno MyFirstSketch` where `/dev/location/` would be subsituted by the appropriate `/dev` entry copied from the output of `arduino-cli board list`. 
+After saving the code the next step was to ensure the interface with the actual Uno device. First I could run `arduino-cli board list` to identify the FQBN (fully qualified board name) for my board. The next step was to search for available 'cores' that would work with the board. The next step was to run `arduino-cli board listall uno`. Following that I ran `arduino-cli core install arduino:avr`. I could now compile by running `arduino-cli compile --fqbn arduino:avr:uno BareMinimum` and then I could upload with `arduino-cli upload -p /dev/location --fqbn arduino:avr:uno BareMinimum` where `/dev/location/` would be subsituted by the appropriate `/dev` entry copied from the output of `arduino-cli board list`. 
 
 After doing all this... the code was uploaded! Nothing of significance happened other than the light from the default LED remaining on. However, by creating [another project](https://create.arduino.cc/projecthub/B45i/getting-started-with-arduino-cli-7652a5) it would be possible to observe a blinking effect. 
 ```cpp
