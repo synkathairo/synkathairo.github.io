@@ -41,4 +41,22 @@ void loop() {
 }
 ```
 
-As you might notice from the example code, the Arduino language is customized a dialect of C++. 
+As you might notice from the example code, the Arduino language is a customized dialect of C++.
+
+Following [another guide](https://www.circuitbasics.com/arduino-7-segment-display-tutorial/) it was possible to proceed to the next step. The next step was to try to use this board with some other hardware! I was able to use a basic LED:
+```cpp
+void setup(){
+    pinMode(7, OUTPUT);
+    digitalWrite(7, LOW);
+}
+
+void loop(){ 
+}
+```
+
+This was wired as follows (refer to the original link for more details):
+![single-LED](https://www.circuitbasics.com/wp-content/uploads/2017/05/Arduino-7-Segment-Display-Tutorial-Cathode-to-GPIO.png){: width="150"}
+
+--------
+
+Note: the code snippets in this page come from the linked pages
