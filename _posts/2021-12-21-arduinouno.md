@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Got an Arduino Uno R3
+title:  A journey into basic hardware design with an Arduino Uno R3
 date:   2021-12-21 17:43:00 -0500
 categories: 
 ---
@@ -56,10 +56,26 @@ void loop(){
 
 This was wired as follows (refer to the original link for more details), using a 1K Ω resistor:
 
-![single-LED](https://www.circuitbasics.com/wp-content/uploads/2017/05/Arduino-7-Segment-Display-Tutorial-Cathode-to-GPIO.png){: width="150"}
+![single-LED](https://www.circuitbasics.com/wp-content/uploads/2017/05/Arduino-7-Segment-Display-Tutorial-Cathode-to-GPIO.png){: width="250"}
 
-I also found it helpful to check resistor values using an [online resistor calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code). Resistance values in ohms are typically indicated by colored bands which correspond to certain values. It is important to note which side you begin reading the bands from, since you could obtain different values. An [online source](https://www.arrow.com/en/research-and-events/articles/resistor-color-code) suggested reading from the side with grouped bands (never from the side with a metallic band). The resistor here plays the role of limiting current (as we know from the elementary formulation of Ohm's Law, *I = V/R*) and therefore a higher resistance could be used to limit further the intensity/brightness of the LED. It is important to use resistors in electronics to protect against excessive current from damaging more sensitive components.
+I also found it helpful to check resistor values using an [online resistor calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code). Resistance values in ohms are typically indicated by colored bands which correspond to certain values. It is important to note which side you begin reading the bands from, since you could obtain different values. An [online source](https://www.arrow.com/en/research-and-events/articles/resistor-color-code) suggested reading from the side with grouped bands (never from the side with a metallic band). The resistor here plays the role of limiting current (as we know from the elementary formulation of Ohm's Law, *I = V/R*) and therefore a higher resistance could be used to limit further the intensity/brightness of the LED. It is important to use resistors in electronics to protect against excessive current from damaging more sensitive components. 
+
+Another interesting feature of this simple circuit is to note that the LEDs used (any LEDs in fact) exhibit a characteristic [polarity](https://www.switchelectronics.co.uk/blog/post/ledpolarity.html), that is, current can only flow in one direction and thus the LED must be wired accordingly. As can be noted on the above image, the 5 volts are on the side of the the anode (+) side of the LED, also wired in series with the resistor. The cathode side is connected to pin 7, which has a 'LOW OUTPUT' set by our code, which in according to the [code documentation](https://www.arduino.cc/reference/en/language/variables/constants/constants/) actually sets the pin to 0 volts. In theory, our setup would be similar to [doing this](https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds/all):
+
+![circuit_cartoon](https://cdn.sparkfun.com/assets/6/e/8/3/c/51f93d85757b7f2049270817.png){: width="250"}
+
+Or, if we were to follow the standard circuitry schematic, it would be [similar to this](http://www.electronicshobbyprojects.com/basic-circuits/simplest-led-circuit.html) (albeit with different numerical values for voltage and resistance etc):
+
+![LED_circuitDiagram](http://www.electronicshobbyprojects.com/wp-content/uploads/2016/01/Project1SimpleLED-2.png){: width="250"}
+
+Nominally/conventionally, 'current' flows from positive to negative, that is, from our anode side to our cathode side (in actuality it is more like the electrons 'flow' from the negative to the positive side). Our current works out to be a little less than 5V/1000Ω = 5mA (unknown resistance of the LED itself).
+
+It is also important to note the way that breadboards are wired. Supposedly, breadboards are named as such due to the [historic usage of actual bread cutting boards for prototyping circuits](https://en.wikipedia.org/wiki/Breadboard#Evolution). The wiring pattern of breadboards follows [this pattern](http://wiring.org.co/learning/tutorials/breadboard/):
+
+![breadboard](http://wiring.org.co/learning/tutorials/breadboard/imgs/breadboard-02.jpg){: width="400"}
+
+This was just a very elementary demonstration of how circuitry could be incorporated with hardware and software, and our humble [ATMega328P](https://store-usa.arduino.cc/products/arduino-uno-rev3/) micrcontroller is sufficient to work with this circuitry!
 
 --------
 
-Note: the code snippets in this page come from the linked pages
+Note: the code snippets in this page come from the linked pages, please refer to linked pages for source information and images as well as further details.
