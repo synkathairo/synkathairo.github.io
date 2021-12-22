@@ -54,8 +54,11 @@ void loop(){
 }
 ```
 
-This was wired as follows (refer to the original link for more details):
+This was wired as follows (refer to the original link for more details), using a 1K Ω resistor:
+
 ![single-LED](https://www.circuitbasics.com/wp-content/uploads/2017/05/Arduino-7-Segment-Display-Tutorial-Cathode-to-GPIO.png){: width="150"}
+
+I also found it helpful to check resistor values using an [online resistor calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code). Resistance values in ohms are typically indicated by colored bands which correspond to certain values. It is important to note which side you begin reading the bands from, since you could obtain different values. An [online source](https://www.arrow.com/en/research-and-events/articles/resistor-color-code) suggested reading from the side with grouped bands (never from the side with a metallic band). The resistor here plays the role of limiting current (as we know from the elementary formulation of Ohm's Law, *I = V/R*) and therefore a higher resistance could be used to limit further the intensity/brightness of the LED. It is important to use resistors in electronics to protect against excessive current from damaging more sensitive components.
 
 --------
 
