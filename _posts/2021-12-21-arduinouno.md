@@ -54,7 +54,7 @@ void loop(){
 }
 ```
 
-This was wired as follows (refer to the original link for more details), using a 1K Ω resistor:
+This was wired as follows (refer to the [original link](https://www.circuitbasics.com/arduino-7-segment-display-tutorial/) for more details), using a 1K Ω resistor:
 
 ![single-LED](https://www.circuitbasics.com/wp-content/uploads/2017/05/Arduino-7-Segment-Display-Tutorial-Cathode-to-GPIO.png){: width="250"}
 
