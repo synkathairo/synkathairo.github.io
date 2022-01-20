@@ -16,11 +16,21 @@ After this, the virtual machine can be booted from the sidebar in UTM (click in 
 
 ![Install Ubuntu]({{ site.url }}/assets/2022/01/installUbuntu.png) 
 
-Next, after exiting the installer and rebooting, you might notice that the UTM virtual machine is unable to boot (as of the 3.0.3 beta). Here you need to right click the VM and press "Edit", look at the section titled "Drives" on the left-hand side, select the "USB Drive", and press "Move down" to move it to a lower boot priority. Now, when you try to boot the VM, you should be presented with a console. You can login and use the operating system!
+Next, after exiting the installer and rebooting, you might notice that the UTM virtual machine is unable to boot (as of the 3.0.3 beta). Here you need to right click the VM and press "Edit", look at the section titled "Drives" on the left-hand side, select the "USB Drive", and press "Move down" to move it to a lower boot priority.
+
+![UTM USB]({{ site.url }}/assets/2022/01/utmUSB.png){: width="250" }  ![UTM USB2]({{ site.url }}/assets/2022/01/utmUSB2.png){: width="250" } 
+
+Now, when you try to boot the VM, you should be presented with a console. You can login and use the operating system!
+
+![Ubuntu TTY]({{ site.url }}/assets/2022/01/ubuntuTTY.png)
 
 Finally, perhaps you do not want to simply use everything in the terminal and you want to use a graphical user interface (GUI) desktop as you are accustomed to using. You can run `sudo apt install ubuntu-desktop` (or use another desktop, [see here](https://itsfoss.com/install-gui-ubuntu-server/)). Then run `sudo apt install lightdm` to install the LightDM display manager (if you are not sure what this is, just know that a display manager is needed to use the GUI). Finally, run `sudo services lightdm start` to start the GUI. You will be presented with a colorful login page where you can enter your password and enjoy the desktop!
 
+![Ubuntu Desktop]({{ site.url }}/assets/2022/01/ubuntuDesktop.png) 
+
 You can enable optionally a feature to be able to share files between your virtual machine and your host operating system. You again want to right click and "Edit" the settings for the virtual machine (after it is shut down). Press "Sharing" and then check "Enable Directory Sharing". Now, boot Ubuntu, open a terminal (terminal app if you installed the GUI, otherwise you are already in the terminal), type `sudo apt install spice-vdagent spice-webdavd` to [install](https://mac.getutm.app/support/) the SPICE guest tools package which will allow sharing files. 
+
+![SPICE tools]({{ site.url }}/assets/2022/01/utmSharing.png) 
 
 More links for further information:
 - [Ubuntu 20.04 - UTM](https://mac.getutm.app/gallery/ubuntu-20-04)
