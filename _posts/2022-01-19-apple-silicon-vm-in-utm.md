@@ -24,7 +24,8 @@ Next, after exiting the installer and rebooting, you might notice that the UTM v
 
 Now, when you try to boot the VM, you should be presented with a console. You can login and use the operating system!
 
-![Ubuntu TTY]({{ site.url }}/assets/2022/01/ubuntuTTY.png)
+<!-- ![Ubuntu TTY]({{ site.url }}/assets/2022/01/ubuntuTTY.png) -->
+![Ubuntu Neofetch]({{ site.url }}/assets/2022/01/ubuntuNeofetch.png)
 
 Finally, perhaps you do not want to simply use everything in the terminal and you want to use a graphical user interface (GUI) desktop as you are accustomed to using. You can run `sudo apt install ubuntu-desktop` (or use another desktop, [see here](https://itsfoss.com/install-gui-ubuntu-server/)). Then run `sudo apt install lightdm` to install the LightDM display manager (if you are not sure what this is, just know that a display manager is needed to use the GUI). Finally, run `sudo services lightdm start` to start the GUI. You will be presented with a colorful login page where you can enter your password and enjoy the desktop!
 
