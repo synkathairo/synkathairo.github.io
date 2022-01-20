@@ -19,7 +19,8 @@ After this, the virtual machine can be booted from the sidebar in UTM (click in 
 
 Next, after exiting the installer and rebooting, you might notice that the UTM virtual machine is unable to boot (as of the 3.0.3 beta). Here you need to right click the VM and press "Edit", look at the section titled "Drives" on the left-hand side, select the "USB Drive", and press "Move down" to move it to a lower boot priority.
 
-![UTM USB]({{ site.url }}/assets/2022/01/utmUSB.png){: width="300" }  ![UTM USB2]({{ site.url }}/assets/2022/01/utmUSB2.png){: width="300" } 
+<!-- ![UTM USB]({{ site.url }}/assets/2022/01/utmUSB.png){: width="300" }  ![UTM USB2]({{ site.url }}/assets/2022/01/utmUSB2.png){: width="300" }  -->
+![UTM USB]({{ site.url }}/assets/2022/01/utmUsbDrive.gif)
 
 Now, when you try to boot the VM, you should be presented with a console. You can login and use the operating system!
 
