@@ -10,7 +10,11 @@ I ended up referencing several guides before successfully being able to install 
 
 The next step was to configure the wizard, which was actually quite straightforward. After opening UTM, one simply presses "Create a new Virtual Machine", then in this case, choosing "Virtualize" for the next step, then choosing "Linux" under the operating system section. Then, using the default virtualization (QEMU instead of Apple Virtualization), it is enough to then simply select the "Boot ISO image" by clicking "Browse" and selecting the downloaded ISO file. The following pages allow for configuring RAM, CPU, and maximum size of the drive (since this uses the qcow2 format, it will not actually use the full size at the beginning, rather, this sets an upper limit to the storage usage of the virtual machine). Pressing next to step through these options, we can pick a name for the installation and click "Save".
 
+![select VM]({{ site.url }}/assets/2022/01/selectVM.png) ![select Virtualize]({{ site.url }}/assets/2022/01/selectVirtualize.png) ![select Linux]({{ site.url }}/assets/2022/01/selectLinux.png) ![choose ISO]({{ site.url }}/assets/2022/01/utmBootISO.png) ![chosen ISO]({{ site.url }}/assets/2022/01/utmBootISO2.png) 
+
 After this, the virtual machine can be booted from the sidebar in UTM (click in the taskbar "View" and "Toggle Sidebar" if you do not see it). Upon booting, choose the first install option in GRUB, (press <kbd>Enter</kbd> for "Install Ubuntu Server"). Choose a language, keyboard layout, network connection (you can probably leave this default and simply click next), proxy (can leave this blank as well), archive mirror (you can leave the default or [pick one near to you](https://launchpad.net/ubuntu/+archivemirrors) for faster speeds). Go through the settings, pick a Name, Username, Hostname, and install.
+
+![Install Ubuntu]({{ site.url }}/assets/2022/01/installUbuntu.png) 
 
 Next, after exiting the installer and rebooting, you might notice that the UTM virtual machine is unable to boot (as of the 3.0.3 beta). Here you need to right click the VM and press "Edit", look at the section titled "Drives" on the left-hand side, select the "USB Drive", and press "Move down" to move it to a lower boot priority. Now, when you try to boot the VM, you should be presented with a console. You can login and use the operating system!
 
