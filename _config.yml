@@ -31,6 +31,7 @@ github_username:  synkathairo
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-katex
 
 # Exclude from processing.
 # The following items will not be processed, by default.
