@@ -29,7 +29,7 @@ int rand(void)
 	return seed>>33;
 }
 ```
-The method utlized by musl appears to be a [linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator#:~:text=264-,6364136223846793005,-1), which was originally a method described by Knuth. It is noted that LCGs are [not sufficiently secure for "cryptographic applications"](https://crypto.stackexchange.com/questions/60543/how-are-linear-congruential-generator-multipliers-chosen). The algorithm follows the [formula](https://www.eg.bucknell.edu/~xmeng/Course/CS6337/Note/master/node40.html):
+The method utlized by musl appears to be a [linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator#:~:text=264-,6364136223846793005,-1), whereas the reference implementation is by Knuth. It is noted that LCGs are [not sufficiently secure for "cryptographic applications"](https://crypto.stackexchange.com/questions/60543/how-are-linear-congruential-generator-multipliers-chosen). The algorithm follows the [formula](https://www.eg.bucknell.edu/~xmeng/Course/CS6337/Note/master/node40.html):
 
 {% katex display %}
 X_{i+1} = (aX_i + c) \mod m, i=0,1,2,...
