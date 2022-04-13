@@ -2,8 +2,8 @@
 layout: post
 title:  Random number generators in R, deterministic systems and the difficulty of modeling stochasticity
 date:   2022-04-13 02:06:11 -0500
+categories: 
 ---
-
 When using the R language I decided to look up the documentation of the [`Random`](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/Random) function which actually seems to be quite interesting. This `Random` function in the R `base` library offers several different pseudorandom number generators: the [Wichmann-Hill](https://en.wikipedia.org/wiki/Wichmann%E2%80%93Hill), [Marsaglia-Multicarry](https://en.wikipedia.org/wiki/Multiply-with-carry_pseudorandom_number_generator), Super Duper, [Mersenne-Twister](https://en.wikipedia.org/wiki/Mersenne_Twister), [Knuth-TAOCP-2002](https://www-cs-faculty.stanford.edu/~knuth/news02.html), Knuth-TAOCP, and [L'Ecuyer-CMRG](https://pubsonline.informs.org/doi/abs/10.1287/opre.47.1.159). 
 
 [Another blog](https://coolbutuseless.github.io/2020/07/07/the-quality-of-rs-random-number-generators/) I found has summarized the apparent performance advantages and disadvantages of each of these random number generators (RNGs) so I will link it here. The data in the post is taken from [L'Ecuyer and Simard, 2007](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/testu01.pdf). 
