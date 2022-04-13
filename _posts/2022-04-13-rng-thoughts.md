@@ -2,6 +2,7 @@
 layout: post
 title:  Random number generators in R, deterministic systems and the difficulty of modeling stochasticity
 date:   2022-04-13 02:06:11 -0500
+usemathjax: true
 categories: 
 ---
 When using the R language I decided to look up the documentation of the [`Random`](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/Random) function which actually seems to be quite interesting. This `Random` function in the R `base` library offers several different pseudorandom number generators: the [Wichmann-Hill](https://en.wikipedia.org/wiki/Wichmann%E2%80%93Hill), [Marsaglia-Multicarry](https://en.wikipedia.org/wiki/Multiply-with-carry_pseudorandom_number_generator), Super Duper, [Mersenne-Twister](https://en.wikipedia.org/wiki/Mersenne_Twister), [Knuth-TAOCP-2002](https://www-cs-faculty.stanford.edu/~knuth/news02.html), Knuth-TAOCP, and [L'Ecuyer-CMRG](https://pubsonline.informs.org/doi/abs/10.1287/opre.47.1.159). 
@@ -31,9 +32,7 @@ int rand(void)
 ```
 The method utlized by musl appears to be a [linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator#:~:text=264-,6364136223846793005,-1), whereas the reference implementation is by Knuth. It is noted that LCGs are [not sufficiently secure for "cryptographic applications"](https://crypto.stackexchange.com/questions/60543/how-are-linear-congruential-generator-multipliers-chosen). The algorithm follows the [formula](https://www.eg.bucknell.edu/~xmeng/Course/CS6337/Note/master/node40.html):
 
-<!-- {% katex display %} -->
 $$X_{i+1} = (aX_i + c) \mod m, i=0,1,2,...$$
-<!-- {% endkatex %} -->
 
 *a* is the constant multiplier, *c* is the increment, *m* is the modulus, hence in the above musl implementation, the multiplier is 6364136223846793005, the increment is 1, and the modulus is 2<sup>64</sup>.
 
