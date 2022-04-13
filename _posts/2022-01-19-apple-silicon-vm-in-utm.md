@@ -39,4 +39,4 @@ More links for further information:
 - [Ubuntu 20.04 - UTM](https://mac.getutm.app/gallery/ubuntu-20-04)
 - [How to Install GUI on Ubuntu Server [Beginner's Guide]](https://itsfoss.com/install-gui-ubuntu-server/)
 - [Linux VMs on an M1-based Mac with VScode and UTM](https://medium.com/@lizrice/linux-vms-on-an-m1-based-mac-with-vscode-and-utm-d73e7cb06133)
-- [Running Linux in a Virtual Machine | Apple Developer Documentation](https://developer.apple.com/documentation/virtualization/running_linux_in_a_virtual_machine)
+- [Running Linux in a Virtual Machine \| Apple Developer Documentation](https://developer.apple.com/documentation/virtualization/running_linux_in_a_virtual_machine)
