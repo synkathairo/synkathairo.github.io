@@ -62,7 +62,7 @@ static int32_t randtbl[DEG_3 + 1] =
 
 Which such trinomials are utilized? [The code](https://sourceware.org/git/?p=glibc.git;a=blob;f=stdlib/random.c#l94) details 4 types of RNGs, with `TYPE_0` being the simple linear congruential method, the others being trinomials: `TYPE_1` \\(x^7 + x^3 + 1\\), `TYPE_2` \\(x^15 + x + 1\\), and `TYPE_3` \\(x^31 + x^3 + 1\\). These three trinomial equations intersect at the points (0,1), (1,3) and (-1,-1), while additional intersections exist between the pairs at non-integer points:
 
-![plot_trinomials]({{ site.url }}/assets/2022/04/desmos-graph.png)
+![plot_trinomials]({{ site.url }}/assets/2022/04/desmos-graph.png){: width="50%"}
 
 These trinomials are important enough that [lists have been published of them](https://www.unf.edu/~cwinton/html/cop4300/s09/class.notes/c1-VLP-RNGs.pdf) and they have been subject of study.
 
@@ -77,12 +77,23 @@ In the GNU man page is detailed the differences between `random()` and `random_r
 
 A [linear feedback shift register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register) utilizes "a [linear function](https://en.wikipedia.org/wiki/Linearity#Boolean_functions) of its previous state" as the input bit.
 
-`/dev/random` and `/dev/urandom` also 
+Another set of random number generators in UNIX and UNIX-like systems (such as macOS, BSD, Linux) occurs in the exposed `/dev/random` and `/dev/urandom` "files". Under the UNIX paradigm "everything is a file" so these "files" can be handled by utilities such as `cat` as if they were files, allowing pipelining to files etc. These produce continuous streams of random bytes which are considered ["cryptographically secure"](https://en.wikipedia.org/wiki//dev/random#Linux). 
 
 Let's examine the randomness tests contained within the TestU01 suite proposed by [L’Ecuyer and Simard, 2007](https://www.iro.umontreal.ca/~lecuyer/myftp/papers/testu01.pdf). They first define a "good imitation" of "independent uniform random variables" (colloquially, what we would presumably consider "truly random"):
 > RNGs for all types of applications are designed so that their output sequence is a good imitation of a sequence of independent uniform random variables, usually over the real interval \\((0, 1)\\) or over the binary set \\(\\{0, 1\\}\\). In the first case, the relevant hypothesis \\(H_0^A\\) to be tested is that the successive output values of the RNG, say \\(u_0 , u_1 , u_2 , . . .\\), are independent random variables from the uniform distribution over the interval \\((0, 1)\\), that is, i.i.d. \\(U (0, 1)\\). In the second case, \\(H_0^B\\) says that we have a sequence of independent random bits, each taking the value 0 or 1 with equal probabilities independently of the others.
 
-[Blackman and Vigna, 2018](https://arxiv.org/abs/1805.01407) discuss some of the weaknesses of "F<sub>2</sub>-linear pseudorandom number generators". They propose a [new generator called Xoshiro256\*\*](https://www.pcg-random.org/posts/a-quick-look-at-xoshiro256.html) which addresses the failures of previous RNGs including their own Xoshiro128+.
+The paper discusses many methods of testing (implemented in their testing suite), a few are given below:
+
+1. *Statistical two-level statistical test*
+> Several authors have advocated and/or applied a two-level (or second-order) procedure for testing RNGs [Fishman 1996; Knuth 1998; L’Ecuyer 1992; Marsaglia 1985]. The idea is to generate N “independent” copies of Y , say \\(Y_1 , . . . , Y_N\\), by replicating the first-order test N times on disjoint subsequences of the generator’s output. Let F be the theoretical distribution function of Y under \\(H_0\\). If F is continuous, the transformed observations \\(U_1 = F (Y_1)\\), . . . , \\(UN = F (Y_N )\\) are i.i.d. \\(U (0, 1)\\) random variables under \\(H_0\\) . One way of performing the two-level test is to compare the empirical distribution of these \\(U_j\\) ’s to the uniform distribution, via a goodness-of-fit (GOF) test such as those of Kolmogorov- Smirnov, Anderson-Darling, Crámer-von Mises, etc.
+
+> The p-value of the GOF test statistic is computed and \\(H_0\\) is rejected if this p-value is deemed too extreme, as usual.
+
+2. *Testing a stream of real numbers*, this involves "measuring global uniformity", "measuring clustering" (if the numbers tend to be clustered in a certain manner), and "run and gap tests" (counts gap between successive values that land in a certain interval, using the heuristic of Lebesgue measure).
+
+3. other methods
+
+[Blackman and Vigna, 2018](https://arxiv.org/abs/1805.01407) discuss some of the weaknesses of "F<sub>2</sub>-linear pseudorandom number generators". They propose a new generator called [xoshiro256\*\*](https://prng.di.unimi.it/) which supposedly addresses the failures of previous RNGs including their own Xoshiro128+. This in turn was criticized by [O'Neill, 2018](https://www.pcg-random.org/posts/a-quick-look-at-xoshiro256.html), where she compares it to her own [PCG](https://www.pcg-random.org/paper.html) random number generator algorithms.
 
 work in progress to be continued-
 
