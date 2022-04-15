@@ -85,13 +85,15 @@ Let's examine the randomness tests contained within the TestU01 suite proposed b
 The paper discusses many methods of testing (implemented in their testing suite), a few are given below:
 
 1. *Statistical two-level statistical test*
-> Several authors have advocated and/or applied a two-level (or second-order) procedure for testing RNGs [Fishman 1996; Knuth 1998; L’Ecuyer 1992; Marsaglia 1985]. The idea is to generate N “independent” copies of Y , say \\(Y_1 , . . . , Y_N\\), by replicating the first-order test N times on disjoint subsequences of the generator’s output. Let F be the theoretical distribution function of Y under \\(H_0\\). If F is continuous, the transformed observations \\(U_1 = F (Y_1)\\), . . . , \\(UN = F (Y_N )\\) are i.i.d. \\(U (0, 1)\\) random variables under \\(H_0\\) . One way of performing the two-level test is to compare the empirical distribution of these \\(U_j\\) ’s to the uniform distribution, via a goodness-of-fit (GOF) test such as those of Kolmogorov- Smirnov, Anderson-Darling, Crámer-von Mises, etc.
-
+> Several authors have advocated and/or applied a two-level (or second-order) procedure for testing RNGs [Fishman 1996; Knuth 1998; L’Ecuyer 1992; Marsaglia 1985]. The idea is to generate N “independent” copies of Y , say \\(Y_1 , . . . , Y_N\\), by replicating the first-order test N times on disjoint subsequences of the generator’s output. Let F be the theoretical distribution function of Y under \\(H_0\\). If F is continuous, the transformed observations \\(U_1 = F (Y_1)\\), . . . , \\(U_N = F (Y_N )\\) are i.i.d. \\(U (0, 1)\\) random variables under \\(H_0\\) . One way of performing the two-level test is to compare the empirical distribution of these \\(U_j\\) ’s to the uniform distribution, via a goodness-of-fit (GOF) test such as those of Kolmogorov- Smirnov, Anderson-Darling, Crámer-von Mises, etc.
+> [...]
 > The p-value of the GOF test statistic is computed and \\(H_0\\) is rejected if this p-value is deemed too extreme, as usual.
 
 2. *Testing a stream of real numbers*, this involves "measuring global uniformity", "measuring clustering" (if the numbers tend to be clustered in a certain manner), and "run and gap tests" (counts gap between successive values that land in a certain interval, using the heuristic of Lebesgue measure).
 
-3. other methods
+3. *"Testing for n subsequences of length t"*
+
+4. *Testing for
 
 [Blackman and Vigna, 2018](https://arxiv.org/abs/1805.01407) discuss some of the weaknesses of "F<sub>2</sub>-linear pseudorandom number generators". They propose a new generator called [xoshiro256\*\*](https://prng.di.unimi.it/) which supposedly addresses the failures of previous RNGs including their own Xoshiro128+. This in turn was criticized by [O'Neill, 2018](https://www.pcg-random.org/posts/a-quick-look-at-xoshiro256.html), where she compares it to her own [PCG](https://www.pcg-random.org/paper.html) random number generator algorithms.
 
