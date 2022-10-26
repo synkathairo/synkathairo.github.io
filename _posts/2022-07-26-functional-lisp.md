@@ -21,7 +21,7 @@ I found the SICP book (*Structure and Interpretation of Computer Programs*), lin
 (* (+ 2 3) (+ 5 6))
 ```
 
-Functional programming languages correspond also mathematically to the concepts of type theory and formal languages. Agda is a programming language which has been used in mathematical proofs. 
+Functional programming languages correspond also mathematically to the concepts of type theory and formal languages. Agda is a programming language which has been used in mathematical proofs. Functional programming is also widely used in some fields such as finance.
 
 `TODO write more here`
 
