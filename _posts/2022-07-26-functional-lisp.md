@@ -39,3 +39,4 @@ Resources:
 - [Gambit Scheme](https://gambitscheme.org/)
 - [MIT/GNU Scheme](https://www.gnu.org/software/mit-scheme/)
 - [Racket lang](https://racket-lang.org/)
+- [Perchance to Scheme](https://hardmath123.github.io/perchance-to-scheme.html)
