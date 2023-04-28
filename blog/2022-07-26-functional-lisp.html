@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="/topcontent.js"></script>
+	<link rel="stylesheet" href="/styles.css" />
+	<title>Functional programming, Lisp-like languages, and type
+theory</title>
+</head>
+<body>
+<top-content></top-content>
+<h2>Functional programming, Lisp-like languages, and type theory</h2>
+<p><time datetime="26 Jul 2022">26 Jul 2022</time></p>
+<p>I recently came across the concept of functional programming which
+piqued my interest. The concept of functional programming syntactically
+follows the convention as established by “Polish notation”; that is,
+instead of putting operations between variables (eg. \(1+2)\ to add 1
+and 2), which reflects our linguistic conventions (especially in
+subject-verb-object order) and the origins of mathematical expressions
+from natural language grammars, we instead list the operation first and
+then the variables or numbers involved, which is more logical for
+computers.</p>
+<p>For example, to add 1 and 2 in Scheme, we write:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode scheme"><code class="sourceCode scheme"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="op">+</span> <span class="dv">1</span> <span class="dv">2</span>)</span></code></pre></div>
+<p>which of course evaluates to 3.</p>
+<p>I found the SICP book (<em>Structure and Interpretation of Computer
+Programs</em>), linked below, to give a helpful introduction to Scheme.
+The book utilizes the simplicity of Scheme to teach programming
+concepts. Scheme, as a prominent Lisp derivative, in general follows the
+convention of prefix notation-based syntax. The parentheses seem to
+indicate a sort of order of operations as you might find in a
+mathematical expression, and follows a simple syntactical logic, ie. to
+do \((2+3) (5+6)\), we use:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode scheme"><code class="sourceCode scheme"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(<span class="op">*</span> (<span class="op">+</span> <span class="dv">2</span> <span class="dv">3</span>) (<span class="op">+</span> <span class="dv">5</span> <span class="dv">6</span>))</span></code></pre></div>
+<p>Functional programming languages correspond also mathematically to
+the concepts of type theory and formal languages. Agda is a programming
+language which has been used in mathematical proofs. Functional
+programming is also widely used in some fields such as finance.</p>
+<p><code>TODO write more here</code></p>
+<p>Resources: - <a
+href="https://en.wikipedia.org/wiki/Polish_notation">Polish notation</a>
+- <a
+href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp
+programming language</a> - <a
+href="https://staff.math.su.se/anders.mortberg/slides/master_slides.pdf">Anders
+Mörtberg - <em>Constructive Algebra in Functional Programming and Type
+Theory</em></a> - <a
+href="http://fmnt.info/blog/20181029_scheme.html">Scheme for scientific
+computing</a> - <a href="https://beautifulracket.com/">Beautiful
+Racket</a> - <a
+href="https://staff.math.su.se/anders.mortberg/papers/cubicalagda.pdf">Vezzozi,
+Mörtberg, Abel - <em>Cubical Agda: A Dependently Typed Programming
+Language with Univalence and Higher Inductive Types</em></a> - <a
+href="https://ncatlab.org/nlab/show/cubical+type+theory">Cubical type
+theory</a> - <a href="https://web.mit.edu/6.001/6.037/sicp.pdf">Abelson
+&amp; Sussman - <em>Structure and Interpretation of Computer
+Programs</em></a> - <a
+href="https://wiki.portal.chalmers.se/agda/pmwiki.php">Agda wiki</a> -
+<a href="https://www.haskell.org/">Haskell</a> - <a
+href="https://gambitscheme.org/">Gambit Scheme</a> - <a
+href="https://www.gnu.org/software/mit-scheme/">MIT/GNU Scheme</a> - <a
+href="https://racket-lang.org/">Racket lang</a> - <a
+href="https://hardmath123.github.io/perchance-to-scheme.html">Perchance
+to Scheme</a></p>
+</body>
+</html>
