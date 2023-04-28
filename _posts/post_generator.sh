@@ -1,2 +1,0 @@
-# pandoc $1.md --template ./template.html --lua-filter=date-format.lua -o ../blog/$1.html
-pandoc -f markdown+tex_math_double_backslash -t html --mathml --lua-filter=date-format.lua --template ./template.html $1.md -o ../blog/$1.html
