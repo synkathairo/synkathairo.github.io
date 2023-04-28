@@ -93,7 +93,8 @@ implementation, the multiplier is 6364136223846793005, the increment is
 <p>The glibc <code>random()</code> code is interesting because it
 provides <a
 href="https://sourceware.org/git/?p=glibc.git;a=blob;f=stdlib/random.c#l59">very
-extensive comments</a>. The code comments note: &gt; In addition to the
+extensive comments</a>. The code comments note:
+<blockquote>In addition to the
 standard <code>rand()</code>/<code>srand()</code> like interface, this
 package also has a special state info interface. The
 <code>initstate()</code> routine is called with a seed, an array of
@@ -106,11 +107,11 @@ initialized with <code>initstate()</code>. By default, the package runs
 with 128 bytes of state information and generates far better random
 numbers than a linear congruential generator. If the amount of state
 information is less than 32 bytes, a simple linear congruential R.N.G.
-is used.</p>
-<p>What method is utilized instead of a linear congruential RNG? &gt;
-The random number generation technique is a linear feedback shift
+is used.</blockquote></p>
+<p>What method is utilized instead of a linear congruential RNG?
+<blockquote>The random number generation technique is a linear feedback shift
 register approach, employing trinomials (since there are fewer terms to
-sum up that way).</p>
+sum up that way).</blockquote></p>
 <p>The man page states: 
 <blockquote>The <code>random()</code> function uses a
 nonlinear additive feedback random number generator employing a default
@@ -155,12 +156,12 @@ utilized by glibc</a> in <code>random_r()</code> involves the <a
 href="https://github.com/lattera/glibc/blob/master/stdlib/random_r.c#L364">formula</a>:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int32_t</span> val <span class="op">=</span> <span class="op">((</span>state<span class="op">[</span><span class="dv">0</span><span class="op">]</span> <span class="op">*</span> <span class="dv">1103515245</span><span class="bu">U</span><span class="op">)</span> <span class="op">+</span> <span class="dv">12345</span><span class="bu">U</span><span class="op">)</span> <span class="op">&amp;</span> <span class="bn">0x7fffffff</span><span class="op">;</span></span></code></pre></div>
 <p>In the GNU man page is detailed the differences between
-<code>random()</code> and <code>random_r()</code>: &gt; The
-<code>random_r()</code> function is like <code>random(3)</code>, except
+<code>random()</code> and <code>random_r()</code>:
+<blockquote>The <code>random_r()</code> function is like <code>random(3)</code>, except
 that instead of using state information maintained in a global variable,
 it uses the state information in the argument pointed to by buf, which
 must have been previously initialized by <code>initstate_r()</code>. The
-generated random number is returned in the argument result.</p>
+generated random number is returned in the argument result.</blockquote></p>
 <p>A <a
 href="https://en.wikipedia.org/wiki/Linear-feedback_shift_register">linear
 feedback shift register</a> utilizes “a <a
