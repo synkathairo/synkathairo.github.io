@@ -1,7 +1,7 @@
 :root {
-	background-color: white;
+	background-color: #e9cdc6;
 	color: black;
-	--link-color: blue;
+	--link-color: darkslateblue;
 }
 a {
 	color: var(--link-color);
@@ -9,7 +9,7 @@ a {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		background-color: rgb(75, 75, 75);
+		background-color: rgb(32, 32, 32);
 		color: white;
 		--link-color: darksalmon;
 	}
