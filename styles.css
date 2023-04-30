@@ -1,7 +1,10 @@
 :root {
-	background-color: #e9cdc6;
+	background-color: wheat;
 	color: black;
 	--link-color: darkslateblue;
+	--h1-font-weight: 700;
+	--heading-font-family: 'Big Caslon', 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+	--navbar-font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 }
 a {
 	color: var(--link-color);
@@ -44,15 +47,18 @@ body {
 }
 
 h1 {
-	font-weight: 700;
+	font-weight: var(--h1-font-weight);
+	font-family: var(--heading-font-family);
 }
 
 h2 {
 	font-weight: 600;
+	font-family: var(--heading-font-family);
 }
 
 h3 {
 	font-weight: 500;
+	font-family: var(--heading-font-family);
 }
 
 code {

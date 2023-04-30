@@ -21,12 +21,16 @@ class TopContent extends HTMLElement {
 		const style = document.createElement('style');
 
 		style.textContent = `
+		h1 {
+			font-weight: var(--h1-font-weight);
+			font-family: var(--heading-font-family);
+		}
 		ul {
+			font-family: var(--navbar-font-family);
 			list-style-type: none;
 			margin: 0;
 			padding: 5px;
 			border: outset;
-			// background-color: DeepSkyBlue;
 		}
 
 		li {
