@@ -8,7 +8,7 @@ class TopContent extends HTMLElement {
 		const shadow = this.attachShadow({ mode: 'open' });
 		const headDiv = document.createElement('div');
 		const heading = document.createElement('h1');
-		heading.innerHTML = 'synkathairo.github.io';
+		heading.innerHTML = 'Charles Zhu\'s page';
 		// Create spans
 		const nav = document.createElement('nav');
 		nav.innerHTML = `<ul>
