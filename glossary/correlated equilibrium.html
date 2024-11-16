@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>correlated equilibrium</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>correlated equilibrium</h1>
+
+<h2 id="definition">Definition</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Γ</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo>,</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mi>i</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow></msub><mo>,</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>u</mi><mi>i</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Gamma = (N, (S^i)_{i \in N}, (u^i)_{i \in N})</annotation></semantics></math>
+be a finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>-person
+game in strategic normal form, with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+denoting the set of players,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mi>i</mi></msup><annotation encoding="application/x-tex">S^i</annotation></semantics></math>
+the set of strategies,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mi>i</mi></msup><mo>:</mo><msub><mo>∏</mo><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow></msub><msup><mi>S</mi><mi>i</mi></msup><mo>→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">u^i: \prod_{i \in N} S^i \to \mathbb{R}</annotation></semantics></math>
+is player
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>'s
+payoff function. Generic element of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>s</mi><mi>i</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow></msub></mrow><annotation encoding="application/x-tex">s = (s^i)_{i \in N}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mrow><mo>−</mo><mi>i</mi></mrow></msup><mo>=</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>s</mi><mrow><mi>i</mi><mi>′</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mi>′</mi><mo>≠</mo><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">s^{-i} = (s^{i&#39;})_{i&#39; \neq i}</annotation></semantics></math>
+is strategy combination of all players except
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>.</p>
+<p>A probability distribution
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\psi</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a <strong>correlated equilibrium</strong> of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>
+if,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>i</mi><mo>∈</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">\forall i \in N</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>j</mi><mo>∈</mo><msup><mi>S</mi><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">\forall j \in S^i</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>k</mi><mo>∈</mo><msup><mi>S</mi><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">\forall k \in S^i</annotation></semantics></math>,
+we have
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>s</mi><mo>∈</mo><mi>S</mi><mo>:</mo><msup><mi>s</mi><mi>i</mi></msup><mo>=</mo><mi>j</mi></mrow></munder><mi>ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">[</mo><msup><mi>u</mi><mi>i</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>,</mo><mo>,</mo><msup><mi>s</mi><mrow><mo>−</mo><mi>i</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msup><mi>u</mi><mi>i</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum_{s \in S: s^i = j} \psi(s) [u^i(k,,s^{-i}) - u^i(s)] \leq 0</annotation></semantics></math></p>
+<p>Define a <strong>correlated
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math>-equilbrium</strong>
+if the right-hand side above is replaced by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math>.</p>
+<h2 id="notes">Notes</h2>
+<p>Every <a href="Nash%20equilibrium.html">Nash equilibrium</a> is a
+correlated equilibrium, the special case where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\psi</annotation></semantics></math>
+is a product measure i.e. the play of different players is
+independent.</p>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>Hart S, Mas-Colell A. <em>A Simple Adaptive Procedure Leading to
+Correlated Equilibrium</em>. <em>Econometrica</em>, 2000; 68(5):
+1127-1150.</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Continuous optimization</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Continuous optimization</h1>
+
+<p>Given function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>ℝ</mi><mi>d</mi></msup><mo>→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">f: \mathbb{R}^d \rightarrow \mathbb{R}</annotation></semantics></math>.
+Find
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>x</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{x}</annotation></semantics></math>
+such that:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>x</mi><mo accent="true">̂</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><munder><mo>min</mo><mi>x</mi></munder><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">f(\hat{x}) \leq \min_x f(x) + \epsilon</annotation></semantics></math>
+^f11fcd</p>
+<hr />
+<p>Have some function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>ℝ</mi><mi>d</mi></msup><mo>→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">f: \mathbb{R}^d \rightarrow \mathbb{R}</annotation></semantics></math>.
+Want to find
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>*</mo></msup><annotation encoding="application/x-tex">x^*</annotation></semantics></math>
+such that:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>min</mo><mi>x</mi></munder><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x^*) = \min_x f(x^*)</annotation></semantics></math></p>
+<p>Or at least
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>x</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{x}</annotation></semantics></math>
+which is close to a minimum e.g. <a href="#^f11fcd">#^f11fcd</a></p>
+<p>Often have additional constraints such as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐱</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbf{x} &gt; 0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐱</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub><mo>≤</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">||\mathbf{x}||_2 \leq R</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐱</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>1</mn></msub><mo>≤</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">||\mathbf{x}||_1 \leq R</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐚</mi><mi>T</mi></msup><mi>𝐱</mi><mo>&gt;</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\mathbf{a}^T \mathbf{x} &gt; c</annotation></semantics></math></p>
+<hr />
+<p>Also see: <a href="Convex%20Optimization%20notes">Convex Optimization
+notes</a> (specific type of continuous optimization)</p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>saddle-point equilibrium (game theory)</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>saddle-point equilibrium (game theory)</h1>
+
+<h2 id="definition">Definition</h2>
+<p>For a given
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \times n</annotation></semantics></math>
+<a href="matrix%20game.html">Matrix game</a>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">A=\{a_{ij}\}</annotation></semantics></math>
+let {row
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>i</mi><mo>*</mo></msup><annotation encoding="application/x-tex">i^*</annotation></semantics></math>,
+column
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>j</mi><mo>*</mo></msup><annotation encoding="application/x-tex">j^*</annotation></semantics></math>}
+be a pair of strategies adopted by the players. Then if the pair of
+equalities
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><msup><mi>i</mi><mo>*</mo></msup><mi>j</mi></mrow></msub><mo>≤</mo><msub><mi>a</mi><mrow><msup><mi>i</mi><mo>*</mo></msup><msup><mi>j</mi><mo>*</mo></msup></mrow></msub><mo>≤</mo><msub><mi>a</mi><mrow><mi>i</mi><msup><mi>j</mi><mo>*</mo></msup></mrow></msub></mrow><annotation encoding="application/x-tex">a_{i^* j} \leq a_{i^* j^*} \leq a_{ij^*}</annotation></semantics></math>
+is satisfied for all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">i=1,...,m</annotation></semantics></math>
+and all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">j=1,...,n</annotation></semantics></math>,
+then the strategies are said to constitute a <strong>saddle-point
+equilibrium</strong> (or said to be <strong>saddle-point
+strategies</strong>). Corresponding outcome
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mrow><msup><mi>i</mi><mo>*</mo></msup><msup><mi>j</mi><mo>*</mo></msup></mrow></msub><annotation encoding="application/x-tex">a_{i^* j^*}</annotation></semantics></math>
+is called the <strong>saddle-point value</strong> or simply the
+<strong>value</strong> of the matrix game, and is denoted
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">V(A)</annotation></semantics></math>.</p>
+<h2 id="theorem">Theorem</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">A=\{a_{ij}\}</annotation></semantics></math>
+denote a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \times n</annotation></semantics></math>
+<a href="matrix%20game.html">Matrix game</a> with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>V</mi><mo accent="true">¯</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mi>V</mi><mo accent="true">_</mo></munder><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\overline{V}(A) = \underline{V}(A)</annotation></semantics></math>,
+then</p>
+<ol type="1">
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+has a <strong>saddle point</strong> in <a href="pure%20strategy.html">pure
+strategies</a>,</li>
+<li>an ordered pair of strategies provides a saddle pair for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+iff the first of these is a <a href="security%20strategy.html">security
+strategy</a> for P1, and the second one a security strategy for P2,</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">V(A)</annotation></semantics></math>
+is uniquely given by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mover><mi>V</mi><mo accent="true">¯</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mi>V</mi><mo accent="true">_</mo></munder><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">V(A) = \overline{V}(A) = \underline{V}(A)</annotation></semantics></math>.</li>
+</ol>
+<h2 id="corollary">Corollary</h2>
+<p>In a matrix game
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+let {row
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>i</mi><mn>1</mn></msub><annotation encoding="application/x-tex">i_1</annotation></semantics></math>,
+column
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>j</mi><mn>1</mn></msub><annotation encoding="application/x-tex">j_1</annotation></semantics></math>}
+and {row
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>i</mi><mn>2</mn></msub><annotation encoding="application/x-tex">i_2</annotation></semantics></math>,
+column
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>j</mi><mn>2</mn></msub><annotation encoding="application/x-tex">j_2</annotation></semantics></math>}
+be two saddle-point strategy pairs. Then {row
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>i</mi><mn>1</mn></msub><annotation encoding="application/x-tex">i_1</annotation></semantics></math>,
+column
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>j</mi><mn>2</mn></msub><annotation encoding="application/x-tex">j_2</annotation></semantics></math>},
+{row
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>i</mi><mn>2</mn></msub><annotation encoding="application/x-tex">i_2</annotation></semantics></math>,
+column
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>j</mi><mn>1</mn></msub><annotation encoding="application/x-tex">j_1</annotation></semantics></math>}
+are also in saddle-point equilibrium. This feature of saddle-point
+strategies is known as their <strong>ordered interchangeability</strong>
+property.</p>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>T. Başar and G.J. Olsder, <em>Dynamic Noncooperative Game
+Theory</em>, 2nd edition, Classics in Applied Mathematics, SIAM,
+Philadelphia, 1999, p. 21.</li>
+</ol>
+</body>
+</html>

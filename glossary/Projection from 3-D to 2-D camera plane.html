@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projection from 3-D to 2-D camera plane</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Projection from 3-D to 2-D camera plane</h1>
+
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐗</mi><munderover><mo>→</mo><mi>P</mi><mrow></mrow></munderover><mi>𝐱</mi></mrow><annotation encoding="application/x-tex">\mathbf{X} \xrightarrow[P]{} \mathbf{x}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐱</mi><annotation encoding="application/x-tex">\mathbf{x}</annotation></semantics></math>:
+2D position in camera plane</p>
+<p>Image function:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐗</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mover><mi>ψ</mi><mo accent="true">¯</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐗</mi><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\psi(P(\mathbf{X}),t)=\overline{\psi}(\mathbf{X},t)</annotation></semantics></math>
+or
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mover><mi>ψ</mi><mo accent="true">¯</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>P</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\psi(\mathbf{x},t)=\overline{\psi}(P^{-1}(\mathbf{x}),t)</annotation></semantics></math></p>
+<p>The projection operator is non-linear – Perspective projection<br />
+– Orthographic projection<br />
+– More on this later</p>
+<hr />
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>ψ</mi><mo accent="true">¯</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐗</mi><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\overline{\psi} (\mathbf{X},t)</annotation></semantics></math>
+is <a href="Camera%20absorption%20function.html">Camera absorption
+function</a></p>
+</body>
+</html>

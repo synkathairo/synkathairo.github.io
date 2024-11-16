@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maximum A Posteriori (MAP)</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Maximum A Posteriori (MAP)</h1>
+
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x = (x_1,…,x_n)</annotation></semantics></math>
+be i.i.d. realizations from probability mass function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>X</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>;</mo><mi>Θ</mi><mo>=</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_X(t; \Theta = \theta)</annotation></semantics></math>
+(if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+discrete), or from density
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>X</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>;</mo><mi>Θ</mi><mo>=</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_X(t; \Theta = \theta)</annotation></semantics></math>
+(if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+continuous), where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+is the random variable representing the parameter (or vector of
+parameters). We define the Maximum A Posteriori (MAP) estimator
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>θ</mi><mo accent="true">̂</mo></mover><mrow><mi>M</mi><mi>A</mi><mi>P</mi></mrow></msub><annotation encoding="application/x-tex">\hat \theta_{MAP}</annotation></semantics></math>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+to be the parameter which maximizes the <strong>posterior</strong>
+distribution of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+given the data.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>θ</mi><mo accent="true">̂</mo></mover><mrow><mi>M</mi><mi>A</mi><mi>P</mi></mrow></msub><mo>=</mo><mo>arg</mo><munder><mo>max</mo><mi>θ</mi></munder><mi>L</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo stretchy="false" form="prefix">|</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>π</mi><mi>Θ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\hat \theta_{MAP} = \arg \max_{\theta} L(\mathbf{x} | \theta) \pi_{\Theta}(\theta)</annotation></semantics></math></p>
+<p>(same as maximum likelihood, except instead of maximizing likelihood,
+it is maximizing likelihood multiplied by prior)</p>
+<p>where loss function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo stretchy="false" form="prefix">|</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msubsup><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>f</mi><mi>X</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">|</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">L(\mathbf{x} | \theta) = \prod_{i=1}^n f_X(x_i | \theta)</annotation></semantics></math>
+for i.i.d.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>X</mi></msub><annotation encoding="application/x-tex">f_X</annotation></semantics></math>,
+(compare maximum likelihood estimation)</p>
+<hr />
+<p>The estimate of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>w</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat w</annotation></semantics></math>,
+from the noisy observation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+depending on the observed (noisy) value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+is also denoted as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>w</mi><mo accent="true">̂</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\hat w(y)</annotation></semantics></math>.
+To obtain estimate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>w</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat w</annotation></semantics></math>,
+we will use the maximum a posteriori (MAP) estimator. The MAP estimator
+is based on the probability density function (pdf) of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.
+Specifically, given an observed value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+the MAP estimator asks what value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is most likely?That is, the MAP estimator looks for the value of w where
+the probability of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+is highest; it looks for the peak value. Therefore, the MAP estimator is
+defined as
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>w</mi><mo accent="true">̂</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>arg</mo><munder><mo>max</mo><mi>w</mi></munder><msub><mi>p</mi><mrow><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\hat w(y) = \arg \max_w p_{w|y}(w|y)</annotation></semantics></math>
+where
+‘<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>arg</mo><mo>max</mo></mrow><annotation encoding="application/x-tex">\arg \max</annotation></semantics></math>’
+is the value of the argument where the function has its maximum. The pdf
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_{w|y} (w|y)</annotation></semantics></math>
+is the distribution of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+given a specific value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+where,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><msub><mi>p</mi><mrow><mi>w</mi><mo>,</mo><mi>v</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><msub><mi>p</mi><mi>y</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">p_{w|y}(w|y) = \frac{p_{w,v}(w,y)}{p_y(y)}</annotation></semantics></math></p>
+<p>(The MAP estimate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>w</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat w</annotation></semantics></math>
+is the point where the pdf of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p_{w|y} (w|y)</annotation></semantics></math>
+for some value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+has its peak)</p>
+<hr />
+<p>If</p>
+<p>#incomplete</p>
+<p><a href="Soft%20thresholding.html">Soft thresholding</a> softmax</p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://courses.cs.washington.edu/courses/cse312/22wi/files/student_drive/7.5.pdf">https://courses.cs.washington.edu/courses/cse312/22wi/files/student_drive/7.5.pdf</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation">https://en.wikipedia.org/wiki/Maximum_likelihood_estimation</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation">https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation</a></li>
+<li><a
+href="https://eeweb.engineering.nyu.edu/iselesni/lecture_notes/SoftThresholding.pdf">https://eeweb.engineering.nyu.edu/iselesni/lecture_notes/SoftThresholding.pdf</a></li>
+</ol>
+</body>
+</html>

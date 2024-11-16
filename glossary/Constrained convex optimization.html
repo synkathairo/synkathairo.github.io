@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Constrained convex optimization</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Constrained convex optimization</h1>
+
+<p>Solve a convex minimization problem with additional convex
+constraints,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>min</mo><mrow><mi>x</mi><mo>∈</mo><mi>𝒮</mi></mrow></munder><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\min_{x \in \mathcal{S}}f(\mathbf{x})</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒮</mi><annotation encoding="application/x-tex">\mathcal{S}</annotation></semantics></math>
+is a <a href="convex%20set.html">convex set</a>.</p>
+<h2 id="examples">Examples:</h2>
+<ul>
+<li><strong>norm constraint</strong>: minimize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mi>𝐀</mi><mi>𝐱</mi></mrow><mo>−</mo><mi>𝐛</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">||\mathbf{Ax} − \mathbf{b}||_2</annotation></semantics></math>
+subject to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐱</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub><mo>≤</mo><mi>λ</mi></mrow><annotation encoding="application/x-tex">||\mathbf{x}||_2 ≤ λ</annotation></semantics></math>.</li>
+<li><strong>positivity constraint</strong>: minimize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(\mathbf{x})</annotation></semantics></math>
+subject to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐱</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbf{x} \geq 0</annotation></semantics></math></li>
+<li><strong>linear constraint</strong>: minimize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐜</mi><mo>⊺</mo></msup><mi>𝐱</mi></mrow><annotation encoding="application/x-tex">\mathbf{c}^\intercal \mathbf{x}</annotation></semantics></math>
+subject to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝐀</mi><mi>𝐱</mi></mrow><mo>≤</mo><mi>𝐛</mi></mrow><annotation encoding="application/x-tex">\mathbf{Ax} \leq \mathbf{b}</annotation></semantics></math></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chosen ciphertext attack security</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>chosen ciphertext attack security</h1>
+
+<h2 id="definition">Definition</h2>
+<p>An encryption
+scheme <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>E</mi><mo>,</mo><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(E,D)</annotation></semantics></math> is <em>chosen
+ciphertext attack (CCA) secure</em> if every efficient
+adversary <em>Mallory</em> wins in the following game with probability
+at
+most <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn><mo>+</mo><mi>n</mi><mi>e</mi><mi>g</mi><mi>l</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1/2+negl(n)</annotation></semantics></math>:</p>
+<ul>
+<li><p>Mallory
+gets <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>1</mn><mi>n</mi></msup><annotation encoding="application/x-tex">1^n</annotation></semantics></math> where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> is
+the length of the key</p></li>
+<li><p>For <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>o</mi><mi>l</mi><mi>y</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">poly(n)</annotation></semantics></math> rounds,
+Mallory gets access to the
+functions m↦Ek(m)m↦Ek​(m) and c↦Dk(c)c↦Dk​(c).</p></li>
+<li><p>Mallory chooses a pair of messages {m0,m1}{m0​,m1​}, a secret bb is
+chosen at random in {0,1}{0,1}, and Mallory
+gets c∗=Ek(mb)c∗=Ek​(mb​).</p></li>
+<li><p>Mallory now gets another poly(n)poly(n) rounds of access to the
+functions m↦Ek(m)m↦Ek​(m) and c↦Dk(c)c↦Dk​(c) except that she is not
+allowed to query c∗c∗ to her second oracle.</p></li>
+<li><p>Mallory outputs b′b′ and <em>wins</em> if b′=bb′=b.</p></li>
+</ul>
+<p>#incomplete</p>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li><a
+href="https://intensecrypto.org/public/lec_06_CCA.html">https://intensecrypto.org/public/lec_06_CCA.html</a></li>
+</ol>
+</body>
+</html>

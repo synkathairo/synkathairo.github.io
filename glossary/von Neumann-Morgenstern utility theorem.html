@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>von Neumann-Morgenstern utility theorem</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>von Neumann-Morgenstern utility theorem</h1>
+
+<h2 id="theorem">Theorem</h2>
+<p>If player
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>'s
+<a href="Preference%20relation.html">preference relation</a>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≿</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\succsim_i</annotation></semantics></math>
+over the set of <a href="Compound%20lottery.html">compound lotteries</a>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>ℒ</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{\mathcal{L}}</annotation></semantics></math>
+is complete and transitive, and satisfies the four <a
+href="von%20Neumann-Morgenstern%20utility%20theorem.md#von%20Neumann-Morgenstern%20axioms|von%20Neumann-Morgenstern%20axioms"></a>,
+then this preference relation can be represented by a <a
+href="Linear%20utility%20function.html">linear utility function</a>.</p>
+<h2 id="von-neumann-morgenstern-axioms">von Neumann-Morgenstern
+axioms</h2>
+<p>Assume
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≿</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\succsim_i</annotation></semantics></math>
+defined over the set of compound lotteries
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>ℒ</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{\mathcal{L}}</annotation></semantics></math>.
+Player
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>'s
+<a href="utility%20function.html">utility function</a>, representing his
+preference relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≿</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\succsim_i</annotation></semantics></math>,
+is therefore a function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mo>:</mo><mover><mi>ℒ</mi><mo accent="true">̂</mo></mover><mo>→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">u_i : \hat{\mathcal{L}} \to \mathbb{R}</annotation></semantics></math>
+satisfying
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mover><mi>L</mi><mo accent="true">̂</mo></mover><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>u</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mover><mi>L</mi><mo accent="true">̂</mo></mover><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>⇔</mo><msub><mover><mi>L</mi><mo accent="true">̂</mo></mover><mn>1</mn></msub><msub><mo>≿</mo><mi>i</mi></msub><msub><mover><mi>L</mi><mo accent="true">̂</mo></mover><mn>2</mn></msub><mo>,</mo><mspace width="1.0em"></mspace><mo>∀</mo><msub><mover><mi>L</mi><mo accent="true">̂</mo></mover><mn>1</mn></msub><mo>,</mo><msub><mover><mi>L</mi><mo accent="true">̂</mo></mover><mn>2</mn></msub><mo>∈</mo><mover><mi>ℒ</mi><mo accent="true">̂</mo></mover></mrow><annotation encoding="application/x-tex">u_i(\hat{L}_1) \geq u_i(\hat{L}_2) \iff \hat{L}_1 \succsim_i \hat{L}_2, \quad \forall \hat{L}_1, \hat{L}_2 \in \hat{\mathcal{L}}</annotation></semantics></math></p>
+<h3 id="axiom-of-continuity">Axiom of Continuity</h3>
+<p>For every triplet of outcomes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>B</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">A \succsim_i B \succsim_i C</annotation></semantics></math>,
+there exists a number
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mi>i</mi></msub><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\theta_i \in [0,1]</annotation></semantics></math>
+such that
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><msub><mo>≈</mo><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>θ</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>θ</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">B \approx_i [\theta_i(A), (1-\theta_i)(C)]</annotation></semantics></math>
+(where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≈</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\approx_i</annotation></semantics></math>
+denotes an <a href="Indifference%20relation.html">indifference
+relation</a>)</p>
+<h3 id="axiom-of-monotonicity">Axiom of Monotonicity</h3>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha, \beta</annotation></semantics></math>
+be numbers in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>,
+and suppose that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>≻</mo><mi>i</mi></msub><mi>B</mi></mrow><annotation encoding="application/x-tex">A \succ_i B</annotation></semantics></math>
+(<a href="Strict%20preference%20relation.html">strict preference</a>).
+Then,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>α</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><msub><mo>≿</mo><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">[</mo><mi>β</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">[\alpha(A) , (1-\alpha)(B)] \succsim_i [\beta(A) , (1-\beta)(B)]</annotation></semantics></math>
+if and only iff
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>≥</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha \geq \beta</annotation></semantics></math>.</p>
+<h4 id="theorem-1">Theorem</h4>
+<p>If a preference relation satisfies the Axioms of <a
+href="von%20Neumann-Morgenstern%20utility%20theorem.md#Axiom%20of%20Continuity|Continuity"></a>
+and <a
+href="von%20Neumann-Morgenstern%20utility%20theorem.md#Axiom%20of%20Monotonicity|Monotonicity"></a>,
+and if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>B</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">A \succsim_i B \succsim_i C</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>≻</mo><mi>i</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">A \succ_i C</annotation></semantics></math>,
+then the value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>θ</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\theta_i</annotation></semantics></math>
+defined in the Axiom of Continuity is <em>unique</em>.</p>
+<h5 id="corollary">Corollary</h5>
+<p>If a preference relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≿</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\succsim_i</annotation></semantics></math>
+over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>ℒ</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{\mathcal{L}}</annotation></semantics></math>
+satisfies the Axioms of Continuity and Monotonicity, and if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>K</mi></msub><msub><mo>≻</mo><mi>i</mi></msub><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">A_K \succ_i A_1</annotation></semantics></math>,
+then for each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">k = 1,2,...,K</annotation></semantics></math>
+there exists a <em>unique</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>θ</mi><mi>i</mi><mi>k</mi></msubsup><mo>∈</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\theta_i^k \in [0,1]</annotation></semantics></math>
+such that
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub><msub><mo>≈</mo><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">[</mo><msubsup><mi>θ</mi><mi>i</mi><mi>k</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>K</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msubsup><mi>θ</mi><mi>i</mi><mi>k</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">A_k \approx_i [\theta_i^k (A_K), (1-\theta_i^k)(A_1)]</annotation></semantics></math>
+The corollary and the fact that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><msub><mo>≈</mo><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>K</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mn>1</mn><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">A_1 \approx_i [0 (A_K), 1(A_1)]</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub><msub><mo>≈</mo><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>K</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mn>0</mn><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">A_k \approx_i [1 (A_K), 0(A_1)]</annotation></semantics></math>
+imply that
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>θ</mi><mi>i</mi><mn>1</mn></msubsup><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><msubsup><mi>θ</mi><mi>i</mi><mi>K</mi></msubsup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\theta_i^1 = 0, \quad \theta_i^K = 1</annotation></semantics></math></p>
+<h3 id="axiom-of-simplification-of-compound-lotteries">Axiom of
+Simplification of Compound Lotteries</h3>
+<p>For each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>J</mi></mrow><annotation encoding="application/x-tex">j = 1,...,J</annotation></semantics></math>,
+let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>j</mi></msub><annotation encoding="application/x-tex">L_j</annotation></semantics></math>
+be the <a href="Lottery%20(probability).html">simple lottery</a>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>j</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><msubsup><mi>p</mi><mn>1</mn><mi>j</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msubsup><mi>p</mi><mn>2</mn><mi>j</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msubsup><mi>p</mi><mi>K</mi><mi>j</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>K</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">L_j=[p_1^j (A_1), p_2^j (A_2),...,p_K^j (A_K)]</annotation></semantics></math>
+and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>L</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat L</annotation></semantics></math>
+be the <a href="Compound%20lottery.html">compound lottery</a>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>L</mi><mo accent="true">̂</mo></mover><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>q</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>q</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>q</mi><mi>J</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mi>J</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\hat L = [q_1(L_1), q_2(L_1), ..., q_J(L_J)]</annotation></semantics></math>
+For each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">k=1,...,K</annotation></semantics></math>,
+define the overall probability that the outcome of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>L</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat L</annotation></semantics></math>
+will be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>k</mi></msub><annotation encoding="application/x-tex">A_k</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>=</mo><msub><mi>q</mi><mn>1</mn></msub><msubsup><mi>p</mi><mi>k</mi><mn>1</mn></msubsup><mo>+</mo><msub><mi>q</mi><mn>2</mn></msub><msubsup><mi>p</mi><mi>k</mi><mn>2</mn></msubsup><mo>+</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>+</mo><msub><mi>q</mi><mi>J</mi></msub><msubsup><mi>p</mi><mi>k</mi><mi>J</mi></msubsup></mrow><annotation encoding="application/x-tex">r_k = q_1 p_k^1 + q_2 p_k^2 + ... + q_J p_k^J</annotation></semantics></math>
+Consider simple lottery
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>r</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>r</mi><mi>K</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>K</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">L = [r_1(A_1),r_2(A_2),...,r_K(A_K)]</annotation></semantics></math>
+Then,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>L</mi><mo accent="true">̂</mo></mover><msub><mo>≈</mo><mi>i</mi></msub><mi>L</mi></mrow><annotation encoding="application/x-tex">\hat L \approx_i L</annotation></semantics></math></p>
+<h3 id="axiom-of-independence">Axiom of Independence</h3>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>L</mi><mo accent="true">̂</mo></mover><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>q</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>q</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>q</mi><mi>J</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mi>J</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\hat L = [q_1(L_1), q_2(L_1), ..., q_J(L_J)]</annotation></semantics></math>
+be a <a href="Compound%20lottery.html">compound lottery</a>, and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a <a href="Lottery%20(probability).html">simple lottery</a>. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>j</mi></msub><msub><mo>≈</mo><mi>i</mi></msub><mi>M</mi></mrow><annotation encoding="application/x-tex">L_j \approx_i M</annotation></semantics></math>
+then
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>L</mi><mo accent="true">̂</mo></mover><msub><mo>≈</mo><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>q</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>q</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>q</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>q</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>q</mi><mi>J</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mi>J</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\hat L \approx_i [q_1(L_1),...,q_{j-1}(L_j),q_j(M),q_{j+1}(L_{j+1}),...,q_J(L_J)]</annotation></semantics></math></p>
+<h4 id="notes">Notes</h4>
+<p>Can extend Axioms of Simplification and Independence to compound
+lotteries of any order. By induction over levels of compounding, it
+follows that the player's preference relation over all compound
+lotteries (of any order) is determined by the player's preference
+relation over simple lotteries.</p>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>M. Maschler, E. Solan, and Shmuel Zamir, <em>Game Theory</em>,
+Cambridge University Press, 2013, pp. 14-17.</li>
+<li><a
+href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem#The_theorem">https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem#The_theorem</a></li>
+<li>Neumann, John von and Morgenstern, Oskar, <em>Theory of Games and
+Economic Behavior</em>. Princeton, NJ. Princeton University Press,
+1953.</li>
+</ol>
+</body>
+</html>

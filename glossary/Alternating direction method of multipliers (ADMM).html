@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alternating direction method of multipliers (ADMM)</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Alternating direction method of multipliers (ADMM)</h1>
+
+<p>ADMM problem form (with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+<a href="Convex%20function.html">convex</a>): minimize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)+g(z)</annotation></semantics></math>
+subject to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>x</mi><mo>+</mo><mi>B</mi><mi>z</mi><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">Ax + Bz = c</annotation></semantics></math></p>
+<p>two sets of variables, with separable objective</p>
+<p>augmented Lagrangian:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>ρ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><msup><mi>y</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>x</mi><mo>+</mo><mi>B</mi><mi>z</mi><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mfrac><mi>ρ</mi><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>A</mi><mi>x</mi><mo>+</mo><mi>B</mi><mi>z</mi><mo>−</mo><mi>c</mi><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">L_\rho (x,z,y) = f(x)+g(z)+y^T (Ax + Bz - c) + \frac{\rho}{2} ||Ax+Bz-c||_2^2</annotation></semantics></math></p>
+<p>ADMM:</p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>:=</mo><mo>arg</mo><msub><mo>min</mo><mi>x</mi></msub><msub><mi>L</mi><mi>ρ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><msup><mi>z</mi><mi>k</mi></msup><mo>,</mo><msup><mi>y</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x^{k+1} := \arg \min_x L_\rho (x,z^k,y^k)</annotation></semantics></math>
+//
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-minimization</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>z</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>:=</mo><mo>arg</mo><msub><mo>min</mo><mi>z</mi></msub><msub><mi>L</mi><mi>ρ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>,</mo><mi>z</mi><mo>,</mo><msup><mi>y</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">z^{k+1} := \arg \min_z L_\rho (x^{k+1},z,y^k)</annotation></semantics></math>
+//
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-minimization</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>:=</mo><msup><mi>y</mi><mi>k</mi></msup><mo>+</mo><mi>ρ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><msup><mi>x</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>+</mo><mi>B</mi><msup><mi>z</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">y^{k+1} := y^k + \rho(Ax^{k+1} + Bz^{k+1}-c)</annotation></semantics></math>
+// dual update</li>
+</ul>
+<hr />
+<ul>
+<li>flexible optimization algorithm that can handle many convex
+optimization problems
+<ul>
+<li>Represent different terms of the objective function using additional
+variables and introducing constraints</li>
+</ul></li>
+<li>Built on the <a href="Lagrange%20multiplier.html">Lagrangian
+multiplier</a> method</li>
+<li>Solve the dual problem</li>
+<li>Add quadratic penalty (method of multipliers) to ease update of the
+dual variable and be more robust</li>
+</ul>
+<p>#incomplete</p>
+<hr />
+<p>linear programming? optimization? <a
+href="Convex%20Optimization%20notes">Convex Optimization notes</a></p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li>Distributed Optimization and Statistical Learning via the
+Alternating Direction Method of Multipliers (Boyd, Parikh, Chu, Peleato,
+Eckstein) <a
+href="https://web.stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf">https://web.stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf</a>
+<ul>
+<li>slides: Boyd. Alternating Direction Method of Multipliers. EE364b.
+<a
+href="https://web.stanford.edu/~boyd/papers/pdf/admm_slides.pdf">https://web.stanford.edu/~boyd/papers/pdf/admm_slides.pdf</a></li>
+<li><a
+href="https://stanford.edu/~boyd/admm.html">https://stanford.edu/~boyd/admm.html</a></li>
+</ul></li>
+<li><a
+href="https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/admm.pdf">https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/admm.pdf</a></li>
+<li><a
+href="https://paperswithcode.com/method/admm">https://paperswithcode.com/method/admm</a></li>
+<li><a
+href="https://www.stat.cmu.edu/~ryantibs/convexopt-F18/lectures/admm.pdf">https://www.stat.cmu.edu/~ryantibs/convexopt-F18/lectures/admm.pdf</a></li>
+</ol>
+</body>
+</html>

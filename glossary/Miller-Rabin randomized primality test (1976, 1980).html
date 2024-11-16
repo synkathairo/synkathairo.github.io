@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miller-Rabin randomized primality test (1976, 1980)</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Miller-Rabin randomized primality test (1976, 1980)</h1>
+
+<p>There is a randomized algorithm running in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>n</mi><mn>3</mn></msup><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><mi>δ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(n^3 \log_2(1/\delta))</annotation></semantics></math>
+time that, with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">1-\delta</annotation></semantics></math>
+determines if an
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-bit
+integer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is prime.</p>
+<blockquote>
+<p><em><strong>MillerRabin(n)</strong></em> If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n &gt; 2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is even, return <strong>composite</strong>. /* Factor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n − 1</annotation></semantics></math>
+as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>s</mi></msup><mi>t</mi></mrow><annotation encoding="application/x-tex">2^s t</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+is odd. */
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>←</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s ← 0</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>←</mo><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t ← n − 1</annotation></semantics></math>
+<strong>while</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+is even
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>←</mo><mi>s</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">s ← s + 1</annotation></semantics></math>
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>←</mo><mi>t</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">t ← t/2</annotation></semantics></math>
+<strong>end</strong> /* Done.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn><mo>=</mo><msup><mn>2</mn><mi>s</mi></msup><mi>t</mi></mrow><annotation encoding="application/x-tex">n − 1 = 2^s t</annotation></semantics></math>.
+*/ Choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">x ∈ \{1, 2, . . . , n − 1\}</annotation></semantics></math>
+uniformly at random. Compute each of the numbers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>t</mi></msub><mo>,</mo><msup><mi>x</mi><mrow><mn>2</mn><mi>t</mi></mrow></msup><mo>,</mo><msup><mi>x</mi><mrow><mn>4</mn><mi>t</mi></mrow></msup><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msup><mi>x</mi><mrow><msup><mn>2</mn><mi>s</mi></msup><mi>t</mi></mrow></msup><mo>=</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mrow><mspace width="0.444em"></mspace><mo>mod</mo><mspace width="0.222em"></mspace><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">x_t , x^{2t} , x^{4t} , . . . , x^{2^st} = x^{n−1} \mod n</annotation></semantics></math>.
+If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>≢</mo><mn>1</mn><mrow><mspace width="0.222em"></mspace><mo stretchy="false" form="prefix">(</mo><mo>mod</mo><mspace width="0.222em"></mspace><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x^{n−1} \not\equiv 1 \pmod n</annotation></semantics></math>,
+return <strong>composite</strong>. <strong>for</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">i = 1, 2, . . . , s</annotation></semantics></math>
+  If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><msup><mn>2</mn><mi>i</mi></msup><mi>t</mi></mrow></msup><mo>≡</mo><mn>1</mn><mrow><mspace width="0.222em"></mspace><mo stretchy="false" form="prefix">(</mo><mo>mod</mo><mspace width="0.222em"></mspace><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x^{2^i t} ≡ 1 \pmod n</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><msup><mn>2</mn><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>t</mi></mrow></msup><mo>≢</mo><mo>±</mo><mn>1</mn><mrow><mspace width="0.222em"></mspace><mo stretchy="false" form="prefix">(</mo><mo>mod</mo><mspace width="0.222em"></mspace><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x^{2^{i−1} t} \not\equiv ±1 \pmod n</annotation></semantics></math>,
+return <strong>composite</strong>. <strong>end</strong> /* Done checking
+for fake square roots. */ Return <strong>probably prime.</strong></p>
+</blockquote>
+<hr />
+<p>See also: <a
+href="https://annals.math.princeton.edu/2004/160-2/p12">PRIMES is in
+P</a> paper</p>
+<p>References:</p>
+<ol type="1">
+<li>G. L. Miller, “Riemann’s hypothesis and tests for primality,”
+<em>Proceedings of seventh annual ACM symposium on Theory of computing 
+- STOC ’75</em>, pp. 234–239, May 1975. doi: <a
+href="https://doi.org/10.1145/800116.803773">10.1145/800116.803773</a></li>
+<li>M. O. Rabin, “Probabilistic algorithm for testing primality,”
+<em>Journal of Number Theory</em>, vol. 12, no. 1, pp. 128–138, 1980.
+doi: <a
+href="https://doi.org/10.1016/0022-314x(80)90084-0">10.1016/0022-314x(80)90084-0</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test">https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test</a></li>
+<li><a
+href="https://www.cs.cornell.edu/courses/cs4820/2010sp/handouts/MillerRabin.pdf">https://www.cs.cornell.edu/courses/cs4820/2010sp/handouts/MillerRabin.pdf</a></li>
+</ol>
+</body>
+</html>

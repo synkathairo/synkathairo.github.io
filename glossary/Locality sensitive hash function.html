@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Locality sensitive hash function</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Locality sensitive hash function</h1>
+
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>:</mo><msup><mi>ℝ</mi><mi>d</mi></msup><mo>→</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>m</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">h: \mathbb{R}^d \rightarrow \{1,…,m\}</annotation></semantics></math>
+be a random hash function.</p>
+<p>We call
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+locality sensitive for similarity function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐪</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s(\mathbf{q},\mathbf{y})</annotation></semantics></math>
+if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐪</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>=</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐲</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Pr}[h(\mathbf{q})==h(\mathbf{y})]</annotation></semantics></math>
+is</p>
+<ul>
+<li>higher when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐪</mi><annotation encoding="application/x-tex">\mathbf{q}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐲</mi><annotation encoding="application/x-tex">\mathbf{y}</annotation></semantics></math>
+are more similar, i.e.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐪</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s(\mathbf{q},\mathbf{y})</annotation></semantics></math>
+higher</li>
+<li>lower when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐪</mi><annotation encoding="application/x-tex">\mathbf{q}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐲</mi><annotation encoding="application/x-tex">\mathbf{y}</annotation></semantics></math>
+are more dissimilar, i.e.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐪</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">s(\mathbf{q},\mathbf{y})</annotation></semantics></math>
+lower</li>
+</ul>
+<h2 id="locality-sensitive-hash-family">Locality Sensitive Hash
+Family</h2>
+<p>For distances
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">r_1,r_2</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">r_1 &lt; r_2</annotation></semantics></math>,
+a family of hash functions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mo>:</mo><mi>U</mi><mo>→</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">\mathcal{H}: U \rightarrow S</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>,</mo><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(r_1,r_2,p_1,p_2)</annotation></semantics></math>-locality
+sensitive if for any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x,y \in U</annotation></semantics></math>:</p>
+<ol type="1">
+<li>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mi>r</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">d(x,y)\leq r_1</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi></mrow><mrow><mi>h</mi><mo>∈</mo><mi>ℋ</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">[</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>≥</mo><msub><mi>p</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\mathrm{Pr}_{h\in\mathcal{H}}[h(x)=h(y)]\geq p_1</annotation></semantics></math></li>
+<li>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">d(x,y)\geq r_2</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi></mrow><mrow><mi>h</mi><mo>∈</mo><mi>ℋ</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">[</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>≤</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mathrm{Pr}_{h\in\mathcal{H}}[h(x)=h(y)]\leq p_2</annotation></semantics></math></li>
+</ol>
+<p>(For our purposes, we always have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>2</mn></msub><mo>&lt;</mo><msub><mi>p</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">p_2 &lt; p_1</annotation></semantics></math>.
+I.e. if two points are close together, they have a strictly higher
+probability of hashing to the same bucket than two points that are far
+apart. This property is ultimately what allows us to perform efficient
+near neighbor search.)</p>
+<h2 id="tunable-lsh">Tunable LSH</h2>
+<p>Full LSH scheme has two parameters to tune:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+tables and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+bands</p>
+<ul>
+<li>effect of increasing number of tables
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>:
+fewer false negatives, more false positives</li>
+<li>effect of increasing number of bands
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>:
+more false negatives, fewer false positives</li>
+</ul>
+<p>s-curve tuning, collision probability vs Jaccard similarity</p>
+<hr />
+<p>Crucial for <a href="Indyk%20and%20Motwani%20(1998).html">Indyk and
+Motwani (1998)</a> theorem.</p>
+<p>Also see <a href="SimHash.html">SimHash</a> and <a
+href="MinHash%20(Broder,%201997).html">MinHash (Broder, 1997)</a>.</p>
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://web.stanford.edu/class/cs246/slides/03-lsh.pdf">https://web.stanford.edu/class/cs246/slides/03-lsh.pdf</a></li>
+<li><a
+href="https://www.cs.princeton.edu/courses/archive/fall18/cos521/Lectures/lec12.pdf">https://www.cs.princeton.edu/courses/archive/fall18/cos521/Lectures/lec12.pdf</a></li>
+<li><a
+href="https://users.cs.duke.edu/~kamesh/CPS294-PDF/Lecture4.pdf">https://users.cs.duke.edu/~kamesh/CPS294-PDF/Lecture4.pdf</a></li>
+<li><a
+href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/">https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/</a></li>
+<li><a
+href="http://infolab.stanford.edu/~ullman/mining/2009/similarity3.pdf">http://infolab.stanford.edu/~ullman/mining/2009/similarity3.pdf</a></li>
+</ol>
+</body>
+</html>

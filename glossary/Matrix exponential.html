@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Matrix exponential</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Matrix exponential</h1>
+
+<h2 id="definition">Definition</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><msup><mi>e</mi><mrow><mi>A</mi><mi>t</mi></mrow></msup><mo>≜</mo><mi>I</mi><mo>+</mo><mi>A</mi><mi>t</mi><mo>+</mo><msup><mi>A</mi><mn>2</mn></msup><mfrac><msup><mi>t</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><msup><mi>A</mi><mi>i</mi></msup><mfrac><msup><mi>t</mi><mi>i</mi></msup><mrow><mi>i</mi><mi>!</mi></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mfrac><mrow><mi>d</mi><msup><mi>e</mi><mrow><mi>A</mi><mi>t</mi></mrow></msup></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>I</mi><mo>+</mo><mi>A</mi><mi>t</mi><mo>+</mo><msup><mi>A</mi><mn>2</mn></msup><mfrac><msup><mi>t</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo>=</mo><mi>A</mi><msup><mi>e</mi><mrow><mi>A</mi><mi>t</mi></mrow></msup></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{eqnarray}
+e^{At} \triangleq I + At + A^2\frac{t^2}{2!} + ... = \sum_{i=0}^\infty A^i \frac{t^i}{i!} \\
+\frac{de^{At}}{dt} = A [I + At + A^2 \frac{t^2}{2!} + ...] = Ae^{At}
+\end{eqnarray}</annotation></semantics></math></p>
+<h2 id="properties">Properties</h2>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>A</mi><mn>0</mn></mrow></msup><mo>=</mo><mi>I</mi><mo>+</mo><mi>A</mi><mn>0</mn><mo>+</mo><msup><mi>A</mi><mn>2</mn></msup><mfrac><msup><mn>0</mn><mn>2</mn></msup><mrow><mn>2</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">e^{A0} = I + A0 + A^2 \frac{0^2}{2!} + ... = I</annotation></semantics></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mrow><mi>A</mi><mi>t</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>A</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">(e^{At})^{-1} = e^{-At}</annotation></semantics></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><msup><mi>e</mi><mrow><mi>A</mi><mi>t</mi></mrow></msup><mo>=</mo><mi>A</mi><msup><mi>e</mi><mrow><mi>A</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\frac{d}{dt} e^{At} = A e^{At}</annotation></semantics></math></li>
+</ul>
+<h2 id="notes">Notes</h2>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>×</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1 \times 1</annotation></semantics></math>
+i.e. scalar, this becomes the power series,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>a</mi><mi>t</mi></mrow></msup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>k</mi></msup><mrow><mi>k</mi><mi>!</mi></mrow></mfrac><mo>=</mo><mn>1</mn><mo>+</mo><mi>a</mi><mi>t</mi><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mfrac><msup><mi>t</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>!</mi></mrow></mfrac><mo>+</mo><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">e^{at} = \sum_{k=0}^\infty \frac{(at)^k}{k!} = 1 + at + a^2\frac{t^2}{2!} + ...</annotation></semantics></math>
+which matches a common definition of the exponential function</p>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li><a
+href="https://crrl.poly.edu/6253/lectures/lect4.pdf">https://crrl.poly.edu/6253/lectures/lect4.pdf</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Matrix_exponential">https://en.wikipedia.org/wiki/Matrix_exponential</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Characterizations_of_the_exponential_function">https://en.wikipedia.org/wiki/Characterizations_of_the_exponential_function</a></li>
+</ol>
+</body>
+</html>

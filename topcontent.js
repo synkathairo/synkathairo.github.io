@@ -15,6 +15,7 @@ class TopContent extends HTMLElement {
 			<li><a href="/index.html">Home</a></li>
 			<li><a href="/projects.html">Projects</a></li>
 			<li><a href="/about.html">About Me</a></li>
+			<li><a href="/glossary.html">Glossary</a></li>
 		</ul>`;
 
 		// Create some CSS to apply to the shadow dom
@@ -31,6 +32,7 @@ class TopContent extends HTMLElement {
 			margin: 0;
 			padding: 5px;
 			border: outset;
+			border-width: 1.5px;
 		}
 
 		li {

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gamma correction</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Gamma correction</h1>
+
+<ul>
+<li>Displayed light intensity is nonlinearly related to the actual
+intensity following the Gamma rule
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mi>a</mi><msup><mi>f</mi><mi>r</mi></msup></mrow><annotation encoding="application/x-tex">g = af^r</annotation></semantics></math></li>
+<li>Gamma correction pre-compensates this nonlinearity inside the camera
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><msup><mi>f</mi><mrow><mn>1</mn><mi>/</mi><mi>r</mi></mrow></msup></mrow><annotation encoding="application/x-tex">h= f^{1/r}</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mi>a</mi><msup><mi>h</mi><mi>r</mi></msup><mo>=</mo><mi>a</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">g=ah^r=af</annotation></semantics></math></li>
+<li>Gamma value depends on the display device, typically gamma~2.2</li>
+</ul>
+</body>
+</html>

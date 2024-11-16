@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spectral decomposition</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Spectral decomposition</h1>
+
+<p>Symmetric matrices are always (orthogonally) diagonalizable.</p>
+<p>That is, for any symmetric matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐀</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{A} \in \mathbb{R}^{n \times n}</annotation></semantics></math>,
+there exists an <a href="Orthogonal%20matrix.html">orthogonal matrix</a>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐐</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>𝐪</mi><mn>1</mn></msub><mi>.</mi><mi>.</mi><mi>.</mi><msub><mi>𝐪</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{Q} = [\mathbf{q}_1...\mathbf{q}_n]</annotation></semantics></math>
+and a diagonal matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝚲</mi><mo>=</mo><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">g</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>λ</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>λ</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{\Lambda} = \mathrm{diag} (\lambda_1,…,\lambda_n)</annotation></semantics></math>,
+both real and square, such that <span class="math display">$$\mathbf{A}
+= \mathbf{Q\Lambda Q}^{\sf T}$$</span> where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>λ</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\lambda_i</annotation></semantics></math>’s
+are the <a href="Eigenvalue%20and%20eigenvector.html">eigenvalues</a> of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐀</mi><annotation encoding="application/x-tex">\mathbf{A}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝐪</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\mathbf{q}_i</annotation></semantics></math>’s
+the corresponding <a
+href="Eigenvalue%20and%20eigenvector.html">eigenvectors</a> (orthogonal to
+each other and with unit norm).</p>
+<p>Such a factorization is called the
+<strong>eigendecomposition</strong> of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐀</mi><annotation encoding="application/x-tex">\mathbf{A}</annotation></semantics></math>,
+also called the <strong>spectral decomposition</strong> of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐀</mi><annotation encoding="application/x-tex">\mathbf{A}</annotation></semantics></math>.</p>
+<hr />
+<p>For general rectangular matrices, there is <a
+href="Singular%20value%20decomposition.html">Singular value
+decomposition</a>.</p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://www.sjsu.edu/faculty/guangliang.chen/Math253S20/lec5svd.pdf">https://www.sjsu.edu/faculty/guangliang.chen/Math253S20/lec5svd.pdf</a></li>
+<li><a
+href="https://people.math.carleton.ca/~kcheung/math/notes/MATH1107/wk10/10_symmetric_matrices.html">https://people.math.carleton.ca/~kcheung/math/notes/MATH1107/wk10/10_symmetric_matrices.html</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix">https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix</a></li>
+</ol>
+</body>
+</html>

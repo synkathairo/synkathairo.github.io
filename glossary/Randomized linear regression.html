@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Randomized linear regression</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Randomized linear regression</h1>
+
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝚷</mi><annotation encoding="application/x-tex">\mathbf{\Pi}</annotation></semantics></math>
+be a properly scaled <a
+href="Johnson-Lindenstrauss%20Lemma%20(1984).html">JL</a> matrix (random
+<a href="Gaussian%20concentration.md#Gaussian%20function|Gaussian"></a>,
+sparse random etc.) with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>d</mi><msup><mi>ϵ</mi><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">m=O(\frac{d}{\epsilon^2})</annotation></semantics></math>
+rows<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>. Then with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">9/10</annotation></semantics></math>,
+for any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐀</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>×</mo><mi>d</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{A} \in \mathbb{R}^{n \times d}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐛</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{b} \in \mathbb{R}^n</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">∥</mo><mi>𝐀</mi><mover><mi>𝐱</mi><mo accent="true">̃</mo></mover><mo>−</mo><mi>𝐛</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="prefix">∥</mo><mi>𝐀</mi><msup><mi>𝐱</mi><mo>*</mo></msup><mo>−</mo><mi>𝐛</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\lVert \mathbf{A}\tilde{\mathbf{x}}-\mathbf{b}\rVert_2^2 \leq (1+\epsilon)\lVert \mathbf{A}\mathbf{x}^*-\mathbf{b}\rVert_2^2</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>𝐱</mi><mo accent="true">̃</mo></mover><mo>=</mo><mo>arg</mo><msub><mo>min</mo><mi>𝐱</mi></msub><mo stretchy="false" form="prefix">∥</mo><mrow><mi>𝚷</mi><mi>𝐀</mi><mi>𝐱</mi></mrow><mo>−</mo><mrow><mi>𝚷</mi><mi>𝐛</mi></mrow><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\tilde{\mathbf{x}} = \arg\min_\mathbf{x}\lVert \mathbf{\Pi Ax}-\mathbf{\Pi b}\rVert_2^2</annotation></semantics></math>.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>this can be improved to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>/</mi><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(d/\epsilon)</annotation></semantics></math>
+with tighter analysis<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

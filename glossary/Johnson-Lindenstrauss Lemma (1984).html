@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Johnson-Lindenstrauss Lemma (1984)</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Johnson-Lindenstrauss Lemma (1984)</h1>
+
+<h2 id="lemma">Lemma</h2>
+<p>For any set of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+data points
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝐪</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>𝐪</mi><mi>n</mi></msub><mo>∈</mo><msup><mi>ℝ</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{q}_1,...,\mathbf{q}_n \in \mathbb{R}^d</annotation></semantics></math>,
+there exists a linear map
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝚷</mi><mo>:</mo><msup><mi>ℝ</mi><mi>d</mi></msup><mo>→</mo><msup><mi>ℝ</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{\Pi}: \mathbb{R}^d \rightarrow \mathbb{R}^k</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mo>log</mo><mi>n</mi></mrow><msup><mi>ϵ</mi><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">k=O(\frac{\log{n}}{\epsilon^2})</annotation></semantics></math>
+such that for all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i,j</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>𝐪</mi><mi>i</mi></msub><mo>−</mo><msub><mi>𝐪</mi><mi>j</mi></msub><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>i</mi></msub><mo>−</mo><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>j</mi></msub><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>𝐪</mi><mi>i</mi></msub><mo>−</mo><msub><mi>𝐪</mi><mi>j</mi></msub><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">(1-\epsilon)||\mathbf{q}_i-\mathbf{q}_j||_2 \leq ||\mathbf{\Pi q}_i-\mathbf{\Pi q}_j||_2 \leq (1+\epsilon)||\mathbf{q}_i-\mathbf{q}_j||_2</annotation></semantics></math></p>
+<p>Equivalently,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>𝐪</mi><mi>i</mi></msub><mo>−</mo><msub><mi>𝐪</mi><mi>j</mi></msub><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>≤</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>i</mi></msub><mo>−</mo><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>j</mi></msub><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>𝐪</mi><mi>i</mi></msub><mo>−</mo><msub><mi>𝐪</mi><mi>j</mi></msub><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">(1-\epsilon)||\mathbf{q}_i-\mathbf{q}_j||_2^2 \leq ||\mathbf{\Pi q}_i-\mathbf{\Pi q}_j||_2^2 \leq (1+\epsilon)||\mathbf{q}_i-\mathbf{q}_j||_2^2</annotation></semantics></math>
+because for small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>+</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(1+\epsilon)^2 = 1+O(\epsilon)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>−</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(1-\epsilon)^2 = 1-O(\epsilon)</annotation></semantics></math>.</p>
+<p>Equivalently,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>i</mi></msub><mo>−</mo><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>j</mi></msub><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>≤</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>𝐪</mi><mi>i</mi></msub><mo>−</mo><msub><mi>𝐪</mi><mi>j</mi></msub><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>i</mi></msub><mo>−</mo><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>j</mi></msub><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">(1-\epsilon)||\mathbf{\Pi q}_i-\mathbf{\Pi q}_j||_2^2 \leq ||\mathbf{q}_i-\mathbf{q}_j||_2^2 \leq (1+\epsilon)||\mathbf{\Pi q}_i-\mathbf{\Pi q}_j||_2^2</annotation></semantics></math>
+because for small
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>ϵ</mi></mrow></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{1+\epsilon}=1-O(\epsilon)</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>ϵ</mi></mrow></mfrac><mo>=</mo><mn>1</mn><mo>+</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{1-\epsilon}=1+O(\epsilon)</annotation></semantics></math>.</p>
+<h2 id="proof-using-distributional-johnson-lindenstrauss-lemma">Proof
+using <a
+href="Distributional%20Johnson-Lindenstrauss%20Lemma.html">Distributional
+Johnson-Lindenstrauss Lemma</a>:</h2>
+<p>We have a set of vectors
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝐪</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>𝐪</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\mathbf{q}_1,...,\mathbf{q}_n</annotation></semantics></math>.
+Fix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>∈</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">i,j \in \{1,...,n\}</annotation></semantics></math>.</p>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐱</mi><mo>=</mo><msub><mi>𝐪</mi><mi>i</mi></msub><mo>−</mo><msub><mi>𝐪</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\mathbf{x}=\mathbf{q}_i - \mathbf{q}_j</annotation></semantics></math>.
+By linearity,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝚷</mi><mi>𝐱</mi></mrow><mo>=</mo><mi>𝚷</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>𝐪</mi><mi>i</mi></msub><mo>−</mo><msub><mi>𝐪</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>i</mi></msub><mo>−</mo><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\mathbf{Πx} = \mathbf{Π}(\mathbf{q}_i −\mathbf{q}_j) = \mathbf{Πq}_i −\mathbf{Πq}_j</annotation></semantics></math>.</p>
+<p>By distributional JL Lemma, with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">1-\delta</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mrow><msub><mi>𝐪</mi><mi>𝐢</mi></msub><mo mathvariant="bold">−</mo><msub><mi>𝐪</mi><mi>𝐣</mi></msub></mrow><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>i</mi></msub><mo>−</mo><msub><mrow><mi>𝚷</mi><mi>𝐪</mi></mrow><mi>j</mi></msub><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>ϵ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mrow><msub><mi>𝐪</mi><mi>𝐢</mi></msub><mo mathvariant="bold">−</mo><msub><mi>𝐪</mi><mi>𝐣</mi></msub></mrow><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">(1-\epsilon)||\mathbf{\mathbf{q}_i - \mathbf{q}_j}||_2 \leq ||\mathbf{\Pi q}_i - \mathbf{\Pi q}_j||_2 \leq (1+\epsilon)||\mathbf{\mathbf{q}_i - \mathbf{q}_j}||_2</annotation></semantics></math></p>
+<p>Finally, set
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">δ = \frac{1}{n^2}</annotation></semantics></math>
+. Since there are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">&lt; n^2</annotation></semantics></math>
+total
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i,j</annotation></semantics></math>
+pairs, by a <a href="Union%20Bound.html">Union Bound</a> we have that with
+probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>/</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">9/10</annotation></semantics></math>,
+the above will hold for all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i, j</annotation></semantics></math>,
+as long as we compress to:</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><msup><mi>ϵ</mi><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mo>log</mo><mi>n</mi></mrow><msup><mi>ϵ</mi><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">k=O(\frac{\log(1/(1/n^2))}{\epsilon^2})=O(\frac{\log{n}}{\epsilon^2})</annotation></semantics></math>
+dimensions.</p>
+<hr />
+<p>This is a type of <a
+href="Euclidean%20Dimensionality%20Reduction">Euclidean Dimensionality
+Reduction</a>.</p>
+<p>Reference:</p>
+<ol type="1">
+<li>W. B. Johnson, J. Lindenstrauss, and G. Schechtman, “Extensions of
+lipschitz maps into Banach spaces,” <em>Israel J. Math.</em>, vol. 54,
+no. 2, pp. 129–138, Jun. 1986, doi: <a
+href="https://doi.org/10.1007/BF02764938">10.1007/BF02764938</a>.</li>
+<li>S. Dasgupta and A. Gupta, “An elementary proof of a theorem of
+Johnson and Lindenstrauss,” <em>Random Struct. Alg.</em>, vol. 22, no.
+1, pp. 60–65, Jan. 2003, doi: <a
+href="https://doi.org/10.1002/rsa.10073">10.1002/rsa.10073</a>.</li>
+<li><a
+href="https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma">https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma</a></li>
+<li><a
+href="CS6763%20Course%20miscellanea#^e09534|Anupam%20Gupta:%20Advanced%20Algorithms"></a>,
+see full lecture notes, section 10: Dimension Reduction and the JL
+Lemma</li>
+<li><a
+href="https://yao-lab.github.io/2020.csic5011/slides/Lecture04_RP.pdf">https://yao-lab.github.io/2020.csic5011/slides/Lecture04_RP.pdf</a>,
+slide 17</li>
+<li><a
+href="https://simons.berkeley.edu/sites/default/files/docs/721/dubhashislides.pdf">https://simons.berkeley.edu/sites/default/files/docs/721/dubhashislides.pdf</a></li>
+<li><a
+href="https://www.cs.cmu.edu/afs/cs/academic/class/15456-s14/Handouts/Har-Peled-Chap19.pdf">https://www.cs.cmu.edu/afs/cs/academic/class/15456-s14/Handouts/Har-Peled-Chap19.pdf</a></li>
+<li><a
+href="https://people.eecs.berkeley.edu/~satishr/cs270/sp17/rough-notes/measure-concentration.pdf">https://people.eecs.berkeley.edu/~satishr/cs270/sp17/rough-notes/measure-concentration.pdf</a></li>
+</ol>
+</body>
+</html>

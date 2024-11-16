@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradient descent convergence for α-strongly convex
+functions</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Gradient descent convergence for α-strongly convex functions</h1>
+
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be an <a href="α-strongly%20convex.html">α-strongly convex</a> function
+and assume we have that, for all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐱</mi><annotation encoding="application/x-tex">\mathbf{x}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>∇</mi><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub><mo>≤</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">||\nabla f(\mathbf{x})||_2 \leq G</annotation></semantics></math>.
+If we run <a href="Gradient%20descent.html">GD</a> for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+steps (with adaptive step sizes) we have:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>𝐱</mi><mo accent="true">̂</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mfrac><mrow><mn>2</mn><msup><mi>G</mi><mn>2</mn></msup></mrow><mrow><mi>α</mi><mi>T</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(\hat{\mathbf{x}})-f(\mathbf{x}^*) \leq \frac{2G^2}{\alpha T}</annotation></semantics></math></p>
+<h2 id="corollary">Corollary</h2>
+<p>If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mi>G</mi><mn>2</mn></msup><mrow><mi>α</mi><mi>ϵ</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T=O(\frac{G^2}{\alpha \epsilon})</annotation></semantics></math>
+we have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>𝐱</mi><mo accent="true">̂</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">f(\hat{\mathbf{x}})-f(\mathbf{x}^*) \leq \epsilon</annotation></semantics></math></p>
+<hr />
+<p>See: <a href="Gradient%20descent%20convergence%20bound.html">Gradient
+descent convergence bound</a></p>
+<p>Also compare: <a
+href="Gradient%20descent%20convergence%20for%20β-smooth%20functions.html">Gradient
+descent convergence for β-smooth functions</a></p>
+</body>
+</html>

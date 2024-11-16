@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hölder's inequality</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Hölder's inequality</h1>
+
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>q</mi></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{1}{p}+\frac{1}{q} = 1</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mi>q</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p,q &gt;1</annotation></semantics></math>,
+then
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>f</mi><mi>g</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>1</mn></msub><mo>≤</mo><mo stretchy="false" form="postfix">∥</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">∥</mo><mi>p</mi></msub><mo stretchy="false" form="postfix">∥</mo><mi>g</mi><msub><mo stretchy="false" form="postfix">∥</mo><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">\|fg\|_{1}\leq \|f\|_{p}\|g\|_{q}</annotation></semantics></math>
+more generally for sums,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false" form="prefix">|</mo><msub><mi>a</mi><mi>k</mi></msub><msub><mi>b</mi><mi>k</mi></msub><mo stretchy="false" form="postfix">|</mo><mo>≤</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false" form="prefix">|</mo><msub><mi>a</mi><mi>k</mi></msub><msup><mo stretchy="false" form="postfix">|</mo><mi>p</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mi>p</mi></mrow></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false" form="prefix">|</mo><msub><mi>b</mi><mi>k</mi></msub><msup><mo stretchy="false" form="postfix">|</mo><mi>q</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mi>q</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\sum_{k=1}^n \lvert a_k b_k \rvert \leq \left( \sum_{k=1}^n \lvert a_k \rvert^p \right)^{1/p} \left( \sum_{k=1}^n \lvert b_k \rvert^q \right)^{1/q}</annotation></semantics></math>
+with equality when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>b</mi><mi>k</mi></msub><mo stretchy="false" form="postfix">|</mo><mo>=</mo><mi>c</mi><mo stretchy="false" form="prefix">|</mo><msub><mi>a</mi><mi>k</mi></msub><msup><mo stretchy="false" form="postfix">|</mo><mrow><mi>p</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\lvert b_k \rvert = c \lvert a_k \rvert^{p-1}</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>q</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p=q=2</annotation></semantics></math>
+yields Cauchy's inequality.</p>
+<p>For integrals,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">|</mo><mi>d</mi><mi>x</mi><mo>≤</mo><msup><mrow><mo stretchy="true" form="prefix">[</mo><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mo stretchy="false" form="postfix">|</mo><mi>p</mi></msup><mi>d</mi><mi>x</mi><mo stretchy="true" form="postfix">]</mo></mrow><mrow><mn>1</mn><mi>/</mi><mi>p</mi></mrow></msup><msup><mrow><mo stretchy="true" form="prefix">[</mo><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mo stretchy="false" form="postfix">|</mo><mi>q</mi></msup><mi>d</mi><mi>x</mi><mo stretchy="true" form="postfix">]</mo></mrow><mrow><mn>1</mn><mi>/</mi><mi>q</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\int_a^b \lvert f(x) g(x) \rvert dx \leq \left[ \int_a^b \lvert f(x) \rvert^p dx \right]^{1/p} \left[ \int_a^b \lvert g(x) \rvert^q dx \right]^{1/q}</annotation></semantics></math>
+with equality when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="postfix">|</mo><mo>=</mo><mi>c</mi><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mo stretchy="false" form="postfix">|</mo><mrow><mi>p</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\lvert g(x) \rvert = c \lvert f(x) \rvert^{p-1}</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>q</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p=q=2</annotation></semantics></math>
+yields Schwarz's inequality</p>
+<hr />
+<p>For vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-norms:
+the <a href="Lagrange%20dual%20problem.html">dual</a> of the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mi>p</mi></msub><annotation encoding="application/x-tex">\ell_p</annotation></semantics></math>
+norm is the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mi>q</mi></msub><annotation encoding="application/x-tex">\ell_q</annotation></semantics></math>
+norm. e.g. dual of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mn>2</mn></msub><annotation encoding="application/x-tex">\ell_2</annotation></semantics></math>
+norm is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mn>2</mn></msub><annotation encoding="application/x-tex">\ell_2</annotation></semantics></math>
+norm, dual of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mn>1</mn></msub><annotation encoding="application/x-tex">\ell_1</annotation></semantics></math>
+norm is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mi>∞</mi></msub><annotation encoding="application/x-tex">\ell_\infty</annotation></semantics></math>
+norm.</p>
+<hr />
+<p>See also: <a href="Jensen’s%20inequality.html">Jensen’s inequality</a>
+(note that Hölder's inequality can be derived from this)</p>
+<hr />
+<p>References</p>
+<ol type="1">
+<li><a
+href="https://mathworld.wolfram.com/HoeldersInequalities.html">https://mathworld.wolfram.com/HoeldersInequalities.html</a></li>
+<li><a
+href="https://math.stackexchange.com/questions/211633/h%C3%B6lder-inequality-from-jensen-inequality">https://math.stackexchange.com/questions/211633/h%C3%B6lder-inequality-from-jensen-inequality</a></li>
+<li><a
+href="https://artofproblemsolving.com/wiki/index.php/H%C3%B6lder%27s_Inequality">https://artofproblemsolving.com/wiki/index.php/H%C3%B6lder%27s_Inequality</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/H%C3%B6lder%27s_inequality">https://en.wikipedia.org/wiki/H%C3%B6lder%27s_inequality</a></li>
+</ol>
+</body>
+</html>

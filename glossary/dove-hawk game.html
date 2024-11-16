@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dove-hawk game</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>dove-hawk game</h1>
+
+<h2 id="game">Game</h2>
+<p>Suppose two types of animals, hawks (aggressive) and doves
+(peaceful).</p>
+<p>Hawk aggressively repels invader of territory, dove yields. If both
+doves, one leaves with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>.
+If both are hawks, fight ensures, both injured, at most one will remain
+in the territory and produce offspring.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th><strong>Invader</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Dove
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>)</td>
+<td>Hawk
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">1-y</annotation></semantics></math>)</td>
+</tr>
+<tr class="even">
+<td><strong>Defender</strong></td>
+<td>Dove</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">4, 4</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">2, 8</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Hawk</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">8, 2</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1, 1</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<p>"Single species" population, as both players have same set of
+strategies, payoff functions satisfy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mn>1</mn></msub><mo>,</mo><msub><mi>s</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>u</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mn>1</mn></msub><mo>,</mo><msub><mi>s</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u_1(s_1,s_2) = u_2(s_1,s_2)</annotation></semantics></math>,
+game is symmetric.</p>
+<p>Describe a <strong>mutation</strong>, an individual in the population
+characterized by a particular behavior: type hawk or type dove. Type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \leq x \leq 1</annotation></semantics></math>
+(dove with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>),
+hawk with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">1-x</annotation></semantics></math>.</p>
+<p><strong>Mutation population game</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th><strong>Population</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Dove
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>)</td>
+<td>Hawk
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">1-y</annotation></semantics></math>)</td>
+</tr>
+<tr class="even">
+<td><strong>Mutation</strong></td>
+<td>Dove</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">4, 4</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">2, 8</annotation></semantics></math></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Hawk</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">8, 2</annotation></semantics></math></td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1, 1</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<p>The column player is the population, the row player as the mutation
+chooses its type.</p>
+<p>Population is implementing a fixed mixed strategy
+[<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>(Dove),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1-y)</annotation></semantics></math>(Hawk)],
+behaving with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+as a dove,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">1-y</annotation></semantics></math>
+as a hawk.</p>
+<p>Expected payoff of a mutation from a random encounter is</p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>y</mi><mo>+</mo><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">4y + 2(1-y)</annotation></semantics></math>
+if it is a dove,</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mi>y</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">8y + (1-y)</annotation></semantics></math>
+if it is a hawk,</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>4</mn><mi>y</mi><mo>+</mo><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>8</mn><mi>y</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x(4y + 2(1-y)) + (1-x)(8y + (1-y))</annotation></semantics></math>
+if of type
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</li>
+</ul>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>M. Maschler, E. Solan, and Shmuel Zamir, <em>Game Theory</em>,
+Cambridge University Press, 2013, p. 187-189.</li>
+</ol>
+</body>
+</html>

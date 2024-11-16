@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cosine similarity</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<h1>Cosine similarity</h1>
+
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>θ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>x</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>y</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">\cos(\theta(x,y)) = \frac{\langle x,y\rangle}{||x||_2 ||y||_2}</annotation></semantics></math></p>
+<p>with cosine similarity closer to 1 means more similar, farther from 1
+means more different</p>
+<p>Notes: can think of as natural ‘inverse’ to Euclidean distance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐱</mi><mo>−</mo><mi>𝐲</mi><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">||\mathbf{x}-\mathbf{y}||_2^2</annotation></semantics></math></p>
+<p>Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐱</mi><mo>,</mo><mi>𝐲</mi></mrow><annotation encoding="application/x-tex">\mathbf{x},\mathbf{y}</annotation></semantics></math>
+are unit vectors, then,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐱</mi><mo>−</mo><mi>𝐲</mi><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><mi>𝐱</mi><mo>−</mo><mi>𝐲</mi><mo>,</mo><mi>𝐱</mi><mo>−</mo><mi>𝐲</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐱</mi><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐲</mi><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>−</mo><mn>2</mn><mo stretchy="false" form="prefix">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mn>2</mn><mo>−</mo><mn>2</mn><mo>cos</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>θ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo>,</mo><mi>𝐲</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">||\mathbf{x}-\mathbf{y}||_2^2 = \langle \mathbf{x} - \mathbf{y},\mathbf{x} - \mathbf{y} \rangle
+=||\mathbf{x}||_2^2+||\mathbf{y}||_2^2-2\langle x,y \rangle
+= 2 - 2 \cos(\theta(\mathbf{x},\mathbf{y}))</annotation></semantics></math></p>
+</body>
+</html>
