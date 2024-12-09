@@ -15,7 +15,7 @@ class TopContent extends HTMLElement {
 			<li><a href="/index.html">Home</a></li>
 			<li><a href="/projects.html">Projects</a></li>
 			<li><a href="/about.html">About Me</a></li>
-			<li><a href="/glossary.html">Glossary</a></li>
+			<li><a href="/glossary.html">Zettlekasten</a></li>
 		</ul>`;
 
 		// Create some CSS to apply to the shadow dom
