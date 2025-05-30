@@ -1,4 +1,10 @@
+@import url("tango.css");
+@import url("monokai.css");
+
 :root {
+	background-color: #F2ECDE;
+	color: #171412;
+	--link-color: #424C50;
 	background-color: wheat;
 	color: black;
 	--link-color: darkslateblue;

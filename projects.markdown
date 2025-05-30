@@ -5,7 +5,6 @@ title: "synkathairo.github.io - Projects"
 
 ## Projects
 
-
 [**Stability of Evolutionary Population Games**](https://github.com/synkathairo/evolutionary_game_strategies) (Oct 2024 - Dec 2024)
 - Examined population games and evolutionary games using a game theoretic framework
 - Focused on stabilities of Nash equilibria and evolutionarily stable strategies (ESS) under pure and mixed-strategies using probability models, non-equilibrium behavior within bounds, asymptotic stability, and numerical simulation of games
@@ -26,10 +25,12 @@ title: "synkathairo.github.io - Projects"
 
 **Miscellanea**
 - [geodesic-optimization](https://github.com/synkathairo/geodesic-optimization) - implementation of geodesic optimization methods in Julia. These methods generalize convex optimization for non-Euclidean problems.
+- [embedded-gyrometer](https://synkathairo.github.io/embedded-gyrometer/) - gyroscope device using the STM32F429 Discovery Board (ARM-based) and associated L3GD20 gyroscope. Focus on estimation of stride length and step estimation using limited interface resources. Course project. Uses C, C++, and MbedOS.
+- [rsa-py](https://github.com/synkathairo/rsa-py) - proof-of-concept implementation in Python of the [Rivest-Shamir-Adleman (RSA)](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) encryption algorithm.
 - [synkathairo.github.io](https://github.com/synkathairo/synkathairo.github.io) - this very webpage
-- [Youtube_playlist-no_login](https://github.com/synkathairo/Youtube_playlist-no_login) - a basic Chrome extension, conforming to the WebExtension API
-- [flan-t5-large-gradio](https://github.com/synkathairo/flan-t5-large-gradio) - a frontend using the [Gradio](https://gradio.app/) library to interact with [Google's Flan-T5 Large](https://huggingface.co/google/flan-t5-large) language model, using a chat-like interface.
-- [Ruebook](https://github.com/synkathairo/ruebook) - a web application built for BostonHacks 2021 using Node.js, Bootstrap, and Express, utilizing the Google Cloud Natural Language API. Analyzes user sentiments in journal entries and particular themes which cause users stress.
-- [rsa-py](https://github.com/synkathairo/rsa-py) - proof-of-concept implementation in Python of the [Rivest-Shamir-Adleman (RSA)](https://en.wikipedia.org/wiki/RSA_\(cryptosystem\)) encryption algorithm.
 - [Watchers-app](https://github.com/watchers-cs673/Watchers-app) - a social media web app project which allows sharing of posts about favorite movies, providing an interactive and collaborative platform for movie lovers. Course project. Uses Angular, Express, and Prisma ORM.
-- [embedded-gyrometer](https://github.com/synkathairo/embedded-gyrometer) - gyroscope device using the STM32F429 Discovery Board (ARM-based) and associated L3GD20 gyroscope. Focus on estimation of stride length and step estimation using limited interface resources. Course project. Uses C, C++, and MbedOS.
+- [Ruebook](https://github.com/synkathairo/ruebook) - a web application built for BostonHacks 2021 using Node.js, Bootstrap, and Express, utilizing the Google Cloud Natural Language API. Analyzes user sentiments in journal entries and particular themes which cause users stress.
+- [flan-t5-large-gradio](https://huggingface.co/spaces/synkathairo/flan-t5-large-gradio) - a frontend using the [Gradio](https://gradio.app/) library to interact with [Google's Flan-T5 Large](https://huggingface.co/google/flan-t5-large) language model, using a chat-like interface.
+- [Youtube_playlist-no_login](https://github.com/synkathairo/Youtube_playlist-no_login) - a basic Chrome extension, conforming to the WebExtension API
+
+
