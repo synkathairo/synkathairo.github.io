@@ -100,7 +100,7 @@ time {
 	font-style: italic;
 }
 
-#navbar {
+#navlist {
 	font-family: var(--navbar-font-family);
 	list-style-type: none;
 	margin: 0;
