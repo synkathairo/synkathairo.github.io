@@ -2,8 +2,9 @@
 layout: post
 title:  "Functional programming, Lisp-like languages, and type theory"
 date:   2022-07-26
-categories: mathematics computation
+# categories: mathematics computation
 excerpt: "I recently came across the concept of functional programming which piqued my interest..."
+codesnippet: true
 ---
 <p>I recently came across the concept of functional programming which
 piqued my interest. The concept of functional programming syntactically
@@ -15,8 +16,9 @@ from natural language grammars, we instead list the operation first and
 then the variables or numbers involved, which is more logical for
 computers.</p>
 <p>For example, to add 1 and 2 in Scheme, we write:</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode scheme"><code class="sourceCode scheme"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="op">+</span> <span class="dv">1</span> <span class="dv">2</span>)</span></code></pre></div>
+```scheme
+(+ 1 2)
+```
 <p>which of course evaluates to 3.</p>
 <p>I found the SICP book (<em>Structure and Interpretation of Computer
 Programs</em>), linked below, to give a helpful introduction to Scheme.
@@ -26,8 +28,9 @@ convention of prefix notation-based syntax. The parentheses seem to
 indicate a sort of order of operations as you might find in a
 mathematical expression, and follows a simple syntactical logic, ie. to
 do <math><mrow><mo form="prefix" stretchy="false">(</mo><mn>2</mn><mo>+</mo></mrow><mrow><mn>3</mn><mo form="postfix" stretchy="false">)</mo><mspace width="0.2778em"></mspace><mo form="prefix" stretchy="false">(</mo><mn>5</mn><mo>+</mo></mrow><mrow><mn>6</mn><mo form="postfix" stretchy="false">)</mo></mrow></math>, we use:</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode scheme"><code class="sourceCode scheme"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(<span class="op">*</span> (<span class="op">+</span> <span class="dv">2</span> <span class="dv">3</span>) (<span class="op">+</span> <span class="dv">5</span> <span class="dv">6</span>))</span></code></pre></div>
+```scheme
+(* (+ 2 3) (+ 5 6))
+```
 <p>Functional programming languages correspond also mathematically to
 the concepts of type theory and formal languages. Agda is a programming
 language which has been used in mathematical proofs. Functional

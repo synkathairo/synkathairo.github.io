@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up a virtual machine on Apple Silicon “M1” Macs using UTM"
 date:   2022-01-20
-categories: virtualization
+# categories: virtualization
 excerpt: "Recently I had to use an Ubuntu virtual machine (VM) for a course. However, the recommended method, using Oracle's VirtualBox software, was not (at the time of this writing) supported for the ARM architecture (arm64/aarch64) which my M1 Mac laptop utilized..."
 # published: false
 ---

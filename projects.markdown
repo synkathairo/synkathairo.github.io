@@ -17,7 +17,7 @@ title: "synkathairo.github.io - Projects"
 - Used deconvolution and sparse recovery signal processing methods to estimate incidence of cortisol secretion events
 - Compared circadian and ultradian cortisol secretion patterns between overweight and healthy weight female patient cohorts, to demonstrate differences in hormone dynamics between the two groups
 
-**Morris Decay, Optimality of approximate counting algorithms with ε decay** (Oct 2023 — Dec 2023)
+**Morris Decay, Optimality of approximate counting algorithms with ε decay** (Oct 2023 - Dec 2023)
 - Algorithmic analysis and uncertainty quantification
 - Studied the well-known approximate counter algorithm of Morris, and the improved Morris+ algorithm
 - Developed complexity analysis and characterized approximation bound and space complexity
@@ -32,5 +32,3 @@ title: "synkathairo.github.io - Projects"
 - [Ruebook](https://github.com/synkathairo/ruebook) - a web application built for BostonHacks 2021 using Node.js, Bootstrap, and Express, utilizing the Google Cloud Natural Language API. Analyzes user sentiments in journal entries and particular themes which cause users stress.
 - [flan-t5-large-gradio](https://huggingface.co/spaces/synkathairo/flan-t5-large-gradio) - a frontend using the [Gradio](https://gradio.app/) library to interact with [Google's Flan-T5 Large](https://huggingface.co/google/flan-t5-large) language model, using a chat-like interface.
 - [Youtube_playlist-no_login](https://github.com/synkathairo/Youtube_playlist-no_login) - a basic Chrome extension, conforming to the WebExtension API
-
-

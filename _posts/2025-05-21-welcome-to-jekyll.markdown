@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2025-05-21 17:22:03 -0400
-categories: jekyll update
+# categories: jekyll update
 published: false
 latex: true
 ---

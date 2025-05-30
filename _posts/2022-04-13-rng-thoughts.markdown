@@ -2,8 +2,9 @@
 layout: post
 title:  "Random number generators, deterministic systems and the difficulty of modeling stochasticity"
 date:   2022-04-13
-categories: mathematics cryptography randomness
+# categories: mathematics cryptography randomness
 excerpt: "When using the R language I decided to look up the documentation of the <code>Random</code> function which actually seems to be quite interesting..."
+codesnippet: true
 ---
 <p>When using the R language I decided to look up the documentation of
 the <a
@@ -53,21 +54,25 @@ href="https://sourceware.org/git/?p=glibc.git;a=blob;f=stdlib/rand.c;h=9c90e77af
 The implementation in <a
 href="https://git.musl-libc.org/cgit/musl/tree/src/prng/rand.c">musl</a>
 is quite simple:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdlib.h&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdint.h&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">uint64_t</span> seed<span class="op">;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> srand<span class="op">(</span><span class="dt">unsigned</span> s<span class="op">)</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    seed <span class="op">=</span> s<span class="op">-</span><span class="dv">1</span><span class="op">;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> rand<span class="op">(</span><span class="dt">void</span><span class="op">)</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    seed <span class="op">=</span> <span class="dv">6364136223846793005</span><span class="bu">ULL</span><span class="op">*</span>seed <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> seed<span class="op">&gt;&gt;</span><span class="dv">33</span><span class="op">;</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+
+```c
+#include <stdlib.h>
+#include <stdint.h>
+
+static uint64_t seed;
+
+void srand(unsigned s)
+{
+    seed = s-1;
+}
+
+int rand(void)
+{
+    seed = 6364136223846793005ULL*seed + 1;
+    return seed>>33;
+}
+```
+
 <p>The method utlized by musl appears to be a <a
 href="https://en.wikipedia.org/wiki/Linear_congruential_generator#:~:text=264-,6364136223846793005,-1">linear
 congruential generator</a>, whereas the reference implementation is by
@@ -113,17 +118,19 @@ random number generator is very large, approximately 16 * ((2^31) -
 <p><a
 href="https://sourceware.org/git/?p=glibc.git;a=blob;f=stdlib/random.c#l146">In
 the code</a> we observe the table:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">int32_t</span> randtbl<span class="op">[</span>DEG_3 <span class="op">+</span> <span class="dv">1</span><span class="op">]</span> <span class="op">=</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    TYPE_3<span class="op">,</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="dv">1726662223</span><span class="op">,</span> <span class="dv">379960547</span><span class="op">,</span> <span class="dv">1735697613</span><span class="op">,</span> <span class="dv">1040273694</span><span class="op">,</span> <span class="dv">1313901226</span><span class="op">,</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1627687941</span><span class="op">,</span> <span class="op">-</span><span class="dv">179304937</span><span class="op">,</span> <span class="op">-</span><span class="dv">2073333483</span><span class="op">,</span> <span class="dv">1780058412</span><span class="op">,</span> <span class="op">-</span><span class="dv">1989503057</span><span class="op">,</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="dv">615974602</span><span class="op">,</span> <span class="dv">344556628</span><span class="op">,</span> <span class="dv">939512070</span><span class="op">,</span> <span class="op">-</span><span class="dv">1249116260</span><span class="op">,</span> <span class="dv">1507946756</span><span class="op">,</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="dv">812545463</span><span class="op">,</span> <span class="dv">154635395</span><span class="op">,</span> <span class="dv">1388815473</span><span class="op">,</span> <span class="op">-</span><span class="dv">1926676823</span><span class="op">,</span> <span class="dv">525320961</span><span class="op">,</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="dv">1009028674</span><span class="op">,</span> <span class="dv">968117788</span><span class="op">,</span> <span class="op">-</span><span class="dv">123449607</span><span class="op">,</span> <span class="dv">1284210865</span><span class="op">,</span> <span class="dv">435012392</span><span class="op">,</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="dv">2017506339</span><span class="op">,</span> <span class="op">-</span><span class="dv">911064859</span><span class="op">,</span> <span class="op">-</span><span class="dv">370259173</span><span class="op">,</span> <span class="dv">1132637927</span><span class="op">,</span> <span class="dv">1398500161</span><span class="op">,</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span><span class="dv">205601318</span><span class="op">,</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="op">};</span></span></code></pre></div>
+```c
+static int32_t randtbl[DEG_3 + 1] =
+  {
+    TYPE_3,
+    -1726662223, 379960547, 1735697613, 1040273694, 1313901226,
+    1627687941, -179304937, -2073333483, 1780058412, -1989503057,
+    -615974602, 344556628, 939512070, -1249116260, 1507946756,
+    -812545463, 154635395, 1388815473, -1926676823, 525320961,
+    -1009028674, 968117788, -123449607, 1284210865, 435012392,
+    -2017506339, -911064859, -370259173, 1132637927, 1398500161,
+    -205601318,
+  };
+```
 <p>Which such trinomials are utilized? <a
 href="https://sourceware.org/git/?p=glibc.git;a=blob;f=stdlib/random.c#l94">The
 code</a> details 4 types of RNGs, with <code>TYPE_0</code> being the
@@ -145,7 +152,9 @@ have been published of them</a> and they have been subject of study.</p>
 href="https://www.redhat.com/en/blog/understanding-random-number-generators-and-their-limitations-linux">method
 utilized by glibc</a> in <code>random_r()</code> involves the <a
 href="https://github.com/lattera/glibc/blob/master/stdlib/random_r.c#L364">formula</a>:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int32_t</span> val <span class="op">=</span> <span class="op">((</span>state<span class="op">[</span><span class="dv">0</span><span class="op">]</span> <span class="op">*</span> <span class="dv">1103515245</span><span class="bu">U</span><span class="op">)</span> <span class="op">+</span> <span class="dv">12345</span><span class="bu">U</span><span class="op">)</span> <span class="op">&amp;</span> <span class="bn">0x7fffffff</span><span class="op">;</span></span></code></pre></div>
+```c
+int32_t val = ((state[0] * 1103515245U) + 12345U) & 0x7fffffff;
+```
 <p>In the GNU man page is detailed the differences between
 <code>random()</code> and <code>random_r()</code>:
 <blockquote>The <code>random_r()</code> function is like <code>random(3)</code>, except

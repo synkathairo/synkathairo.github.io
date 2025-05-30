@@ -2,8 +2,9 @@
 layout: post
 title:  "A journey into basic hardware design with an Arduino Uno R3"
 date:   2021-12-21
-categories: hardware
+# categories: hardware
 excerpt: "I recently decided to obtain an Arduino Uno R3..."
+codesnippet: true
 ---
 <p>I recently decided to obtain an <a
 href="https://store-usa.arduino.cc/products/arduino-uno-rev3/">Arduino
@@ -44,16 +45,17 @@ manually make a folder and then make a file called
 minimum the <a
 href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/BareMinimum">following
 code</a>:</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">// put your setup code here, to run once:</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">// put your main code here, to run repeatedly:</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+```cpp
+void setup() {
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
+```
 <p>After saving the code the next step was to ensure the interface with
 the actual Uno device. First I could run
 <code>arduino-cli board list</code> to identify the FQBN (fully
@@ -73,17 +75,18 @@ happened other than the light from the default LED remaining on.
 However, by creating <a
 href="https://create.arduino.cc/projecthub/B45i/getting-started-with-arduino-cli-7652a5">another
 project</a> it would be possible to observe a blinking effect.</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    pinMode<span class="op">(</span>LED_BUILTIN<span class="op">,</span> OUTPUT<span class="op">);</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    digitalWrite<span class="op">(</span>LED_BUILTIN<span class="op">,</span> HIGH<span class="op">);</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    delay<span class="op">(</span><span class="dv">1000</span><span class="op">);</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    digitalWrite<span class="op">(</span>LED_BUILTIN<span class="op">,</span> LOW<span class="op">);</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    delay<span class="op">(</span><span class="dv">1000</span><span class="op">);</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+```cpp
+void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1000);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(1000);
+}
+```
 <p>Later I was also able to use the VS Code extension and its <a
 href="https://maker.pro/arduino/tutorial/how-to-use-visual-studio-code-for-arduino">board
 configuration settings</a> to upload code from the IDE directly.</p>
@@ -94,14 +97,15 @@ href="https://www.circuitbasics.com/arduino-7-segment-display-tutorial/">another
 guide</a> it was possible to proceed to the next step. The next step was
 to try to use this board with some other hardware! I was able to use a
 basic LED:</p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">(){</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    pinMode<span class="op">(</span><span class="dv">7</span><span class="op">,</span> OUTPUT<span class="op">);</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    digitalWrite<span class="op">(</span><span class="dv">7</span><span class="op">,</span> LOW<span class="op">);</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">(){</span> </span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+```cpp
+void setup(){
+    pinMode(7, OUTPUT);
+    digitalWrite(7, LOW);
+}
+
+void loop(){ 
+}
+```
 <p>This was wired as follows (refer to the <a
 href="https://www.circuitbasics.com/arduino-7-segment-display-tutorial/">original
 link</a> for more details), using a 1K Ω resistor:</p>
@@ -171,7 +175,7 @@ side column:
 <!-- (http://wiring.org.co/learning/tutorials/breadboard/): --></p>
 <!-- ![breadboard](http://wiring.org.co/learning/tutorials/breadboard/imgs/breadboard-02.jpg){: width="400"} -->
 <p><img
-src="https://cdn.sciencebuddies.org/G3Y7h5sApJ0v4eZPgHvycJ6-sRA=/300x469/-/https/www.sciencebuddies.org/Files/7326/6/breadboard-row-connections.png"
+src="https://www.sciencebuddies.org/Files/7326/6/breadboard-row-connections.png"
 alt="breadboardwiring" width="300" /></p>
 <p>This was just a very elementary demonstration of how circuitry could
 be incorporated with hardware and software, and our humble <a

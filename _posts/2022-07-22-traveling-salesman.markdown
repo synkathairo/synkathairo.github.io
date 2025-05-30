@@ -2,7 +2,7 @@
 layout: post
 title:  "Regarding the quandary of the traveling salesman problem"
 date:   2022-07-22
-categories: mathematics computation
+# categories: mathematics computation
 excerpt: "The traveling salesman problem is stated in simple terms..."
 ---
 <p>The <a
