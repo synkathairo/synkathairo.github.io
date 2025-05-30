@@ -1,0 +1,120 @@
+:root {
+	background-color: wheat;
+	color: black;
+	--link-color: darkslateblue;
+	--h1-font-weight: 700;
+	--heading-font-family: 'Big Caslon', 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+	--navbar-font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+}
+a {
+	color: var(--link-color);
+}
+
+blockquote {
+	border: 0px solid;
+	border-color: #D3B17D !important;
+	border-left-width: 5px !important;
+	font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+	opacity: 80%;
+	padding-left: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		background-color: rgb(32, 32, 32);
+		color: white;
+		--link-color: darksalmon;
+	}
+	a {
+		color: var(--link-color);
+	}
+	blockquote {
+		border-color: #5D513C !important;
+	}
+}
+
+body {
+	font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	body {
+		margin-left: 5em;
+		margin-right: 5em;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	body {
+		margin-left: 10em;
+		margin-right: 10em;
+	}
+}
+
+h1 {
+	font-weight: var(--h1-font-weight);
+	font-family: var(--heading-font-family);
+}
+
+h2 {
+	font-weight: 600;
+	font-family: var(--heading-font-family);
+}
+
+h3 {
+	font-weight: 500;
+	font-family: var(--heading-font-family);
+}
+
+code {
+	font-style: normal;
+	font-family: 'Nimbus Mono PS', 'Courier New', 'Cutive Mono', monospace;
+}
+
+img {
+	max-width: 40vw;
+}
+
+figcaption {
+	font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+	font-size: 0.75em;
+}
+
+time {
+	font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+	font-weight: 300;
+}
+
+.bloglink {
+	padding: 0.25em;
+}
+
+.blogpreview {
+	font-style: italic;
+}
+
+#navbar {
+	font-family: var(--navbar-font-family);
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	border: outset;
+	border-width: 1.5px;
+}
+
+.navitem {
+	display: inline;
+}
+
+.navlink {
+	color: var(--link-color);
+	padding-left: 7px;
+	padding-right: 7px;
+}
