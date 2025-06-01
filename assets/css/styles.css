@@ -1,34 +1,48 @@
-:root {
-	/* background-color: #F2ECDE; */
-	/* background-color: #FFFBF0; */
-	/* background: radial-gradient(circle, #ffffff, #F2ECDE); */
-	/* background: radial-gradient(circle, #FFFBF0, #F2ECDE); */
-	background: radial-gradient(circle, #ffffff, #FFFBF0);
-	/* background: linear-gradient(to top, #000000, #000000, #F2ECDE, #333333); */
-	background-size: cover;
-	background-size: 100% 1px;
-	color: #171412;
+:where(:root) {
+	/* LIGHT THEME VARS */
+	--background-setting: radial-gradient(circle, #FFFBF0, #F2ECDE);
 	--link-color: #424C50;
 	--hover-color: 1px 1px 2px #4C8DAE;
+	--webpagename-color: white;
+	--navlink-color: white;
+	--text-color: #171412;
+	--webpagename-shadow-color: 1px 1px 2px #161823;
+	--navbar-background: linear-gradient(#A1AFC9, #50616D);
+	--blockquote-border-color: #D3B17D !important;
+}
+
+:root {
+	/* COLORS */
+	/* radial-gradient(circle, #ffffff, #F2ECDE); */
+	/* background-color: #F2ECDE; */
+	/* background-color: #FFFBF0; */
+	/* background: radial-gradient(circle, #ffffff, #FFFBF0); */
+	/* background: linear-gradient(to top, #000000, #000000, #F2ECDE, #333333); */
+	background: var(--background-setting);
+	background-size: cover;
+	background-size: 100% 1px;
+	color: var(--text-color);
+	/* --navlink-color: #f9dad0 !important; */
+	/* --navbar-background: linear-gradient(to bottom, #dbe7f9 0%, #f0f4f9 50%, #dbe7f9 100%); */
+	/* 0 0 2px rgba(255, 76, 0, 0.6180339887498948) */
+
+	/* FONTS */
 	--h1-font-weight: 700;
-	--code-font-family: 'Nimbus Mono PS', 'Courier New', 'Cutive Mono', monospace;
-	--caption-font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-	--neogrotesque-font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-	--monospace-font-stack: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono","Roboto Mono","Oxygen Mono","Ubuntu Mono","Source Code Pro","Fira Mono","Droid Sans Mono","Consolas", "Courier New", monospace; /* https://qwtel.com/posts/software/the-monospaced-system-ui-css-font-stack/ */
-	--system-font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	/* https://modernfontstacks.com/ */
+	--geometric-humanist-font-stack: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+	--neogrotesque-font-stack: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+	--monospace-slab-serif-font-stack: 'Nimbus Mono PS', 'Courier New', 'Cutive Mono', monospace;
+	/* https://qwtel.com/posts/software/the-monospaced-system-ui-css-font-stack/ */
+	--monospace-font-stack: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Mono", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Consolas", "Courier New", monospace;
+	--system-font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	/* --heading-font-family: 'Big Caslon', 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; */
-	--heading-font-family: var(--neogrotesque-font-family);
+	--heading-font-family: var(--neogrotesque-font-stack);
+	--code-font-family: var(--monospace-slab-serif-font-stack);
+	--caption-font-family: var(--geometric-humanist-font-stack);
 	/* --body-font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; */
 	--body-font-family: var(--system-font-stack);
 	--webpagename-font-family: var(--monospace-font-stack);
-	--webpagename-color: white;
 	--navbar-font-family: var(--monospace-font-stack);
-	--webpagename-shadow-color: 1px 1px 2px #161823;
-	/* --navbar-background: linear-gradient(to bottom, #dbe7f9 0%, #f0f4f9 50%, #dbe7f9 100%); */
-	--navbar-background: linear-gradient(#A1AFC9, #50616D);
-	/* --navlink-color: #f9dad0 !important; */
-	--navlink-color: white;
-	/* 0 0 2px rgba(255, 76, 0, 0.6180339887498948) */
 }
 
 a {
@@ -42,18 +56,20 @@ a:hover {
 
 blockquote {
 	border: 0px solid;
-	border-color: #D3B17D !important;
+	border-color: var(--blockquote-border-color);
 	border-left-width: 5px !important;
 	font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
 	opacity: 80%;
 	padding-left: 10px;
 }
 
+/* DARK THEME */
 @media (prefers-color-scheme: dark) {
-	:root {
+	:where(:root) {
+		/* COLORS */
 		/* background: rgb(32, 32, 32); */
-		background: radial-gradient(circle,rgb(32, 32, 32),#282828);
-		color: white;
+		--background-setting: radial-gradient(circle, rgb(32, 32, 32), #282828);
+		--text-color: white;
 		/* --link-color: salmon; */
 		--link-color: #f9dad0;
 		--hover-color: 1px 1px 2px rgba(242, 190, 69, 0.5);
@@ -63,32 +79,7 @@ blockquote {
 		--navlink-color: white !important;
 		--webpagename-shadow-color: 1px 1px 1px #2E4E7E;
 		/* --webpagename-color: white; */
-	}
-
-	a {
-		color: var(--link-color);
-	}
-
-	a:hover {
-		text-shadow: var(--hover-color);
-	}
-
-	blockquote {
-		border-color: #5D513C !important;
-	}
-
-	/* #navbar { */
-	#topcontent {
-		background: var(--navbar-background);
-	}
-
-	.navlink {
-		color: var(--navlink-color);
-	}
-
-	#webpagename {
-		text-shadow: var(--webpagename-shadow-color);
-		color: var(--webpagename-color);
+		--blockquote-border-color: #5D513C !important;
 	}
 }
 

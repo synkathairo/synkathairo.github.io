@@ -7,10 +7,7 @@ title: "synkathairo.github.io - Projects"
 
 [**Stability of Evolutionary Population Games**](https://github.com/synkathairo/evolutionary_game_strategies) (Oct 2024 - Dec 2024)
 - Examined population games and evolutionary games using a game theoretic framework
-- Focused on stabilities of Nash equilibria and evolutionarily stable strategies (ESS) under pure and mixed-strategies using probability models, non-equilibrium behavior within bounds, asymptotic stability, and numerical simulation of games
-- Game theoretic optimization
-- Studied dynamics of population games, such as evolutionary games, games under pure and mixed-strategies, and used probability models
-- Examined various mean dynamics (modeled by ordinary differential equations), evolutionarily stable strategies, Nash equilibria, equilibrium stabilities (e.g. Lyapunov stability), non-equilibrium behavior within bounds, asymptotic stability, and numerical simulation of games
+- Focused on stabilities of Nash equilibria and evolutionarily stable strategies (ESS) under pure and mixed-strategies using probability models, non-equilibrium behavior within bounds, asymptotic stability (e.g. Lyapunov stability), and numerical simulation of games
 
 **Comparison of Cortisol Secretion in Overweight and Healthy Weight Females** (Sept 2024 - Dec 2024)
 - Utilized a state-space model of cortisol secretion using tissue-based collection analysis, modeling adrenal, serum, and tissue diffusion of cortisol, under hypothesis of cortisol secretion as a point process
