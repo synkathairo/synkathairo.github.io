@@ -4,7 +4,7 @@ layout: default
 <div class="home">
 	{% for post in site.posts %}
 	<div class="bloglink">
-		<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+		<h3 class="bloglinktitle"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
 		<p class="blogpreview">{{ post.excerpt }}</p>
 		<time>{{ post.date | date: "%d %b %Y" }}</time>
 	</div>

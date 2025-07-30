@@ -1,6 +1,35 @@
+/* latin-ext */
+@font-face {
+	font-family: "IBM Plex Sans";
+	src: local("IBM Plex Sans")
+	, 
+	url(https://fonts.gstatic.com/s/ibmplexsans/v22/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbSB4ZhRNU.woff2) format('woff2')
+	;
+	font-style: normal;
+	font-weight: 100 700;
+	font-stretch: 100%;
+	font-display: swap;
+	/* unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; */
+}
+
+/* latin-ext */
+/* @font-face {
+	font-family: "IBM Plex Mono";
+	src: local("IBM Plex Mono")
+	, 
+	url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3oQIwl5FgsAXHNlYzg.woff2) format('woff2')
+	;
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: 100%;
+	font-display: swap;
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+} */
+
 :where(:root) {
 	/* LIGHT THEME VARS */
-	--background-setting: radial-gradient(circle, #FFFBF0, #F2ECDE);
+	/* --background-setting: radial-gradient(circle, #FFFBF0, #F2ECDE); */
+	--background-setting: white;
 	--link-color: #424C50;
 	--hover-color: 1px 1px 2px #4C8DAE;
 	--webpagename-color: white;
@@ -18,7 +47,7 @@
 	/* background-color: #FFFBF0; */
 	/* background: radial-gradient(circle, #ffffff, #FFFBF0); */
 	/* background: linear-gradient(to top, #000000, #000000, #F2ECDE, #333333); */
-	background: var(--background-setting);
+	background: var(--background-setting); 
 	background-size: cover;
 	background-size: 100% 1px;
 	color: var(--text-color);
@@ -36,12 +65,15 @@
 	--monospace-font-stack: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Mono", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Consolas", "Courier New", monospace;
 	--system-font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	/* --heading-font-family: 'Big Caslon', 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; */
-	--heading-font-family: var(--neogrotesque-font-stack);
-	--code-font-family: var(--monospace-slab-serif-font-stack);
+	--heading-font-family: "Eurostile", var(--neogrotesque-font-stack);
+	--code-font-family: 
+		"IBM Plex Mono", 
+		var(--monospace-slab-serif-font-stack);
+	--math-font-family: "Latin Modern Roman", math;
 	--caption-font-family: var(--geometric-humanist-font-stack);
 	/* --body-font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; */
-	--body-font-family: var(--system-font-stack);
-	--webpagename-font-family: var(--monospace-font-stack);
+	--body-font-family: "IBM Plex Sans", var(--system-font-stack);
+	--webpagename-font-family: "Futura", var(--monospace-font-stack);
 	--navbar-font-family: var(--monospace-font-stack);
 }
 
@@ -128,6 +160,10 @@ code {
 	font-family: var(--code-font-family);
 }
 
+math {
+	font-family: var(--math-font-family);
+}
+
 img {
 	max-width: 40vw;
 }
@@ -144,6 +180,10 @@ time {
 
 .bloglink {
 	padding: 0.25em;
+}
+
+.bloglinktitle {
+	font-weight: bold;
 }
 
 .blogpreview {
