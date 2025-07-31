@@ -17,9 +17,16 @@ Fagin's theorem[^1] states the following:
 
 In other words, a problem lies in [NP](https://en.wikipedia.org/wiki/NP_(complexity)#Formal_definition) iff it can be described by a formula with a pattern in $E_i^* (ae)^*$ ([monadic existential second-order formula](https://www-sop.inria.fr/members/Martin.Avanzini/teaching/2021/AL/slides/w2.pdf)) for some arity $i$[^2].
 
+The [Büchi-Elgot-Trakhtenbrot theorem](https://en.wikipedia.org/wiki/B%C3%BCchi%E2%80%93Elgot%E2%80%93Trakhtenbrot_theorem)[^3] establishes that
+
+> A [language](https://en.wikipedia.org/wiki/Formal_language) (set of words) $L$ is [regular](https://en.wikipedia.org/wiki/Regular_language) if and only if it is definable in [monadic second-order logic](https://en.wikipedia.org/wiki/Monadic_second-order_logic) (i.e. the set of its structures $K_L$ is definable in $MSOL$). 
+
+(note a formal language defines a [decision problem](https://en.wikipedia.org/wiki/Decision_problem) over satisfiability of inputs)
+
 The [Cook-Levin theorem](https://en.wikipedia.org/wiki/Cook%E2%80%93Levin_theorem) states that boolean satisfiability ([SAT](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)) is [NP-complete](https://en.wikipedia.org/wiki/NP-completeness).
 
 ## References
 
 [^1]:N. Immerman, “Second-Order Logic and Fagin’s Theorem,” in *Descriptive Complexity*, New York, NY: Springer New York, 1999, pp. 113–124. doi: [10.1007/978-1-4612-0539-5_8](https://doi.org/10.1007/978-1-4612-0539-5_8).
 [^2]:Bannach, M., Chudigiewitsch, F., & Tantau, T. (2023). Existential second-order logic over graphs: Parameterized complexity. *arXiv preprint arXiv:2310.01134*. <https://arxiv.org/abs/2310.01134>
+[^3]:J.  A. Makowsky, Lecture Notes, Topic: "Lecture 3: Disjoint unions and concatenation, Finite Automata, Regular Languages, The Büchi-Elgot-Trakhtenbrot Theorem." 236331, Technion, Fall 2018. https://janos.cs.technion.ac.il/COURSES/236331-18/Lec-3.pdf
