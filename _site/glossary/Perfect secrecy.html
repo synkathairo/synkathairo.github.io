@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perfect secrecy</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Perfect secrecy</h1>
+
+<h2 id="definition">Definition</h2>
+<p>An <a href="Encryption%20scheme.html">encryption scheme</a> is
+<strong>perfectly secret</strong> if for all distributions/random
+variables
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐌</mi><annotation encoding="application/x-tex">\mathbf{M}</annotation></semantics></math>
+over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℳ</mi><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>m</mi><mo>∈</mo><mi>ℳ</mi></mrow><annotation encoding="application/x-tex">\forall m \in \mathcal{M}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>c</mi><mo>∈</mo><mo>supp</mo><mi>𝒞</mi></mrow><annotation encoding="application/x-tex">\forall c \in \operatorname{supp}\mathcal{C}</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝒞</mi><mo>=</mo><msub><mo>Enc</mo><mi>𝐊</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐌</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{C} = \operatorname{Enc}_\mathbf{K}(\mathbf{M})</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐊</mi><annotation encoding="application/x-tex">\mathbf{K}</annotation></semantics></math>
+uniform over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒦</mi><annotation encoding="application/x-tex">\mathcal{K}</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>M</mi><mo>=</mo><mi>m</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo>=</mo><mo>Pr</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>M</mi><mo>=</mo><mi>m</mi><mo stretchy="false" form="prefix">|</mo><mi>C</mi><mo>=</mo><mi>c</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\Pr[M=m] = \Pr[M=m | C = c]</annotation></semantics></math>
+(<em>a posteriori</em>, <em>a priori</em>)</p>
+<h2 id="references">References</h2>
+<ol type="1">
+<li><a
+href="https://www.khoury.northeastern.edu/home/wichs/class/crypto-fall17/lecture1.pdf">https://www.khoury.northeastern.edu/home/wichs/class/crypto-fall17/lecture1.pdf</a></li>
+<li><a
+href="https://people.cs.uchicago.edu/~davidcash/284-autumn-19/03-perfect-secrecy.pdf">https://people.cs.uchicago.edu/~davidcash/284-autumn-19/03-perfect-secrecy.pdf</a></li>
+</ol>
+</body>
+</html>

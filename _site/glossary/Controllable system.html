@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Controllable system</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Controllable system</h1>
+
+<h2 id="definition">Definition</h2>
+<p>A system is called (completely) <strong>controllable</strong> if for
+any initial time
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+any initial state
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{x}(t_0)</annotation></semantics></math>
+can be transferred to any final state
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>𝐱</mi><mo>*</mo></msup><annotation encoding="application/x-tex">\mathbf{x}^*</annotation></semantics></math>
+(i.e.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>𝐱</mi><mo>*</mo></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{x}(t) = \mathbf{x}^*(t)</annotation></semantics></math>)
+using some input
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi>𝐮</mi><mo accent="false">∼</mo></munder><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\underset{\sim}{\mathbf{u}}[t_0, t]</annotation></semantics></math>
+over a finite time interval (i.e.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+is finite).</p>
+<h2 id="refinements">Refinements</h2>
+<h3 id="total-controllability">Total controllability</h3>
+<p>If the system is completely controllable over every (or almost every)
+finite interval.</p>
+<h3 id="strong-controllability">Strong controllability</h3>
+<p>If the system is controllable from each input terminal.</p>
+<h3 id="output-controllability">Output controllability</h3>
+<p>If the system output (rather than state) can be set arbitrarily at
+some finite time
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+by using an appropriate input.</p>
+<h2 id="controllability-conditions-for-analog-systems">Controllability
+conditions for analog systems</h2>
+<p>Consider <a href="Continuous%20time%20state%20equations.html">analog
+linear system</a>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mover><mi>𝐱</mi><mo accent="true">̇</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝐮</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>𝐲</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝐮</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align} \\
+\dot{\mathbf{x}}(t) = A(t)\mathbf{x}(t)+B(t)\mathbf{u}(t) \\ \\
+\mathbf{y}(t) = C(t)\mathbf{x}(t)+D(t)\mathbf{u}(t)
+\end{align}</annotation></semantics></math></p>
+<p>with analog bounded
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A(t)</annotation></semantics></math>.</p>
+<p>Define
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msubsup><mo>∫</mo><msub><mi>t</mi><mn>0</mn></msub><mi>t</mi></msubsup><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>τ</mi></mrow><annotation encoding="application/x-tex">P(t_0,t) = \int_{t_0}^t \phi(t,\tau) B(\tau)B^T(\tau)\phi^T(t,\tau)d\tau</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(t,\tau)</annotation></semantics></math>
+denotes a <a href="Transition%20matrix.html">transition matrix</a> from
+time
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+to time
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>.</p>
+<p>Alternatively using
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(t,\tau) = \phi(t,t_0)\phi(t_0,\tau)</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msubsup><mo>∫</mo><msub><mi>t</mi><mn>0</mn></msub><mi>t</mi></msubsup><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>τ</mi><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(t_0,t) = \phi(t_0,\tau)\int_{t_0}^t \phi(t_0,\tau) B(\tau)B^T(\tau)\phi^T(t_0,\tau)d\tau \phi(t,t_0)</annotation></semantics></math></p>
+<h3 id="controllability-from-origin">Controllability from origin</h3>
+<p>The system is controllable if any state can be reached from the
+origin in finite time.</p>
+<h3 id="condition-1">Condition 1</h3>
+<p>This system is <em>controllable</em> if and only if given any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(t_0,t)</annotation></semantics></math>
+is <em>nonsingular</em> for some finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&gt;</mo><msub><mi>t</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">t &gt; t_0</annotation></semantics></math>.</p>
+<p>When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A(t)</annotation></semantics></math>
+is bounded for all finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+we know that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(t,t_0)</annotation></semantics></math>
+is nonsingular for all finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(t_0,t)</annotation></semantics></math>
+is nonsingular if and only if the matrix
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>S</mi><mo accent="true">̂</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≜</mo><msubsup><mo>∫</mo><msub><mi>t</mi><mn>0</mn></msub><mi>t</mi></msubsup><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>τ</mi></mrow><annotation encoding="application/x-tex">\hat{S}(t_0,t) \triangleq \int_{t_0}^t \phi(t_0,\tau) B(\tau)B^T(\tau)\phi^T(t_0,\tau)d\tau</annotation></semantics></math>
+is nonsingular. Equivalently, if for every constant vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝛍</mi><mo>≠</mo><mn>𝟎</mn></mrow><annotation encoding="application/x-tex">\mathbf{\mu} \neq \mathbf{0}</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝛍</mi><mi>T</mi></msup><mover><mi>S</mi><mo accent="true">̂</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝛍</mi><mo>=</mo><msubsup><mo>∫</mo><msub><mi>t</mi><mn>0</mn></msub><mi>t</mi></msubsup><msup><mi>𝛍</mi><mi>T</mi></msup><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝛍</mi><mi>d</mi><mi>τ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbf{\mu}^T \hat{S}(t_0,t)\mathbf{\mu} = \int_{t_0}^t \mathbf{\mu}^T \phi(t_0,\tau) B(\tau)B^T(\tau)\phi^T(t_0,\tau)\mathbf{\mu} d\tau &gt; 0</annotation></semantics></math></p>
+<h3 id="condition-2">Condition 2</h3>
+<p>This continuous-time system is <em>controllable</em> if and only if
+given any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+and for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝛍</mi><mo>≠</mo><mn>𝟎</mn></mrow><annotation encoding="application/x-tex">\mathbf{\mu} \neq \mathbf{0}</annotation></semantics></math>,
+the vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐳</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≜</mo><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mn>0</mn></msub><mo>,</mo><mi>τ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝛍</mi></mrow><annotation encoding="application/x-tex">\mathbf{z}(\tau) \triangleq B^T(\tau) \phi^T(t_0,\tau)\mathbf{\mu}</annotation></semantics></math>
+is not identically zero for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>≥</mo><msub><mi>t</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\tau \geq t_0</annotation></semantics></math>.</p>
+<h3
+id="controllability-test-for-fixed-continuous-time-system">Controllability
+test for fixed continuous-time system</h3>
+<p>Controllable if and only if for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝛍</mi><mo>≠</mo><mn>𝟎</mn></mrow><annotation encoding="application/x-tex">\mathbf{\mu} \neq \mathbf{0}</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>A</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝛍</mi><mo>≠</mo><mn>𝟎</mn></mrow><annotation encoding="application/x-tex">B^T (A^k) \mathbf{\mu} \neq \mathbf{0}</annotation></semantics></math>
+for at least one
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k = 0,1,2,...,n-1</annotation></semantics></math>.</p>
+<h3
+id="controllability-test-for-fixed-analog-time-system">Controllability
+test for fixed analog-time system</h3>
+<p>(In the case of the standard form state equations, this occurs when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">A,B,C,D</annotation></semantics></math>
+are not dependent upon
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>)</p>
+<p>When the controllability grammian</p>
+<h2 id="controllability-conditions-for-discrete-systems">Controllability
+conditions for discrete systems</h2>
+<p>Consider <a href="Discrete%20time%20state%20equations.html">discrete
+linear system</a>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝐮</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>𝐲</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝐮</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{eqnarray}
+\mathbf{x}(k+1) = A(k) \mathbf{x}(k) + B(k) \mathbf{u}(k) \\
+\mathbf{y}(k) = C(k) \mathbf{x}(k) + D(k) \mathbf{u}(k)
+\end{eqnarray}</annotation></semantics></math></p>
+<h3 id="condition-1-1">Condition 1'</h3>
+<p>The system is <em>controllable</em> if and only if given any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mn>0</mn></msub><annotation encoding="application/x-tex">k_0</annotation></semantics></math>,
+there exists a finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><msub><mi>k</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">k &gt; k_0</annotation></semantics></math>
+such that
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>k</mi><mn>0</mn></msub><mo>,</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≜</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P&#39;(k_0,k) \triangleq \sum_{i=k_0}^{k-1} \phi(k,i+1)B(i)B^T(i)\phi^T(k,i+1)</annotation></semantics></math>
+is nonsingular. Note
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(k,i+1)</annotation></semantics></math>
+is the <a href="Transition%20matrix.html">transition matrix</a> between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i+1</annotation></semantics></math>.</p>
+<h3 id="condition-2-1">Condition 2'</h3>
+<p>The system is <em>controllable</em> if and only if given any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mn>0</mn></msub><annotation encoding="application/x-tex">k_0</annotation></semantics></math>
+there exists a finite
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><msub><mi>k</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">k&gt;k_0</annotation></semantics></math>
+such that for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝛌</mi><mo>≠</mo><mn>𝟎</mn></mrow><annotation encoding="application/x-tex">\mathbf{\lambda} \neq \mathbf{0}</annotation></semantics></math>,
+the vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐯</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝛌</mi></mrow><annotation encoding="application/x-tex">\mathbf{v}(i) = B^T(i)\phi^T(k,i+1)\mathbf{\lambda}</annotation></semantics></math>
+is nonzero for some value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><msub><mi>k</mi><mn>0</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i = k_0,...,k-1</annotation></semantics></math>,
+i.e.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi>v</mi><mo accent="false">∼</mo></munder><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\underset{\sim}v \neq 0</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>k</mi><mn>0</mn></msub><mo>,</mo><mi>k</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[k_0,k-1]</annotation></semantics></math>.</p>
+<h3 id="condition-2-2">Condition 2''</h3>
+<p>The system is controllable if and only if given any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mn>0</mn></msub><annotation encoding="application/x-tex">k_0</annotation></semantics></math>
+and for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝛍</mi><mo>≠</mo><mn>𝟎</mn></mrow><annotation encoding="application/x-tex">\mathbf{\mu} \neq \mathbf{0}</annotation></semantics></math>,
+the vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐳</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>B</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>k</mi><mn>0</mn></msub><mo>,</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝛍</mi></mrow><annotation encoding="application/x-tex">\mathbf{z}(i) = B^T(i) \phi^T(k_0,i+1)\mathbf{\mu}</annotation></semantics></math>
+is nonzero for some value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>≥</mo><msub><mi>k</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">i \geq k_0</annotation></semantics></math>.</p>
+<p>Here
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ϕ</mi><mi>T</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>k</mi><mn>0</mn></msub><mo>,</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>≜</mo><msup><mrow><mo stretchy="true" form="prefix">[</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi><mi>.</mi><mi>.</mi><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>k</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\phi^T(k_0,i+1) \triangleq [A(i) A(i-1)...A(k_0)]^{-1}</annotation></semantics></math>
+for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>≥</mo><msub><mi>k</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">i \geq k_0</annotation></semantics></math>.</p>
+<h3
+id="controllability-test-for-fixed-discrete-time-system">Controllability
+test for fixed discrete-time system</h3>
+<p>For <a href="Fixed%20system">fixed</a> discrete-time systems, the
+state equation becomes</p>
+<p>For</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math></p>
+<h3 id="condition-3">Condition 3</h3>
+<p>#incomplete</p>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>P. E. Sarachik, <em>Principles of Linear Systems</em>, Cambridge
+Press, 1996, pp. 151-158.</li>
+</ol>
+</body>
+</html>

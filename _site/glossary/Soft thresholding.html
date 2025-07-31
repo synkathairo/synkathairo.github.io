@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Soft thresholding</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Soft thresholding</h1>
+
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">t</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>:=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mi>x</mi><mo>+</mo><mi>T</mi></mtd><mtd columnalign="left" style="text-align: left"><mi>x</mi><mo>≤</mo><mo>−</mo><mi>T</mi></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd><mtd columnalign="left" style="text-align: left"><mrow><mo stretchy="true" form="prefix">|</mo><mi>x</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mi>T</mi></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mi>x</mi><mo>−</mo><mi>T</mi></mtd><mtd columnalign="left" style="text-align: left"><mi>x</mi><mo>≥</mo><mi>T</mi></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">\mathrm{soft}(x,T) 
+:= \begin{cases}
+x + T &amp; x \leq -T \\
+0 &amp; |x| \leq T \\
+x - T &amp; x \geq T
+\end{cases}
+</annotation></semantics></math></p>
+<hr />
+<p>See also:</p>
+<ul>
+<li><a
+href="https://en.wikipedia.org/wiki/LogSumExp">https://en.wikipedia.org/wiki/LogSumExp</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#Softplus">https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#Softplus</a></li>
+</ul>
+</body>
+</html>

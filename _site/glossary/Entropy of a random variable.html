@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Entropy of a random variable</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Entropy of a random variable</h1>
+
+<p>Consider RV
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>,</mo><msub><mi>f</mi><mn>2</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>f</mi><mi>K</mi></msub></mrow></mrow><annotation encoding="application/x-tex">F={f_1,f_2,...,f_K}</annotation></semantics></math>,
+with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>k</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">.</mi></mrow><mo stretchy="false" form="prefix">{</mo><mi>F</mi><mo>=</mo><msub><mi>f</mi><mi>K</mi></msub><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p_k=\mathrm{Prob.}\{F= f_K\}</annotation></semantics></math></p>
+<p>Self-Information of one realization
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>:</mo><msub><mi>H</mi><mi>k</mi></msub><mo>=</mo><mo>−</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>p</mi><mi>k</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_k : H_k= -\log(p_k)</annotation></semantics></math></p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>k</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p_k=1</annotation></semantics></math>:
+always happen, no information</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>k</mi></msub><mo>∼</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_k \sim 0</annotation></semantics></math>:
+seldom happen, its realization carries a lot of information</li>
+</ul>
+<p>Entropy = average information
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>ℱ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mrow><mi>f</mi><mo>∈</mo><mi>𝒜</mi></mrow></munder><msub><mi>p</mi><mi>ℱ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>log</mo><mn>2</mn></msub><msub><mi>p</mi><mi>ℱ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H(\mathcal{F})=-\sum_{f \in \mathcal{A}} p_{\mathcal{F}}(f) \log_2 p_{\mathcal{F}}(f)</annotation></semantics></math></p>
+<ul>
+<li>Entropy is a measure of uncertainty or information content,
+unit=bits</li>
+<li>Very uncertain -&gt; high information content</li>
+</ul>
+</body>
+</html>

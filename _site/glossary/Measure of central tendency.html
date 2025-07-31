@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Measure of central tendency</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Measure of central tendency</h1>
+
+<p>variance is a natural measure of central tendancy, but there are
+others.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>q</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup><annotation encoding="application/x-tex">q^{th}</annotation></semantics></math>
+central moment:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>−</mo><mi>𝔼</mi><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>q</mi></msup><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[(X-\mathbb{E}X)^q]</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">q=2</annotation></semantics></math>
+gives the variance</p>
+<hr />
+<p>In proof of <a href="Hoeffding%20Inequality.html">Hoeffding
+Inequality</a>:</p>
+<p>Idea in brief: Apply <a href="Markov’s%20Inequality.html">Markov’s
+Inequality</a> to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>−</mo><mi>𝔼</mi><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>q</mi></msup><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[(X − \mathbb{E}X)^q]</annotation></semantics></math>
+for larger q, or more generally to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>−</mo><mi>𝔼</mi><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(X − \mathbb{E}X)</annotation></semantics></math>
+for some other non-negative function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+E.g., to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>exp</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>−</mo><mi>E</mi><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\exp(X − EX)</annotation></semantics></math>.</p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://www.chrismusco.com/amlds2023/lectures/lec3_annotated.pdf">CS6763
+Lecture 3</a>, page 14</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Karush-Kuhn-Tucker (KKT) conditions</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Karush-Kuhn-Tucker (KKT) conditions</h1>
+
+<p>Consider a general <a href="Primal.html">primal</a> optimization
+problem (no assumptions of <a href="Convex%20function.html">convexity</a>
+or differentiability).</p>
+<p>Then KKT conditions are</p>
+<ol type="1">
+<li>stationary, i.e.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>∈</mo><mi>∂</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>L</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo>,</mo><mi>ν</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">0 \in \partial \left(L(x,\lambda, \nu)\right)</annotation></semantics></math>
+<ul>
+<li>i.e.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>∇</mi><msub><mi>f</mi><mn>0</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msubsup><mi>λ</mi><mi>i</mi><mo>*</mo></msubsup><mi>∇</mi><msub><mi>f</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>A</mi><mi>T</mi></msup><msup><mi>ν</mi><mo>*</mo></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\nabla f_0 (x^*) + \sum_{i=1}^n \lambda_i^* \nabla f_i(x^*) A^T \nu^* = 0</annotation></semantics></math></li>
+</ul></li>
+<li>complementary slackness, i.e.</li>
+<li>primal feasibility,
+<ul>
+<li>i.e.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_i(x^*) \leq 0</annotation></semantics></math></li>
+</ul></li>
+<li>dual feasibility, i.e.</li>
+</ol>
+<p>#incomplete</p>
+<hr />
+<p>Also see: <a href="Slater%20condition.html">Slater condition</a></p>
+<hr />
+<p>References:</p>
+<ul>
+<li><a
+href="https://www.cs.cmu.edu/~pradeepr/convexopt/Lecture_Slides/dual-ascent.pdf">https://www.cs.cmu.edu/~pradeepr/convexopt/Lecture_Slides/dual-ascent.pdf</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accelerated gradient descent</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Accelerated gradient descent</h1>
+
+<p>Initialize starting vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐯</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>=</mo><msup><mi>𝐲</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>=</mo><msup><mi>𝐳</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{v}^{(0)} = \mathbf{y}^{(1)} = \mathbf{z}^{(1)}</annotation></semantics></math>.
+For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t = 1,...,T</annotation></semantics></math>,
+compute</p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐲</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>=</mo><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>−</mo><mfrac><mn>1</mn><mi>β</mi></mfrac><mi>∇</mi><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{y}^{(t+1)} = \mathbf{x}^{(t)}-\frac{1}{\beta}\nabla f(\mathbf{x}^{(t)})</annotation></semantics></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><mrow><msqrt><mi>κ</mi></msqrt><mo>−</mo><mn>1</mn></mrow><mrow><msqrt><mi>κ</mi></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>𝐲</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>+</mo><mfrac><mrow><msqrt><mi>κ</mi></msqrt><mo>−</mo><mn>1</mn></mrow><mrow><msqrt><mi>κ</mi></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐲</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>−</mo><msup><mi>𝐲</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{x}^{(t+1)} = \left( 1 + \frac{\sqrt{\kappa}-1}{\sqrt{\kappa}+1} \right)\mathbf{y}^{(t+1)} + \frac{\sqrt{\kappa}-1}{\sqrt{\kappa}+1}\left(\mathbf{y}^{(t+1)} - \mathbf{y}^{(t)}\right)</annotation></semantics></math></li>
+</ul>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be <a href="α-strongly%20convex%20and%20β-smooth.html">alpha-strongly
+convex and beta-smooth</a>, then, running accelerated <a
+href="Gradient%20descent.html">gradient descent</a> for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+steps, output
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>x</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{x}</annotation></semantics></math>
+satisfies, with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mfrac><mi>β</mi><mi>α</mi></mfrac></mrow><annotation encoding="application/x-tex">\kappa = \frac{\beta}{\alpha}</annotation></semantics></math>
+<a
+href="α-strongly%20convex%20and%20β-smooth.html#condition%20number|condition%20number"></a>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>κ</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>T</mi><mi>/</mi><msqrt><mi>κ</mi></msqrt></mrow></msup><mrow><mo stretchy="true" form="prefix">[</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">f(\mathbf{x}^{(T)}) - f(\mathbf{x}^*) \leq \kappa e^{-T/\sqrt{\kappa}}[f(\mathbf{x}^{(0)})-f(\mathbf{x}^*)]</annotation></semantics></math></p>
+<hr />
+<h2 id="complexity-analysis">Complexity analysis:</h2>
+<p>Suppose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+<a href="α-strongly%20convex%20and%20β-smooth.html">strongly convex</a>
+such that
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>I</mi><mo>≼</mo><msup><mi>∇</mi><mn>2</mn></msup><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≼</mo><mi>M</mi><mi>I</mi><mo>,</mo><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">for all </mtext><mspace width="0.333em"></mspace></mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">mI \preceq \nabla^2 f(x) \preceq MI, \quad \text{for all } x</annotation></semantics></math>
+Recall that setting
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn><mi>/</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">t = 1/M</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msup><mi>p</mi><mo>*</mo></msup><mo>≤</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mi>κ</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>k</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>−</mo><msup><mi>p</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x^{(k)}) - p^* \leq (1- \frac{1}{\kappa})^k (f(x^{(0)} - p^*)</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>=</mo><mi>M</mi><mi>/</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">\kappa = M/m</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mo>*</mo></msup><annotation encoding="application/x-tex">p^*</annotation></semantics></math>
+is the minimum value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</p>
+<p>#incomplete</p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://web.archive.org/web/20210302210908/https://blogs.princeton.edu/imabandit/2013/04/01/acceleratedgradientdescent/">https://web.archive.org/web/20210302210908/https://blogs.princeton.edu/imabandit/2013/04/01/acceleratedgradientdescent/</a></li>
+<li><a
+href="https://www.chrismusco.com/amlds2023/lectures/lec8_annotated.pdf">https://www.chrismusco.com/amlds2023/lectures/lec8_annotated.pdf</a></li>
+<li><a
+href="https://www.chrismusco.com/amlds2023/notes/lecture08.html#Accelerated_Gradient_Descent">https://www.chrismusco.com/amlds2023/notes/lecture08.html#Accelerated_Gradient_Descent</a></li>
+<li>Yurii Nesterov - <em>Introductory Lectures on Convex
+Optimization</em>, pgs. 66-68, 81. <a
+href="https://link.springer.com/book/10.1007/978-1-4419-8853-9">https://link.springer.com/book/10.1007/978-1-4419-8853-9</a></li>
+<li>Yurii Nesterov - <em>Lectures on Convex Optimization</em></li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gapless power method convergence</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Gapless power method convergence</h1>
+
+<p>If <a href="Power%20method.html">Power method</a> is initialized with a
+random <a href="Gaussian%20concentration.html">Gaussian</a> vector then,
+with high probability, after
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mo>log</mo><mi>d</mi><mi>/</mi><mi>ϵ</mi></mrow><mi>ϵ</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T  = O(\frac{\log d/\epsilon}{\epsilon})</annotation></semantics></math>
+steps, we obtain a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐳</mi><annotation encoding="application/x-tex">\mathbf{z}</annotation></semantics></math>
+satisfying
+<math display="block" class="tml-display" style="display:block math;"><mrow><mo form="prefix" stretchy="false">‖</mo><mi>𝐗</mi><mo>−</mo><msup><mrow><mi>𝐗</mi><mi>𝐳</mi><mi>𝐳</mi></mrow><mi>𝖳</mi></msup><msubsup><mo form="postfix" stretchy="false">‖</mo><mi>F</mi><mn>2</mn></msubsup><mo>≤</mo><mo form="prefix" stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>ϵ</mi><mo form="postfix" stretchy="false">)</mo><mo form="prefix" stretchy="false">‖</mo><mi>𝐗</mi><mo>−</mo><msub><mrow><mi>𝐗</mi><mi>𝐯</mi></mrow><mn>1</mn></msub><msubsup><mi>𝐯</mi><mn>1</mn><mi>𝖳</mi></msubsup><msubsup><mo form="postfix" stretchy="false">‖</mo><mi>F</mi><mn>2</mn></msubsup></mrow></math>
+</p>
+<hr />
+<p>Intuition: For a good low-rank approximation, we don’t actually need
+to converge to v1 if σ1 and σ2 are the same or very close. Would suffice
+to return either v1 or v2, or some linear combination of the two.</p>
+<hr />
+<p>Compare: <a href="Basic%20power%20method%20convergence.html">Basic
+power method convergence</a></p>
+</body>
+</html>

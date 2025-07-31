@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Low-rank approximation</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Low-rank approximation</h1>
+
+<h2 id="column-span">Column span</h2>
+<p>The column span of a matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐗</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>×</mo><mi>d</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{X} \in \mathbb{R}^{n \times d}</annotation></semantics></math>
+is the set of all vectors that can be written as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐗</mi><mi>𝐚</mi></mrow><annotation encoding="application/x-tex">\mathbf{Xa}</annotation></semantics></math>
+for some
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐚</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{a} \in \mathbb{R}^d</annotation></semantics></math>.
+The dimension of the column span
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>c</mi></msub><annotation encoding="application/x-tex">D_c</annotation></semantics></math>
+is the maximum number of linearly independent vectors in the column
+span.</p>
+<h2 id="row-span">Row span</h2>
+<p>The row span of a matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐗</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>×</mo><mi>d</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{X} \in \mathbb{R}^{n \times d}</annotation></semantics></math>
+is the set of all vectors that can be written as <span
+class="math inline">$\mathbf{X}^{\sf T}\mathbf{b}$</span> for some
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐛</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{b} \in \mathbb{R}^d</annotation></semantics></math>.
+The dimension of the row span
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>r</mi></msub><annotation encoding="application/x-tex">D_r</annotation></semantics></math>
+is the maximum number of linearly independent vectors in the row
+span.</p>
+<h2 id="rank">Rank</h2>
+<p>We have
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>c</mi></msub><mo>≤</mo><mi>d</mi><mspace width="2.0em"></mspace><msub><mi>D</mi><mi>r</mi></msub><mo>≤</mo><mi>n</mi><mspace width="2.0em"></mspace><msub><mi>D</mi><mi>c</mi></msub><mo>=</mo><msub><mi>D</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">D_c \leq d \qquad D_r \leq n \qquad D_c = D_r</annotation></semantics></math></p>
+<p>We call the value
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>c</mi></msub><mo>=</mo><msub><mi>D</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">D_c = D_r</annotation></semantics></math>,
+the rank of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐗</mi><annotation encoding="application/x-tex">\mathbf{X}</annotation></semantics></math>.</p>
+<h2 id="low-rank-approximation">Low-rank approximation</h2>
+<p>Approximate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐗</mi><annotation encoding="application/x-tex">\mathbf{X}</annotation></semantics></math>
+as the product of two
+rank-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+matrices.</p>
+<p>Use two matrices
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐂</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>×</mo><mi>k</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{C} \in \mathbb{R}^{n \times k}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐁</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>d</mi><mo>×</mo><mi>k</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{B} \in \mathbb{R}^{d \times k}</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&lt;</mo><mo>min</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>,</mo><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">k &lt; \min (n,d)</annotation></semantics></math>.
+Typically we want to choose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐂</mi><annotation encoding="application/x-tex">\mathbf{C}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐁</mi><annotation encoding="application/x-tex">\mathbf{B}</annotation></semantics></math>
+to minimize
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>min</mo><mrow><mi>𝐁</mi><mo>,</mo><mi>𝐂</mi></mrow></munder><mo stretchy="false" form="prefix">∥</mo><mi>𝐗</mi><mo>−</mo><mrow><mi>𝐂</mi><mi>𝐁</mi></mrow><mo stretchy="false" form="postfix">∥</mo></mrow><annotation encoding="application/x-tex">\min_{\mathbf{B},\mathbf{C}} \lVert \mathbf{X} - \mathbf{CB} \rVert</annotation></semantics></math>
+for some matrix norm, e.g. Frobenius norm or square of as <span
+class="math inline">$\lVert \mathbf{X} - \mathbf{CW}^{\sf T}
+\rVert_F^2$</span></p>
+<p>Without loss of generality can assume right matrix is <a
+href="Orthogonal%20matrix.html">orthogonal</a>, i.e. <span
+class="math inline">$\mathbf{W}^{\sf T}$</span> with <span
+class="math inline">$\mathbf{W}^{\sf T}\mathbf{W} =
+\mathbf{I}$</span>.</p>
+<p>#incomplete</p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://www.chrismusco.com/amlds2023/notes/lecture11.html#Low-Rank_Approximation">https://www.chrismusco.com/amlds2023/notes/lecture11.html#Low-Rank_Approximation</a></li>
+</ol>
+</body>
+</html>

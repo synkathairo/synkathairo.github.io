@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mixed extension</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>mixed extension</h1>
+
+<h2 id="definition">Definition</h2>
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo>,</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>S</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow></msub><mo>,</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>u</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">G = (N, (S_i)_{i \in N},(u_i)_{i \in N})</annotation></semantics></math>
+be a <a href="normal-form%20game.html">strategic-form game</a> in which
+for every player
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">i \in N</annotation></semantics></math>,
+the set of <a href="pure%20strategy.html">pure strategies</a>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>i</mi></msub><annotation encoding="application/x-tex">S_i</annotation></semantics></math>
+is nonempty and finite. Denote by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>:=</mo><msub><mi>S</mi><mn>1</mn></msub><mo>×</mo><msub><mi>S</mi><mn>2</mn></msub><mo>×</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>×</mo><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">S := S_1 \times S_2 \times ... \times S_n</annotation></semantics></math>
+the set of pure strategy vectors. The <strong>mixed extension</strong>
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is the game
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Γ</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo>,</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>Σ</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow></msub><mo>,</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>U</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Gamma = (N, (\Sigma_i)_{i \in N}, (U_i)_{i \in N})</annotation></semantics></math>
+in which for each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">i \in N</annotation></semantics></math>,
+player
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>'s
+set of strategies is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Σ</mi><mi>i</mi></msub><mo>=</mo><mi>Δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>S</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Sigma_i = \Delta(S_i)</annotation></semantics></math>,
+and his payoff function is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>i</mi></msub><mo>:</mo><mi>Σ</mi><mo>→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">U_i : \Sigma \to \mathbb{R}</annotation></semantics></math>,
+which associates each strategy vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>σ</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>σ</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>Σ</mi><mo>=</mo><msub><mi>Σ</mi><mn>1</mn></msub><mo>×</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>×</mo><msub><mi>Σ</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\sigma = (\sigma_1,...,\sigma_n) \in \Sigma = \Sigma_1 \times ... \times \Sigma_n</annotation></semantics></math>
+with the payoff
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>σ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>𝐄</mi><mi>σ</mi></msub><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>u</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>σ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mo>=</mo><munder><mo>∑</mo><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>s</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>∈</mo><mi>S</mi></mrow></munder><msub><mi>u</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>s</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>σ</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>σ</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi><mi>.</mi><mi>.</mi><msub><mi>σ</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>s</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">U_i(\sigma) = \mathbf{E}_\sigma[u_i(\sigma)] = \sum_{(s_1,...,s_n)\in S} u_i (s_1,...,s_n)\sigma_1(s_1)\sigma_2(s_2)...\sigma_n(s_n)</annotation></semantics></math></p>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>M. Maschler, E. Solan, and Shmuel Zamir, <em>Game Theory</em>,
+Cambridge University Press, 2013, p. 147.</li>
+</ol>
+</body>
+</html>

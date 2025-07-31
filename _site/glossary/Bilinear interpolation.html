@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bilinear interpolation</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Bilinear interpolation</h1>
+
+<p>(M=2)</p>
+<pre><code>O[2m,2n]=I[m,n]  
+O[2m,2n+1]=(I[m,n]+I[m,n+1])/2 O[2m+1,2n]=(I[m,n]+I[m+1,n])/2 O[2m+1,2n+1]=(I[m,n]+I[m,n+1]+I[m+1,n]+I[m+1,n+1])/4</code></pre>
+<p>Equivalent 1D Filter <code>h=[0.5, 1, 0.5]</code></p>
+<p><code>cv2.INTER_LINEAR</code> used in <a
+href="Gaussian%20pyramid.html">Gaussian pyramid</a></p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://theailearner.com/2018/12/29/image-processing-bilinear-interpolation/">https://theailearner.com/2018/12/29/image-processing-bilinear-interpolation/</a></li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Separation oracle</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Separation oracle</h1>
+
+<p>Given a <a href="convex%20set.html">convex set</a>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒦</mi><annotation encoding="application/x-tex">\mathcal{K}</annotation></semantics></math>,
+separation oracle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>𝒦</mi></msub><annotation encoding="application/x-tex">S_\mathcal{K}</annotation></semantics></math>
+returns:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>𝒦</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mi>∅</mi></mtd><mtd columnalign="left" style="text-align: left"><mrow><mtext mathvariant="normal">if </mtext><mspace width="0.333em"></mspace></mrow><mi>𝐲</mi><mo>∈</mo><mi>𝒦</mi></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mrow><mtext mathvariant="normal">separating hyperplane </mtext><mspace width="0.333em"></mspace></mrow><mi>ℋ</mi></mtd><mtd columnalign="left" style="text-align: left"><mrow><mtext mathvariant="normal">if </mtext><mspace width="0.333em"></mspace></mrow><mi>𝐲</mi><mo>∉</mo><mi>𝒦</mi></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">S_\mathcal{K}=\begin{cases} \emptyset &amp; \textrm{if }\mathbf{y}\in \mathcal{K}\\
+\textrm{separating hyperplane } \mathcal{H} &amp; \textrm{if }\mathbf{y}\notin \mathcal{K}
+\end{cases}</annotation></semantics></math> Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>𝐱</mi><mo>:</mo><msup><mi>𝐚</mi><mo>⊺</mo></msup><mi>𝐱</mi><mo>=</mo><mi>c</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathcal{H} = \{\mathbf{x} : \mathbf{a}^\intercal \mathbf{x} = c\}</annotation></semantics></math>.</p>
+<hr />
+<p>used in <a href="Ellipsoid%20method.html">ellipsoid method</a></p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://www.chrismusco.com/amlds2023/notes/lecture09.html">https://www.chrismusco.com/amlds2023/notes/lecture09.html</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Hyperplane_separation_theorem">https://en.wikipedia.org/wiki/Hyperplane_separation_theorem</a></li>
+</ol>
+</body>
+</html>

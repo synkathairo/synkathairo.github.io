@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Compound lottery</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Compound lottery</h1>
+
+<h2 id="definition">Definition</h2>
+<p>A <strong>compound lottery</strong> is a <em>lottery of
+lotteries</em>. A compound lottery is therefore given by
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>L</mi><mo accent="true">̂</mo></mover><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>q</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msub><mi>q</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>q</mi><mi>J</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mi>J</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\hat L = [q_1(L_1), q_2(L_1), ..., q_J(L_J)]</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>q</mi><mi>J</mi></msub></mrow><annotation encoding="application/x-tex">q_1,...,q_J</annotation></semantics></math>
+are nonnegative numbers summing to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>L</mi><mi>J</mi></msub></mrow><annotation encoding="application/x-tex">L_1,...,L_J</annotation></semantics></math>
+are <a href="Lottery%20(probability).html">lotteries</a> in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℒ</mi><annotation encoding="application/x-tex">\mathcal{L}</annotation></semantics></math>.</p>
+<p>Therefore for each
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>j</mi><mo>≤</mo><mi>J</mi></mrow><annotation encoding="application/x-tex">1 \leq j \leq J</annotation></semantics></math>
+there are nonnegative numbers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>p</mi><mi>k</mi><mi>j</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>K</mi></msubsup><annotation encoding="application/x-tex">(p_k^j)_{k=1}^K</annotation></semantics></math>
+summing to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+such that
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>j</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><msubsup><mi>p</mi><mn>1</mn><mi>j</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><msubsup><mi>p</mi><mn>2</mn><mi>j</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msubsup><mi>p</mi><mi>K</mi><mi>j</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>K</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">L_j = [p_1^j(A_1), p_2^j(A_1), ..., p_K^j(A_K)]</annotation></semantics></math></p>
+<h2 id="identification-with-simple-lottery">Identification with simple
+lottery</h2>
+<p>Every <a href="Lottery%20(probability).html">simple lottery</a> can be
+identified with <strong>compound lottery</strong> that yields the simple
+lottery
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+with probability
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>L</mi><mo accent="true">̂</mo></mover><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>1</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>L</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\hat L = [1(L)]</annotation></semantics></math></p>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>M. Maschler, E. Solan, and Shmuel Zamir, <em>Game Theory</em>,
+Cambridge University Press, 2013, pp. 14-15.</li>
+</ol>
+</body>
+</html>

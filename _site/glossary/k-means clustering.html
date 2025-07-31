@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>k-means clustering</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>k-means clustering</h1>
+
+<p>Given data points
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝐚</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>𝐚</mi><mi>n</mi></msub><mo>∈</mo><msup><mi>ℝ</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{a}_1,…,\mathbf{a}_n \in \mathbb{R}^d</annotation></semantics></math>,
+find centers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝛍</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>𝛍</mi><mi>k</mi></msub><mo>∈</mo><msup><mi>ℝ</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">\mathbf{\mu}_1,...,\mathbf{\mu}_k \in \mathbb{R}^d</annotation></semantics></math>
+to minimize:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>𝛍</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>𝛍</mi><mi>k</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><munder><mo>min</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>k</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>𝛍</mi><mi>j</mi></msub><mo>−</mo><msub><mi>𝐚</mi><mi>i</mi></msub><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">Cost(\mathbf{\mu}_1,...,\mathbf{\mu}_k)=\sum_{i=1}^n \min_{j=1,...,k} ||\mathbf{\mu}_j-\mathbf{a}_i||_2^2</annotation></semantics></math></p>
+<p>Equivalent form: find clusters
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>C</mi><mi>k</mi></msub><mo>⊆</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">C_1,...,C_k \subseteq \{1,...,n\}</annotation></semantics></math>
+to minimize:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>C</mi><mn>1</mn></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>C</mi><mi>k</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mn>1</mn><mrow><mn>2</mn><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>C</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow></mrow></mfrac><munder><mo>∑</mo><mrow><mi>u</mi><mo>,</mo><mi>v</mi><mo>∈</mo><msub><mi>C</mi><mi>j</mi></msub></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>𝐚</mi><mi>u</mi></msub><mo>−</mo><msub><mi>𝐚</mi><mi>v</mi></msub><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">Cost(C_1,...,C_k)=\sum_{i=1}^n \frac{1}{2|C_j|}\sum_{u,v \in C_j}||\mathbf{a}_u-\mathbf{a}_v||_2^2</annotation></semantics></math>
+Approximation scheme:</p>
+<p>#incomplete</p>
+</body>
+</html>

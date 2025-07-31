@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lagrange multiplier</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Lagrange multiplier</h1>
+
+<p>We want to optimize (i.e. find the minimum and maximum value of) a
+function, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x,y,z)</annotation></semantics></math>,
+subject to the
+constraint <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">g(x,y,z)=k</annotation></semantics></math>.
+Again, the constraint may be the equation that describes the boundary of
+a region or it may not be. The process is actually fairly simple,
+although the work can still be a little overwhelming at times.</p>
+<p>Method of Lagrange multipliers</p>
+<ol type="1">
+<li>Solve the following system of equations:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>∇</mi><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mi>λ</mi><mspace width="0.167em"></mspace><mspace width="0.167em"></mspace><mi>∇</mi><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mi>k</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}\nabla f\left( {x,y,z} \right) &amp; = \lambda \,\,\nabla g\left( {x,y,z} \right)\\ g\left( {x,y,z} \right) &amp; = k\end{align*}</annotation></semantics></math></li>
+<li>Plug in all
+solutions, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x,y,z)</annotation></semantics></math>,
+from the first step
+into <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x,y,z)</annotation></semantics></math>
+and identify the minimum and maximum values, provided they exist
+and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>∇</mi><mi>g</mi><mo>≠</mo><mover><mn>0</mn><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">\nabla g \ne \vec{0}</annotation></semantics></math> at
+the point. The
+constant, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">λ</annotation></semantics></math>
+is called the <strong>Lagrange Multiplier</strong>.</li>
+</ol>
+<p>#incomplete Lagrange multiplier theorem</p>
+<hr />
+<p>Why are Lagrange multipliers chosen as such? This is so that for
+example,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>∂</mi><mi>L</mi><mi>/</mi><mi>∂</mi><mi>λ</mi></mrow><annotation encoding="application/x-tex">\partial L /\partial \lambda</annotation></semantics></math>
+brings back the constraint, and so forth.</p>
+<hr />
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><munder><mtext mathvariant="normal">maximize</mtext><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></munder><mspace width="1.0em"></mspace></mtd><mtd columnalign="left" style="text-align: left"><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mtext mathvariant="normal">subject to</mtext><mspace width="1.0em"></mspace></mtd><mtd columnalign="left" style="text-align: left"><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\displaystyle {\begin{aligned}{\underset {x,y}{\text{maximize}}}\quad &amp;f(x,y)\\{\text{subject to}}\quad &amp;g(x,y)=0.\end{aligned}}</annotation></semantics></math></p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://en.wikipedia.org/wiki/Lagrange_multiplier">https://en.wikipedia.org/wiki/Lagrange_multiplier</a></li>
+<li><a
+href="https://tutorial.math.lamar.edu/classes/calciii/lagrangemultipliers.aspx">https://tutorial.math.lamar.edu/classes/calciii/lagrangemultipliers.aspx</a></li>
+<li><a
+href="https://www.math.cmu.edu/~gautam/sj/teaching/2016-17/269-vector-analysis/pdfs/lagrange.pdf">https://www.math.cmu.edu/~gautam/sj/teaching/2016-17/269-vector-analysis/pdfs/lagrange.pdf</a></li>
+<li><ol type="1">
+<li>Gilbert Strang, <em>Linear Algebra and its Applications</em>, ch.
+6.4, p. 378, 4th ed., 2006.</li>
+</ol></li>
+</ol>
+</body>
+</html>

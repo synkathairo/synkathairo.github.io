@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradient descent convergence bound</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Gradient descent convergence bound</h1>
+
+<p>For
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-<a
+href="Lipschitz%20function.html">Lipschitz</a> function
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is the starting radius,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">∥</mo><msup><mi>x</mi><mo>∗</mo></msup><mo>−</mo><msup><mi>x</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">\lVert x^∗ − x^{(0)}\rVert_2 ≤ R</annotation></semantics></math></p>
+<p>If we run <a href="Gradient%20descent.html">GD</a> for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>≥</mo><mfrac><mrow><msup><mi>R</mi><mn>2</mn></msup><msup><mi>G</mi><mn>2</mn></msup></mrow><msup><mi>ϵ</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">T \geq \frac{R^2 G^2}{\epsilon^2}</annotation></semantics></math>
+iterations then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>𝐱</mi><mo accent="true">̂</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mo mathvariant="bold">*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">f(\mathbf{\hat{x}}) \leq f(\mathbf{x^*}) + \epsilon</annotation></semantics></math></p>
+<hr />
+<p>If we run <a href="Gradient%20descent.html">GD</a> for
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>≥</mo><mfrac><mrow><msup><mi>R</mi><mn>2</mn></msup><msup><mi>G</mi><mn>2</mn></msup></mrow><msup><mi>ϵ</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">T \geq \frac{R^2 G^2}{\epsilon^2}</annotation></semantics></math>
+iterations with step-size
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mfrac><mi>R</mi><mrow><mi>G</mi><msqrt><mi>T</mi></msqrt></mrow></mfrac></mrow><annotation encoding="application/x-tex">\eta = \frac{R}{G \sqrt{T}}</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>𝐱</mi><mo accent="true">̂</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mo mathvariant="bold">*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">f(\mathbf{\hat{x}}) \leq f(\mathbf{x^*}) + \epsilon</annotation></semantics></math></p>
+<hr />
+<p>(<a href="Projected%20gradient%20descent.html">Projected</a>) <a
+href="Gradient%20descent.html">Gradient descent</a> returns
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>𝐱</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{\mathbf{x}}</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>𝐱</mi><mo accent="true">̂</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msub><mo>min</mo><mrow><mi>𝐱</mi><mo>∈</mo><mi>𝒮</mi></mrow></msub><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>𝐱</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">f(\hat{\mathbf{x}}) \leq \min_{\mathbf{x} \in \mathcal{S}} f(\mathbf{x}) + \epsilon</annotation></semantics></math>
+after
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><msup><mi>R</mi><mn>2</mn></msup><msup><mi>G</mi><mn>2</mn></msup></mrow><msup><mi>ϵ</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">T = \frac{R^2 G^2}{\epsilon^2}</annotation></semantics></math>
+iterations.</p>
+<hr />
+<h2 id="proof">Proof</h2>
+<p>Claim 1: For all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">i=0,…,T</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mfrac><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>−</mo><msup><mi>𝐱</mi><mo>*</mo></msup><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>−</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>−</mo><msup><mi>𝐱</mi><mo>*</mo></msup><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>η</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>η</mi><msup><mi>G</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">f(\mathbf{x}^{(i)})-f(\mathbf{x}^*) 
+\leq \frac{||\mathbf{x}^{(i)}-\mathbf{x}^*||_2^2-||\mathbf{x}^{(i+1)}-\mathbf{x}^*||_2^2}{2\eta} + \frac{\eta G^2}{2}</annotation></semantics></math>
+Claim 1(a): For all
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">i=0,…,T</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>∇</mi><mi>f</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mi>𝖳</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>−</mo><msup><mi>𝐱</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mfrac><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>−</mo><msup><mi>𝐱</mi><mo>*</mo></msup><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>−</mo><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>𝐱</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msup><mo>−</mo><msup><mi>𝐱</mi><mo>*</mo></msup><msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>η</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>η</mi><msup><mi>G</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\nabla f (\mathbf{x}^{(i)})^{\mathsf{T}}(\mathbf{x}^{(i)}-\mathbf{x}^{*}) 
+\leq \frac{||\mathbf{x}^{(i)}-\mathbf{x}^*||_2^2-||\mathbf{x}^{(i+1)}-\mathbf{x}^*||_2^2}{2\eta} + \frac{\eta G^2}{2}</annotation></semantics></math>
+Claim 1 follows from Claim 1(a) by definition of convexity.</p>
+<p>#incomplete</p>
+<hr />
+<p>See <a href="Gradient%20descent.html">Gradient descent</a></p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li><a
+href="https://www.stat.cmu.edu/~ryantibs/convexopt-F13/scribes/lec6.pdf">https://www.stat.cmu.edu/~ryantibs/convexopt-F13/scribes/lec6.pdf</a></li>
+</ol>
+</body>
+</html>

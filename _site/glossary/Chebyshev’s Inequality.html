@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chebyshev’s inequality</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Chebyshev’s inequality</h1>
+
+<p>Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be a random variable with expectation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}[X]</annotation></semantics></math>
+and variance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>=</mo><mrow><mi mathvariant="normal">V</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\sigma^2 = \mathrm{Var}[X]</annotation></semantics></math>.
+Then for any
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k&gt;0</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>X</mi><mo>−</mo><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≥</mo><mi>k</mi><mo>⋅</mo><mi>σ</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo>≤</mo><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{Pr}[|X-\mathbb{E}[X]|\geq k \cdot \sigma]\leq \frac{1}{k^2}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mrow><mrow><mi mathvariant="normal">V</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow></msqrt></mrow><annotation encoding="application/x-tex">\sigma = \sqrt{\mathrm{Var}[X]}</annotation></semantics></math>
+is standard deviation of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>;
+intuitively the bound is tighter when
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>
+is smaller.</p>
+<h2 id="proof">Proof</h2>
+<p>This can be derived from <a href="Markov’s%20Inequality.html">Markov’s
+Inequality</a> (can be considered a corollary or special case of).</p>
+<p>Apply Markov’s inequality to the non-negative random variable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>−</mo><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">S=(X-\mathbb{E}[X])^2</annotation></semantics></math>:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi></mrow><mrow><mo stretchy="true" form="prefix">[</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>−</mo><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>≥</mo><msup><mi>k</mi><mn>2</mn></msup><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow><mo>≤</mo><mfrac><mrow><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>−</mo><mi>𝔼</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow></mrow><mrow><msup><mi>k</mi><mn>2</mn></msup><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><msup><mi>σ</mi><mn>2</mn></msup><mrow><msup><mi>k</mi><mn>2</mn></msup><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{Pr}[(X-\mathbb{E}[X])^2 \geq k^2 \sigma^2] \leq \frac{\mathbb{E}[(X-\mathbb{E}[X])^2]}{k^2 \sigma^2} = \frac{\sigma^2}{k^2 \sigma^2} = \frac{1}{k^2}</annotation></semantics></math></p>
+<hr />
+<p>Example of <a href="Concentration%20inequality">Concentration
+inequality</a>.</p>
+<hr />
+<p>see also: multidimensional Chebyshev’s inequality</p>
+</body>
+</html>

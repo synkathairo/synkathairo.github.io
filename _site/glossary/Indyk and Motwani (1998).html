@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Indyk and Motwani (1998)</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Indyk and Motwani (1998)</h1>
+
+<p>If there exists some
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐪</mi><annotation encoding="application/x-tex">\mathbf{q}</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐪</mi><mo>−</mo><mi>𝐲</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>0</mn></msub><mo>≤</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">||\mathbf{q}-\mathbf{y}||_0 \leq R</annotation></semantics></math>,
+return a vector
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>𝐪</mi><mo accent="true">̃</mo></mover><annotation encoding="application/x-tex">\tilde{\mathbf{q}}</annotation></semantics></math>
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mover><mi>𝐪</mi><mo accent="true">̃</mo></mover><mo>−</mo><mi>𝐲</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>0</mn></msub><mo>≤</mo><mi>C</mi><mo>⋅</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">||\tilde{\mathbf{q}}-\mathbf{y}||_0 \leq C \cdot R</annotation></semantics></math>
+in:</p>
+<ul>
+<li>Time:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>n</mi><mrow><mn>1</mn><mi>/</mi><mi>C</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(n^{1/C})</annotation></semantics></math></li>
+<li>Space:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>n</mi><mrow><mn>1</mn><mo>+</mo><mn>1</mn><mi>/</mi><mi>C</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(n^{1+1/C})</annotation></semantics></math></li>
+</ul>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝐪</mi><mo>−</mo><mi>𝐲</mi><msub><mrow><mo stretchy="true" form="prefix">|</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">||\mathbf{q}-\mathbf{y}||_0</annotation></semantics></math>
+is the “hamming distance” number of elements that different between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐪</mi><annotation encoding="application/x-tex">\mathbf{q}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐲</mi><annotation encoding="application/x-tex">\mathbf{y}</annotation></semantics></math>.</p>
+<p>Used in near neighbor search problem.</p>
+<p>#incomplete</p>
+<hr />
+<p>Given a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>,</mo><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(r_1,r_2,p_1,p_2)</annotation></semantics></math>-<a
+href="Locality%20sensitive%20hash%20function.html#Locality%20Sensitive%20Hash%20Family|locality%20sensitive%20hash%20family"></a>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(r_1,r_2)</annotation></semantics></math>-PLEB
+(point location in equal balls) can be solved with constant probability
+using:</p>
+<ul>
+<li>Space:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>n</mi><mo>+</mo><msup><mi>n</mi><mrow><mn>1</mn><mo>+</mo><mi>γ</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(dn + n^{1+\gamma})</annotation></semantics></math></li>
+<li>Query time:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>n</mi><mi>γ</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(n^\gamma)</annotation></semantics></math>
+hash function evaluations and metric computations,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo>⋅</mo><mo>,</mo><mo>⋅</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">d(\cdot,\cdot)</annotation></semantics></math>,
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mfrac><mrow><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><msub><mi>p</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><msub><mi>p</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\gamma = \frac{\log(1/p_1)}{\log(1/p_2)}</annotation></semantics></math>.</li>
+</ul>
+<hr />
+<p>PLEB (point location in equal balls) For given radii r1, r2 with r1 ≤
+r2, if there is at least one point p ∈ X with d(q, p) ≤ r1, return any p
+with d(q, p) &lt; r2. On the other hand, if there is no point p ∈ X with
+d(q, p) &lt; r2, output FAIL.</p>
+<hr />
+<p>References:</p>
+<ol type="1">
+<li>P. Indyk and R. Motwani, “Approximate nearest neighbors: towards
+removing the curse of dimensionality,” in <em>Proceedings of the
+thirtieth annual ACM symposium on Theory of computing  - STOC ’98</em>,
+Dallas, Texas, United States: ACM Press, 1998, pp. 604–613. doi: <a
+href="https://doi.org/10.1145/276698.276876">10.1145/276698.276876</a>.</li>
+<li><a
+href="https://www.cs.princeton.edu/courses/archive/fall18/cos521/Lectures/lec12.pdf">https://www.cs.princeton.edu/courses/archive/fall18/cos521/Lectures/lec12.pdf</a></li>
+</ol>
+</body>
+</html>

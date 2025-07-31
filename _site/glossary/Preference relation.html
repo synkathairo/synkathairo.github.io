@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Preference relation</title>
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<h1>Preference relation</h1>
+
+<h2 id="definition">Definition</h2>
+<p>A <strong>preference relation</strong> of player
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+over a set of outcomes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+is a binary relation denoted by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≿</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\succsim_i</annotation></semantics></math>.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>y</mi></mrow><annotation encoding="application/x-tex">x \succsim_i y</annotation></semantics></math>
+as "player
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+either prefers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+or is indifferent between the two outcomes"</p>
+<h2 id="assumptions">Assumptions</h2>
+<h3 id="complete">Complete</h3>
+<p>The preference relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≿</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\succsim_i</annotation></semantics></math>
+over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+is <strong>complete</strong>, that is, for any pair of outcomes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>,
+either
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>y</mi></mrow><annotation encoding="application/x-tex">x \succsim_i y</annotation></semantics></math>,
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">y \succsim_i x</annotation></semantics></math>,
+or both.</p>
+<h3 id="reflexive">Reflexive</h3>
+<p>The preference relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≿</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\succsim_i</annotation></semantics></math>
+over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+is <strong>reflexive</strong>, that is,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">x \succsim_i x</annotation></semantics></math>
+for every
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>O</mi></mrow><annotation encoding="application/x-tex">x \in O</annotation></semantics></math>.</p>
+<h3 id="transitive">Transitive</h3>
+<p>The preference relation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>≿</mo><mi>i</mi></msub><annotation encoding="application/x-tex">\succsim_i</annotation></semantics></math>
+over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+is <strong>reflexive</strong>, that is, for any triplet of outcomes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>,
+if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>y</mi></mrow><annotation encoding="application/x-tex">x \succsim_i y</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>z</mi></mrow><annotation encoding="application/x-tex">y \succsim_i z</annotation></semantics></math>
+then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msub><mo>≿</mo><mi>i</mi></msub><mi>z</mi></mrow><annotation encoding="application/x-tex">x \succsim_i z</annotation></semantics></math>.</p>
+<h2 id="compare">Compare</h2>
+<ul>
+<li><a href="Strict%20preference%20relation.html">Strict preference
+relation</a></li>
+<li><a href="Indifference%20relation.html">Indifference relation</a></li>
+</ul>
+<hr />
+<h2 id="references">References</h2>
+<ol type="1">
+<li>M. Maschler, E. Solan, and Shmuel Zamir, Game Theory, Cambridge
+University Press, 2013, p. 10.</li>
+</ol>
+</body>
+</html>
