@@ -5,6 +5,7 @@ date:   2022-07-26
 # categories: mathematics computation
 excerpt: "I recently came across the concept of functional programming which piqued my interest..."
 codesnippet: true
+published: false
 ---
 <p>I recently came across the concept of functional programming which
 piqued my interest. The concept of functional programming syntactically

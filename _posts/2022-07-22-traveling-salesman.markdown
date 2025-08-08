@@ -4,6 +4,7 @@ title:  "Regarding the quandary of the traveling salesman problem"
 date:   2022-07-22
 # categories: mathematics computation
 excerpt: "The traveling salesman problem is stated in simple terms..."
+published: false
 ---
 <p>The <a
 href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">traveling

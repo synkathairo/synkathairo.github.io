@@ -4,7 +4,8 @@ title:  "A journey into basic hardware design with an Arduino Uno R3"
 date:   2021-12-21
 # categories: hardware
 excerpt: "I recently decided to obtain an Arduino Uno R3..."
-codesnippet: true
+codesnippet: false
+published: false
 ---
 <p>I recently decided to obtain an <a
 href="https://store-usa.arduino.cc/products/arduino-uno-rev3/">Arduino

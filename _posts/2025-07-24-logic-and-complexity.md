@@ -3,8 +3,8 @@ layout: post
 title: Logic and Complexity
 date: 2025-07-24 16:00:02 -0400
 excerpt: Descriptive complexity relates the realms of logic and complexity theory...
-published: true
 latex: true
+published: false
 ---
 
 Descriptive complexity relates the realms of logic and complexity theory.
