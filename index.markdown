@@ -5,5 +5,3 @@
 layout: home
 title: "synkathairo.github.io - Home"
 ---
-
-🚧 under construction 🚧
