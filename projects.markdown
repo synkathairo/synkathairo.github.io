@@ -17,4 +17,7 @@ title: "synkathairo.github.io - Projects"
 **Miscellanea**
 - [geodesic-optimization](https://github.com/synkathairo/geodesic-optimization) - implementation of geodesic optimization methods in Julia. These methods generalize convex optimization for non-Euclidean problems.
 - [embedded-gyrometer](https://synkathairo.github.io/embedded-gyrometer/) - gyroscope device using the STM32F429 Discovery Board (ARM-based) and associated L3GD20 gyroscope. Focus on estimation of stride length and step estimation using limited interface resources. Course project. Uses C, C++, and MbedOS.
-
+- [rsa-py](https://github.com/synkathairo/rsa-py) - proof-of-concept implementation in Python of the [Rivest-Shamir-Adleman (RSA)](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) encryption algorithm.
+- [synkathairo.github.io](https://github.com/synkathairo/synkathairo.github.io) - this very webpage
+- [Watchers-app](https://github.com/watchers-cs673/Watchers-app) - a social media web app project which allows sharing of posts about favorite movies, providing an interactive and collaborative platform for movie lovers. Course project. Uses Angular, Express, and Prisma ORM.
+- [Youtube_playlist-no_login](https://github.com/synkathairo/Youtube_playlist-no_login) - a basic Chrome extension, conforming to the WebExtension API
