@@ -13,4 +13,5 @@ One means by which such problems might be considered is through the lens of comp
 
 Consider for instance the 
 
-In the work by Dasakalakis et al 
+In the work by Dasakalakis et al
+(elaborate)
