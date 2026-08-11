@@ -13,4 +13,4 @@ Specifically I am interested in areas such as: computer science (algorithmic gam
 
 My programming experience includes application programming, web development, data analytics, and numerical/scientific programming, and spans languages such as Python, Julia, Rust, C++, Typescript, MATLAB, etc.
 
-You can view my <a href="https://github.com/synkathairo">GitHub profile</a>.
+[gpg](https://github.com/synkathairo.gpg) - [github](https://github.com/synkathairo) - [huggingface](https://huggingface.co/synkathairo) - [gitlab](https://gitlab.com/synkathairo) - [stackexchange](https://cs.stackexchange.com/users/189601/synkathairo)
