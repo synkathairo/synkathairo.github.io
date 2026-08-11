@@ -1,29 +1,38 @@
 :root {
-    font-family: "IBM Plex Mono", "Menlo", "Andale Mono", "Cascadia Code", monospace;
+    --monospace-font-stack:
+        "IBM Plex Mono", "Menlo", "Andale Mono", "Cascadia Code", monospace;
+    font-family: var(--monospace-font-stack);
+}
+body {
+    font-size: 0.9em;
 }
 math {
-    font-family:  "IBM Plex Math", "STIX Two Math", "Latin Modern Math", "DejaVu Math TeX Gyre", "Cambria Math", "Noto Sans Math", math, sans-serif;
+    font-family:
+        "IBM Plex Math", "STIX Two Math", "Latin Modern Math",
+        "DejaVu Math TeX Gyre", "Cambria Math", "Noto Sans Math", math,
+        sans-serif;
     font-size-adjust: ex-height from-font;
 }
 code {
-    background-color: #D1D9E037;
+    background-color: #d1d9e037;
+    font-family: var(--monospace-font-stack);
 }
 /*time {
     font-size-adjust: ;
 }*/
 a {
-  overflow-wrap: break-word;
-  word-break: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 #navlist {
-	list-style-type: none;
-	margin: 0;
-	padding: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
 }
 .navitem {
-	display: inline;
+    display: inline;
 }
 .navlink {
-	padding-left: 7px;
-	padding-right: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
