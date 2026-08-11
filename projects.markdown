@@ -3,7 +3,7 @@ layout: default
 title: "synkathairo.github.io - Projects"
 ---
 
-## Projects
+<!--## Projects-->
 
 [**Stability of Evolutionary Population Games**](https://github.com/synkathairo/evolutionary_game_strategies) (Oct 2024 - Dec 2024)
 - Examined population games and evolutionary games using a game theoretic framework

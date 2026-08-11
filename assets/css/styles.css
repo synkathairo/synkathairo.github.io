@@ -27,12 +27,13 @@ a {
 #navlist {
     list-style-type: none;
     margin: 0;
-    padding: 5px;
+    /*padding: 5px;*/
+    padding: 0px;
 }
 .navitem {
     display: inline;
 }
 .navlink {
-    padding-left: 7px;
+    /*padding-left: 7px;*/
     padding-right: 7px;
 }
