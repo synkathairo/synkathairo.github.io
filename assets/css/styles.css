@@ -8,8 +8,12 @@ math {
 code {
     background-color: #D1D9E037;
 }
-time {
+/*time {
     font-size-adjust: ;
+}*/
+a {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 #navlist {
 	list-style-type: none;

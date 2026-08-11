@@ -21,3 +21,5 @@ title: "synkathairo.github.io - Projects"
 - [synkathairo.github.io](https://github.com/synkathairo/synkathairo.github.io) - this very webpage
 - [Watchers-app](https://github.com/watchers-cs673/Watchers-app) - a social media web app project which allows sharing of posts about favorite movies, providing an interactive and collaborative platform for movie lovers. Course project. Uses Angular, Express, and Prisma ORM.
 - [Youtube_playlist-no_login](https://github.com/synkathairo/Youtube_playlist-no_login) - a basic Chrome extension, conforming to the WebExtension API
+- [userstyles](https://github.com/synkathairo/userstyles) - miscellaneous user styles for CSS style manager e.g. [Stylus](https://github.com/openstyles/stylus)
+- [userscripts](https://github.com/synkathairo/userscripts) - miscellaneous user scripts
