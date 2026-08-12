@@ -31,12 +31,28 @@ github_username:  synkathairo
 
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-wikirefs
+#   - jekyll-feed
 
-minima:
-  date_format: "%d %B %Y"
+# minima:
+#   date_format: "%d %B %Y"
+
+markdown: kramdown
+
+kramdown:
+  input: Skramdown
+  math_engine: itex2mml
+
+collections:
+  glossary:
+    output: true
+
+wikilinks:
+  enabled: true
+  # attributes:
+  #   enabled: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -46,14 +62,16 @@ minima:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .github/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .ruby-lsp/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

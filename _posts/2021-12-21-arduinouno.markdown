@@ -5,7 +5,7 @@ date:   2021-12-21
 # categories: hardware
 excerpt: "I recently decided to obtain an Arduino Uno R3..."
 codesnippet: false
-published: false
+published: true
 ---
 <p>I recently decided to obtain an <a
 href="https://store-usa.arduino.cc/products/arduino-uno-rev3/">Arduino

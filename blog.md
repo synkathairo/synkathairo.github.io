@@ -1,4 +1,4 @@
 ---
 layout: blog
-title: "synkathairo.github.io - Blog"
+title: "Charles Zhu's page - Blog"
 ---

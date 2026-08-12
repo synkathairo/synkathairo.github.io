@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class="glossary">
+	<!-- 🚧 under construction 🚧 -->
+	{% assign notes = site.glossary | sort_natural: "path" %}
+	{% for page in notes %}
+	<p class="axiom"><a href="{{ page.url | relative_url }}">{{ page.title }}</a></p>
+	{% endfor %}
+</div>
