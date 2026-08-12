@@ -17,9 +17,11 @@ from natural language grammars, we instead list the operation first and
 then the variables or numbers involved, which is more logical for
 computers.</p>
 <p>For example, to add 1 and 2 in Scheme, we write:</p>
+
 ```scheme
 (+ 1 2)
 ```
+
 <p>which of course evaluates to 3.</p>
 <p>I found the SICP book (<em>Structure and Interpretation of Computer
 Programs</em>), linked below, to give a helpful introduction to Scheme.
@@ -29,9 +31,11 @@ convention of prefix notation-based syntax. The parentheses seem to
 indicate a sort of order of operations as you might find in a
 mathematical expression, and follows a simple syntactical logic, ie. to
 do <math><mrow><mo form="prefix" stretchy="false">(</mo><mn>2</mn><mo>+</mo></mrow><mrow><mn>3</mn><mo form="postfix" stretchy="false">)</mo><mspace width="0.2778em"></mspace><mo form="prefix" stretchy="false">(</mo><mn>5</mn><mo>+</mo></mrow><mrow><mn>6</mn><mo form="postfix" stretchy="false">)</mo></mrow></math>, we use:</p>
+
 ```scheme
 (* (+ 2 3) (+ 5 6))
 ```
+
 <p>Functional programming languages correspond also mathematically to
 the concepts of type theory and formal languages. Agda is a programming
 language which has been used in mathematical proofs. Functional
