@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "synkathairo.github.io - geodesic-optimization"
-# latex: true
+latex: true
 ---
 
 # geodesic-optimization
@@ -41,7 +41,6 @@ The code is implemented as Julia functions in `src/`. An implementation for a fu
 ## Riemannian online convex optimization problem
 
 Wang et. al describe the Riemannian online convex optimization problem (R-OCO)[^4].
-
 
 ## Remarks
 

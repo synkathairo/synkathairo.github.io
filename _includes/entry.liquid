@@ -1,0 +1,35 @@
+---
+layout: default
+nomenu: true
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ title | escape }}</h1>
+  </header>
+
+  <div id="post-info">
+      <!--<summary>---</summary>-->
+      <span id="post-aliases">
+      {% if aliases and aliases.size > 0 %}
+        {% for alias in aliases %}
+          <em>{{ alias }}</em>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      {% endif %} </span>
+      <br />
+      {% if tags and tags.size > 0 %}
+        <span id="post-tag">
+        {% for tag in tags %}
+          #{{ tag }}{% unless forloop.last %} {% endunless %}
+        {% endfor %}
+        </span>
+      {% endif %}
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
+<p></p>
+<p><a href="/glossary.html">&lt;- back</a></p>

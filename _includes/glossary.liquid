@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="glossary">
+	<!-- 🚧 under construction 🚧 -->
+	<!--<p>hint: use CMD-F or CTRL-F to search</p>-->
+	{% for entry in collections.glossary %}
+	<p class="axiom"><a href="{{ entry.url }}">{{ entry.data.title }}</a>
+	<!--{% if entry.aliases and entry.aliases.size > 0 %}
+        (
+        {% for alias in entry.aliases %}
+            <em>{{alias}}</em>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+        )
+    {% endif %}-->
+	</p>
+	{% endfor %}
+</div>

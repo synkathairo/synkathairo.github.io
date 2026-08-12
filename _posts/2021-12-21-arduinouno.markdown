@@ -46,6 +46,7 @@ manually make a folder and then make a file called
 minimum the <a
 href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/BareMinimum">following
 code</a>:</p>
+
 ```cpp
 void setup() {
   // put your setup code here, to run once:
@@ -57,6 +58,7 @@ void loop() {
 
 }
 ```
+
 <p>After saving the code the next step was to ensure the interface with
 the actual Uno device. First I could run
 <code>arduino-cli board list</code> to identify the FQBN (fully
@@ -76,6 +78,7 @@ happened other than the light from the default LED remaining on.
 However, by creating <a
 href="https://create.arduino.cc/projecthub/B45i/getting-started-with-arduino-cli-7652a5">another
 project</a> it would be possible to observe a blinking effect.</p>
+
 ```cpp
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
@@ -88,6 +91,7 @@ void loop() {
     delay(1000);
 }
 ```
+
 <p>Later I was also able to use the VS Code extension and its <a
 href="https://maker.pro/arduino/tutorial/how-to-use-visual-studio-code-for-arduino">board
 configuration settings</a> to upload code from the IDE directly.</p>
@@ -98,6 +102,7 @@ href="https://www.circuitbasics.com/arduino-7-segment-display-tutorial/">another
 guide</a> it was possible to proceed to the next step. The next step was
 to try to use this board with some other hardware! I was able to use a
 basic LED:</p>
+
 ```cpp
 void setup(){
     pinMode(7, OUTPUT);
@@ -107,6 +112,7 @@ void setup(){
 void loop(){ 
 }
 ```
+
 <p>This was wired as follows (refer to the <a
 href="https://www.circuitbasics.com/arduino-7-segment-display-tutorial/">original
 link</a> for more details), using a 1K Ω resistor:</p>

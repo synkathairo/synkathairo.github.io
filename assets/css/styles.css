@@ -42,3 +42,10 @@ a {
     padding-right: 7px;
     font-style: italic;
 }
+#post-info {
+    font-size: .8em;
+    color: gray;
+}
+#post-info:empty, #post-aliases.empty, #post-tag.empty {
+    display: none;
+}

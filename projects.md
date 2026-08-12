@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Charles Zhu's page - Projects"
+permalink: /projects.html
 ---
 
 <!--## Projects-->
