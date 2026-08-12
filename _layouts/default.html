@@ -12,7 +12,9 @@
 	<title>{{ page.title }}</title>
 </head>
 <body>
-{% include topcontent.html %}
+{%- unless layout.nomenu -%}
+    {% include topcontent.html %}
+{%- endunless -%}
 <!--<hr />-->
 {{ content }}
 {%- if page.latex -%}
