@@ -5,7 +5,7 @@ aliases:
   - 矩阵指数
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE6253
 lecture:
@@ -15,8 +15,10 @@ created: 2024-10-21T21:29:49-04:00
 tags:
   - linear_algebra
 ---
+
 ## Definition
-$$\begin{aligned}
+
+$$ \begin{aligned}
 e^{At} \triangleq I + At + A^2\frac{t^2}{2!} + ... = \sum_{i=0}^\infty A^i \frac{t^i}{i!} \\
 \frac{de^{At}}{dt} = A [I + At + A^2 \frac{t^2}{2!} + ...] = Ae^{At}
 \end{aligned}$$
@@ -36,3 +38,4 @@ ___
 1. https://crrl.poly.edu/6253/lectures/lect4.pdf
 2. https://en.wikipedia.org/wiki/Matrix_exponential
 3. https://en.wikipedia.org/wiki/Characterizations_of_the_exponential_function
+$$

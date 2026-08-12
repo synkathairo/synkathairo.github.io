@@ -15,19 +15,22 @@ course:
   - CS6763
   - CS9233
 ---
+
 ## Johnson-Lindenstrauss lemma (1984)
+
 For any set of $n$ data points $\mathbf{q}_1,...,\mathbf{q}_n \in \mathbb{R}^d$, there exists a linear map $\mathbf{\Pi}: \mathbb{R}^d \rightarrow \mathbb{R}^k$ where $k=O(\frac{\log{n}}{\epsilon^2})$ such that for all $i,j$,
 $$(1-\epsilon)||\mathbf{q}_i-\mathbf{q}_j||_2 \leq ||\mathbf{\Pi q}_i-\mathbf{\Pi q}_j||_2 \leq (1+\epsilon)||\mathbf{q}_i-\mathbf{q}_j||_2$$
 
 Equivalently,
 $$(1-\epsilon)||\mathbf{q}_i-\mathbf{q}_j||_2^2 \leq ||\mathbf{\Pi q}_i-\mathbf{\Pi q}_j||_2^2 \leq (1+\epsilon)||\mathbf{q}_i-\mathbf{q}_j||_2^2$$
-because for small $\epsilon$, $(1+\epsilon)^2 = 1+O(\epsilon)$ and  $(1-\epsilon)^2 = 1-O(\epsilon)$.
+because for small $\epsilon$, $(1+\epsilon)^2 = 1+O(\epsilon)$ and $(1-\epsilon)^2 = 1-O(\epsilon)$.
 
 Equivalently,
 $$(1-\epsilon)||\mathbf{\Pi q}_i-\mathbf{\Pi q}_j||_2^2 \leq ||\mathbf{q}_i-\mathbf{q}_j||_2^2 \leq (1+\epsilon)||\mathbf{\Pi q}_i-\mathbf{\Pi q}_j||_2^2$$
 because for small $\epsilon$, $\frac{1}{1+\epsilon}=1-O(\epsilon)$ and $\frac{1}{1-\epsilon}=1+O(\epsilon)$.
 
 Such a map can be computed in $\operatorname{poly}(n,d,1/\epsilon)$-time.
+
 ## Proof using [[distributional Johnson-Lindenstrauss lemma]]:
 
 We have a set of vectors $\mathbf{q}_1,...,\mathbf{q}_n$. Fix $i,j \in \{1,...,n\}$.
@@ -41,10 +44,12 @@ Finally, set $δ = \frac{1}{n^2}$ . Since there are $< n^2$ total $i,j$ pairs, b
 
 $k=O(\frac{\log(1/(1/n^2))}{\epsilon^2})=O(\frac{\log{n}}{\epsilon^2})$ dimensions.
 
-___
+---
+
 This is a type of [[Euclidean dimensionality reduction]].
 
 Reference:
+
 1. W. B. Johnson, J. Lindenstrauss, and G. Schechtman, “Extensions of lipschitz maps into Banach spaces,” _Israel J. Math._, vol. 54, no. 2, pp. 129–138, Jun. 1986, doi: [10.1007/BF02764938](https://doi.org/10.1007/BF02764938).
 2. S. Dasgupta and A. Gupta, “An elementary proof of a theorem of Johnson and Lindenstrauss,” _Random Struct. Alg._, vol. 22, no. 1, pp. 60–65, Jan. 2003, doi: [10.1002/rsa.10073](https://doi.org/10.1002/rsa.10073).
 3. https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma

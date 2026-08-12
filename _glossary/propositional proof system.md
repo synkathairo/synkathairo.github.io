@@ -7,48 +7,50 @@ aliases:
   - pps
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-24T10:44:18-04:00
 tags:
   - logic
   - propositional_logic
 ---
+
 ## Definition
 
-A **propositional proof system** (pps) is a [[class P|polynomial time]] function $f$ with range on set of all propositional tautologies ($\text{TAUT}$). If $A$ is a formula, then any $w$ such that $f(w) = A$ is called a $f$-proof of $A$. Conditions defining *pps*:
+A **propositional proof system** (pps) is a [[class P|polynomial time]] function $f$ with range on set of all propositional tautologies ($\text{TAUT}$). If $A$ is a formula, then any $w$ such that $f(w) = A$ is called a $f$-proof of $A$. Conditions defining _pps_:
 
-- *completeness*: every propositional *tautology* has a $f$-proof
-- *soundness*: if a propositional formula has a $f$-proof then it is a tautology,
-	- that existence of the proof implies the given formula
-- *efficiency*: $f$ runs in polynomial time
+- _completeness_: every propositional _tautology_ has a $f$-proof
+- _soundness_: if a propositional formula has a $f$-proof then it is a tautology,
+  - that existence of the proof implies the given formula
+- _efficiency_: $f$ runs in polynomial time
 
 (concisely: **propositional proof system** is a [[proof calculus|proof system]] for the set $\text{TAUT}$)
 
-An **abstract propositional proof system** is a [[class P|polynomial time]] [[effectively computable|computable function]] $f$ such that the range of $f$ is $\text{TAUT}$, the set of all boolean (propositional) tautologies. An *$f$-proof* of a formula $A$ is a string $w$ such that $f(w) = A$.
+An **abstract propositional proof system** is a [[class P|polynomial time]] [[effectively computable|computable function]] $f$ such that the range of $f$ is $\text{TAUT}$, the set of all boolean (propositional) tautologies. An _$f$-proof_ of a formula $A$ is a string $w$ such that $f(w) = A$.
 
 ## Notes
 
-- for *abstract propositional proof system*, $f$ need not be *polynomially honest*, i.e. does not need to be a polynomial $p$ such that $\forall w$, $p(|f(w)|) > |w|$ 
+- for _abstract propositional proof system_, $f$ need not be _polynomially honest_, i.e. does not need to be a polynomial $p$ such that $\forall w$, $p(|f(w)|) > |w|$
 - can it be considered a [[class dIP|dIP]]?
-	- the language of tautologies, $\text{TAUT}$
-	- *completeness*: $A \in \text{TAUT}$ implies $\exists w$ s.t. $V(A,w) = 1$ 
-		- i.e. every propositional tautology $A$ has an $f$-proof
-	- *soundness*: $A \notin \text{TAUT}$ implies $\forall w$, $V(A,w) = 0$
-		- (contrapositive of above pps soundness, if not tautology, does not have an $f$-proof, hence verifier fails)
+  - the language of tautologies, $\text{TAUT}$
+  - _completeness_: $A \in \text{TAUT}$ implies $\exists w$ s.t. $V(A,w) = 1$
+    - i.e. every propositional tautology $A$ has an $f$-proof
+  - _soundness_: $A \notin \text{TAUT}$ implies $\forall w$, $V(A,w) = 0$
+    - (contrapositive of above pps soundness, if not tautology, does not have an $f$-proof, hence verifier fails)
 - is a [[proof calculus|proof system]]
 - so, PPS $\subseteq$ [[class NP|NP]]?
-	- see also [[Fagin's theorem]], [[existential second-order logic|ESO]] and [[Church-Turing thesis]]
-	- implies PPS can be written as ESO
+  - see also [[Fagin's theorem]], [[existential second-order logic|ESO]] and [[Church-Turing thesis]]
+  - implies PPS can be written as ESO
 
 ## See also
 
 - [[Frege proof system]]
-	- *Hilbert system*
+  - _Hilbert system_
 
-___
+---
+
 ## References
 
 1. https://mathweb.ucsd.edu/~sbuss/CourseWeb/Math268_2014W/Beame_IAS_proofcomplexity.pdf

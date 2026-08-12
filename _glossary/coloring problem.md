@@ -11,30 +11,35 @@ aliases:
 type:
   - definition
   - computational problem
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-05-20T18:03:07-04:00
 tags:
   - complexity_theory
 ---
+
 ## Definition
-Given [[undirected graph|graph]] $G(V,E)$, the **coloring problem** asks for an assignment of $k$ *colors* to vertices $c: V \to \{1,2,...,k\}$. A coloring is **proper** if adjacent vertices receive different *colors*, i.e. $\forall (u,v) \in E$, $c(u) \neq c(v)$.
 
-The **minimum coloring problem** asks for the smallest $k$ to properly *color* $G$.
+Given [[undirected graph|graph]] $G(V,E)$, the **coloring problem** asks for an assignment of $k$ _colors_ to vertices $c: V \to \{1,2,...,k\}$. A coloring is **proper** if adjacent vertices receive different _colors_, i.e. $\forall (u,v) \in E$, $c(u) \neq c(v)$.
 
-The **k-coloring problem** asks whether $G$ can be *properly colored* using $k$ *colors*.
+The **minimum coloring problem** asks for the smallest $k$ to properly _color_ $G$.
 
-We call the subset of vertices receiving the same *color* a **color class**. In a *proper coloring* every *color class* is an [[independent set]] (i.e. no two vertices in the set are *adjacent*, meaning no two vertices in the set share an edge).
+The **k-coloring problem** asks whether $G$ can be _properly colored_ using $k$ _colors_.
 
-The **chromatic number** of a graph is the smallest $k$ such that $G$ admits a *k-proper coloring*.
+We call the subset of vertices receiving the same _color_ a **color class**. In a _proper coloring_ every _color class_ is an [[independent set]] (i.e. no two vertices in the set are _adjacent_, meaning no two vertices in the set share an edge).
+
+The **chromatic number** of a graph is the smallest $k$ such that $G$ admits a _k-proper coloring_.
 
 ## 3-coloring
-Theorem, *3-coloring* is [[class NP-complete|NP-complete]].
+
+Theorem, _3-coloring_ is [[class NP-complete|NP-complete]].
 
 [[k-SAT problem|3SAT]]
 
-___
+---
+
 ## References
+
 1. https://www.cs.toronto.edu/~lalla/373s16/notes/3col.pdf

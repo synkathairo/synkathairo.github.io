@@ -14,11 +14,12 @@ statement: vector space over $\mathbb{R}$ with inner product
 created: 2025-06-01T20:36:26-04:00
 tags:
 ---
+
 ## Definition
 
 A **Hilbert space** is a [[vector space]] $H$ with [[inner product]] $\langle f,g \rangle$ such that the [[norm]] defined by $\lvert f \rvert = \sqrt{\langle f,f \rangle}$ turns $H$ into a [[complete metric space]]
 
-(i.e. [[complete metric space|complete]] [[inner product]] *space*, whereas an *inner product space* may be known as a *pre-Hilbert space*)
+(i.e. [[complete metric space|complete]] [[inner product]] _space_, whereas an _inner product space_ may be known as a _pre-Hilbert space_)
 
 ## Lean4 definition
 
@@ -34,11 +35,13 @@ structure HilbertSpace (𝕜 E : Type*) [RCLike 𝕜]
 
 ## Notes
 
-- examples: 
-	- [[real numbers]] $\mathbb{R}^n$ with $\langle v,u \rangle$ vector dot product of $v$ and $u$
+- examples:
+  - [[real numbers]] $\mathbb{R}^n$ with $\langle v,u \rangle$ vector dot product of $v$ and $u$
 
-___
+---
+
 ## References
+
 1. https://en.wikipedia.org/wiki/Hilbert_space
 2. https://ncatlab.org/nlab/show/Hilbert+space
 3. https://ncatlab.org/nlab/show/an+elementary+treatment+of+Hilbert+spaces

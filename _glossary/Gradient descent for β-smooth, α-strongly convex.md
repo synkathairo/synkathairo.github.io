@@ -5,12 +5,12 @@ aliases:
   - GD for β-smooth, α-strongly convex
 type:
   - theorem
-reference: 
+reference:
 course:
   - CS6763
 lecture:
   - cs6763-8
-statement: 
+statement:
 created: 2023-11-30T02:38:11-05:00
 ---
 
@@ -19,6 +19,6 @@ $$||\mathbf{x}^{(T)} − \mathbf{x}^*||_2^2 ≤ e^{−T\frac{α}{β}} ||\mathbf{
 
 $\kappa = \frac{\beta}{\alpha}$ is called the **condition number** of $f$
 
+---
 
-___
 compare: [[Gradient descent convergence for β-smooth functions]], [[Gradient descent convergence for α-strongly convex functions]]

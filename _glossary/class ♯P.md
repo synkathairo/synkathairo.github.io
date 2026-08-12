@@ -17,11 +17,12 @@ created: 2025-03-04T21:07:02-05:00
 tags:
   - complexity_theory
 ---
+
 ## Definition
 
-The **class \#P** is defined as 
+The **class \#P** is defined as
 
-#incomplete 
+#incomplete
 
 ## Notes
 
@@ -31,6 +32,8 @@ The **class \#P** is defined as
 
 - [[class NP]]
 
-___
+---
+
 ## References
+
 1. https://en.wikipedia.org/wiki/%E2%99%AFP

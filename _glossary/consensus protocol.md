@@ -13,21 +13,22 @@ tags:
   - cryptography
   - distributed_computing
 ---
+
 ## Overview
 
 Strong form of consensus: given set of processors, each with an initial value:
 
-- *termination*: all non-faulty processes eventually [[effectively decidable|decide]] on a value
-- *agreement*: all processes that decide do so on the same value
-- *validity*: value that is decided must have been proposed by some process
+- _termination_: all non-faulty processes eventually [[effectively decidable|decide]] on a value
+- _agreement_: all processes that decide do so on the same value
+- _validity_: value that is decided must have been proposed by some process
 
 weaker form: allow that only some non-faulty process decides for termination
 
 ## Formal definition (see )
 
-**Consensus protocol** $P$ is an *asynchronous system* of $N \geq 2$ processes. 
+**Consensus protocol** $P$ is an _asynchronous system_ of $N \geq 2$ processes.
 
-#incomplete 
+#incomplete
 
 ## Notes
 
@@ -35,7 +36,8 @@ weaker form: allow that only some non-faulty process decides for termination
 - addresses the [[Byzantine agreement problem]] (consensus problem) of distributed computing, agreement between network nodes
 - [[Fischer-Lynch-Paterson theorem|Fischer-Lynch-Paterson result]]
 
-___
+---
+
 ## References
 
 1. Fischer MJ, Lynch NA, Paterson MS. Impossibility of distributed consensus with one faulty process. Journal of the ACM (JACM). 1985 Apr 1;32(2):374-82. https://doi.org/10.1145/3149.214121

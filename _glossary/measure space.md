@@ -1,20 +1,24 @@
 ---
 layout: entry
 title: measure space
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
+reference:
+course:
+lecture:
 statement: A [[measurable space]] equipped with a *measure*.
 created: 2025-04-13T19:10:51-04:00
 tags:
   - measure_theory
 ---
-## Definition
-A [[measurable space]] equipped with a *measure*.
 
-___
+## Definition
+
+A [[measurable space]] equipped with a _measure_.
+
+---
+
 ## References
+
 1. https://ncatlab.org/nlab/show/measure+space

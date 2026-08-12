@@ -15,6 +15,7 @@ created: 2025-02-13T22:01:37-05:00
 tags:
   - convex_optimization
 ---
+
 ## Definition
 
 Suppose function $f$ which is [[convex function|convex]] and [[differentiable function|differentiable]], where $\mathrm{dom} f = \mathbb{R}^n$. then any maximizer $x^*$ of $y^T x - f(x)$ satisfies $y = \nabla f(x^*)$, conversely, if $x^*$ satisfies $y = \nabla f(x^*)$, then $x^*$ maximizes $y^T x - f(x)$. Therefore, if $y = \nabla f(x^*)$, have $$f^*(y) = x^{*T} \nabla f(x^*) - f(x^*)$$
@@ -26,9 +27,10 @@ or simply, given function $f$, $$f^*(y) = \sup_{x \in \operatorname{dom}(f)} (y^
 
 - Intuition: for given slope, find "highest" line that minorizes (i.e. lives below) function, i.e. line with largest possible intercept, which is $-f^*(y)$
 - role in [[Fenchel duality]]
-	- see [[weak duality]], [[strong duality]]
+  - see [[weak duality]], [[strong duality]]
 
-___
+---
+
 ## References
 
 1. https://en.m.wikipedia.org/wiki/Convex_conjugate

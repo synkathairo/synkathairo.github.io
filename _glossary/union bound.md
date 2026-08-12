@@ -5,7 +5,7 @@ aliases:
   - Boole's inequality
 type:
   - lemma
-reference: 
+reference:
 lecture:
   - cs6763-1
 statement: $\mathrm{Pr}[A_1 \cup A_2 \cup ... \cup A_k] \leq \mathrm{Pr}[A_1] + \mathrm{Pr}[A_2] + ... + \mathrm{Pr}[A_k]$
@@ -16,17 +16,21 @@ course:
 tags:
   - probability
 ---
+
 ## Lemma
 
-For any random *events* $A_1,...,A_k$ (*countable*):
+For any random _events_ $A_1,...,A_k$ (_countable_):
 $$\mathrm{Pr}[A_1 \cup A_2 \cup ... \cup A_k] \leq \mathrm{Pr}[A_1] + \mathrm{Pr}[A_2] + ... + \mathrm{Pr}[A_k]$$
 
 (here in $\mathrm{Pr}[A_1 \cup A_2 \cup ... \cup A_k]$, $\cup$ means “or”)
 
 ## Notes
-- follows from fact that a [[measure]] (such as a *probability measure*) is $\sigma$-*sub-additive*, so it holds not only for probability, but for any finite measure
 
-___
+- follows from fact that a [[measure]] (such as a _probability measure_) is $\sigma$-_sub-additive_, so it holds not only for probability, but for any finite measure
+
+---
+
 ## References
+
 1. https://en.wikipedia.org/wiki/Boole%27s_inequality
 2. https://www.probabilitycourse.com/chapter6/6_2_1_union_bound_and_exten.php

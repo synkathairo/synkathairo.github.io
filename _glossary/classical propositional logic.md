@@ -6,27 +6,29 @@ aliases:
   - classical logic
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-03T16:20:31-04:00
 tags:
   - logic
   - propositional_logic
 ---
+
 ## Definition
 
-Classical propositional logic is that branch of [[propositional logic]] based on *Aristotelian logic*, with tenets:
+Classical propositional logic is that branch of [[propositional logic]] based on _Aristotelian logic_, with tenets:
 
-1. A *statement* must be either *true* or *false*, and there can be no *middle value* ([[law of excluded middle]])
-2. A *statement* cannot be both *true* and *not true* at the same time, i.e. cannot *contradict itself* (*principle of non-contradiction*)
+1. A _statement_ must be either _true_ or _false_, and there can be no _middle value_ ([[law of excluded middle]])
+2. A _statement_ cannot be both _true_ and _not true_ at the same time, i.e. cannot _contradict itself_ (_principle of non-contradiction_)
 
 ## Notes
 
-- Consider the [[formal language of propositional logic]] $\mathcal{L}_0$ which, endowed with *deductive apparatus* (*axioms* and *rules of inference*), is made into a *formal system*
+- Consider the [[formal language of propositional logic]] $\mathcal{L}_0$ which, endowed with _deductive apparatus_ (_axioms_ and _rules of inference_), is made into a _formal system_
 
-___
+---
+
 ## References
 
 1. https://proofwiki.org/wiki/Definition:Classical_Propositional_Logic

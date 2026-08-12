@@ -5,7 +5,7 @@ aliases:
   - noncooperative (Nash) equilibrium outcome
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE6263
 lecture:
@@ -15,9 +15,12 @@ created: 2024-11-14T18:24:04-05:00
 tags:
   - game_theory
 ---
+
 ## Definition
+
 A pair of strategies $\{\text{row } i^*, \text{column } j^*\}$ is said to constitute a **noncooperative (Nash) equilibrium solution** to a bimatrix game if the following pair of inequalities is satisfied for all $i=1,...,m$ and all $j=1,...,n$:
-$$\begin{aligned}
+
+$$ \begin{aligned}
 a_{i^* j^*} \leq a_{ij^*} \\
 b_{i^* j^*} \leq b_{i^* j}
 \end{aligned}$$
@@ -32,7 +35,7 @@ $$\begin{aligned}
 with the pair $({y^*}' A z^*, {y^*}' B z^*)$ known as a **noncooperative (Nash) equilibrium outcome** of the bimatrix game in mixed strategies.
 
 ### Proposition
-Let $\mathring{Y}, \mathring{Z}$  denote sets of inner points (interiors) of $Y$ and $Z$, respectively. If bimatrix game $(A, B)$ admits a [[mixed strategy]] [[Nash equilibrium]] solution $\{y^* \in \mathring{Y}, z^* \in \mathring{Z} \}$, then this also serves as a mixed-strategy solution for the bimatrix game $(-A, -B)$. 
+Let $\mathring{Y}, \mathring{Z}$  denote sets of inner points (interiors) of $Y$ and $Z$, respectively. If bimatrix game $(A, B)$ admits a [[mixed strategy]] [[Nash equilibrium]] solution $\{y^* \in \mathring{Y}, z^* \in \mathring{Z} \}$, then this also serves as a mixed-strategy solution for the bimatrix game $(-A, -B)$.
 
 (Known also as *completely mixed Nash equilibrium solution* or *inner mixed-strategy Nash equilibrium solution*.)
 
@@ -45,3 +48,4 @@ ___
 
 ## References
 1. T. Başar and G.J. Olsder, *Dynamic Noncooperative Game Theory*, 2nd edition, Classics in Applied Mathematics, SIAM, Philadelphia, 1999, pp. 78-79, 85-86, 91-94.
+$$

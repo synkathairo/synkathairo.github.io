@@ -12,10 +12,12 @@ tags:
   - type_theory
 ---
 
-#incomplete 
+#incomplete
 
 [[type]]
 
-___
+---
+
 ## References
+
 1. https://ncatlab.org/nlab/show/dependent+type+theory

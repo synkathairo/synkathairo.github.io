@@ -1,20 +1,22 @@
 ---
 layout: entry
 title: big-Oh notation
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-01-23T17:01:25-05:00
 tags:
   - complexity_theory
 ---
+
 ## Definition
 
-If $f$, $g$ are two functions from $\mathbb{N}$ to $\mathbb{N}$, then we say that 
+If $f$, $g$ are two functions from $\mathbb{N}$ to $\mathbb{N}$, then we say that
+
 1. $f = O(g)$ if $\exists c$ such that $f(n) \leq c \cdot g(n)$ for every sufficiently large $n$
 2. $f = \Omega(g)$ if $g = O(f)$
 3. $f = \Theta(n)$ if $f = O(g)$ and $g = O(f)$
@@ -29,11 +31,13 @@ Notation: may also write as $f(n) = O(g(n))$ etc.
 
 ## See also
 
-- *complexity class*
+- _complexity class_
 - [[class DTIME|DTIME]]
 
-___
+---
+
 ## References
-1. S. Arora, B. Barak. *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, pp. 3-4.
+
+1. S. Arora, B. Barak. _Computational Complexity: A Modern Approach_, Cambridge University Press, 2009, pp. 3-4.
 2. https://en.wikipedia.org/wiki/Big_O_notation
 3. https://cs.stackexchange.com/questions/63264/what-does-tilde-mean-in-big-o-notation

@@ -13,11 +13,13 @@ created: 2024-12-18T21:24:03-05:00
 tags:
   - cryptography
 ---
+
 ## Definition
 
-#incomplete 
+#incomplete
 
-___
+---
+
 ## References
 
 1. A. C.-C. Yao, “How to generate and exchange secrets,” in _27th Annual Symposium on Foundations of Computer Science (sfcs 1986)_, Toronto, ON, Canada: IEEE, Oct. 1986, pp. 162–167. doi: [10.1109/sfcs.1986.25](https://doi.org/10.1109/sfcs.1986.25).

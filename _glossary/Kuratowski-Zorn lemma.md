@@ -16,9 +16,11 @@ created: 2025-10-09T15:58:15-04:00
 tags:
   - analysis
 ---
+
 ## Lemma
 
-Suppose $S$ is any nonempty [[partial order|partially ordered set]], where every [[chain]] in $S$ has an upper bound in $S$, then $S$ has at least one *maximal element*
+Suppose $S$ is any nonempty [[partial order|partially ordered set]], where every [[chain]] in $S$ has an upper bound in $S$, then $S$ has at least one _maximal element_
+
 ## Notes
 
 - statement is equivalent to [[axiom of choice]]
@@ -27,7 +29,8 @@ Suppose $S$ is any nonempty [[partial order|partially ordered set]], where every
 
 - [[Hahn-Banach theorem]]
 
-___
+---
+
 ## References
 
 1. https://mathworld.wolfram.com/ZornsLemma.html

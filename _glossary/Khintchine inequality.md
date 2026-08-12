@@ -15,16 +15,19 @@ created: 2025-10-08T16:19:38-04:00
 tags:
   - probability
 ---
+
 ## Lemma (Rademacher concentration inequality)
 
-Let $R_1,…,R_n$ be [[Rademacher concentration|Rademacher random variables]] (i.e. [[uniform distribution|uniform]] $\pm 1$). Then for any vector $\mathbf{a} \in \mathbb{R}^n$, 
+Let $R_1,…,R_n$ be [[Rademacher concentration|Rademacher random variables]] (i.e. [[uniform distribution|uniform]] $\pm 1$). Then for any vector $\mathbf{a} \in \mathbb{R}^n$,
 $$\mathrm{Pr}\left[ \sum_{i=1}^n R_i a_i \geq t \lVert \mathbf{a} \rVert_2 \right] \leq e^{-t^2 /2}$$
 This is the **Khintchine inequality**.
 
 ## Notes
+
 - compare to [[Bernstein inequality]]
 
-___
+---
+
 ## References
 
 1. https://www.chrismusco.com/amlds2023/lectures/lec13_annotated.pdf

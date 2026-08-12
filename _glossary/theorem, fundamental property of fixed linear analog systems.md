@@ -1,10 +1,10 @@
 ---
 layout: entry
 title: theorem, fundamental property of fixed linear analog systems
-aliases: 
+aliases:
 type:
   - theorem
-reference: 
+reference:
 course:
   - ECE6253
 lecture:
@@ -14,14 +14,15 @@ created: 2024-11-26T08:51:15-05:00
 tags:
   - control_theory
 ---
+
 ## Theorem
-If $S$ is a [[fixed system|fixed]] (time-invariant) linear [[continuous time state equations|analog]] (continuous-time) system then the *zero-state response*
+
+If $S$ is a [[fixed system|fixed]] (time-invariant) linear [[continuous time state equations|analog]] (continuous-time) system then the _zero-state response_
 $$S\{e^{st}\} = H(s) \{e^{st}\}$$
 where $H(s)$ is the [[transfer function]]
 
+---
 
-
-
-___
 ## References
-1. P. E. Sarachik, *Principles of Linear Systems*, Cambridge Press, 1996, p. 98.
+
+1. P. E. Sarachik, _Principles of Linear Systems_, Cambridge Press, 1996, p. 98.

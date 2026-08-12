@@ -5,7 +5,7 @@ aliases:
   - SVD
 type:
   - theorem
-reference: 
+reference:
 course:
   - CS6763
 lecture:
@@ -13,6 +13,7 @@ lecture:
 statement: Without loss of generality, suppose that $n \geq d$. Any matrix $\mathbf{X} \in \mathbb{R}^{n \times d}$ can be written in the form:$$\mathbf{X} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^{\sf T}$$
 created: 2023-12-03T20:09:28-05:00
 ---
+
 Without loss of generality, suppose that $n \geq d$. Any matrix $\mathbf{X} \in \mathbb{R}^{n \times d}$ can be written in the form:
 $$\mathbf{X} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^{\sf T}$$
 ![[Pasted image 20231203201544.png]]
@@ -24,13 +25,14 @@ Denote the left singular vectors as columns in matrix $\mathbf{U}$ ($n \times d$
 The following are satisfied: $\mathbf{U}^{\sf T} \mathbf{U} = \mathbf{I}$, $\mathbf{V}^{\sf T} \mathbf{V} = \mathbf{I}$, and $\sigma_1 \geq \sigma_2 \geq … \sigma_d \geq 0$.
 
 This is called the **Singular Value Decomposition (SVD)** of $\mathbf{X}$.
-- The diagonals of $\mathbf{\Sigma}$ are called *singular values* of $\mathbf{X}$ (often sorted in decreasing order).
-- The columns of $\mathbf{U}$ are called the *left singular vectors* of $\mathbf{X}$.
-- The columns of $\mathbf{V}$ are called the *right singular vectors* of $\mathbf{X}$.
+
+- The diagonals of $\mathbf{\Sigma}$ are called _singular values_ of $\mathbf{X}$ (often sorted in decreasing order).
+- The columns of $\mathbf{U}$ are called the _left singular vectors_ of $\mathbf{X}$.
+- The columns of $\mathbf{V}$ are called the _right singular vectors_ of $\mathbf{X}$.
 
 ## Characteristics
-#incomplete 
 
+#incomplete
 
 ## Geometric interpretation of SVD
 
@@ -41,15 +43,16 @@ SVD of $\mathbf{A}$ indicates linear transformation $f$ can be decomposed into a
 $$\mathbf{Ax} = \mathbf{U} \cdot \mathbf{\Sigma} \cdot \mathbf{V}^{\sf T}\mathbf{x}$$
 full transformation equals rotation rescaling rotation
 
+---
 
-
-___
 “one of the most fundamental results in linear algebra”
 
-___
+---
+
 See also: [[spectral decomposition]]
 
-___
+---
+
 ## References:
 
 1. https://www.chrismusco.com/amlds2023/notes/lecture11.html#Singular_Value_Decomposition

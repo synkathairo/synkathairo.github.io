@@ -5,7 +5,7 @@ aliases:
   - distributional JL Lemma
 type:
   - lemma
-reference: 
+reference:
 lecture:
   - cs6763-5
   - cs6763-12
@@ -22,12 +22,14 @@ $$(1-\epsilon)||\mathbf{x}||_2^2 \leq ||\mathbf{\Pi x}||_2^2 \leq (1+\epsilon)||
 May be used to prove [[Johnson-Lindenstrauss lemma]].
 
 ## Corollary
-For any fixed $\mathbf{x}$, 
+
+For any fixed $\mathbf{x}$,
 
 #incomplete (TODO: see lecture 12 )
 
 ## Proof
-Want to argue that, with probability $(1-\delta)$, 
+
+Want to argue that, with probability $(1-\delta)$,
 $$(1-\epsilon)||\mathbf{x}||_2^2 \leq ||\mathbf{\Pi x}||_2^2 \leq (1+\epsilon)||\mathbf{x}||_2^2$$
 Claim: $\mathbb{E}||\mathbf{\Pi x}||_2^2 = ||\mathbf{x}||_2^2$
 
@@ -52,7 +54,8 @@ $$||\mathbf{\Pi x}||_2^2=\frac{1}{k}\sum_{i=1}^k(\langle \mathbf{\pi}_i, \mathbf
 
 “chi-squared random variable with $k$ degrees of freedom”
 
-___
+---
+
 See [[Gaussian distribution|Gaussian concentration]]
 
 See also: [[CS6763 Homework 2#Proof of $ mathbb{E}[ mathbf{ Pi x} _2 2]= mathbf{x} _2 2$|Homework 2]] for proof of $\mathbb{E}[||\mathbf{\Pi x}||_2^2]=||\mathbf{x}||_2^2$

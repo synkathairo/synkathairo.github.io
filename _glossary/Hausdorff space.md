@@ -16,13 +16,13 @@ created: 2026-01-06T18:04:52-05:00
 tags:
   - topology
 ---
+
 ## Definition
-#incomplete 
+
+#incomplete
 
 $T_2$
 
-
-
 [[separation axioms]]
 
-___
+---

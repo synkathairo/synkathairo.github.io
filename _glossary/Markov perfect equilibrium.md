@@ -12,15 +12,17 @@ created: 2025-10-21T19:08:55-04:00
 tags:
   - game_theory
 ---
+
 ## Definition
 
 A **Markov perfect equilibrium**
 
-#incomplete 
+#incomplete
 
 (see [[Nash equilibrium]], [[trembling hand perfect Nash equilibrium|perfect equilibrium]], [[subgame perfect equilibrium]], )
 
-___
+---
+
 ## References
 
 1. https://en.wikipedia.org/wiki/Markov_perfect_equilibrium

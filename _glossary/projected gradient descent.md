@@ -3,7 +3,7 @@ layout: entry
 title: projected gradient descent
 type:
   - approach
-reference: 
+reference:
 course:
   - CS6763
 lecture:
@@ -11,11 +11,12 @@ lecture:
 statement: $x^{(t+1)} = P_{\mathcal{S}} (x^{(t)} - \eta \nabla f(x^{(t)}))$
 created: 2023-11-14T21:25:42-05:00
 ---
+
 ## Overview
 
 **Projected gradient descent** is a simple modification of [[gradient descent]]. Instead of setting the next iterate to
 
-$$\begin{aligned}
+$$ \begin{aligned}
 x^{(t+1)} = x^{(t)} - \eta \nabla f(x^{(t)}),
 \end{aligned}$$
 we set the next iterate to
@@ -58,3 +59,4 @@ ___
 ## References:
 1. https://angms.science/doc/CVX/CVX_PGD.pdf
 2. https://www.chrismusco.com/amlds2023/notes/lecture06.html#Projected_Gradient_Descent
+$$

@@ -12,6 +12,7 @@ created: 2025-10-16T14:37:33-04:00
 tags:
   - topology
 ---
+
 ## Definition
 
 A **complete metric space** is a [[metric space]] in which every [[Cauchy sequence]] is [[convergence|convergent]].
@@ -27,11 +28,13 @@ class CompleteSpace (α : Type u) [UniformSpace α] : Prop where
 ```
 
 (Cauchy [[filter]] is generalization of Cauchy sequence)
+
 ## Notes
 
 - examples: [[real numbers]] with usual metric, complex numbers, etc
 
-___
+---
+
 ## References
 
 1. https://mathworld.wolfram.com/CompleteMetricSpace.html

@@ -7,16 +7,17 @@ aliases:
   - probabilistic polynomial time
 type:
   - definition
-reference: 
+reference:
 course:
   - CSCI3210
 lecture:
   - csci3210-6
-statement: 
+statement:
 created: 2025-07-15T18:45:08-04:00
 tags:
   - complexity_theory
 ---
+
 ## Definition
 
 $\mathbf{PPT}$ or $\mathbf{PP}$ is the class of [[decision problem|decision problems]] solvable by a [[probabilistic Turing machine]] in [[class P|polynomial time]], with error probability less than $1/2$ for all instances.
@@ -31,9 +32,10 @@ $\mathbf{PPT}$ or $\mathbf{PP}$ is the class of [[decision problem|decision prob
 - [[class P|P]]
 - [[class BPP|BPP]]
 - [[polynomial hierarchy|PH]]
-	- Toda's theorem
+  - Toda's theorem
 
-___
+---
+
 ## References
 
 1. <https://en.wikipedia.org/wiki/PP_(complexity)>

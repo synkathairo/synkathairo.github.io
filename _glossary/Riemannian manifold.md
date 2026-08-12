@@ -1,23 +1,27 @@
 ---
 layout: entry
 title: Riemannian manifold
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-04-16T22:52:56-04:00
 tags:
   - geometry
 ---
+
 ## Definition
-A **Riemannian manifold** is a [[smooth manifold]] equipped with a *Riemannian metric*.
+
+A **Riemannian manifold** is a [[smooth manifold]] equipped with a _Riemannian metric_.
 
 [[metric]]
-#incomplete 
+#incomplete
 
-___
+---
+
 ## References
+
 1. https://ncatlab.org/nlab/show/Riemannian+manifold

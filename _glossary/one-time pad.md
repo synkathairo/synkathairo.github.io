@@ -6,7 +6,7 @@ aliases:
 type:
   - definition
   - proposition
-reference: 
+reference:
 course:
   - CSCI3210
 lecture:
@@ -16,9 +16,12 @@ created: 2024-11-20T21:20:22-05:00
 tags:
   - cryptography
 ---
+
 ## Definition
+
 Let $\mathcal{M} = \{0,1\}^n$, $\mathcal{K} = \{0,1\}^n$, $\mathcal{C} = \{0,1\}^n$,
-$$\begin{aligned}
+
+$$ \begin{aligned}
 \operatorname{Enc}_\mathbf{K}(m) & = m \oplus k  \\
 \operatorname{Dec}_\mathbf{K}(m) & = c \oplus k
 \end{aligned}$$
@@ -35,3 +38,4 @@ ___
 2. Vernam, 1917
 3. Shannon, 1949
 4. https://github.com/cpeikert/TheoryOfCryptography/blob/master/lec01%20-%20Overview%20and%20Perfect%20Secrecy.pdf
+$$

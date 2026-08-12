@@ -15,16 +15,17 @@ tags:
   - stochastic_processes
   - calculus
 ---
+
 ## Lemma
 
 For $W_t$ [[Wiener process|Brownian motion]]
 
+for 1-dimensional [[Itô process]],
 
-for 1-dimensional [[Itô process]], 
+#incomplete
 
-#incomplete 
+---
 
-___
 ## References
 
 1. https://martin-haugh.github.io/files/FoundationsFE/IntroStochCalc.pdf

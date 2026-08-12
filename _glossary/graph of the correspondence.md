@@ -1,10 +1,10 @@
 ---
 layout: entry
 title: graph of the correspondence
-aliases: 
+aliases:
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE6263
 lecture:
@@ -14,10 +14,13 @@ created: 2024-12-09T22:11:12-05:00
 tags:
   - analysis
 ---
+
 ## Definition
+
 Given $A \subset \mathbb{R}^N$ and $Y \subset \mathbb{R}^K$, the **graph of the correspondence** $f : A \mapsto Y$ is the set
 $$\{(x,y) \in A \times Y : y \in f(x)\}$$
 
 ## See also
+
 - [[correspondence]]
 - [[graph of a function]]

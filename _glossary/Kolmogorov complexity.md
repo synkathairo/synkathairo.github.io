@@ -9,28 +9,33 @@ aliases:
   - 柯尔莫戈洛夫复杂性
 type:
   - definition
-reference: 
-course: 
-lecture: 
+reference:
+course:
+lecture:
 statement: "$K(x) := C_U(x) = \\min\\{\\lvert \\langle M,w \\rangle \\rvert : \\text{TM }M\\text{ halts on input }w\\text{ and outputs }x\\}$"
 created: 2025-03-12T22:54:34-04:00
 tags:
   - information_theory
   - complexity_theory
 ---
+
 ## Definition
-The **Kolmogorov complexity** of a *string* $x$ is 
+
+The **Kolmogorov complexity** of a _string_ $x$ is
 $$K(x) := C_U(x) = \min\{\lvert \langle M,w \rangle \rvert : \text{TM }M\text{ halts on input }w\text{ and outputs }x\}$$
 
 (see: [[halting problem]], [[Turing machine]])
 
 ## See also
+
 - [[incompressible string]]
 - [[entropy of a random variable]]
-- *minimum description length* (MDL)
+- _minimum description length_ (MDL)
 
-___
+---
+
 ## References
+
 1. https://en.wikipedia.org/wiki/Kolmogorov_complexity
 2. https://www.sciencedirect.com/topics/computer-science/kolmogorov-complexity
 3. https://nautil.us/kolmogorov-complexity-and-our-search-for-meaning-237158/

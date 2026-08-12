@@ -12,8 +12,10 @@ tags:
   - optimization
 ---
 
-#incomplete 
+#incomplete
 
-___
+---
+
 ## References
+
 1. https://cs.stanford.edu/~ambrad/adjoint_tutorial.pdf

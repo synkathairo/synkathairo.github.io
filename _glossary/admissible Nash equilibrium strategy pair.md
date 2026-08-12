@@ -1,10 +1,10 @@
 ---
 layout: entry
 title: admissible Nash equilibrium strategy pair
-aliases: 
+aliases:
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE6263
 lecture:
@@ -14,9 +14,13 @@ created: 2024-11-17T17:37:26-05:00
 tags:
   - game_theory
 ---
-## Definition
-A [[Nash equilibrium]] [[strategy]] pair is said to be *admissible* if there exists no better Nash equilibrium strategy pair.
 
-___
+## Definition
+
+A [[Nash equilibrium]] [[strategy]] pair is said to be _admissible_ if there exists no better Nash equilibrium strategy pair.
+
+---
+
 ## References
-1. T. Başar and G.J. Olsder, *Dynamic Noncooperative Game Theory*, 2nd edition, Classics in Applied Mathematics, SIAM, Philadelphia, 1999, p. 79.
+
+1. T. Başar and G.J. Olsder, _Dynamic Noncooperative Game Theory_, 2nd edition, Classics in Applied Mathematics, SIAM, Philadelphia, 1999, p. 79.

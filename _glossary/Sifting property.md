@@ -1,9 +1,9 @@
 ---
 layout: entry
 title: Sifting property
-aliases: 
-type: 
-reference: 
+aliases:
+type:
+reference:
 course:
   - ECE6253
 lecture:
@@ -11,6 +11,7 @@ lecture:
 statement: $f(\tau)=\int_{-\infty}^\infty f(\lambda) \delta (\tau - \lambda) d \lambda$
 created: 2024-10-21T16:31:37-04:00
 ---
+
 ## Continuous form
 
 see [[delta function|δ-function]],

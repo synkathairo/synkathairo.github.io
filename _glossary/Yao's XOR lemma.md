@@ -13,11 +13,13 @@ created: 2025-08-01T18:13:36-04:00
 tags:
   - cryptography
 ---
+
 ## Lemma
 
-#incomplete 
+#incomplete
 
-___
+---
+
 ## References
 
 1. <https://crypto.stanford.edu/~dabo/courses/cs355_fall07/yao.pdf>

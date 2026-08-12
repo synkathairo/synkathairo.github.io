@@ -14,7 +14,9 @@ created: 2026-01-06T15:08:47-05:00
 tags:
   - topology
 ---
-#incomplete 
+
+#incomplete
 
 ## References
+
 1. https://ncatlab.org/nlab/show/topological+base

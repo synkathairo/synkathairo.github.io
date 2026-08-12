@@ -16,9 +16,13 @@ tags:
   - analysis
   - topology
 ---
-## Definition (*continuous map between topological spaces*)
-Define a **continuous map** between [[topological space|topological spaces]] $X$ and $Y$ as a [[function|mapping]] $f$ such that for every [[open set]] $V$ in $Y$, *preimage* $f^{-1}(V)$ is also an *open set* in $X$.
 
-___
+## Definition (_continuous map between topological spaces_)
+
+Define a **continuous map** between [[topological space|topological spaces]] $X$ and $Y$ as a [[function|mapping]] $f$ such that for every [[open set]] $V$ in $Y$, _preimage_ $f^{-1}(V)$ is also an _open set_ in $X$.
+
+---
+
 ## References
+
 1. http://staff.ustc.edu.cn/~wangzuoq/Courses/18F-Manifolds/Notes/Lec01.pdf

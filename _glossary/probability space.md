@@ -1,10 +1,10 @@
 ---
 layout: entry
 title: probability space
-aliases: 
+aliases:
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE6303
 lecture:
@@ -14,13 +14,17 @@ created: 2025-04-13T19:15:27-04:00
 tags:
   - probability
 ---
+
 ## Definition
-The **probability space** $(S,\mathcal{F},P)$ is defined over *universal set* $S$ (the *sample space* in probability theory serves as the *universal set* from set theory in this context), [[Borel σ-algebra|Borel field]] of *events* $\mathcal{F}$ (the *event space*), and *probabilities* of these events $P$ (*probability measure*, which is a [[measure space]]).
 
-Condensed definition: a *probability space* is a [[measure space]] where [[measure]] of the whole space is equal to one
+The **probability space** $(S,\mathcal{F},P)$ is defined over _universal set_ $S$ (the _sample space_ in probability theory serves as the _universal set_ from set theory in this context), [[Borel σ-algebra|Borel field]] of _events_ $\mathcal{F}$ (the _event space_), and _probabilities_ of these events $P$ (_probability measure_, which is a [[measure space]]).
 
-___
+Condensed definition: a _probability space_ is a [[measure space]] where [[measure]] of the whole space is equal to one
+
+---
+
 ## References
+
 1. https://en.wikipedia.org/wiki/Probability_space
 2. https://mathoverflow.net/questions/31603/why-do-probabilists-take-random-variables-to-be-borel-and-not-lebesgue-measura/31724#31724
 3. https://en.wikipedia.org/wiki/Probability_measure

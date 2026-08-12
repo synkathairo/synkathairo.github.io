@@ -15,6 +15,7 @@ created: 2023-12-14T16:12:58-05:00
 tags:
   - linear_algebra
 ---
+
 ## Overview
 
 Symmetric matrices are always (orthogonally) diagonalizable.
@@ -25,10 +26,12 @@ where $\lambda_i$’s are the [[eigenvalue and eigenvector|eigenvalues]] of $\ma
 
 Such a factorization is called the **eigendecomposition** of $\mathbf{A}$, also called the **spectral decomposition** of $\mathbf{A}$.
 
-___
+---
+
 For general rectangular matrices, there is [[Singular value decomposition]].
 
-___
+---
+
 ## References:
 
 1. https://www.sjsu.edu/faculty/guangliang.chen/Math253S20/lec5svd.pdf

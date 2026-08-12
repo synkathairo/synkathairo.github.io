@@ -15,17 +15,23 @@ tags:
   - geometry
   - topology
 ---
+
 ## Definition
+
 An $n$-dimensional **topological manifold** $M$ is a [[topological space]] such that
+
 - $M$ is [[Hausdorff space|Hausdorff]]
 - $M$ is [[axioms of countability#A2 (second-countable)|second-countable]]
 - $M$ is [[locally Euclidean]] of dimension $n$
 
 ## Notes
-- *manifold* may mean [[topological space]] that is locally *Euclidean*, but usually more formally defined to also require Hausdorff and second-countable condtions
 
-___
+- _manifold_ may mean [[topological space]] that is locally _Euclidean_, but usually more formally defined to also require Hausdorff and second-countable condtions
+
+---
+
 ## References
+
 1. http://staff.ustc.edu.cn/~wangzuoq/Courses/18F-Manifolds/Notes/Lec01.pdf
 2. J. M. Lee, _Introduction to smooth manifolds_, Second edition. in Graduate texts in mathematics, no. 218. New York Heidelberg Dordrecht London: Springer, 2013, pp. 2-3.
 3. https://mathworld.wolfram.com/Manifold.html

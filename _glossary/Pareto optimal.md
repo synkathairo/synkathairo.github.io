@@ -15,28 +15,29 @@ created: 2025-09-14T18:53:05-04:00
 tags:
   - game_theory
 ---
-## Definition (*Pareto optimal*)
 
-Suppose an instance of *multiobjective optimization*, with a certain *feasible space* (given by the constraints) known as the *design space* for the problem.
+## Definition (_Pareto optimal_)
 
-The *design space* has as its axes the values $x_1, x_2$, whereas a *criterion space* may be defined having the axes $f_1, f_2$ consisting of the two objective functions.
+Suppose an instance of _multiobjective optimization_, with a certain _feasible space_ (given by the constraints) known as the _design space_ for the problem.
 
-The edge between the minimum $f_1$ and minimum $f_2$ may be deemed as the **Pareto front** whereas along this edge, improvements in one objective come with tradeoff in the other objective, and any point along this edge is considered **Pareto optimal**. 
+The _design space_ has as its axes the values $x_1, x_2$, whereas a _criterion space_ may be defined having the axes $f_1, f_2$ consisting of the two objective functions.
 
-However, a point in the feasible region not along this *Pareto front* is **Pareto inefficient** and may be improved by a **Pareto improvement** towards the Pareto front helping one objective or both without harm to the other.
+The edge between the minimum $f_1$ and minimum $f_2$ may be deemed as the **Pareto front** whereas along this edge, improvements in one objective come with tradeoff in the other objective, and any point along this edge is considered **Pareto optimal**.
 
-## Definition (*efficient points*)
+However, a point in the feasible region not along this _Pareto front_ is **Pareto inefficient** and may be improved by a **Pareto improvement** towards the Pareto front helping one objective or both without harm to the other.
 
-Denote $PO(S)$ the **set of efficient points** of $S$, whereas $x \in S$ is an **efficient point** when there does not exist an alternative $y \in S$, $y \neq x$, such that $y \geq x$. (i.e. set of *Pareto optimal* points)
+## Definition (_efficient points_)
+
+Denote $PO(S)$ the **set of efficient points** of $S$, whereas $x \in S$ is an **efficient point** when there does not exist an alternative $y \in S$, $y \neq x$, such that $y \geq x$. (i.e. set of _Pareto optimal_ points)
 
 A solution concept $\varphi$ is **efficient** (or satisfies the **efficiency property**) if $\varphi(S,d) \in PO(S)$ for each [[bargaining game]] $(S,d) \in \mathcal{F}$.
 
-An alternative $x \in S$ is called **weakly efficient** in $S$ if there is no $y \in S,$ $y \neq x$ strictly preferred to $x$ by both players, i.e. satisfying $y \gg x$ 
+An alternative $x \in S$ is called **weakly efficient** in $S$ if there is no $y \in S,$ $y \neq x$ strictly preferred to $x$ by both players, i.e. satisfying $y \gg x$
 
 ## illustration
 
 ![[Pasted image 20250916165805.png|300]]
-here, the purple line is the *Pareto front*
+here, the purple line is the _Pareto front_
 (image from Stanford notes)
 
 ![[Pasted image 20250916172233.png|300]]
@@ -49,10 +50,11 @@ on vertical/horizontal segments, improvement is not preferred by both players (o
 - [[polytope]]
 - [[convex optimization]]
 - [[bargaining game]]
-	- [[Rubenstein bargaining]]
+  - [[Rubenstein bargaining]]
 - [[zero-sum game]]
 
-___
+---
+
 ## References
 
 1. https://en.wikipedia.org/wiki/Pareto_efficiency

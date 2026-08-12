@@ -6,21 +6,22 @@ aliases:
   - 零知识证明
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-25T18:42:18-04:00
 tags:
   - cryptography
   - proof_system
 ---
+
 ## Definition
 
 **Zero-knowledge proofs** are [[class IP|interactive proofs]] with a [[class PPT|PPT]] prover and verifier $(P,V)$.
 
+---
 
-___
 ## References
 
 1. https://www.khoury.northeastern.edu/home/wichs/class/crypto-fall17/lecture19.pdf

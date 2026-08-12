@@ -1,10 +1,10 @@
 ---
 layout: entry
 title: Kaiming initialization
-aliases: 
+aliases:
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE9483
 lecture:
@@ -15,6 +15,7 @@ tags:
   - deep_learning
   - dnn
 ---
+
 Designed for modern deep neural networks that use ReLU,
 
 $$W \sim \mathcal{N}\left(0,\frac{2}{n^l}\right)$$
@@ -22,6 +23,8 @@ Target: ensure activation variance across different layers
 
 Assumptions: ReLU activation, weight normally distributed with mean of zero, weight and activations are independent.
 
-___
+---
+
 ## References
-1. He, Kaiming, et al. "Delving deep into rectifiers: Surpassing human-level performance on imagenet classification." *Proceedings of the IEEE international conference on computer vision*. 2015.
+
+1. He, Kaiming, et al. "Delving deep into rectifiers: Surpassing human-level performance on imagenet classification." _Proceedings of the IEEE international conference on computer vision_. 2015.

@@ -16,9 +16,9 @@ tags:
   - convex_optimization
 ---
 
-If $\mathcal{S}$ is [[convex set|convex]], then for any $\mathbf{y} \in \mathcal{S}$, 
+If $\mathcal{S}$ is [[convex set|convex]], then for any $\mathbf{y} \in \mathcal{S}$,
 $$||\mathbf{y}-\mathsf{P}_\mathcal{S}(\mathbf{x})||_2 \leq ||\mathbf{y}-\mathbf{x}||_2$$
 
-___
+---
 
 See: [[projection oracle]]

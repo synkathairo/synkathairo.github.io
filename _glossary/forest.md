@@ -1,26 +1,28 @@
 ---
 layout: entry
 title: forest
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-29T15:08:19-04:00
 tags:
   - graph_theory
 ---
+
 ## Definition
 
 A **forest** is a [[undirected graph|graph]] that contains no [[graph cycle|cycles]].
 
 ## Notes
 
-- a [[connectivity|connected]] *forest* is known as a [[tree]]
+- a [[connectivity|connected]] _forest_ is known as a [[tree]]
 
-___
+---
+
 ## References
 
 1. https://en.wikipedia.org/wiki/Tree_(graph_theory)

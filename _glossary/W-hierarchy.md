@@ -7,51 +7,54 @@ aliases:
   - weft
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-15T18:07:48-04:00
 tags:
   - complexity_theory
 ---
+
 ## Definition
 
-W\[i\], a problem that can be transformed (in [[class FPT|FPT]] time) into combinatorial circuit with *weft* at most $i$
+W\[i\], a problem that can be transformed (in [[class FPT|FPT]] time) into combinatorial circuit with _weft_ at most $i$
 
-*weft*: max number of nodes with in-degree $\geq 3$ on directed path from input to output node (in boolean circuit)
+_weft_: max number of nodes with in-degree $\geq 3$ on directed path from input to output node (in boolean circuit)
 
-**W\[t\]**: class of decision problems of form $(x,k)$, [[parameterized problem|parameter]] $k$, [[class FPT|fixed-parameter reducible]] to *weighted weft-$t$ depth-$h$ circuit SAT* for some constant $h$
+**W\[t\]**: class of decision problems of form $(x,k)$, [[parameterized problem|parameter]] $k$, [[class FPT|fixed-parameter reducible]] to _weighted weft-$t$ depth-$h$ circuit SAT_ for some constant $h$
 
-## Definition (*W\[1\]*)
+## Definition (_W\[1\]_)
 
 **W\[1\]**: class of [[decision problem|decision problems]] of form $(x,k)$ which are [[class FPT|fixed-parameter reducible]] to:
 
-*weighted 3SAT*: given a [[k-SAT problem|3SAT]] formula, does it have a satisfying assignment of *Hamming weight* $k$?
+_weighted 3SAT_: given a [[k-SAT problem|3SAT]] formula, does it have a satisfying assignment of _Hamming weight_ $k$?
 
 (Hamming weight: non-zero in string, e.g. here, $k$ number of `1` assignments in circuit input)
 
 ## Weighted weft $t$ depth circuit satisfiability problem
 
 The **weighted weft $t$ depth $h$ circuit satisfiability problem**, $\operatorname{WCS}(t,h)$:
-- input: *weft* $t$ depth $h$ *decision circuit* $C$
+
+- input: _weft_ $t$ depth $h$ _decision circuit_ $C$
 - [[parameterized problem|parameter]]: positive integer $k$
 - question: does $C$ have a weight $k$ satisfying assignment?
 
 ## Notes
 
 - W\[1\] is the weighted analogue of [[class NP|NP]]
-	- c.f. NP-complete 3SAT problem 
+  - c.f. NP-complete 3SAT problem
 - [[class FPT|FPT]] $= \mathsf{W}[0] \subseteq \mathsf{W}[1] \subseteq \mathsf{W}[2] \subseteq ... \mathsf{W}[\mathsf{P}]$
-	- $\mathsf{W}[\mathsf{P}]$, referring to *weighted circuit satisfiability*, class of decision problems of form $(x,k)$ *fixed-parameter reducible* to, for some constant $h$, the *weighted circuit-SAT* problem
-		- *weighted circuit-SAT*: given boolean circuit $C$ with no restriction on depth, does $C$ have satisfying assignment of Hamming weight $k$?
-	- $\mathsf{W}[\mathsf{SAT}] \subseteq \mathsf{W}[\mathsf{P}]$, where $\mathsf{W}[\mathsf{SAT}]$ refers to *weighted satisfiability*, class of decision problems of form $(x,k)$ *fixed-parameter reducible* to, for some constant $h$, the *weighted SAT* problem
-		- *weighted SAT*: given boolean formula $F$ with no restriction on depth, does $F$ have satisfying assignment of Hamming weight $k$?
-			- note: difference with weighted circuit SAT is that this is boolean formula rather than circuit (is this specifically CNF?)
-		- see [[Tseytin transformation]], are these classes nonequal?
-- see also: [[class XP|XP]] (*slicewise polynomial*) which contains FPT, and *A hierarchy*
+  - $\mathsf{W}[\mathsf{P}]$, referring to _weighted circuit satisfiability_, class of decision problems of form $(x,k)$ _fixed-parameter reducible_ to, for some constant $h$, the _weighted circuit-SAT_ problem
+    - _weighted circuit-SAT_: given boolean circuit $C$ with no restriction on depth, does $C$ have satisfying assignment of Hamming weight $k$?
+  - $\mathsf{W}[\mathsf{SAT}] \subseteq \mathsf{W}[\mathsf{P}]$, where $\mathsf{W}[\mathsf{SAT}]$ refers to _weighted satisfiability_, class of decision problems of form $(x,k)$ _fixed-parameter reducible_ to, for some constant $h$, the _weighted SAT_ problem
+    - _weighted SAT_: given boolean formula $F$ with no restriction on depth, does $F$ have satisfying assignment of Hamming weight $k$?
+      - note: difference with weighted circuit SAT is that this is boolean formula rather than circuit (is this specifically CNF?)
+    - see [[Tseytin transformation]], are these classes nonequal?
+- see also: [[class XP|XP]] (_slicewise polynomial_) which contains FPT, and _A hierarchy_
 
-___
+---
+
 ## References
 
 1. https://en.wikipedia.org/wiki/Parameterized_complexity#W_hierarchy

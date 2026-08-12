@@ -3,7 +3,7 @@ layout: entry
 title: pairwise independence
 type:
   - definition
-reference: 
+reference:
 lecture:
   - cs6763-2
 statement: $X_i,X_j$ are [[Independence|independent]] for all $i,j \in \{1,…,k\}$
@@ -13,6 +13,7 @@ course:
 tags:
   - probability
 ---
+
 ## Definition
 
 $X_1,…,X_k$ are **pairwise independent** if $X_i,X_j$ are [[independence|independent]] for all $i,j \in \{1,…,k\}$
@@ -23,5 +24,6 @@ $$\mathrm{Var}[X_1 + X_2 + ... + X_m] = \mathrm{Var}[X_1] + \mathrm{Var}[X_2] + 
 i.e. we require that for any $i,j$ that $X_i$ and $X_j$ are independent.
 
 ## Notes
+
 - Weaker than [[mutual independence]].
 - See [[types of independence]].

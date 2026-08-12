@@ -1,27 +1,32 @@
 ---
 layout: entry
 title: class MAX SNP
-aliases: 
+aliases:
 type:
   - definition
   - complexity class
   - time complexity
-reference: 
+reference:
 course:
   - CS9233
-lecture: 
-statement: 
+lecture:
+statement:
 created: 2025-01-23T21:32:22-05:00
 tags:
   - complexity_theory
 ---
+
 ## Definition
-#incomplete 
+
+#incomplete
 
 ## Theorem
-For any *MAX SNP*-hard problem, there does not exist a [[polynomial-time approximation scheme]], unless [[P versus NP problem|P=NP]].
 
-___
+For any _MAX SNP_-hard problem, there does not exist a [[polynomial-time approximation scheme]], unless [[P versus NP problem|P=NP]].
+
+---
+
 ## References
-1. D. P. Williamson, D. B. Shmoys. *Approximation Algorithms*, Cambridge University Press, 2010, p. 14.
+
+1. D. P. Williamson, D. B. Shmoys. _Approximation Algorithms_, Cambridge University Press, 2010, p. 14.
 2. https://en.wikipedia.org/wiki/SNP_%28complexity%29#MaxSNP

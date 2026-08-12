@@ -3,7 +3,7 @@ layout: entry
 title: projection oracle
 type:
   - definition
-reference: 
+reference:
 course:
   - CS6763
 lecture:

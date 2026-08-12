@@ -1,10 +1,10 @@
 ---
 layout: entry
 title: strategically equivalent
-aliases: 
+aliases:
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE6263
 lecture:
@@ -14,9 +14,12 @@ created: 2024-11-17T17:43:02
 tags:
   - game_theory
 ---
+
 ## Definition (bimatrix games)
-Two ($m \times n$) *bimatrix games* $(A,B)$ and $(C,D)$ are said to be **strategically equivalent** if there exists positive constants $\alpha_1, \alpha_2$ and scalars $\beta_1, \beta_2$ such that 
-$$\begin{aligned}
+
+Two ($m \times n$) _bimatrix games_ $(A,B)$ and $(C,D)$ are said to be **strategically equivalent** if there exists positive constants $\alpha_1, \alpha_2$ and scalars $\beta_1, \beta_2$ such that
+
+$$ \begin{aligned}
 a_{ij} = \alpha_1 c_{ij} + \beta_1 \\
 b_{ij} = \alpha_2 d_{ij} + \beta_2
 \end{aligned}$$
@@ -36,3 +39,4 @@ Multiple [[Nash equilibrium]] of a bimatrix game $(A,B)$ are interchangeable if 
 ___
 ## References
 1. T. Başar and G.J. Olsder, *Dynamic Noncooperative Game Theory*, 2nd edition, Classics in Applied Mathematics, SIAM, Philadelphia, 1999, pp. 81, 90.
+$$

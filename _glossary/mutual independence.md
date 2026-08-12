@@ -5,7 +5,7 @@ aliases:
   - mutually independent
 type:
   - definition
-reference: 
+reference:
 lecture:
   - cs6763-2
 statement: $\mathrm{Pr}[X_1 = v_1, ..., X_k = v_k] = \mathrm{Pr}[X_1 = v_1]\cdot ... \cdot \mathrm{Pr}[X_k = v_k]$
@@ -15,12 +15,14 @@ course:
 tags:
   - probability
 ---
+
 ## Definition
 
 [[random variable|Random variables]] $X_1,…,X_k$ are **mutually independent** if, for all possible values $v_1,…,v_k$,
 $$\mathrm{Pr}[X_1 = v_1, ..., X_k = v_k] = \mathrm{Pr}[X_1 = v_1]\cdot ... \cdot \mathrm{Pr}[X_k = v_k]$$
 
-___
+---
+
 Strictly stronger than [[pairwise independence]];
 mutual independence implies pairwise independence, but pairwise independence does not imply mutual independence.
 

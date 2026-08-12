@@ -13,6 +13,7 @@ created: 2025-07-06T14:26:55-04:00
 tags:
   - analysis
 ---
+
 ## Definition
 
 In a [[metric space]], a [[sequence]] is a **Cauchy sequence** if, for every $\epsilon >0$, almost all terms are within $\epsilon$ of each other (relative to [[metric]] $d$), i.e.
@@ -32,7 +33,7 @@ def CauchySeq [Preorder β] (u : β → α) :=
 ([[preorder]] as in a reflexive and transitive relation `≤`, `atTop` the filter representing limit `→ ∞` on an [[ordered set]])
 
 > A [[filter|filter]] `f` is Cauchy if for every [[entourage|entourage]] `r`, there exists an `s ∈ f` such that `s × s ⊆ r`. This is a generalization of Cauchy sequences, because if `a : ℕ → α` then the filter of sets containing [[cofinite set|cofinitely]] many of the `a n` is Cauchy iff `a` is a Cauchy sequence.
-  
+
 ```lean
 def Cauchy (f : Filter α) :=
   NeBot f ∧ f ×ˢ f ≤ 𝓤 α
@@ -40,7 +41,8 @@ def Cauchy (f : Filter α) :=
 
 (`NeBot` means the filter is not equal to `⊥` i.e. empty set does not belong to the filter, `×ˢ` refers to [[Cartesian product]], `𝓤` means uniformity as in a filter on `α × α` inferred from an ambient uniform space structure on `α`, and `α` is a type)
 
-___
+---
+
 ## References
 
 1. <https://en.wikipedia.org/wiki/Cauchy_sequence>

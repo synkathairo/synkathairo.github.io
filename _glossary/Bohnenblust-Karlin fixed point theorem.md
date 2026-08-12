@@ -1,17 +1,19 @@
 ---
 layout: entry
 title: Bohnenblust-Karlin fixed point theorem
-aliases: 
+aliases:
 type:
   - theorem
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2024-12-18T18:49:34-05:00
 tags:
 ---
-#incomplete 
+
+#incomplete
 
 ## Notes
+
 generalization of [[Kakutani fixed-point theorem]]?

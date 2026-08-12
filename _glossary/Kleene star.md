@@ -1,13 +1,13 @@
 ---
 layout: entry
 title: Kleene star
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-23T17:41:45-04:00
 tags:
   - formal_language_theory
@@ -21,10 +21,11 @@ where $L^0 = \{\epsilon\}$ ($\epsilon$ empty word) and $L^{n+1} = L \cdot L^n$ (
 
 ## Notes
 
-- the *Kleene star* $A^*$ of an *alphabet* is a [[free monoid]] on the set $A$
+- the _Kleene star_ $A^*$ of an _alphabet_ is a [[free monoid]] on the set $A$
 - (see [[monoid]] and [[free monoid]])
 
-___
+---
+
 ## References
 
 1. M. Avanzini, Lecture Notes, Topic: “finite automata.” M1-AL, Centre Inria d’Université Côte d’Azur, 2021. <https://www-sop.inria.fr/members/Martin.Avanzini/teaching/2021/AL/slides/w1.pdf>

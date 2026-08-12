@@ -5,40 +5,42 @@ aliases:
   - 群
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-23T17:03:26-04:00
 tags:
   - algebra
   - algebra
 ---
+
 ## Definition
 
 A **group** is a [[set]] $G$ with binary operation (i.e. a [[law of composition]]) $*$ satisfying axioms of:
 
-- *closure*
-	- for all elements $g$ and $h$ of $G$, $g * h$ is an element of $G$
-- *associativity*
-	- $(g * h) * k = g * (h * k)$ for all $g,h,k \in G$
-- *existence of identity*
-	- exists element $e \in G$, *identity* (or *unit*) of $G$ such that $e * g = g * e = g$ for all $g \in G$
-- *existence of inverse*
-	- for every $g \in G$ there exists an element $h \in G$ called the *inverse* of $g$ such that $e * g = g * e = g$ for all $g \in G$
+- _closure_
+  - for all elements $g$ and $h$ of $G$, $g * h$ is an element of $G$
+- _associativity_
+  - $(g * h) * k = g * (h * k)$ for all $g,h,k \in G$
+- _existence of identity_
+  - exists element $e \in G$, _identity_ (or _unit_) of $G$ such that $e * g = g * e = g$ for all $g \in G$
+- _existence of inverse_
+  - for every $g \in G$ there exists an element $h \in G$ called the _inverse_ of $g$ such that $e * g = g * e = g$ for all $g \in G$
 
-An **abelian** or **commutative** group is a *group* $(G,*)$ also satisfying
+An **abelian** or **commutative** group is a _group_ $(G,*)$ also satisfying
 
-- *commutativity*
-	- $g * h = h * g$ for all $g,h \in G$
+- _commutativity_
+  - $g * h = h * g$ for all $g,h \in G$
 
 ## Notes
 
-- a *group* is a special case of [[semigroup]] where there is existence of *identity* and *inverse*
-- it can also be considered as a special case of a [[monoid]] with an *inverse*
-- *closure* is sometimes omitted in definitions, in this case, it is incorporated into the properties required for the relevant *law of composition* instead
+- a _group_ is a special case of [[semigroup]] where there is existence of _identity_ and _inverse_
+- it can also be considered as a special case of a [[monoid]] with an _inverse_
+- _closure_ is sometimes omitted in definitions, in this case, it is incorporated into the properties required for the relevant _law of composition_ instead
 
-___
+---
+
 ## References
 
 1. https://people.tamu.edu/~yvorobets/MATH433-2010B/Lect2-05web.pdf

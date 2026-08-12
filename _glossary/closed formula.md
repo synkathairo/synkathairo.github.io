@@ -3,19 +3,20 @@ layout: entry
 title: closed formula
 aliases:
   - sentence
-type: 
-reference: 
-course: 
-lecture: 
-statement: 
+type:
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-31T16:45:40-04:00
 tags:
   - logic
 ---
-#incomplete 
 
+#incomplete
 
-___
+---
+
 ## References
 
 1. https://en.wikipedia.org/wiki/Sentence_(mathematical_logic)

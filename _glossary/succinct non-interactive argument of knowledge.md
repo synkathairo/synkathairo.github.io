@@ -8,30 +8,31 @@ aliases:
   - 简短无交互证明
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-25T18:35:35-04:00
 tags:
   - cryptography
   - proof_system
 ---
+
 ## Definition
 
 A **succinct preprocessing NARK** is a triple $(S,P,V)$:
 
 - $S(C)$, public parameters $(pp,vp)$ for prover and verifier
 - $P(pp,x,w)$, short proof $\pi$
-	- $\operatorname{len}(\pi) = O_\lambda(\operatorname{polylog}(|C|))$
+  - $\operatorname{len}(\pi) = O_\lambda(\operatorname{polylog}(|C|))$
 - $V(vp, x, \pi)$, fast to verify
-	- $\operatorname{time}(V) = O_\lambda(|x|, \operatorname{polylog}(|C|))$
+  - $\operatorname{time}(V) = O_\lambda(|x|, \operatorname{polylog}(|C|))$
 
-## Construction (*PCP-based SNARK*)
+## Construction (_PCP-based SNARK_)
 
-- recall [[class PCP|PCP theorem]]; 
+- recall [[class PCP|PCP theorem]];
 - Use [[Fiat-Shamir transform]] to make the proof non-interactive
-- #incomplete 
+- #incomplete
 - (impractical as not efficient)
 
 ## See also
@@ -41,7 +42,8 @@ A **succinct preprocessing NARK** is a triple $(S,P,V)$:
 - [[non-interactive zero-knowledge proof system|NIZK]]
 - [[proof calculus|proof system]]
 
-___
+---
+
 ## References
 
 1. https://cs251.stanford.edu/lectures/lecture15.pdf

@@ -11,6 +11,7 @@ created: 2023-10-17T15:49:21-04:00
 course: CS6763
 tags:
 ---
+
 Given data points $\mathbf{a}_1,…,\mathbf{a}_n \in \mathbb{R}^d$, find centers $\mathbf{\mu}_1,...,\mathbf{\mu}_k \in \mathbb{R}^d$ to minimize:
 $$Cost(\mathbf{\mu}_1,...,\mathbf{\mu}_k)=\sum_{i=1}^n \min_{j=1,...,k} ||\mathbf{\mu}_j-\mathbf{a}_i||_2^2$$
 

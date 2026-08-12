@@ -3,7 +3,7 @@ layout: entry
 title: directional derivative
 type:
   - definition
-reference: 
+reference:
 course:
   - CS6763
 lecture:
@@ -16,6 +16,8 @@ $D_\mathbf{v} f(\mathbf{x}) = \nabla f(\mathbf{x})^{\intercal}\mathbf{v}$
 
 where $\nabla f(\mathbf{x})$ denotes the [[gradient]]
 
-___
+---
+
 References:
+
 1. https://www.chrismusco.com/amlds2023/notes/lecture06.html

@@ -23,13 +23,14 @@ $$\nabla f(\mathbf{x}) = \begin{bmatrix}\frac{\partial f}{\partial x_1}(\mathbf{
 
 ## Notes
 
-- it may be noted that the *gradient* may be defined as a [[linear functional]] on $\mathbb{R}^n$ and hence belongs to the [[dual space]] of $\mathbb{R}^n$
+- it may be noted that the _gradient_ may be defined as a [[linear functional]] on $\mathbb{R}^n$ and hence belongs to the [[dual space]] of $\mathbb{R}^n$
 
 ## See also
 
 - [[Hessian matrix]]
 
-___
+---
+
 ## References:
 
 1. https://www.chrismusco.com/amlds2023/notes/lecture06.html

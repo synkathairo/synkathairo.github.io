@@ -9,45 +9,47 @@ aliases:
   - sentential calculus
   - propositional calculus
   - theory of deduction
-type: 
-reference: 
-course: 
-lecture: 
-statement: 
+type:
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-03T21:24:42-04:00
 tags:
   - logic
   - propositional_logic
 ---
+
 ## Description
 
-**Propositional logic** is a sub-branch of *symbolic logic* studying the *truth values* of *propositional formulas*.
+**Propositional logic** is a sub-branch of _symbolic logic_ studying the _truth values_ of _propositional formulas_.
 
-- a [[proposition]] is a statement that can be either *true* or *false*, but not both (i.e. having a *truth value*)
+- a [[proposition]] is a statement that can be either _true_ or _false_, but not both (i.e. having a _truth value_)
 - an **atomic proposition** has a truth value (truth or falsity) not dependent upon the truth value of any other proposition
-	- may abbreviate as **propositional variable**, e.g. $p,q,r...$
-- **connectives** allow building up *complex propositions*
-	- $\land$, `And`, *conjunction*, e.g. $p \land q$
-	- $\lor$, `Or`, *disjunction*, e.g. $p \lor q$
-	- $\implies$, `If... Then...`, *conditional* or *implication*, e.g. $p \implies q$
-	- $\iff$, `Iff`, *biconditional*, e.g. $p \iff q$
-		- "if and only if"
-	- $\lnot$, `Not`, *negation*, e.g. $\lnot p$
-	- $(\quad)$, `Comments`, *disambiguation*, e.g. $(p \land (q \implies r)) \lor s$
-		- parentheses
+  - may abbreviate as **propositional variable**, e.g. $p,q,r...$
+- **connectives** allow building up _complex propositions_
+  - $\land$, `And`, _conjunction_, e.g. $p \land q$
+  - $\lor$, `Or`, _disjunction_, e.g. $p \lor q$
+  - $\implies$, `If... Then...`, _conditional_ or _implication_, e.g. $p \implies q$
+  - $\iff$, `Iff`, _biconditional_, e.g. $p \iff q$
+    - "if and only if"
+  - $\lnot$, `Not`, _negation_, e.g. $\lnot p$
+  - $(\quad)$, `Comments`, _disambiguation_, e.g. $(p \land (q \implies r)) \lor s$
+    - parentheses
 
 ## Notes
 
-- various systems for determining *truth values* of *propositional formulas*, such as *natural deduction* and *method of truth tables*
+- various systems for determining _truth values_ of _propositional formulas_, such as _natural deduction_ and _method of truth tables_
 
 ## See also
 
 - [[predicate]]
 - [[SAT problem|Boolean satisfiability problem]]
-- *truth table*
-- compare [[syllogistic logic]] (introduced by Aristotle in *Posterior Analytics*)
+- _truth table_
+- compare [[syllogistic logic]] (introduced by Aristotle in _Posterior Analytics_)
 
-___
+---
+
 ## References
 
 1. https://proofwiki.org/wiki/Definition:Propositional_Logic

@@ -10,22 +10,26 @@ statement: "LSH function scheme for cosine similarity: Let $\\mathbf{g}_1,...,\\
 created: 2023-10-18T01:00:19-04:00
 course: CS6763
 ---
+
 a [[Locality sensitive hash function]] scheme for [[Cosine similarity]]:
+
 - Let $\mathbf{g}_1,...,\mathbf{g}_r \in \mathbb{R}^d$ be randomly chosen with each entry $\mathcal{N}(0,1)$.
 - Let $f : \{-1,1\}^r \rightarrow \{1,…,m\}$ be a [[uniformly random hash function]].
 - Define the LSH hash function $h: \mathbb{R}^d \rightarrow \{1,…,m\}$ as:
-$$h(x) = f([\mathrm{sign}(\langle \mathbf{g}_1,x \rangle),...,\mathrm{sign}(\langle \mathbf{g}_r,x \rangle)])$$
+  $$h(x) = f([\mathrm{sign}(\langle \mathbf{g}_1,x \rangle),...,\mathrm{sign}(\langle \mathbf{g}_r,x \rangle)])$$
+
 ## Proof
 
 Let $\theta = \theta(\mathbf{x},\mathbf{y})$. Will show that (theorem to prove):
 $$\mathrm{Pr}[h(\mathbf{x}) = h(\mathbf{y})] = (1 − \frac{θ}{\mathbf{Π}}+\frac{1}{m})$$
 Intermediate result to show that:
-$$\begin{aligned}
+
+$$ \begin{aligned}
 \Pr( \langle \mathbf{g}, \mathbf{x} \rangle = \langle \mathbf{g},
 \mathbf{y} \rangle )
 = 1 - \frac{\theta}{\pi}
 \end{aligned}$$
-Consider random vector $\mathbf{g}$ and its hyperplane. Since it is drawn from the standard normal distribution, the direction of $\mathbf{g}$ is uniformly distributed around the unit circle. Similarly, the hyperplane is also uniformly distributed around the unit circle. The _sign_ of the inner product $\langle \mathbf{g},\mathbf{x} \rangle$ specifies which side of the hyperplane $\mathbf{x}$ is on. Intuitively, the probability that $\mathbf{x}$ and $\mathbf{y}$ are on the same side of the hyperplane is proportional to their angle. 
+Consider random vector $\mathbf{g}$ and its hyperplane. Since it is drawn from the standard normal distribution, the direction of $\mathbf{g}$ is uniformly distributed around the unit circle. Similarly, the hyperplane is also uniformly distributed around the unit circle. The _sign_ of the inner product $\langle \mathbf{g},\mathbf{x} \rangle$ specifies which side of the hyperplane $\mathbf{x}$ is on. Intuitively, the probability that $\mathbf{x}$ and $\mathbf{y}$ are on the same side of the hyperplane is proportional to their angle.
 
 The probability that they lie on _different_ sides of the hyperplane is the probability that the random hyperplane falls between $\mathbf{x}$ and $\mathbf{y}$ which is $\frac{2\theta}{2\pi}$. Then the probability that they lie on the _same_ side of the hyperplane is $1−\frac{\theta}{\pi}$.
 
@@ -34,7 +38,7 @@ In higher dimensions, we can use the same intuition. There is always some rotati
 ___
 
 SimHash can be tuned, just like our [[MinHash (Broder, 1997)|MinHash]] based function for [[Jaccard similarity]]
-- Suppose $g_1,…,g_r \in \mathbb{R}^d$ be randomly chosen with each $\mathcal{N}(0,1)$. 
+- Suppose $g_1,…,g_r \in \mathbb{R}^d$ be randomly chosen with each $\mathcal{N}(0,1)$.
 - Let $f: \{-1,1\}^r \rightarrow \{1,...,m\}$ be a [[uniformly random hash function]]
 - $h: \mathbb{R}^d \rightarrow \{1,…,m\}$ is defined
 - $h(\mathbf{x}) = f ([\mathrm{sign}(⟨\mathbf{g}_1, \mathbf{x}⟩), . . . , \mathrm{sign}(⟨\mathbf{g}_r, \mathbf{x}⟩)])$.
@@ -56,3 +60,4 @@ References:
 6. https://people.cs.umass.edu/~cmusco/CS514F20/slides/lecture8/lecture8Compressed.pdf
 7. https://sumonbis.github.io/academic-project/simhash/
 8. https://www.fromkk.com/posts/near-duplicate-with-simhash/
+$$

@@ -5,22 +5,23 @@ aliases:
   - ESO
 type:
   - definition
-reference: 
-course: 
-lecture: 
+reference:
+course:
+lecture:
 statement: $\exists X^k \varphi = \lnot (\forall X^k \lnot \varphi)$
 created: 2025-07-02T19:20:30-04:00
 tags:
   - logic
 ---
+
 ## Definition
 
-Set of *formulas* of **existential second-order logic** (i.e. $\Sigma_1^1$ logic) of [[vocabulary]] $\tau$ (formulas of $\mathbf{ESO}[\tau]$) is the smallest set containing all formulas of $\mathbf{FO}[\tau]$ ([[first-order logic]] of *vocabulary* $\tau$), and closed under the following two rules:
+Set of _formulas_ of **existential second-order logic** (i.e. $\Sigma_1^1$ logic) of [[vocabulary]] $\tau$ (formulas of $\mathbf{ESO}[\tau]$) is the smallest set containing all formulas of $\mathbf{FO}[\tau]$ ([[first-order logic]] of _vocabulary_ $\tau$), and closed under the following two rules:
 
 1. if $\phi$ is an $\mathbf{ESO}[\tau \cup \{f\}]$ formula, then $(\exists f) \phi$ is an $\mathbf{ESO}[\tau]$ formula
 2. if $\phi$ is an $\mathbf{ESO}[\tau \cup \{R\}]$ formula, then $(\exists R) \phi$ is an $\mathbf{ESO}[\tau]$ formula
 
-(where $\phi$ is a *first-order sentence*)
+(where $\phi$ is a _first-order sentence_)
 
 Alternatively,
 $(SO\exists)$, set of **second-order existential boolean queries**, i.e. **existential second-order quantification**,
@@ -28,13 +29,15 @@ $$\exists X^k \varphi = \lnot (\forall X^k \lnot \varphi)$$
 
 ## Notes
 
-- it is a *fragment* of [[second-order logic]]
+- it is a _fragment_ of [[second-order logic]]
 - compare also: [[universal second-order logic]], $\Pi_1^1 = \mathbf{USO}$
 
 ## See also
+
 - [[Fagin's theorem]]
 
-___
+---
+
 ## References
 
 1. https://plato.stanford.edu/entries/logic-if/supplement.html

@@ -1,10 +1,10 @@
 ---
 layout: entry
 title: game with perfect information
-aliases: 
+aliases:
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE6263
 lecture:
@@ -14,9 +14,13 @@ created: 2024-12-15T17:53:59-05:00
 tags:
   - game_theory
 ---
-## Definition
-An [[extensive form game]] is called a **game with perfect information for player** *i* if each *information set* of player $i$ contains only one vertex. An extensive form game is called a **game with perfect information** if it is a game with perfect information for all the players.
 
-___
+## Definition
+
+An [[extensive form game]] is called a **game with perfect information for player** _i_ if each _information set_ of player $i$ contains only one vertex. An extensive form game is called a **game with perfect information** if it is a game with perfect information for all the players.
+
+---
+
 ## References
-1. M. Maschler, E. Solan, and Shmuel Zamir, *Game Theory*, Cambridge University Press, 2013, p. 55.
+
+1. M. Maschler, E. Solan, and Shmuel Zamir, _Game Theory_, Cambridge University Press, 2013, p. 55.

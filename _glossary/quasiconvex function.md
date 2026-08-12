@@ -5,25 +5,27 @@ aliases:
   - quasiconvex
 type:
   - definition
-reference: 
-course: 
-lecture: 
+reference:
+course:
+lecture:
 statement: "*Function* $f: S \\to \\mathbb{R}$ defined on [[convex set|convex subset]] $S$ of *real vector space* is **quasiconvex** if for all $x,y \\in S$ and $\\lambda \\in [0,1]$, $f(\\lambda x + (1-\\lambda)y) \\leq \\max \\{f(x), f(y)\\}$"
 created: 2025-07-22T16:40:02-04:00
 tags:
   - analysis
 ---
+
 ## Definition
 
-*Function* $f: S \to \mathbb{R}$ defined on [[convex set|convex subset]] $S$ of *real vector space* is **quasiconvex** if for all $x,y \in S$ and $\lambda \in [0,1]$,
+_Function_ $f: S \to \mathbb{R}$ defined on [[convex set|convex subset]] $S$ of _real vector space_ is **quasiconvex** if for all $x,y \in S$ and $\lambda \in [0,1]$,
 $$f(\lambda x + (1-\lambda)y) \leq \max \{f(x), f(y)\}$$
 
 ## Notes
 
-- For a *quasiconvex function*, all of the *sublevel sets* are [[convex set|convex]].
-- All [[convex function|convex functions]] are *quasiconvex*.
+- For a _quasiconvex function_, all of the _sublevel sets_ are [[convex set|convex]].
+- All [[convex function|convex functions]] are _quasiconvex_.
 
-___
+---
+
 ## References
 
 1. https://en.wikipedia.org/wiki/Quasiconvex_function

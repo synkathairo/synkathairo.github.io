@@ -15,10 +15,14 @@ tags:
   - analysis
 ---
 
-#incomplete 
-## Notes
-- *map* and *function* are usually considered interchangable terms but occasionally they are differentiated e.g. in differential geometry using *function* as a special type of mapping to $\mathbb{R}$ or $\mathbb{C}$
+#incomplete
 
-___
+## Notes
+
+- _map_ and _function_ are usually considered interchangable terms but occasionally they are differentiated e.g. in differential geometry using _function_ as a special type of mapping to $\mathbb{R}$ or $\mathbb{C}$
+
+---
+
 ## References
+
 1. https://math.stackexchange.com/questions/95741/is-there-any-difference-between-mapping-and-function

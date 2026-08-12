@@ -1,25 +1,26 @@
 ---
 layout: entry
 title: tree
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-29T15:02:37-04:00
 tags:
   - graph_theory
 ---
+
 ## Definition
 
-A **tree** is an [[undirected graph]] in which every pair of distinct *vertices* is connected by exactly one path, i.e. a [[connectivity|connected]] [[graph cycle|acyclic]] *undirected graph*.
+A **tree** is an [[undirected graph]] in which every pair of distinct _vertices_ is connected by exactly one path, i.e. a [[connectivity|connected]] [[graph cycle|acyclic]] _undirected graph_.
 
 In other words, a **tree** is a [[connectivity|connected]] [[forest]].
 
+---
 
-___
 ## References
 
 1. https://en.wikipedia.org/wiki/Tree_(graph_theory)

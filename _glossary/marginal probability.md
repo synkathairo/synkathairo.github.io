@@ -12,6 +12,7 @@ created: 2025-10-28T17:37:28-04:00
 tags:
   - probability
 ---
+
 ## Definition
 
 probability of a single event occurring, independent of other events
@@ -20,7 +21,8 @@ probability of a single event occurring, independent of other events
 
 - compare [[conditional probability]]
 
-___
+---
+
 ## References
 
 1. https://en.wikipedia.org/wiki/Marginal_distribution

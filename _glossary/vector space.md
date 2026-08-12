@@ -13,11 +13,13 @@ tags:
   - linear_algebra
   - topology
 ---
+
 ## Definition
 
 A **vector space** $V$ is a [[set]] closed under finite vector addition and scalar multiplication.
 
-___
+---
+
 ## References
 
 1. https://mathworld.wolfram.com/VectorSpace.html

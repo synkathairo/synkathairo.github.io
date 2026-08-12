@@ -3,19 +3,20 @@ layout: entry
 title: Cobham-Edmonds thesis
 aliases:
   - Cobham's thesis
-type: 
-reference: 
-course: 
-lecture: 
-statement: 
+type:
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-25T16:21:44-04:00
 tags:
   - complexity_theory
 ---
 
-#incomplete 
+#incomplete
 
-___
+---
+
 ## References
 
 1. https://courses.corelab.ntua.gr/pluginfile.php/8936/mod_folder/content/0/CC_Slides_handouts.pdf

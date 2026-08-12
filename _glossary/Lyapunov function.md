@@ -5,20 +5,24 @@ aliases:
   - Lyapunov analysis
 type:
   - theorem
-reference: 
+reference:
 course:
   - ECE6253
-lecture: 
-statement: 
+lecture:
+statement:
 created: 2024-11-26T19:36:23-05:00
 tags:
   - linear_systems
   - analysis
 ---
+
 ## Theorem (Lyapunov's Direct Method for local stability)
+
 ### (locally) stable in the sense of Lyapunov (i.s.L.)
+
 Given system $\dot{\mathbf{x}} = f(\mathbf{x})$, with $f$ [[continuous function|continuous]], for some region $\mathcal{D}$ around the origin (specifically open subset of $\mathbb{R}^n$ containing the origin), if there exists (can produce) a scalar, continuously-differentiable function $V(\mathbf{x})$ such that
-$$\begin{gathered}
+
+$$ \begin{gathered}
       V(\mathbf{x}) > 0, \forall \mathbf{x} \in {\cal D} \setminus \{0\} \quad V(0) = 0,
       \text{ and} \\ \dot{V}(\mathbf{x}) = \frac{\partial V}{\partial \mathbf{x}} f(\mathbf{x}) \le 0, \forall \mathbf{x} \in
       {\cal D} \setminus \{0\} \quad \dot{V}(0) = 0
@@ -30,21 +34,24 @@ then the origin ($\mathbf{x} = 0$) is *stable in the sense of Lyapunov* (i.s.L.)
 If additionally,
 $$\dot{V}(\mathbf{x}) = \frac{\partial V}{\partial \mathbf{x}} f(\mathbf{x}) < 0, \forall \mathbf{x} \in {\cal D} \setminus \{0\}
 $$
-then origin is (locally) *asymptotically stable*.
 
-(i.e. if $\dot{V}(\mathbf{x},t)$ is *negative definite* in neighborhood $\mathcal{D}$ then equilibrium state at origin is *asymptotically stable*)
+then origin is (locally) _asymptotically stable_.
+
+(i.e. if $\dot{V}(\mathbf{x},t)$ is _negative definite_ in neighborhood $\mathcal{D}$ then equilibrium state at origin is _asymptotically stable_)
 
 ### (locally) exponentially stable
+
 Additionally if
 $$\dot{V}(\mathbf{x}) = \frac{\partial V}{\partial \mathbf{x}} f(\mathbf{x}) \le -\alpha V(x), \forall \mathbf{x} \in {\cal D} \setminus \{0\}$$
-for some $\alpha > 0$, then origin is (locally) *exponentially stable*.
-
-
+for some $\alpha > 0$, then origin is (locally) _exponentially stable_.
 
 ## Theorem (Lyapunov analysis for global stability)
+
 ### globally asymptotically stable
+
 Given system $\dot{\mathbf{x}} = f(\mathbf{x})$, with $f$ [[continuous function|continuous]], if there exists (can produce) a scalar, continuously-differentiable function $V(\mathbf{x})$ such that
-$$\begin{gathered} V(\mathbf{x}) \succ 0, \\ \dot{V}(\mathbf{x}) = \frac{\partial V}{\partial \mathbf{x}}
+
+$$ \begin{gathered} V(\mathbf{x}) \succ 0, \ \dot{V}(\mathbf{x}) = \frac{\partial V}{\partial \mathbf{x}}
     f(\mathbf{x}) \prec 0, \text{ and} \\ V(\mathbf{x}) \rightarrow \infty \text{ whenever
     } ||\mathbf{x}||\rightarrow \infty,
 \end{gathered}$$
@@ -65,7 +72,7 @@ then the origin is *globally exponentially stable*.
 
 For unforced fixed linear system $\dot{\mathbf{x}} = A\mathbf{x}(t)$, can choose Lyapunov function $V(\mathbf{x}) = \mathbf{x}^T(t) M \mathbf{x}(t)$, where $M$ is a *symmetric* *positive definite* matrix.
 
-Then, $\dot{V}(\mathbf{x}(t))$ #incomplete 
+Then, $\dot{V}(\mathbf{x}(t))$ #incomplete
 
 ___
 ## References
@@ -75,3 +82,4 @@ ___
 4. https://ecs-pw-facweb.ecs.csus.edu/~fbelkhou/LSsummary1.pdf
 5. https://www.cds.caltech.edu/~murray/courses/cds101/fa02/caltech/mls93-lyap.pdf
 6. T. L. Vincent and J. S. Brown, _Evolutionary game theory, natural selection, and darwinian dynamics_. Cambridge: Cambridge university press, 2005, p. 51.
+$$

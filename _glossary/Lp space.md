@@ -12,7 +12,7 @@ created: 2026-07-23T22:55:24-04:00
 tags:
 ---
 
-#incomplete 
+#incomplete
 
 has a Lp norm or p norm, a specific kind of [[norm]]
 

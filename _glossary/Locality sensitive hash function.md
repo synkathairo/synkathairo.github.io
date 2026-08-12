@@ -5,7 +5,7 @@ aliases:
   - LSH function
 type:
   - definition
-reference: 
+reference:
 lecture:
   - cs6763-5
   - cs6763-6
@@ -18,30 +18,37 @@ course:
 Let $h: \mathbb{R}^d \rightarrow \{1,…,m\}$ be a random [[hash function]].
 
 We call $h$ locality sensitive for similarity function $s(\mathbf{q},\mathbf{y})$ if $\mathrm{Pr}[h(\mathbf{q})==h(\mathbf{y})]$ is
- - higher when $\mathbf{q}$ and $\mathbf{y}$ are more similar, i.e. $s(\mathbf{q},\mathbf{y})$ higher
- - lower when $\mathbf{q}$ and $\mathbf{y}$ are more dissimilar, i.e. $s(\mathbf{q},\mathbf{y})$ lower
+
+- higher when $\mathbf{q}$ and $\mathbf{y}$ are more similar, i.e. $s(\mathbf{q},\mathbf{y})$ higher
+- lower when $\mathbf{q}$ and $\mathbf{y}$ are more dissimilar, i.e. $s(\mathbf{q},\mathbf{y})$ lower
 
 ## Locality Sensitive Hash Family
+
 For distances $r_1,r_2$ with $r_1 < r_2$, a family of hash functions $\mathcal{H}: U \rightarrow S$ is $(r_1,r_2,p_1,p_2)$-locality sensitive if for any $x,y \in U$:
+
 1. If $d(x,y)\leq r_1$ then $\mathrm{Pr}_{h\in\mathcal{H}}[h(x)=h(y)]\geq p_1$
 2. If $d(x,y)\geq r_2$ then $\mathrm{Pr}_{h\in\mathcal{H}}[h(x)=h(y)]\leq p_2$
 
 (For our purposes, we always have $p_2 < p_1$. I.e. if two points are close together, they have a strictly higher probability of hashing to the same bucket than two points that are far apart. This property is ultimately what allows us to perform efficient near neighbor search.)
 
 ## Tunable LSH
+
 Full LSH scheme has two parameters to tune: $t$ tables and $r$ bands
+
 - effect of increasing number of tables $t$: fewer false negatives, more false positives
 - effect of increasing number of bands $r$: more false negatives, fewer false positives
 
 s-curve tuning,
 collision probability vs Jaccard similarity
 
-___
+---
+
 Crucial for [[Indyk and Motwani (1998)]] theorem.
 
 Also see [[SimHash]] and [[MinHash (Broder, 1997)]].
 
 References:
+
 1. https://web.stanford.edu/class/cs246/slides/03-lsh.pdf
 2. https://www.cs.princeton.edu/courses/archive/fall18/cos521/Lectures/lec12.pdf
 3. https://users.cs.duke.edu/~kamesh/CPS294-PDF/Lecture4.pdf

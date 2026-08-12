@@ -1,20 +1,21 @@
 ---
 layout: entry
 title: average hard NP puzzle
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-08-01T18:01:59-04:00
 tags:
   - cryptography
 ---
+
 ## Definition
 
-#incomplete 
+#incomplete
 [[class NP|NP]]
 
 [[δ-hard function]]

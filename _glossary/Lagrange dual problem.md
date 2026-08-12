@@ -17,6 +17,7 @@ created: 2025-09-30T18:06:53-04:00
 tags:
   - convex_optimization
 ---
+
 ## Definition
 
 Define the **Lagrange dual function** $g: \mathbb{R}^m \times \mathbb{R}^p \to \mathbb{R}$ as minimum value of the [[Lagrangian]] over $x$, i.e. for $\lambda \in \mathbb{R}^m$, $\nu \in \mathbb{R}^p$, $$g(\lambda, \nu) = \inf_{x \in \mathcal{D}} L(x, \lambda, \nu) = \inf_{x \in \mathcal{D}} \left( f_0(x) + \sum_{i=1}^m \lambda_i f_i(x) + \sum_{i=1}^p \nu_i h_i(x) \right)$$
@@ -30,8 +31,8 @@ Define the **Lagrange dual function** $g: \mathbb{R}^m \times \mathbb{R}^p \to \
 
 - [[Fenchel duality]], Wolfe dual
 
+---
 
-___
 ## References
 
 1. https://en.wikipedia.org/wiki/Duality_(optimization)

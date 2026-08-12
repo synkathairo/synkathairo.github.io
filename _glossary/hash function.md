@@ -15,6 +15,7 @@ tags:
   - cryptography
   - hashing
 ---
+
 ## Definition
 
 (in general): projects from large (possibly infinite) set to fixed size set
@@ -23,7 +24,8 @@ tags:
 
 - a cryptographically useful definition is [[universal hash function]]
 
-___
+---
+
 ## References
 
 1. https://mathworld.wolfram.com/HashFunction.html

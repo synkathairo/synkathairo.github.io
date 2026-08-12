@@ -1,29 +1,31 @@
 ---
 layout: entry
 title: second-order logic
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-29T15:55:12-04:00
 tags:
   - logic
 ---
+
 ## Definition
 
-Extension of [[first-order logic]] with *quantifiers* and *variables* ranging over *subsets* of the *universe* of discourse
+Extension of [[first-order logic]] with _quantifiers_ and _variables_ ranging over _subsets_ of the _universe_ of discourse
 
 ## Notes
 
-- in [[first-order logic]], *quantification* confined to elements of domain, however in *second-order logic*, quantification is also permitted on *relations*
-	- e.g. $\forall x. \exists X .\forall y. X(x,y) \leftrightarrow x=y$ 
-- see [[monadic second-order logic]], which requires *monadic* predicates
+- in [[first-order logic]], _quantification_ confined to elements of domain, however in _second-order logic_, quantification is also permitted on _relations_
+  - e.g. $\forall x. \exists X .\forall y. X(x,y) \leftrightarrow x=y$
+- see [[monadic second-order logic]], which requires _monadic_ predicates
 - 'In Philosophy of Logic [Quine 1970], W. V. Quine summed up a popular opinion among mathematical logicians by referring to second-order logic as “set theory in sheep’s clothing”.' (Resnik, 1998)
 
-___
+---
+
 ## References
 
 1. https://ncatlab.org/nlab/show/second-order+logic

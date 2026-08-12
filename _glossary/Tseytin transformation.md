@@ -4,19 +4,21 @@ title: Tseytin transformation
 aliases:
   - Tseitin transformation
   - Tseitin transform
-type: 
-reference: 
-course: 
-lecture: 
-statement: 
+type:
+reference:
+course:
+lecture:
+statement:
 created: 2025-08-04T10:50:34-04:00
 tags:
   - logic
   - circuit_complexity
 ---
-#incomplete 
 
-___
+#incomplete
+
+---
+
 ## References
 
 1. <https://en.wikipedia.org/wiki/Tseytin_transformation>

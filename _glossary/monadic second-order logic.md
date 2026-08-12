@@ -5,26 +5,27 @@ aliases:
   - MSO
   - MSOL
   - MSO logic
-type: 
-reference: 
-course: 
-lecture: 
-statement: 
+type:
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-29T15:48:12-04:00
 tags:
   - logic
 ---
+
 ## Definition
 
-**Monadic second-order logic** (MSO) is the [[fragment]] of [[second-order logic]] where second-order *quantification* is limited to quantification over [[set|sets]] (set predicates) e.g. $\forall X.\varphi(X)$
+**Monadic second-order logic** (MSO) is the [[fragment]] of [[second-order logic]] where second-order _quantification_ is limited to quantification over [[set|sets]] (set predicates) e.g. $\forall X.\varphi(X)$
 
-In other words, **MSO** confines *second-order* *quantification* to *monadic* *predicates*.
+In other words, **MSO** confines _second-order_ _quantification_ to _monadic_ _predicates_.
 
 ## Notes
 
-- a predicate symbol $P$ is *monadic* if its [[arity]] is $1$
-	- e.g. $Y$ in $\forall x . \exists Y . \forall y . Y(y) \leftrightarrow x= y$
-- MSO confines *second-order quantification* to *monadic predicates*
+- a predicate symbol $P$ is _monadic_ if its [[arity]] is $1$
+  - e.g. $Y$ in $\forall x . \exists Y . \forall y . Y(y) \leftrightarrow x= y$
+- MSO confines _second-order quantification_ to _monadic predicates_
 
 ## See also
 
@@ -32,7 +33,8 @@ In other words, **MSO** confines *second-order* *quantification* to *monadic* *p
 - [[second-order logic]]
 - [[existential second-order logic]]
 
-___
+---
+
 ## References
 
 1. https://en.wikipedia.org/wiki/Monadic_second-order_logic

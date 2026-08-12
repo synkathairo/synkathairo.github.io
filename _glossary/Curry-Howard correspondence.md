@@ -1,19 +1,20 @@
 ---
 layout: entry
 title: Curry-Howard correspondence
-aliases: 
-type: 
-reference: 
-course: 
-lecture: 
-statement: 
+aliases:
+type:
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-02T21:09:54-04:00
 tags:
   - complexity_theory
   - type_theory
   - PLT
 ---
-#incomplete 
+
+#incomplete
 
 intuition: relationship between computer programs and proofs
 
@@ -21,8 +22,10 @@ intuition: relationship between computer programs and proofs
 
 - relationship between type theory and category theory
 
-___
+---
+
 ## References
+
 1. https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence
 2. https://ncatlab.org/nlab/show/propositions+as+types
 3. https://web2.qatar.cmu.edu/cs/15317/lectures/04-curryhoward.pdf

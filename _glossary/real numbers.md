@@ -15,10 +15,13 @@ created: 2026-02-16T15:23:12-05:00
 tags:
   - analysis
 ---
-## Definition (*Cantor construction*)
-The set of **real numbers**, $\mathbb{R}$ may be defined as the set of [[equivalence class|equivalence classes]] of [[Cauchy sequence|Cauchy sequences]] of [[rational numbers]] under the [[equivalence relation]] $\{x_i\} \sim \{y_i\}$ if the [[interleave sequence]] of the two sequences is itself a *Cauchy sequence*.
+
+## Definition (_Cantor construction_)
+
+The set of **real numbers**, $\mathbb{R}$ may be defined as the set of [[equivalence class|equivalence classes]] of [[Cauchy sequence|Cauchy sequences]] of [[rational numbers]] under the [[equivalence relation]] $\{x_i\} \sim \{y_i\}$ if the [[interleave sequence]] of the two sequences is itself a _Cauchy sequence_.
 
 ## Lean4 representation
+
 ```lean
 /-- The type `ℝ` of real numbers constructed as equivalence classes of Cauchy sequences of rational numbers. -/
 structure Real where ofCauchy ::
@@ -27,12 +30,15 @@ structure Real where ofCauchy ::
 ```
 
 ## Notes
+
 - there are different equivalent constructions
 - these constructions demonstrate satisfaction of axiomatic requirements for reals
-- [[rational numbers]] are [[dense]] in the *reals*
+- [[rational numbers]] are [[dense]] in the _reals_
 
-___
+---
+
 ## References
+
 1. https://planetmath.org/realnumber
 2. https://ncatlab.org/nlab/show/real+number
 3. https://blog.richmond.edu/math320/2017/09/22/cantors-construction-of-the-real-numbers/

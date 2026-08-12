@@ -12,6 +12,7 @@ created: 2025-09-10T11:54:15-04:00
 tags:
   - game_theory
 ---
+
 ## Game
 
 ### two-player formulation
@@ -22,11 +23,10 @@ tags:
 
 ### n-player formulation
 
+#incomplete
 
+---
 
-#incomplete 
-
-___
 ## References
 
 1. G. Tullock, “Efficient Rent Seeking,” in _Efficient Rent-Seeking_, Boston, MA: Springer US, 2001, pp. 3–16. doi: [10.1007/978-1-4757-5055-3_2](https://doi.org/10.1007/978-1-4757-5055-3_2).

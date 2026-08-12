@@ -7,39 +7,45 @@ aliases:
 type:
   - definition
   - logic
-reference: 
+reference:
 course:
   - ECE6263
 lecture:
   - ece6263-6
-statement: 
+statement:
 created: 2024-12-04T19:57:22-05:00
 tags:
   - game_theory
   - modal_logic
   - logic
 ---
+
 ## Definition
+
 Consider axioms of [[propositional logic]] to hold. In addition,
-#incomplete 
+#incomplete
 
 ## Kripke's S5 system (formulated via knowledge operators)
+
 [[Aumann model of incomplete information#Definition (operator)|Knowledge operator]] $K_i$ of player $i$ satisfies following five properties, collectively known as **Kripke's S5 System**:
+
 1. $K_i Y = Y$: player knows $Y$ is set of all states of the world
 2. $K_i A \cap K_i B = K_i (A \cap B)$: if player knows event $A$ and knows event $B$ ten he knows event $A \cap B$.
-3. $K_i A \subseteq A$: if player knows event $A$ then event $A$ *obtains*
+3. $K_i A \subseteq A$: if player knows event $A$ then event $A$ _obtains_
 4. $K_i K_i A = K_i A$: if player knows event $A$ then he knows he knows event $A$ and vice versa
 5. $(K_i A)^c = K_i((K_i A)^C)$: if the player does not know event $A$, then he knows he does not know event $A$, and vice versa
 
 ## Notes
-This is a type of [[modal logic]]. It may be alternatively formulated using the language of modal operators, 
-#incomplete 
 
-$\mathbf{K}$ logic 
+This is a type of [[modal logic]]. It may be alternatively formulated using the language of modal operators,
+#incomplete
 
-___
+$\mathbf{K}$ logic
+
+---
 
 ## References
+
 1. https://plato.stanford.edu/entries/logic-modal/#ModLog
 2. M. Maschler, E. Solan, and Shmuel Zamir, _Game Theory_, Cambridge University Press, 2013, p. 327.
 3. https://ncatlab.org/nlab/show/S5+modal+logic

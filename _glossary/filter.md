@@ -1,29 +1,30 @@
 ---
 layout: entry
 title: filter
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-08-06T18:05:03-04:00
 tags:
   - logic
   - set_theory
 ---
+
 ## Definition
 
-A *subset* $F$ of a [[partial order|partial order]] $L$ is called a **filter** if it is *upward-closed* and *downward directed*, i.e.
+A _subset_ $F$ of a [[partial order|partial order]] $L$ is called a **filter** if it is _upward-closed_ and _downward directed_, i.e.
 
-1. if $A \leq B$ in $L$ and $A \in F$, then $B \in F$ (*upward closed*)
-2. for some $A$ in $L$, $A \in F$ (*nonempty*)
-3. if $A \in F$ and $B \in F$, then for some $C \in F$, $C \leq A$ and $C \leq B$ (*downward directed*)
+1. if $A \leq B$ in $L$ and $A \in F$, then $B \in F$ (_upward closed_)
+2. for some $A$ in $L$, $A \in F$ (_nonempty_)
+3. if $A \in F$ and $B \in F$, then for some $C \in F$, $C \leq A$ and $C \leq B$ (_downward directed_)
 
 ## Notes
 
-- can define filter in terms of [[predicate]] being a *filter* under similar conditions (whereas instead membership of $F$ it is defined in terms of truth condition $F(A)$ being *satisfiable* on some *type* $A$)
+- can define filter in terms of [[predicate]] being a _filter_ under similar conditions (whereas instead membership of $F$ it is defined in terms of truth condition $F(A)$ being _satisfiable_ on some _type_ $A$)
 
 ## Lean4 definition
 
@@ -45,7 +46,8 @@ structure Filter (α : Type*) where
 
 - [[SAT problem|Boolean satisfiability problem]]
 
-___
+---
+
 ## References
 
 1. <https://mathworld.wolfram.com/Filter.html>

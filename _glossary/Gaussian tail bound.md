@@ -3,7 +3,7 @@ layout: entry
 title: Gaussian tail bound
 type:
   - lemma
-reference: 
+reference:
 lecture:
   - cs6763-2
 statement: $\mathrm{Pr}[|X-\mathbb{E}X|\geq k \cdot \sigma] \leq 2e^{-k^2/2}$
@@ -21,9 +21,12 @@ $$\mathrm{Pr}[|X-\mathbb{E}X|\geq k \cdot \sigma] \leq 2e^{-k^2/2}$$
 
 see [[Gaussian distribution|Gaussian concentration]]
 
-___
+---
+
 compare [[Chebyshev's inequality]]; Gaussian random variables concentrate much tighter around their expectation than variance alone (i.e. Chebyshevs’s inequality) predicts.
 
-___
+---
+
 References:
+
 1. https://www.math.uci.edu/~rvershyn/papers/concentration-random-tensors.pdf

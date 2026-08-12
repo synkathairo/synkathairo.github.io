@@ -12,31 +12,33 @@ statement: "*__MillerRabin(n)__*<br />If $n 2$ and $n$ is even, return **composi
 created: 2023-10-17T15:34:17-04:00
 course: CS6763
 ---
+
 There is a randomized algorithm running in $O(n^3 \log_2(1/\delta))$ time that, with probability $1-\delta$ determines if an $n$-bit integer $x$ is prime.
 
-> *__MillerRabin(n)__*
-> If $n > 2$ and $n$ is even, return **composite**. 
+> _**MillerRabin(n)**_
+> If $n > 2$ and $n$ is even, return **composite**.
 > /\* Factor $n − 1$ as $2^s t$ where $t$ is odd. \*/
-> $s ← 0$ 
+> $s ← 0$
 > $t ← n − 1$
-> **while** $t$ is even 
+> **while** $t$ is even
 > &emsp;&emsp;$s ← s + 1$
 > &emsp;&emsp;$t ← t/2$
-> **end** /* Done. $n − 1 = 2^s t$. \*/ 
-> Choose $x ∈ \{1, 2, . . . , n − 1\}$ uniformly at random. 
-> Compute each of the numbers $x_t , x^{2t} , x^{4t} , . . . , x^{2^st} = x^{n−1} \mod n$. 
-> If $x^{n−1} \not\equiv 1 \pmod n$, return **composite**. 
+> **end** /* Done. $n − 1 = 2^s t$. \*/
+> Choose $x ∈ \{1, 2, . . . , n − 1\}$ uniformly at random.
+> Compute each of the numbers $x_t , x^{2t} , x^{4t} , . . . , x^{2^st} = x^{n−1} \mod n$.
+> If $x^{n−1} \not\equiv 1 \pmod n$, return **composite**.
 > **for** $i = 1, 2, . . . , s$
-> &emsp;&emsp;If $x^{2^i t} ≡ 1 \pmod n$ and $x^{2^{i−1} t} \not\equiv ±1 \pmod n$, return **composite**. 
-> **end** /\* Done checking for fake square roots. \*/ 
+> &emsp;&emsp;If $x^{2^i t} ≡ 1 \pmod n$ and $x^{2^{i−1} t} \not\equiv ±1 \pmod n$, return **composite**.
+> **end** /\* Done checking for fake square roots. \*/
 > Return **probably prime.**
 
-___
+---
 
 See also: [PRIMES is in P](https://annals.math.princeton.edu/2004/160-2/p12) paper
 
 References:
+
 1. G. L. Miller, “Riemann’s hypothesis and tests for primality,” _Proceedings of seventh annual ACM symposium on Theory of computing  - STOC ’75_, pp. 234–239, May 1975. doi: [10.1145/800116.803773](https://doi.org/10.1145/800116.803773)
-2. M. O. Rabin, “Probabilistic algorithm for testing primality,” _Journal of Number Theory_, vol. 12, no. 1, pp. 128–138, 1980. doi: [10.1016/0022-314x(80)90084-0](https://doi.org/10.1016/0022-314x(80)90084-0)
+2. M. O. Rabin, “Probabilistic algorithm for testing primality,” _Journal of Number Theory_, vol. 12, no. 1, pp. 128–138, 1980. doi: [10.1016/0022-314x(80)90084-0](<https://doi.org/10.1016/0022-314x(80)90084-0>)
 3. https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
 4. https://www.cs.cornell.edu/courses/cs4820/2010sp/handouts/MillerRabin.pdf

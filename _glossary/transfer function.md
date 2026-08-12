@@ -1,26 +1,29 @@
 ---
 layout: entry
 title: transfer function
-aliases: 
+aliases:
 type:
   - definition
   - function
-reference: 
+reference:
 course:
   - ECE6253
-lecture: 
-statement: 
+lecture:
+statement:
 created: 2024-11-25T17:50:31-05:00
 tags:
   - control_theory
 ---
+
 ## Definition
+
 Suppose a [[fixed system|fixed]], linear, analog system,
-$$\begin{aligned}
+
+$$ \begin{aligned}
 \dot{\mathbf{x}}(t) & = A \mathbf{x}(t) + B \mathbf{u}(t) \\
 \mathbf{y}(t) & = C \mathbf{x}(t) + D \mathbf{u}(t)
 \end{aligned}$$
-take [[Laplace transform]] ($\mathscr{L}$-transform) of both sides 
+take [[Laplace transform]] ($\mathscr{L}$-transform) of both sides
 $$\begin{aligned}
 \mathscr{L}\{\dot{\mathbf{x}}(t)\} & = A \mathscr{L}\{\mathbf{x}(t)\} + B \mathscr{L}\{\mathbf{u}(t)\} \\
 \mathscr{L}\{\mathbf{y}(t)\} & = C \mathscr{L}\{\mathbf{x}(t)\} + D \mathscr{L}\{\mathbf{u}(t)\}
@@ -35,7 +38,7 @@ s \mathbf{X}(s) - \mathbf{x}(0) & = A \mathbf{X}(s) + B \mathbf{U}(s) \\
 
 
 
-#incomplete 
+#incomplete
 
 Then
 $$[C (sI - A)^{-1} B + D] = H(s)$$
@@ -50,3 +53,4 @@ ___
 
 ## References
 1. P. E. Sarachik, *Principles of Linear Systems*, Cambridge Press, 1996, pp. 101-102, 125.
+$$

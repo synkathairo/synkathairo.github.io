@@ -16,17 +16,20 @@ tags:
   - probability
   - statistics
 ---
+
 ## Definition
 
-[[uniform distribution|uniform]] *discrete* [[random variable]] with $1/2$ (i.e. $50\%$) chance of being either $-1$ or $+1$
+[[uniform distribution|uniform]] _discrete_ [[random variable]] with $1/2$ (i.e. $50\%$) chance of being either $-1$ or $+1$
 
 ## See also
 
 - [[Khintchine inequality]]
 - [[Rademacher complexity]]
 
-___
+---
+
 ## References
+
 1. https://www.chrismusco.com/amlds2023/lectures/lec13_annotated.pdf
 2. https://www.chrismusco.com/amlds2023/notes/lecture13.html
 3. https://en.wikipedia.org/wiki/Rademacher_distribution

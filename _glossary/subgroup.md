@@ -14,13 +14,17 @@ tags:
   - algebra
   - algebra
 ---
+
 ## Definition
 
-A *subset* $H \subseteq G$ is a **subgroup** of [[group]] $G$ if the following properties hold:
-- *closure*, if $a \in H$, $b\in H$, then $ab \in H$
-- *identity*, $1 \in H$
-- *inverses*, if $a \in H$, then $a^{-1}\in H$
+A _subset_ $H \subseteq G$ is a **subgroup** of [[group]] $G$ if the following properties hold:
 
-___
+- _closure_, if $a \in H$, $b\in H$, then $ab \in H$
+- _identity_, $1 \in H$
+- _inverses_, if $a \in H$, then $a^{-1}\in H$
+
+---
+
 ## References
+
 1. M. Artin, _Algebra_, 2. ed. Boston, Mass. Munich: Pearson Education, Prentice Hall, 2011, p. 42.

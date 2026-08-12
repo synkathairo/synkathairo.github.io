@@ -1,10 +1,10 @@
 ---
 layout: entry
 title: theorem, perfect security and indistinguishability
-aliases: 
+aliases:
 type:
   - theorem
-reference: 
+reference:
 course:
   - CSCI3210
 lecture:
@@ -14,4 +14,5 @@ created: 2024-10-31T18:13:20-04:00
 ---
 
 ## Theorem
+
 An [[encryption scheme]] is perfectly secure if and only if it is [[perfect indistinguishability|perfectly indistinguishable]].

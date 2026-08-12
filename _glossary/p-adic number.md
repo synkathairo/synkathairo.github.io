@@ -1,20 +1,22 @@
 ---
 layout: entry
 title: p-adic number
-aliases: 
-type: 
-reference: 
-course: 
-lecture: 
-statement: 
+aliases:
+type:
+reference:
+course:
+lecture:
+statement:
 created: 2025-01-30T22:34:25-05:00
 tags:
 ---
 
-#incomplete 
+#incomplete
 
-___
+---
+
 ## References
+
 1. https://math.uchicago.edu/~may/REU2020/REUPapers/Pomerantz.pdf
 2. https://www.kurims.kyoto-u.ac.jp/~motizuki/An%20Introduction%20to%20p-adic%20Teichmuller%20Theory.pdf
 3. https://link.springer.com/book/10.1007/978-3-030-47295-5

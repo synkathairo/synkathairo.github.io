@@ -1,20 +1,21 @@
 ---
 layout: entry
 title: correlated equilibrium
-aliases: 
+aliases:
 type:
   - definition
-reference: 
+reference:
 course:
   - ECE6263
-lecture: 
+lecture:
 statement: "A probability distribution $\\psi$ on $S$ is a **correlated equilibrium** of $\\Gamma$ if, $\\forall i \\in N$, $\\forall j \\in S^i$, $\\forall k \\in S^i$, we have $\\sum_{s \\in S: s^i = j} \\psi(s) [u^i(k,,s^{-i}) - u^i(s)] \\leq 0$"
 created: 2024-11-14T14:59:46-05:00
 tags:
 ---
+
 ## Definition
 
-Let $\Gamma = (N, (S^i)_{i \in N}, (u^i)_{i \in N})$ be a finite $N$-person game in [[normal-form game|strategic normal form]], with $N$ denoting the set of players, $S^i$ the set of strategies, $u^i: \prod_{i \in N} S^i \to \mathbb{R}$  is player $i$'s payoff function. Generic element of $S$ is $s = (s^i)_{i \in N}$, $s^{-i} = (s^{i'})_{i' \neq i}$ is strategy combination of all players except $i$.
+Let $\Gamma = (N, (S^i)_{i \in N}, (u^i)_{i \in N})$ be a finite $N$-person game in [[normal-form game|strategic normal form]], with $N$ denoting the set of players, $S^i$ the set of strategies, $u^i: \prod_{i \in N} S^i \to \mathbb{R}$ is player $i$'s payoff function. Generic element of $S$ is $s = (s^i)_{i \in N}$, $s^{-i} = (s^{i'})_{i' \neq i}$ is strategy combination of all players except $i$.
 
 A [[probability density function|probability distribution]] $\psi$ on $S$ is a **correlated equilibrium** of $\Gamma$ if, $\forall i \in N$, $\forall j \in S^i$, $\forall k \in S^i$, we have
 $$\sum_{s \in S: s^i = j} \psi(s) [u^i(k,,s^{-i}) - u^i(s)] \leq 0$$
@@ -28,7 +29,7 @@ A (correlated) equilibrium of a given normal form game $G$ is a pair of
 1. strategy profile $f = (f_1, f_2)$, $f_i \in \Gamma_i$, $i = 1,2$
 2. correlation device $D$ such that the strategy profile $f$ is a NE.
 
-$$\begin{aligned}
+$$ \begin{aligned}
 u_1(f_1, f_2) & \geq u_1(f_1',f_2) \quad \forall f_1' \in \Gamma_1 \\
 u_1(f_1, f_2) & \geq u_2(f_1,f_2') \quad \forall f_2' \in \Gamma_2
 \end{aligned}$$
@@ -73,3 +74,4 @@ ___
 1. Hart S, Mas-Colell A. *A Simple Adaptive Procedure Leading to Correlated Equilibrium*. *Econometrica*, 2000; 68(5): 1127-1150. https://doi.org/10.1111/1468-0262.00153
 2. M. Maschler, E. Solan, and Shmuel Zamir, *Game Theory*, Cambridge University Press, 2013, pp. 307-308.
 3. https://en.wikipedia.org/wiki/Correlated_equilibrium
+$$

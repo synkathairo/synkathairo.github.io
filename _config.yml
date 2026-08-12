@@ -39,11 +39,11 @@ plugins:
 # minima:
 #   date_format: "%d %B %Y"
 
-markdown: kramdown
+# markdown: kramdown
 
-kramdown:
-  input: Skramdown
-  math_engine: itex2mml
+# kramdown:
+#   input: Skramdown
+#   math_engine: itex2mml
 
 collections:
   glossary:

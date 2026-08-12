@@ -6,24 +6,26 @@ aliases:
   - slicewise polynomial
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-08-03T18:48:26-04:00
 tags:
   - complexity_theory
 ---
+
 ## Definition
 
-**XP** is defined as the class of [[parameterized problem|parameterized problems]] that can be solved in time $n^{f(k)}$ for some *parameter* $k$ and [[effectively computable|computable function]] $f$
+**XP** is defined as the class of [[parameterized problem|parameterized problems]] that can be solved in time $n^{f(k)}$ for some _parameter_ $k$ and [[effectively computable|computable function]] $f$
 
 ## Notes
 
 - it is the "slicewise" version of [[class P|P]]
 - X[[class AC0|AC⁰]] $\subseteq$ XP
 
-___
+---
+
 ## References
 
 1. <https://en.wikipedia.org/wiki/Parameterized_complexity#XP>

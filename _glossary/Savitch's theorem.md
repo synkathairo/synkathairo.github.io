@@ -12,14 +12,19 @@ created: 2025-11-13T16:41:17-05:00
 tags:
   - complexity_theory
 ---
+
 ## Theorem
-For any *space-constructible* $S : \mathbb{N} \to \mathbb{N}$ with $S(n) \geq \log n$, $\mathbf{NSPACE}(S(n)) \subseteq \mathbf{SPACE}(S(n)^2)$.
+
+For any _space-constructible_ $S : \mathbb{N} \to \mathbb{N}$ with $S(n) \geq \log n$, $\mathbf{NSPACE}(S(n)) \subseteq \mathbf{SPACE}(S(n)^2)$.
 
 ([[class NSPACE|NSPACE]], [[class SPACE|SPACE]])
 
 ## See also
+
 - PSPACE-completeness of TBQF
 
-___
+---
+
 ## References
-1. S. Arora, B. Barak. *Computational Complexity: A Modern Approach*, Cambridge University Press, 2009, p. 86.
+
+1. S. Arora, B. Barak. _Computational Complexity: A Modern Approach_, Cambridge University Press, 2009, p. 86.

@@ -1,26 +1,29 @@
 ---
 layout: entry
 title: set
-aliases: 
+aliases:
 type:
   - definition
-reference: 
-course: 
-lecture: 
-statement: 
+reference:
+course:
+lecture:
+statement:
 created: 2025-07-31T17:17:39-04:00
 tags:
   - set_theory
 ---
+
 ## Overview
 
-Intuitively a **set** is a "collection" of "items" (*elements*)
+Intuitively a **set** is a "collection" of "items" (_elements_)
+
 ## Notes
 
-- definition of *set* depends on axiomatic approach
-	- e.g. *ZFC* or *HTT*
+- definition of _set_ depends on axiomatic approach
+  - e.g. _ZFC_ or _HTT_
 
-___
+---
+
 ## References
 
 1. <https://ncatlab.org/nlab/show/set>
