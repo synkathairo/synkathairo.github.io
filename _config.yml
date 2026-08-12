@@ -41,7 +41,8 @@ plugins:
 
 # markdown: kramdown
 
-# kramdown:
+kramdown:
+  math_engine: mathjax
 #   input: Skramdown
 #   math_engine: itex2mml
 

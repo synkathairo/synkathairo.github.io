@@ -10,7 +10,7 @@ created: 2023-10-13T14:39:34-04:00
 course: CS6763
 ---
 
-$\cos(\theta(x,y)) = \frac{\langle x,y\rangle}{||x||_2 ||y||_2}$
+$\cos(\theta(x,y)) = \frac{\langle x,y\rangle}{\Vert x \rVert_2 \lVert y \rVert_2}$
 
 with cosine similarity closer to 1 means more similar, farther from 1 means more different
 
