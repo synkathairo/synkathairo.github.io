@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Charles Zhu's page - Projects"
-permalink: /projects.html
 ---
 
 <!--## Projects-->
@@ -16,7 +15,7 @@ permalink: /projects.html
 - Compared circadian and ultradian cortisol secretion patterns between overweight and healthy weight female patient cohorts, to demonstrate differences in hormone dynamics between the two groups
 
 **Miscellanea**
-- [geodesic-optimization](projects/geodesic-optimization) - implementation of geodesic optimization methods in Julia. These methods generalize convex optimization for non-Euclidean problems.
+- [geodesic-optimization](/projects/geodesic-optimization) - implementation of geodesic optimization methods in Julia. These methods generalize convex optimization for non-Euclidean problems.
 - [embedded-gyrometer](https://synkathairo.github.io/embedded-gyrometer/) - gyroscope device using the STM32F429 Discovery Board (ARM-based) and associated L3GD20 gyroscope. Focus on estimation of stride length and step estimation using limited interface resources. Course project. Uses C, C++, and MbedOS.
 - [rsa-py](https://github.com/synkathairo/rsa-py) - proof-of-concept implementation in Python of the [Rivest-Shamir-Adleman (RSA)](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) encryption algorithm.
 - [synkathairo.github.io](https://github.com/synkathairo/synkathairo.github.io) - this very webpage

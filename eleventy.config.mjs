@@ -18,7 +18,7 @@ export default function (eleventyConfig) {
       })
       .use(wikilinksPlus, {
       pageLink: {
-        absoluteBaseURL: "/_glossary/",
+        absoluteBaseURL: "/glossary/",
         forceAllLinksAbsolute: true,
         uriSuffix: "/",
       },
@@ -37,13 +37,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi
       .getAll()
-      .filter((item) => item.inputPath.includes("_posts/"))
+      .filter((item) => item.inputPath.includes("posts/"))
       .filter((post) => post.data.published !== false)
       .sort((a, b) => b.date - a.date);
   });
   eleventyConfig.addCollection("glossary", function (collectionApi) {
     return collectionApi
-      .getFilteredByGlob("./_glossary/*.{md,markdown}")
+      .getFilteredByGlob("./glossary/*.{md,markdown}")
       .sort((a, b) =>
         String(a.data.title ?? a.page.fileSlug).localeCompare(
           String(b.data.title ?? b.page.fileSlug),

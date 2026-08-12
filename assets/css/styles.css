@@ -49,3 +49,6 @@ a {
 #post-info:empty, #post-aliases.empty, #post-tag.empty {
     display: none;
 }
+#linkback {
+    font-size: .8em;
+}
