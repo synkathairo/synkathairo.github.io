@@ -17,17 +17,21 @@ export default function (eleventyConfig) {
         },
       })
       .use(wikilinksPlus, {
-      pageLink: {
-        absoluteBaseURL: "/glossary/",
-        forceAllLinksAbsolute: true,
-        uriSuffix: "/",
-      },
-      imageEmbed: {
-        absoluteBaseURL: "/assets/images/",
-        forceAllImageUrlsAbsolute: true,
-        defaultAltText: true,
-      },
-    });
+        pageLink: {
+          absoluteBaseURL: "/glossary/",
+          forceAllLinksAbsolute: true,
+          uriSuffix: "/",
+        },
+        imageEmbed: {
+          absoluteBaseURL: "/assets/images/",
+          forceAllImageUrlsAbsolute: true,
+          defaultAltText: true,
+        },
+      });
+  });
+
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    mdLib.set({ linkify: true });
   });
 
   eleventyConfig.ignores.add("README.md");
