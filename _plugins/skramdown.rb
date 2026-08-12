@@ -3,6 +3,7 @@
 require 'kramdown/parser/kramdown'
 require 'kramdown/parser/kramdown/block_boundary'
 require 'kramdown-parser-gfm'
+require 'kramdown-math-itex2mml'
 
 module Kramdown
   module Parser
@@ -33,7 +34,7 @@ module Kramdown
         start_line_number = @src.current_line_number
         @src.pos += @src.matched_size
         data = (@src[1] || @src[2]).strip
-        data = data.gsub('>', '\gt').gsub('<', '\lt')
+        data = data.gsub('>', '\gt').gsub('<', '\lt').gsub('…', '\ldots')
         @tree.children << Element.new(:math, data, nil, :category => :span, :location => start_line_number)
       end
       define_parser(:sane_inline_math, SANE_INLINE_MATH_START, '\\$|\\\\\\(')
@@ -44,7 +45,7 @@ module Kramdown
         start_line_number = @src.current_line_number
         @src.pos += @src.matched_size
         data = (@src[1] || @src[2]).strip
-        data = data.gsub('>', '\gt').gsub('<', '\lt')
+        data = data.gsub('>', '\gt').gsub('<', '\lt').gsub('…', '\ldots')
         @tree.children << Element.new(:math, data, nil, :category => :block, :location => start_line_number)
       end
       define_parser(:sane_display_math, SANE_DISPLAY_MATH_START, '\\$\\$')
