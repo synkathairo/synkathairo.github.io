@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: field
 aliases:
   - 域

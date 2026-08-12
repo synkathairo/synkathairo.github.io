@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Pearson correlation coefficient
 aliases:
   - correlation coefficient

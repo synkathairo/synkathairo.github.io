@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Itô process
 aliases:
   - Ito process

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: non-deterministic Turing Machine
 aliases:
   - NDTM

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: binomial distribution
 aliases:
   - 二项分布

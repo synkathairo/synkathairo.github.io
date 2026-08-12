@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Lenz–Ising model
 aliases:
   - Ising model

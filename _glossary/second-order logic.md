@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: second-order logic
 aliases: 
 type:

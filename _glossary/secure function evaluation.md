@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: secure function evaluation
 aliases:
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kakutani fixed-point theorem
 aliases: 
 type:

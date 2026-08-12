@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Locality sensitive hash function
 aliases:
   - LSH function

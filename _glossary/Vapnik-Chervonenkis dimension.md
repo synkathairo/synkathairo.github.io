@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Vapnik-Chervonenkis dimension
 aliases:
   - VC dimension

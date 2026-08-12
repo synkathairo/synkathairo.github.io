@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: axioms of countability
 aliases:
   - first-countable
@@ -31,4 +31,3 @@ ___
 ## References
 1. https://proofwiki.org/wiki/Definition:Countability_Axioms
 2. http://staff.ustc.edu.cn/~wangzuoq/Courses/21S-Topology/Notes/Lec13.pdf
-

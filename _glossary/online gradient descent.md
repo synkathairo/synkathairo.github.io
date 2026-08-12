@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: online gradient descent
 type:
   - algorithm
@@ -49,6 +49,3 @@ ___
 ## References
 1. https://www.chrismusco.com/amlds2023/lectures/lec8_annotated.pdf
 2. L. Bottou, “On-line Learning and Stochastic Approximations,” in _On-Line Learning in Neural Networks_, 1st ed., D. Saad, Ed., Cambridge University Press, 1999, pp. 9–42. doi: [10.1017/CBO9780511569920.003](https://doi.org/10.1017/CBO9780511569920.003).
-
-
-

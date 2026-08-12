@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title:
   graph of a function 
 aliases: 
@@ -13,4 +13,4 @@ created:
 tags:
 ---
 
-#incomplete 
+#incomplete

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Hilbert space
 aliases:
   - 希尔伯特空间

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cauchy sequence
 aliases:
   - Cauchy 列

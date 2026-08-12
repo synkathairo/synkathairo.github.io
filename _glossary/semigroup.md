@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: semigroup
 aliases:
   - 半群

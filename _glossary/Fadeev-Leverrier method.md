@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Fadeev-Leverrier method
 aliases:
   - Leverrier's method

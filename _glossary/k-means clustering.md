@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: k-means clustering
 type:
   - algorithm
@@ -18,4 +18,4 @@ Equivalent form: find clusters $C_1,...,C_k \subseteq \{1,...,n\}$ to minimize:
 $$Cost(C_1,...,C_k)=\sum_{i=1}^n \frac{1}{2|C_j|}\sum_{u,v \in C_j}||\mathbf{a}_u-\mathbf{a}_v||_2^2$$
 Approximation scheme:
 
-#incomplete 
+#incomplete

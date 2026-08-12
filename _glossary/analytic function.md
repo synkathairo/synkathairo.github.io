@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cω-function
 aliases:
   - analytic function

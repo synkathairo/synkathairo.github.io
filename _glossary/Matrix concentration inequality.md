@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Matrix concentration inequality
 aliases: 
 type: []

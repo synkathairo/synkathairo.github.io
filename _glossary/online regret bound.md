@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: online regret bound
 type: 
 reference: 

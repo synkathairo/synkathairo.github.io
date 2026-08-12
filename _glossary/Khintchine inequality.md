@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Khintchine inequality
 aliases:
 type:

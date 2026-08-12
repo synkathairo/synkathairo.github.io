@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Church-Turing thesis
 aliases: 
 type: 

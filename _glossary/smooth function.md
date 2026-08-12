@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: smooth function
 aliases:
   - smooth
@@ -22,4 +22,3 @@ A **smooth function** (or **$C^\infty$-function**), is a [[Cᵏ-function|Cᵏ-fu
 ___
 ## References
 1. http://staff.ustc.edu.cn/~wangzuoq/Courses/18F-Manifolds/Notes/Lec02.pdf
-

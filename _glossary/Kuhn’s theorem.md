@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kuhn’s theorem
 aliases: 
 type:

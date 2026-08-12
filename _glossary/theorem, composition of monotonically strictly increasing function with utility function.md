@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: theorem, composition of monotonically strictly increasing function with utility function
 aliases: 
 type:

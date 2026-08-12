@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Approximation filters
 type:
   - image filter

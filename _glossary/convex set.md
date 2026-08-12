@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: convex set
 aliases:
   - 凸集

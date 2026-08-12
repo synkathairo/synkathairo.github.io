@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: non-interactive argument of knowledge
 aliases:
   - NARK

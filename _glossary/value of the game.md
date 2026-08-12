@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: value of the game
 aliases:
   - optimal strategies

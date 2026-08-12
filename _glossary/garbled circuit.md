@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: garbled circuit
 aliases:
   - Yao's garbled circuits

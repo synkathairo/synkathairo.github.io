@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Wasserstein distance
 aliases:
   - Kantorovich-Rubinstein metric

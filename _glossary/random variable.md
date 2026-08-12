@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: random variable
 aliases:
   - 随机变量
@@ -22,4 +22,3 @@ A **random variable** $X$ is a [[measurable function]] $X: \Omega \to E$ from a 
 ___
 ## References
 1. https://en.wikipedia.org/wiki/Random_variable
-

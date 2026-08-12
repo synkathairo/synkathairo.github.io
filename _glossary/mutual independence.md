@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: mutual independence
 aliases:
   - mutually independent

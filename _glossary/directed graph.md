@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: directed graph
 aliases:
   - digraph
@@ -15,4 +15,4 @@ tags:
   - graph_theory
 ---
 
-#incomplete 
+#incomplete

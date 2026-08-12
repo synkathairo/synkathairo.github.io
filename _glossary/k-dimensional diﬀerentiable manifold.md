@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: k-dimensional diﬀerentiable manifold
 aliases:
   - k-manifold

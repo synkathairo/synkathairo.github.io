@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: total variation regularization
 aliases:
   - TV regularization

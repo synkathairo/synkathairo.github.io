@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Bernoulli's theorem
 aliases: 
 type:

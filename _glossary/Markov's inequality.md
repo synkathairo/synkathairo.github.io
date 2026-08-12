@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Markov's inequality
 aliases: 
 type:

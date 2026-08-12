@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Borel field
 aliases:
   - 波莱尔域

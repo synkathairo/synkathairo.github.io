@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Byzantine agreement problem
 aliases:
   - Byzantine fault

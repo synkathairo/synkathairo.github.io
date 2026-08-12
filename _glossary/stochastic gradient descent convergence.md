@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: stochastic gradient descent convergence
 aliases:
   - SGD convergence
@@ -25,4 +25,4 @@ see: [[stochastic gradient descent]]
 
 ___
 References:
-1. 
+1.

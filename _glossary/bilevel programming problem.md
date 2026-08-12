@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: bilevel programming problem
 aliases:
   - bilevel optimization

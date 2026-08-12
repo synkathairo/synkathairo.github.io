@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Alternating direction method of multipliers
 aliases:
   - ADMM

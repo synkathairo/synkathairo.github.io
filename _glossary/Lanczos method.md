@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Lanczos method
 aliases: 
 type:

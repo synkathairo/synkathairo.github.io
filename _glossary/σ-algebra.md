@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: σ-algebra
 aliases:
   - sigma algebra

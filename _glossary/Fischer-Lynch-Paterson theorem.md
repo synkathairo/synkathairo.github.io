@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Fischer-Lynch-Paterson theorem
 aliases:
   - Fischer-Lynch-Paterson result

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: machine learning model
 type:
   - approach

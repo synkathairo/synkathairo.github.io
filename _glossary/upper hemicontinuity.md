@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: upper hemicontinuity
 aliases:
   - u.h.c.

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Courant-Fischer min-max principle
 aliases: 
 type:

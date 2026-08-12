@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: noncooperative (Nash) equilibrium solution
 aliases:
   - noncooperative (Nash) equilibrium outcome

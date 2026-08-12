@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Gács-Sipser-Lautemann theorem
 aliases:
   - Gacs-Sipser-Lautemann theorem
@@ -13,4 +13,4 @@ tags:
   - complexity_theory
 ---
 
-#incomplete 
+#incomplete

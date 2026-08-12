@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kelly criterion
 aliases: 
 type: 
@@ -11,4 +11,4 @@ created: 2025-04-28T23:05:32-04:00
 tags:
   - probability
 ---
-#incomplete 
+#incomplete

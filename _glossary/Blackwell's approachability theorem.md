@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Blackwell's approachability theorem
 aliases: 
 type:

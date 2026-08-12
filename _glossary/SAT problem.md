@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: SAT problem
 aliases:
   - SAT

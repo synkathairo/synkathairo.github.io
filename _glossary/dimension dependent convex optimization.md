@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: dimension dependent convex optimization
 type:
   - theorem

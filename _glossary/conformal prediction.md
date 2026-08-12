@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: conformal prediction
 aliases: 
 type:

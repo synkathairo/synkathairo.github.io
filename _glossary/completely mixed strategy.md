@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: completely mixed strategy
 aliases: 
 type:

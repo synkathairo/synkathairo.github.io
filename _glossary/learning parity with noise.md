@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: learning parity with noise
 aliases:
   - LPN

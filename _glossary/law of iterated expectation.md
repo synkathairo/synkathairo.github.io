@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: law of iterated expectation
 aliases:
   - law of total expectation

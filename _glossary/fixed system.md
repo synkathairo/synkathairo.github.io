@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: fixed system
 aliases: 
 type: 
@@ -12,4 +12,4 @@ created: 2024-11-26T12:56:56-05:00
 tags:
   - control_theory
 ---
-#incomplete 
+#incomplete

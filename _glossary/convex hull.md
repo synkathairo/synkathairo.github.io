@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: convex hull
 aliases:
   - 凸包

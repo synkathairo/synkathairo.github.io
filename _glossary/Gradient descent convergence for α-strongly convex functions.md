@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Gradient descent convergence for α-strongly convex functions
 aliases:
   - GD convergence for α-strongly convex functions

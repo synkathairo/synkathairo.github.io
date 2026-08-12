@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Borel-Cantelli lemma
 aliases:
 type:

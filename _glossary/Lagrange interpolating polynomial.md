@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Lagrange interpolating polynomial
 aliases:
   - Lagrange polynomial

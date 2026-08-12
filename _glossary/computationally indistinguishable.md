@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: computationally indistinguishable
 aliases:
   - computational indistinguishability

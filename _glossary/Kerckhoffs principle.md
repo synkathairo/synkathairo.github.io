@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kerckhoffs principle
 aliases:
   - Kerckhoff's law

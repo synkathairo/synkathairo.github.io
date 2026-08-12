@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: probabilistic Turing machine
 aliases:
 type:

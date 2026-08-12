@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: polynomial hierarchy
 aliases:
   - polynomial-time hierarchy

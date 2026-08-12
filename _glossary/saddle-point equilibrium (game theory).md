@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: saddle-point equilibrium (game theory)
 aliases:
   - saddle-point strategies

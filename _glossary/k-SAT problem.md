@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: k-SAT problem
 aliases:
   - 3SAT

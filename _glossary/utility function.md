@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: utility function
 aliases:
   - payoff function

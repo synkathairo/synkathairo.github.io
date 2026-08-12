@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: mixed strategy
 aliases:
   - 混合策略

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: quasiconvex function
 aliases:
   - quasiconvex

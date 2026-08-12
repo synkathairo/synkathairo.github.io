@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Fenchel coupling
 aliases: 
 type: 
@@ -14,5 +14,4 @@ tags:
 ---
 see [[Fenchel conjugate]]
 
-#incomplete 
-
+#incomplete

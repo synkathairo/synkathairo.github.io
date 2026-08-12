@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: polytope
 aliases:
   - 多胞形

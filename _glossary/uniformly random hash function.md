@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: uniformly random hash function
 type:
   - definition

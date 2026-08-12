@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: complete metric space
 aliases:
 type:

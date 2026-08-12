@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Euler's identity
 type:
   - theorem

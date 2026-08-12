@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: situation of incomplete information with beliefs
 aliases:
   - Aumann situation of incomplete information with beliefs

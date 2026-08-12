@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Gradient descent for β-smooth, α-strongly convex
 aliases:
   - GD for β-smooth, α-strongly convex

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Courcelle's theorem
 aliases: 
 type:

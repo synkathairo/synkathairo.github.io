@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Singular value decomposition
 aliases:
   - SVD
@@ -58,4 +58,4 @@ ___
 4. G. Strang, “6.3 Singular Value Decomposition” in _Introduction to Linear Algebra_, 4th ed., Wellesley, MA: Wellesley-Cambridge Press, 2009, pp. 367-376.
 5. https://www.sjsu.edu/faculty/guangliang.chen/Math253S20/lec5svd.pdf
 
-#incomplete 
+#incomplete

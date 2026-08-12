@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: proof calculus
 aliases:
   - proof system

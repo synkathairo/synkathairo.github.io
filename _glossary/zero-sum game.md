@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: zero-sum game
 aliases:
   - 零和博弈

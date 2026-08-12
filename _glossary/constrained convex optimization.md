@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: constrained convex optimization
 type:
   - approach

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: scalar property of variance and expectation
 type:
   - proposition

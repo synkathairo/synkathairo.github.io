@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: game with perfect information
 aliases: 
 type:

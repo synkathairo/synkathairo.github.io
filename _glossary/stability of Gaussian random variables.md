@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: stability of Gaussian random variables
 type:
   - proposition

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Interior point method
 aliases: 
 type:

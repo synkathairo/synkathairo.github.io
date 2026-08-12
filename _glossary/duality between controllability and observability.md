@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: duality between controllability and observability
 aliases:
 type:
@@ -14,4 +14,4 @@ tags:
   - duality
 ---
 
-#incomplete 
+#incomplete

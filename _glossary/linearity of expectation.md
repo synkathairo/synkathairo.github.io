@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: linearity of expectation
 aliases:
   - 期望的线性性质

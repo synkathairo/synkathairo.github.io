@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: strategically equivalent
 aliases: 
 type:

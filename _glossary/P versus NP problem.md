@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: P versus NP problem
 aliases:
   - Algorithmica

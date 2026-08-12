@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: smooth manifold
 aliases:
   - 光滑流形

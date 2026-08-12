@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: simplex
 aliases:
   - 单纯形

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Brouwer fixed-point theorem
 aliases:
   - Brouwer's fixed-point theorem

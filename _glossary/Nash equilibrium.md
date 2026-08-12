@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Nash equilibrium
 aliases:
   - 纳什均衡

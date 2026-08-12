@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: lower hemicontinuity
 aliases:
   - l.h.c.

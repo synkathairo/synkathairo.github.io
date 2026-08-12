@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Rolle's theorem
 aliases: 
 type:

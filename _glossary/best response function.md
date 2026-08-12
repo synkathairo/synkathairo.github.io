@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: best response function
 aliases: 
 type:

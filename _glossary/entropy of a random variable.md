@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: entropy of a random variable
 aliases:
   - Shannon entropy

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Riemannian manifold
 aliases: 
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: graph of the correspondence
 aliases: 
 type:

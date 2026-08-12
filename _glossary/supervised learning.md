@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: supervised learning
 type: 
 reference: 
@@ -12,4 +12,4 @@ statement:
 created: 2023-10-25T14:15:00-04:00
 ---
 
-#incomplete 
+#incomplete

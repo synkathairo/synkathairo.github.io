@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Gradient descent convergence for β-smooth functions
 aliases:
   - GD convergence for β-smooth functions

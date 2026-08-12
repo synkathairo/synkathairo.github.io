@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: strategy vector
 aliases:
   - mixed/behavior strategy vector

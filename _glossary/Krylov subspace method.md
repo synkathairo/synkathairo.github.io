@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Krylov subspace method
 aliases: 
 type: 
@@ -11,4 +11,4 @@ lecture:
 statement: 
 created: 2023-12-04T01:12:58-05:00
 ---
-#incomplete 
+#incomplete

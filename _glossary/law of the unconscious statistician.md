@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: law of the unconscious statistician
 aliases:
   - LOTUS

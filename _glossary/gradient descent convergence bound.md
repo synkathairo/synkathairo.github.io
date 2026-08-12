@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: gradient descent convergence bound
 aliases:
   - GD convergence bound

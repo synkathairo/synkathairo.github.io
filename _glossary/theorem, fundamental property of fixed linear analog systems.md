@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: theorem, fundamental property of fixed linear analog systems
 aliases: 
 type:

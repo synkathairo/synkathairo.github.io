@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: spectral decomposition
 aliases:
   - eigendecomposition of a matrix

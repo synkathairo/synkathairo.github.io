@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Accelerated gradient descent
 aliases:
   - Nesterov's accelerated gradient descent

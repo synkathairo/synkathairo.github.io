@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Harsanyi's purification theorem
 aliases: 
 type: 

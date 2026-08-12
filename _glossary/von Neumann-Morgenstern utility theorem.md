@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: von Neumann-Morgenstern utility theorem
 aliases:
   - von Neumann-Morgenstern axioms

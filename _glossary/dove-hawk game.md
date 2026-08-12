@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: dove-hawk game
 aliases: 
 type:

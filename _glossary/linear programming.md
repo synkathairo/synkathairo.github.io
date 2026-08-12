@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: linear programming
 aliases:
   - linear program

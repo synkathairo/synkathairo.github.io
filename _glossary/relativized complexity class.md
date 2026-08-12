@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: relativized complexity class
 aliases:
   - relativized world

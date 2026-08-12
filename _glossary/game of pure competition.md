@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: game of pure competition
 aliases: 
 type:

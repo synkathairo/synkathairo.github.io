@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Shamir's secret sharing scheme
 aliases:
   - Shamir secret sharing

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: distributional Johnson-Lindenstrauss lemma
 aliases:
   - distributional JL Lemma
@@ -55,4 +55,4 @@ $$||\mathbf{\Pi x}||_2^2=\frac{1}{k}\sum_{i=1}^k(\langle \mathbf{\pi}_i, \mathbf
 ___
 See [[Gaussian distribution|Gaussian concentration]]
 
-See also: [[CS6763 Homework 2#Proof of $ mathbb{E}[ mathbf{ Pi x} _2 2]= mathbf{x} _2 2$|Homework 2]] for proof of $\mathbb{E}[||\mathbf{\Pi x}||_2^2]=||\mathbf{x}||_2^2$ 
+See also: [[CS6763 Homework 2#Proof of $ mathbb{E}[ mathbf{ Pi x} _2 2]= mathbf{x} _2 2$|Homework 2]] for proof of $\mathbb{E}[||\mathbf{\Pi x}||_2^2]=||\mathbf{x}||_2^2$

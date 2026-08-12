@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Curry-Howard correspondence
 aliases: 
 type: 

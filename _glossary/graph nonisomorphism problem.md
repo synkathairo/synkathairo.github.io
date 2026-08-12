@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: graph nonisomorphism problem
 aliases:
   - GNI problem

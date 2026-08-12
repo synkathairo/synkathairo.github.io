@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: monadic second-order logic
 aliases:
   - MSO

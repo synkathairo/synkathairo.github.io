@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cantor–Schröder–Bernstein theorem
 aliases:
   - Schröder–Bernstein theorem

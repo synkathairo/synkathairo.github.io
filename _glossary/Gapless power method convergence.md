@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Gapless power method convergence
 aliases: 
 type:

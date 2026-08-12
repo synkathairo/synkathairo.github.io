@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Hamilton–Jacobi–Bellman equation
 aliases:
 type:

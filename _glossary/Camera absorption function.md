@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Camera absorption function
 type:
   - function

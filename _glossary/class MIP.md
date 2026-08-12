@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: class MIP
 aliases:
   - MIP

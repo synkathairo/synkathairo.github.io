@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: cumulative distribution function
 aliases:
   - cdf
@@ -15,4 +15,4 @@ tags:
   - probability
 ---
 
-#incomplete 
+#incomplete

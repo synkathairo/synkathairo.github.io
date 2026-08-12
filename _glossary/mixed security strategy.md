@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: mixed security strategy
 aliases: 
 type: 

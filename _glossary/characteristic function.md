@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: characteristic function
 aliases: 
 type: 

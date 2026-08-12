@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Grayscale Image specification
 type:
   - definition

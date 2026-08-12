@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: oracle machine
 aliases:
   - oracle

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: polynomial-time approximation scheme
 aliases:
   - PTAS

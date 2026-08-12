@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: theorem, security levels of matrix game players
 aliases: 
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Nash social welfare
 aliases:
   - Nash social welfare function

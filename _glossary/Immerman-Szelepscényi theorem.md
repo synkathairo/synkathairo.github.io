@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Immerman-Szelepscényi theorem
 aliases:
 type:

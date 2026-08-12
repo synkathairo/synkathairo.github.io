@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: knowledge hierarchy
 aliases: 
 type:

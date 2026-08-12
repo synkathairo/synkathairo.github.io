@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Fokker-Planck equation
 aliases: 
 type: 

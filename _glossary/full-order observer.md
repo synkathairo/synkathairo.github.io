@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: full-order observer
 aliases: 
 type:
@@ -14,4 +14,4 @@ created: 2024-12-03T17:52:54-05:00
 tags:
 ---
 
-#incomplete 
+#incomplete

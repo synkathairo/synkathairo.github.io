@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: common knowledge
 aliases: 
 type:

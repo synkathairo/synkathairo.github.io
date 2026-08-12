@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Projection from 3-D to 2-D camera plane
 type:
   - function

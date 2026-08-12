@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: succinct non-interactive argument of knowledge
 aliases:
   - SNARK

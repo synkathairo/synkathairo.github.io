@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: directional derivative
 type:
   - definition

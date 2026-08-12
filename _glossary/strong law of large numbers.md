@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: strong law of large numbers
 aliases:
   - SLLN

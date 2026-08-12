@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: pumping lemma for regular languages
 aliases:
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: prime number theorem
 aliases: 
 type:

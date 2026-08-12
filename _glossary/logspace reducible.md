@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: logspace reducible
 aliases:
   - logspace reduction

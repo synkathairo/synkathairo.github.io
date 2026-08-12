@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Peirce's law
 aliases: 
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Bohnenblust-Karlin fixed point theorem
 aliases: 
 type:

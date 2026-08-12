@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Block power method
 aliases:
   - Simultaneous Iteration
@@ -14,4 +14,4 @@ lecture:
 statement: 
 created: 2023-12-14T18:07:05-05:00
 ---
-#incomplete 
+#incomplete

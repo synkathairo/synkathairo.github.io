@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: randomness
 aliases:
   - 随机性

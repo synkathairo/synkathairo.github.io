@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Stackelberg game
 aliases:
   - leader-follower game

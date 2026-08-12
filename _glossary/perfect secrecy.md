@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: perfect secrecy
 aliases:
   - perfectly secret

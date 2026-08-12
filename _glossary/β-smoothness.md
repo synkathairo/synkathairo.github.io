@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: β-smoothness
 aliases:
   - beta-smoothness

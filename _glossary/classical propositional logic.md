@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: classical propositional logic
 aliases:
   - Aristotelian logic

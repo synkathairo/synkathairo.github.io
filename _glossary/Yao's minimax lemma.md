@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Yao's minimax lemma
 aliases:
   - Yao's lemma

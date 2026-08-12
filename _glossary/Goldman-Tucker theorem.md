@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Goldman-Tucker theorem
 aliases: 
 type:

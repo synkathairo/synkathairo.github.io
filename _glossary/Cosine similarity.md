@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cosine similarity
 type:
   - definition
@@ -20,6 +20,3 @@ Suppose $\mathbf{x},\mathbf{y}$ are unit vectors, then,
 $$||\mathbf{x}-\mathbf{y}||_2^2 = \langle \mathbf{x} - \mathbf{y},\mathbf{x} - \mathbf{y} \rangle
 =||\mathbf{x}||_2^2+||\mathbf{y}||_2^2-2\langle x,y \rangle
 = 2 - 2 \cos(\theta(\mathbf{x},\mathbf{y}))$$
-
-
-

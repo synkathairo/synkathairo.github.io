@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: time-constructible function
 aliases:
   - time-constructible

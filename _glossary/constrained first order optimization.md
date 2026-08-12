@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: constrained first order optimization
 aliases:
 type:
@@ -11,4 +11,4 @@ statement:
 created: 2023-11-29T00:55:20-05:00
 ---
 
-#incomplete 
+#incomplete

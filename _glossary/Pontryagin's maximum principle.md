@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Pontryagin's maximum principle
 aliases: 
 type: 

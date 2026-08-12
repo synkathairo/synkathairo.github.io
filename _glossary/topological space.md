@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: topological space
 aliases:
   - 拓扑空间

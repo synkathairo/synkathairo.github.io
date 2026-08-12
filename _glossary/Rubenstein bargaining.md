@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Rubenstein bargaining
 aliases:
   - Rubenstein-Ståhl bargaining model

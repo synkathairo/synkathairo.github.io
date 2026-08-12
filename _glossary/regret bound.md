@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: regret bound
 type:
   - definition

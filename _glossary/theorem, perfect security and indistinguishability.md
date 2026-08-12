@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: theorem, perfect security and indistinguishability
 aliases: 
 type:

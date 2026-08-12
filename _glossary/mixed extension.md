@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: mixed extension
 aliases: 
 type:
@@ -24,4 +24,3 @@ ___
 ## References
 1. M. Maschler, E. Solan, and Shmuel Zamir, *Game Theory*, Cambridge University Press, 2013, p. 147.
 2. https://homepages.cwi.nl/~apt/stra/ch9.pdf
-

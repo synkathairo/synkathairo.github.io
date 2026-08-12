@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Itô lemma
 aliases:
   - Itô's lemma

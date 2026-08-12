@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cauchy distribution
 aliases: 
 type: 
@@ -13,4 +13,4 @@ tags:
   - statistics
 ---
 
-#incomplete 
+#incomplete

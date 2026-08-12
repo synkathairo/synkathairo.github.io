@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: exponential time hypothesis
 aliases: 
 type: 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: online perceptron algorithm
 aliases: 
 type:

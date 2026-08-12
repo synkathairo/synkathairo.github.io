@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Bernoulli distribution
 aliases: 
 type:

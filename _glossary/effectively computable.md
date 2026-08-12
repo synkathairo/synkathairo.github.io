@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: effectively computable
 aliases:
   - effective computability

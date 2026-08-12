@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Flajolet-Martin algorithm
 type:
   - algorithm

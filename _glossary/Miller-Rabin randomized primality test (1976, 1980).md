@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Miller-Rabin randomized primality test (1976, 1980)
 type:
   - algorithm

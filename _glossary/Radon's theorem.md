@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Radon's theorem
 aliases: 
 type:

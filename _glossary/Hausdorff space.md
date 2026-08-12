@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Hausdorff space
 aliases:
   - T2 space

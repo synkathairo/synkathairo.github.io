@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: long short-term memory network
 aliases:
   - LSTM

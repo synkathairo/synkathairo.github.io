@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: continuous time state equations
 aliases: 
 type:

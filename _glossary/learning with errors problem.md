@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: learning with errors problem
 aliases:
   - LWE

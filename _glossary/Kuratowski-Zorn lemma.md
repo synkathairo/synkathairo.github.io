@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kuratowski-Zorn lemma
 aliases:
   - Zorn's lemma

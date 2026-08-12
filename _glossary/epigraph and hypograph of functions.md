@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: epigraph and hypograph of functions
 aliases:
   - epigraph

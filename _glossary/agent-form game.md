@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: agent-form game
 aliases: 
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: right continuous function
 aliases:
 type:
@@ -11,4 +11,4 @@ created: 2025-09-21T20:00:51-04:00
 tags:
   - analysis
 ---
-#incomplete 
+#incomplete

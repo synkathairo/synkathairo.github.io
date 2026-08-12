@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: (non-)multiplicativity of the expected value
 type:
   - theorem

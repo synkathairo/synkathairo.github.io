@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Theorem (Khachiyan, 1979)
 aliases: 
 type:

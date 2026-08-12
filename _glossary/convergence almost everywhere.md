@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: convergence almost everywhere
 aliases:
   - convergence with probability 1

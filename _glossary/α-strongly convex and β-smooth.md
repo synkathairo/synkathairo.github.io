@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: α-strongly convex and β-smooth
 aliases:
   - alpha-strongly convex and beta-smooth

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: MinHash (Broder, 1997)
 type:
   - algorithm

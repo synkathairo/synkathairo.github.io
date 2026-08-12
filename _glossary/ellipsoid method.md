@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: ellipsoid method
 type:
   - algorithm

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: perturbed game
 aliases:
   - ε-perturbed game

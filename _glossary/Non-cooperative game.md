@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Non-cooperative game
 aliases: 
 type: 
@@ -15,4 +15,4 @@ players
 
 
 
-#incomplete 
+#incomplete

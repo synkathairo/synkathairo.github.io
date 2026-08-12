@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Chernoff bound
 type:
   - theorem
@@ -15,7 +15,7 @@ tags:
 ---
 ## Theorem (*multiplicative Chernoff bound*)
 
-Let $X_1,X_2,...,X_n$ be [[independence|independent]] $\{0,1\}$-valued [[random variable|random variables]] and let $p_i = \mathbb{E}[X_i]$, where $0<p_i<1$. Then the sum $S = \sum_{j=1}^n X_i$, which has mean $μ = \sum_{j=1}^n p_i$, satisfies
+Let $X_1,X_2,...,X_n$ be [[independence|independent]] $\{0,1\}$-valued [[random variable|random variables]] and let $p_i = \mathbb{E}[X_i]$, where $0<p_i<1$. Then the sum $S = \sum_{j=1}^n X_i$, which has mean $\mu = \sum_{j=1}^n p_i$, satisfies
 $$\mathrm{Pr}[S \geq (1+\epsilon)\mu] \leq e^{\frac{-\epsilon^2\mu}{2+\epsilon}}$$
 (where $\mathbb{E}[X_i]$ is [[expectation|expected value]] of $X_i$)
 

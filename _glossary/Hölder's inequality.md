@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Hölder's inequality
 aliases:
   - Hoedler's inequality

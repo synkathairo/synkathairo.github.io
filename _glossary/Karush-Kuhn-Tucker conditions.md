@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Karush-Kuhn-Tucker conditions
 aliases:
   - KKT conditions

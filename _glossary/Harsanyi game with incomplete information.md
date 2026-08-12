@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Harsanyi game with incomplete information
 aliases: 
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: separable signals
 type:
   - definition

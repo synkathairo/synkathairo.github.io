@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: locally Euclidean
 aliases:
   - chart

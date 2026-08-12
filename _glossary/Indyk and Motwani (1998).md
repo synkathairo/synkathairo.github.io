@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Indyk and Motwani (1998)
 type:
   - theorem

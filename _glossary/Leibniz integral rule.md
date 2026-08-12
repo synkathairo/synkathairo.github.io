@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Leibniz integral rule
 aliases:
   - Leibniz's rule of integration

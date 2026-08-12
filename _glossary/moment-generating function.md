@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: moment-generating function
 aliases: 
 type: 
@@ -14,4 +14,4 @@ tags:
   - statistics
 ---
 
-#incomplete 
+#incomplete

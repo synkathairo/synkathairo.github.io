@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: partial order
 aliases:
   - poset

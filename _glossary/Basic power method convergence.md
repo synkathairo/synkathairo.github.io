@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Basic power method convergence
 aliases: 
 type:
@@ -17,4 +17,4 @@ $$\lVert \mathbf{v}_1 - \mathbf{z}^{(T)}\rVert_2 \leq \epsilon \qquad \textrm{or
 
 The method won’t converge if $\gamma$ is very small. Consider extreme case when $\gamma = 0$.
 
-#incomplete 
+#incomplete

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Stirling's approximation
 aliases: 
 type: 

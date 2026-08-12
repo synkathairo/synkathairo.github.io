@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Black-Scholes equation
 aliases:
 type:

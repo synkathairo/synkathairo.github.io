@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Aumann situation of incomplete information
 aliases: 
 type:

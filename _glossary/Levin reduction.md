@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Levin reduction
 aliases:
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Power method
 aliases: 
 type:
@@ -14,4 +14,4 @@ created: 2023-12-03T23:59:20-05:00
 ---
 A [[Krylov subspace method]]
 
-Goal: find some 
+Goal: find some

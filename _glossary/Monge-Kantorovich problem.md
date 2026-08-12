@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Monge-Kantorovich problem
 aliases:
 type:

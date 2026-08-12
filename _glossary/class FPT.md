@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: class FPT
 aliases:
   - fixed-parameter tractable problems

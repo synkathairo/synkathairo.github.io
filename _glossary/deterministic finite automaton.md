@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: deterministic finite automaton
 aliases:
   - DFA
@@ -13,4 +13,4 @@ tags:
   - formal_language_theory
 ---
 [[nondeterministic finite automaton|NFA]]
-#incomplete 
+#incomplete

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: stochastic boolean function evaluation problem
 aliases:
   - SBFE problem

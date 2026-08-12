@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: probably approximately correct learning theory
 aliases:
   - PAC learning theory

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Theorem, Turing machine non-computable function
 aliases: 
 type:

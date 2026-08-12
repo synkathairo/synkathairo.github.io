@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Gaussian tail bound
 type:
   - lemma

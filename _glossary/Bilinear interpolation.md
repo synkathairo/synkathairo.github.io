@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Bilinear interpolation
 type:
   - image filter

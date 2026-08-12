@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: battle of the sexes game
 aliases: 
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: online gradient descent regret bound
 aliases:
   - OGD regret bound

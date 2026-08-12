@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: time hierarchy theorem
 aliases:
 type:

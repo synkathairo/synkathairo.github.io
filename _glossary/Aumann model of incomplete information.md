@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Aumann model of incomplete information
 aliases: 
 type:

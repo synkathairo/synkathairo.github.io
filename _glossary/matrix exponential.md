@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: matrix exponential
 aliases:
   - 矩阵指数

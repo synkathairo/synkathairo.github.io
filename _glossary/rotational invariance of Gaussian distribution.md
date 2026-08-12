@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Rotational Invariance of Gaussian distribution
 type: 
 reference: 

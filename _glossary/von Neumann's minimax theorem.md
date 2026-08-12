@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: von Neumann's minimax theorem
 aliases:
   - 极小极大定理

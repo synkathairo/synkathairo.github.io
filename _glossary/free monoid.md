@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: free monoid
 aliases:
   - 自由幺半群

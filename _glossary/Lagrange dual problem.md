@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Lagrange dual problem
 aliases:
   - dual problem

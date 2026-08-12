@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Least squares regression
 type: 
 reference: 
@@ -9,4 +9,4 @@ statement:
 created: 2023-10-13T15:01:11-04:00
 course: CS6763
 ---
-#incomplete 
+#incomplete

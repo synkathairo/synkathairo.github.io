@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: envy-freeness
 aliases:
   - envy-free

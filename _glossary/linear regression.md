@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: linear regression
 aliases:
 type:
@@ -13,4 +13,4 @@ created: 2025-11-14T16:51:04-05:00
 tags:
   - machine_learning
 ---
-#incomplete 
+#incomplete

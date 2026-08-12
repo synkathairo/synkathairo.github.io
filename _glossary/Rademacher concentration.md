@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Rademacher concentration
 aliases:
   - Rademacher random variable

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Weierstrass extreme value theorem
 aliases:
   - Weierstrass theorem

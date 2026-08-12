@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: martingale
 aliases:
   - 鞅

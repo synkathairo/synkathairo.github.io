@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: better pair of strategies
 aliases: 
 type:

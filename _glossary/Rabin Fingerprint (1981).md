@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Rabin Fingerprint (1981)
 type:
   - algorithm

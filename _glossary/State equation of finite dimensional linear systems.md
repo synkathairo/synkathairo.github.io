@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: State equation of finite dimensional linear systems
 aliases: 
 type:

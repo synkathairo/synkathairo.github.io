@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Lagrangian
 aliases: 
 type: 
@@ -11,4 +11,4 @@ created: 2025-01-30T23:06:30-05:00
 tags:
 ---
 
-#incomplete 
+#incomplete

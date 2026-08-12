@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: concentration inequality
 created: 2024-11-20T20:51:25-05:00
 type:

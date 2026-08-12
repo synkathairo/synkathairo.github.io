@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: existential second-order logic
 aliases:
   - ESO

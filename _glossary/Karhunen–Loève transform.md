@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Karhunen–Loève transform
 aliases:
   - KL transform

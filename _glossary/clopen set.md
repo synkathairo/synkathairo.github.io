@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: clopen set
 aliases:
   - clopen subset

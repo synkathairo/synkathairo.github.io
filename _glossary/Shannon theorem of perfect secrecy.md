@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Shannon theorem of perfect secrecy
 aliases:
   - Shannon's theorem

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: diffeomorphism
 aliases:
   - 微分同胚

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: average hard NP puzzle
 aliases: 
 type:

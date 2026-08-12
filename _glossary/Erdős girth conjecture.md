@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Erdős girth conjecture
 aliases:
   - girth conjecture of Erdős

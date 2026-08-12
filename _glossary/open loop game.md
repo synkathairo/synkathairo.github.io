@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: open loop game
 aliases: 
 type:

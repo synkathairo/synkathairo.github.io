@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Lipschitz function
 aliases:
   - G-Lipschitz

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kolmogorov complexity
 aliases:
   - Kolmogorov-Chaitin complexity

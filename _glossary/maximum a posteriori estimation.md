@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: maximum a posteriori estimation
 aliases:
   - MAP

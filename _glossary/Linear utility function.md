@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Linear utility function
 aliases:
   - von Neumann-Morgenstern utility function

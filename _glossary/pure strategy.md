@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: pure strategy
 aliases: 
 type:

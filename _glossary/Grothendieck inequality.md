@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Grothendieck inequality
 aliases:
   - 格罗滕迪克不等式

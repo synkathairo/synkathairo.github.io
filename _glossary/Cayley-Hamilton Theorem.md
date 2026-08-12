@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cayley-Hamilton Theorem
 aliases:
   - 哈密顿一凯莱定理

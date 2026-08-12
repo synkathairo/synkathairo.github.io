@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: syllogistic logic
 aliases:
 type:

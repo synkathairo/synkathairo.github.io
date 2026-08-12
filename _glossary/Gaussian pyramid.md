@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Gaussian pyramid
 type:
   - image filter

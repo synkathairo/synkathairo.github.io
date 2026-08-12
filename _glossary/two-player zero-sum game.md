@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: two player zero-sum game
 aliases:
   - two-person zero-sum game

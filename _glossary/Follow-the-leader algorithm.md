@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Follow-the-leader algorithm
 type:
   - algorithm
@@ -12,4 +12,4 @@ statement:
 created: 2023-11-13T17:30:10-05:00
 ---
 
-#incomplete 
+#incomplete

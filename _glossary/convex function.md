@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: convex function
 aliases:
   - 凸函数

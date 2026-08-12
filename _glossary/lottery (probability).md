@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: lottery (probability)
 aliases:
   - simple lottery

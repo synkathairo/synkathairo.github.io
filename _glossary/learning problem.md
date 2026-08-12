@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: learning problem
 aliases:
 type:
@@ -12,4 +12,4 @@ created: 2025-11-18T14:57:10-05:00
 tags:
   - computational_learning_theory
 ---
-#incomplete 
+#incomplete

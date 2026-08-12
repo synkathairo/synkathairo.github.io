@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: W-hierarchy
 aliases:
   - nondeterministic fixed-parameter hierarchy

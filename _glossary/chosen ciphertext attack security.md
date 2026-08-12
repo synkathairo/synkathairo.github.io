@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: chosen ciphertext attack security
 aliases:
   - CCA security

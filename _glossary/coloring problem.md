@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: coloring problem
 aliases:
   - colouring problem

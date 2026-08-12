@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cᵏ-function
 aliases:
   - Ck-function

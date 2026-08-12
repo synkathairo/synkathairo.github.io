@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kosambi–Karhunen–Loève theorem
 aliases:
   - Karhunen–Loève theorem

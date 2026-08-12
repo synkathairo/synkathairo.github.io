@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: hard-core predicate
 aliases:
   - hard-core bit

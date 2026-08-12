@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: negligible function
 aliases: 
 type:

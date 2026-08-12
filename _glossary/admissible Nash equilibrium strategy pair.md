@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: admissible Nash equilibrium strategy pair
 aliases: 
 type:

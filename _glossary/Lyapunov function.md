@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Lyapunov function
 aliases:
   - Lyapunov analysis

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: concentration of chi-squared random variables
 type:
   - lemma

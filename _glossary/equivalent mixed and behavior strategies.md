@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: equivalent mixed and behavior strategies
 aliases: 
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Theorem (Karmarkar, 1984)
 aliases: 
 type:

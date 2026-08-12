@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Baker-Gill-Solovay theorem
 aliases:
 type:

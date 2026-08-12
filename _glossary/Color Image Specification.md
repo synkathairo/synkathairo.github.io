@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Color Image Specification
 type:
   - definition

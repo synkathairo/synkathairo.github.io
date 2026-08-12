@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kolmogorov-Arnold representation theorem
 aliases:
   - Kolmogorov-Arnold theorem

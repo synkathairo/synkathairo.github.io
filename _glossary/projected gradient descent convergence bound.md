@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: projected gradient descent convergence bound
 aliases:
   - PGD convergence bound

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: k-round interaction
 aliases: 
 type:

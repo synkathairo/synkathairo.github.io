@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Subspace embedding from Johnson-Lindenstrauss
 aliases:
   - Subspace embedding from JL
@@ -22,4 +22,4 @@ for all $\mathbf{v} \in \mathcal{U}$, as long as $m=O \left(\frac{d\log(1/\epsil
 ## Corollary
 
 If we choose $\mathbf{\Pi}$ and properly scale, then with $O(d/\epsilon^2)$ rows,
-#incomplete 
+#incomplete

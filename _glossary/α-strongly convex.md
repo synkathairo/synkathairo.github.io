@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: α-strongly convex
 aliases:
   - alpha-strongly convex

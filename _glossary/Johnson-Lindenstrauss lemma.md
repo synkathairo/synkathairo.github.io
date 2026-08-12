@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Johnson-Lindenstrauss lemma
 aliases:
   - JL Lemma

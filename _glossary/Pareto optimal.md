@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Pareto optimal
 aliases:
   - Pareto improvement

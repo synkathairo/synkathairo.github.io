@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Fenchel conjugate
 aliases:
   - convex conjugate

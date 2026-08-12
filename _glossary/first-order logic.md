@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: first-order logic
 aliases:
   - predicate logic

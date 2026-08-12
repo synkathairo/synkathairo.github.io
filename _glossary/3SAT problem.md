@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: 3SAT problem
 aliases:
   - 3SAT

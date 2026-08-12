@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: quotient group
 aliases:
 type:

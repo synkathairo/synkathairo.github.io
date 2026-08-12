@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: metric
 aliases:
   - 度量

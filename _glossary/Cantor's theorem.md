@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cantor's theorem
 aliases: 
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: projection oracle
 type:
   - definition

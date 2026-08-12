@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: hash function
 aliases:
   - 散列函数

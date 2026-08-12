@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: δ-hard function
 aliases: 
 type:

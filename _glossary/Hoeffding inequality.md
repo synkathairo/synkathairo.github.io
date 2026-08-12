@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Hoeffding inequality
 type:
   - theorem

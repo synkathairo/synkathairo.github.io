@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: theorem, stability of linear analog system equilibrium state at origin
 aliases: 
 type:

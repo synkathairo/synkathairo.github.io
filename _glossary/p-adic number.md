@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: p-adic number
 aliases: 
 type: 

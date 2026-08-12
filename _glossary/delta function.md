@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: delta function
 aliases:
   - Dirac delta

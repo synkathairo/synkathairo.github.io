@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: pairwise independence
 type:
   - definition

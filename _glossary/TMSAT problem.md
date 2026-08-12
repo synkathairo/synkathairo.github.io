@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: TMSAT problem
 aliases: 
 type:

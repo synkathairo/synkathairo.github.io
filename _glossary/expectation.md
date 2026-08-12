@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: expectation
 aliases:
   - expected value
@@ -26,4 +26,4 @@ or for continuous r.v.,
 $$\mathbb{E}[X]=\int_{s \in \mathcal{S}} \mathrm{Pr}(s)\cdot s \,ds$$
 
 ## Conditional expectation
-#incomplete 
+#incomplete

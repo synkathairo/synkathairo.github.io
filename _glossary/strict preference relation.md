@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: strict preference relation
 aliases: 
 type:

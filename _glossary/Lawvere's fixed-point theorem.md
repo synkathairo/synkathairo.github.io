@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title:
   Lawvere's fixed-point theorem 
 aliases: 

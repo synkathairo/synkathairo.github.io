@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Boltzmann constant
 aliases: 
 type:

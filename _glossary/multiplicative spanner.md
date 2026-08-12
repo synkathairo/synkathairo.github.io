@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: multiplicative spanner
 aliases:
   - α-multiplicative spanner

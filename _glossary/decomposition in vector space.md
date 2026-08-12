@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: decomposition in vector space
 type:
   - definition

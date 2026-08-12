@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: dependent type theory
 aliases:
 type:

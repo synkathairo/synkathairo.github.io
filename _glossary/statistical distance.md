@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: statistical distance
 aliases:
   - total variation distance

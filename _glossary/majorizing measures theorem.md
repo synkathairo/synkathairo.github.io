@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: majorizing measures theorem
 aliases: 
 type:

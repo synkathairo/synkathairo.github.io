@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: t-out-of-n threshold secret-sharing scheme
 aliases:
   - threshold secret-sharing scheme

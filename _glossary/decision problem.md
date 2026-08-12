@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: decision problem
 aliases:
   - language

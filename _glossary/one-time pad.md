@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: one-time pad
 aliases:
   - Vernam cipher

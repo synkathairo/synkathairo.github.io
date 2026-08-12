@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: independent and identically distributed
 aliases:
   - i.i.d.
@@ -14,4 +14,4 @@ created: 2025-04-22T22:30:56-04:00
 tags:
   - probability
 ---
-#incomplete 
+#incomplete

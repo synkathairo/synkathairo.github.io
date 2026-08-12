@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kolmogorov axioms of probability
 aliases:
   - three axioms of probability

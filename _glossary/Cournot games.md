@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cournot games
 aliases: 
 type: 
@@ -13,4 +13,4 @@ created: 2024-12-13T21:03:24-05:00
 tags:
 ---
 
-#incomplete 
+#incomplete

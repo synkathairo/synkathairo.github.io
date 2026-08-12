@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: normal-form game
 aliases:
   - strategic-form game

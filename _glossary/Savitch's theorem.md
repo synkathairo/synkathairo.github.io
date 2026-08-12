@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Savitch's theorem
 aliases:
 type:

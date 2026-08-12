@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: theorem, efficient universal Turing machine
 aliases:
   - efficient universal Turing machine

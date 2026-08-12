@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: incompressible string
 aliases:
   - Kolmogorov random

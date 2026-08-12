@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Ramsey number
 aliases: 
 type:

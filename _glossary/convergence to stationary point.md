@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: convergence to stationary point
 type:
   - theorem

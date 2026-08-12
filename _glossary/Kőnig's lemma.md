@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kőnig's lemma
 aliases:
   - König's lemma

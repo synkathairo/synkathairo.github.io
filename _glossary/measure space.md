@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: measure space
 aliases: 
 type:

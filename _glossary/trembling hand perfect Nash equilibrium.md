@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: trembling hand perfect Nash equilibrium
 aliases:
   - perfect equilibrium

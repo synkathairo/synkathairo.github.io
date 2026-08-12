@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: encryption scheme
 aliases:
   - valid encryption scheme

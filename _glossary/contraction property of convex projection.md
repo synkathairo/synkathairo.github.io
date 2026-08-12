@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: contraction property of convex projection
 aliases:
 type:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Euclidean dimensionality reduction
 aliases: 
 type: 

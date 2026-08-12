@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: conjunctive normal form
 aliases:
   - CNF form

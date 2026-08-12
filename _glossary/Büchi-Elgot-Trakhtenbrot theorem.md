@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Büchi-Elgot-Trakhtenbrot theorem
 aliases:
   - BET theorem

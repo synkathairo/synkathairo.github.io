@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Faddeev-LeVerrier algorithm
 aliases: 
 type: 
@@ -13,5 +13,4 @@ tags:
 ---
 To calculate coefficients of characteristic polynomial of a square matrix
 
-#incomplete 
-
+#incomplete

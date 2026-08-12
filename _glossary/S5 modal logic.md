@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: S5 modal logic
 aliases:
   - S5模态逻辑

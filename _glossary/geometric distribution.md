@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: geometric distribution
 aliases: 
 type:

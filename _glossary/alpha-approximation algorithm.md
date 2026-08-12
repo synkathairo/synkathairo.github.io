@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: alpha-approximation algorithm
 aliases:
   - α-approximation algorithm

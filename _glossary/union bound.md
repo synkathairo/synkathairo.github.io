@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: union bound
 aliases:
   - Boole's inequality

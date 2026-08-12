@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: class para-AC0
 aliases:
   - para-AC0

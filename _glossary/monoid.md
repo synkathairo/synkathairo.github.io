@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: monoid
 aliases:
   - 幺半群

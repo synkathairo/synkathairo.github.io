@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: word RAM model
 aliases:
   - word RAM

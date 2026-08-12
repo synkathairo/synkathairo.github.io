@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Rice's theorem
 aliases: 
 type:

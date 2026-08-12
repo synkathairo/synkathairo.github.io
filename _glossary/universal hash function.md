@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: universal hash function
 type:
   - definition

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Jensen's inequality
 type:
   - theorem

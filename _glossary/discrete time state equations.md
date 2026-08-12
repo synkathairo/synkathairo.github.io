@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: discrete time state equations
 aliases: 
 type:

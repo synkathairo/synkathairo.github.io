@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Bernstein inequality
 type:
   - theorem

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Grünbaum's theorem
 aliases:
   - Grunbaum's theorem

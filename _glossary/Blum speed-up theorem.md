@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Blum speed-up theorem
 aliases:
 type:

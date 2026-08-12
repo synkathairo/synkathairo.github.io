@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kolmogorov-Arnold network
 aliases: 
 type:
@@ -13,4 +13,4 @@ tags:
   - deep_learning
 ---
 
-#incomplete 
+#incomplete

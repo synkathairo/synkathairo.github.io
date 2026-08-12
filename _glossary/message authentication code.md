@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: message authentication code
 aliases:
   - MAC scheme

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: metric space
 aliases:
   - 度量空间

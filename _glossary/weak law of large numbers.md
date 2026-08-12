@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: weak law of large numbers
 aliases:
   - WLLN

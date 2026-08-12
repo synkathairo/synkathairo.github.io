@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: central limit theorem
 aliases:
   - Lindberg-Lévy central limit theorem

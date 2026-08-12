@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: eigenvalue and eigenvector
 aliases:
   - eigenvalue

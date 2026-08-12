@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: vector space
 aliases:
 type:

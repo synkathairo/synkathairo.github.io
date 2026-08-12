@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: theorem, Cartesian product of compact or convex sets
 aliases: 
 type:

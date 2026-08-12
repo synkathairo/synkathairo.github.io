@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: power mean
 aliases:
   - generalized mean

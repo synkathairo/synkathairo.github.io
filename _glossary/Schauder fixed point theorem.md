@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Schauder fixed point theorem
 aliases: 
 type:

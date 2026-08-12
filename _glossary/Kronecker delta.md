@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kronecker delta
 aliases:
   - discrete delta function

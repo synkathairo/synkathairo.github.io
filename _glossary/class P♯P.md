@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: class P♯P
 aliases:
   - class P#P
@@ -23,4 +23,4 @@ tags:
 
 ___
 ## References
-1. 
+1.

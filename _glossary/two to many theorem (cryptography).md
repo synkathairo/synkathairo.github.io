@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: two to many theorem (cryptography)
 aliases: 
 type:

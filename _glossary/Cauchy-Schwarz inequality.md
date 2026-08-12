@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Cauchy-Schwarz inequality
 aliases:
   - Cauchy-Bunyakovsky-Schwarz inequality

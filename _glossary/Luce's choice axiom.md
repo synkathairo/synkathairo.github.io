@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Luce's choice axiom
 aliases:
 type:

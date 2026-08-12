@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: differentiable function
 aliases:
 type:
@@ -12,4 +12,4 @@ tags:
   - analysis
   - calculus
 ---
-#incomplete 
+#incomplete

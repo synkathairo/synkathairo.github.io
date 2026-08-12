@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: stochastic score classification problem
 aliases:
   - SSClass

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Kullback-Leibler divergence
 aliases:
   - relative entropy

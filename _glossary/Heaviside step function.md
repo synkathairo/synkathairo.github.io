@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: entry
 title: Heaviside step function
 aliases:
   - Step function
