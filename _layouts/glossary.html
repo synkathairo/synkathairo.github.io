@@ -5,6 +5,6 @@ layout: default
 	<!-- 🚧 under construction 🚧 -->
 	{% assign notes = site.glossary | sort_natural: "path" %}
 	{% for entry in notes %}
-	<p class="axiom"><a href="{{ page.url | relative_url }}">{{ entry.title }}</a></p>
+	<p class="axiom"><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></p>
 	{% endfor %}
 </div>
