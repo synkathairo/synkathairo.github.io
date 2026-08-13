@@ -8,12 +8,6 @@ export default function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["md", "markdown", "html", "liquid"]);
   eleventyConfig.addExtension("markdown", { key: "md" });
   eleventyConfig.addPlugin(syntaxHighlight);
-  let options = {
-    html: true,
-    breaks: true,
-    linkify: true,
-  };
-  eleventyConfig.setLibrary("md", markdownIt(options));
   eleventyConfig.amendLibrary("md", (markdownIt) => {
     markdownIt
       .use(footnote)
@@ -38,7 +32,7 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.amendLibrary("md", (mdLib) => {
-    mdLib.set({ linkify: true });
+    mdLib.set({ html: true, breaks: true, linkify: true });
   });
 
   eleventyConfig.ignores.add("README.md");
