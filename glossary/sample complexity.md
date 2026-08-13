@@ -15,7 +15,8 @@ tags:
 
 ## Definition
 
-Let $A$ be an _algorithm_ that is a naïve [[probably approximately correct learning theory|PAC learner]] for functions $\mathcal{X} \to \mathcal{Y}$, for some sets $\mathcal{X}, \mathcal{Y}$. The **sample complexity** of $A$ is a function $m: (0,1)^2 \to \mathbb{N}$ such that for every $\varepsilon, \delta \in (0,1)$, the number $m(\varepsilon, \delta)$ is the minimal sample size for which $A$ satisfies the requirement of _naïve PAC learning_, $$\mathbb{P}_{S \sim (\mathcal{D},f)^m} [L_{\mathcal{D},f}(h) \leq \varepsilon] \geq 1 - \delta$$
+Let $A$ be an _algorithm_ that is a naïve [[probably approximately correct learning theory|PAC learner]] for functions $\mathcal{X} \to \mathcal{Y}$, for some sets $\mathcal{X}, \mathcal{Y}$. The **sample complexity** of $A$ is a function $m: (0,1)^2 \to \mathbb{N}$ such that for every $\varepsilon, \delta \in (0,1)$, the number $m(\varepsilon, \delta)$ is the minimal sample size for which $A$ satisfies the requirement of _naïve PAC learning_, 
+$$\mathbb{P}_{S \sim (\mathcal{D},f)^m} [L_{\mathcal{D},f}(h) \leq \varepsilon] \geq 1 - \delta$$
 
 ---
 

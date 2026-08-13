@@ -29,7 +29,7 @@ where $\Theta$ is the zero matrix.
 Any power of $A$ can be written as a linear combination of $I, A, A^2, ..., A^{n-1}$
 
 Any function which has a convergent power series expansion can be expressed as a linear combination of $I, A, A^2, ..., A^{n-1}$
-$$f(A) = \gamma_{n-1}A^{n-1} + \gamma_{n-2}A^{n-2} + ... + \gamma_1 A + \gamma_0 I = \sum_{j=0}^{n-1} \gamma_j A^j \triangleq g(A) $$
+$$f(A) = \gamma_{n-1}A^{n-1} + \gamma_{n-2}A^{n-2} + ... + \gamma_1 A + \gamma_0 I = \sum_{j=0}^{n-1} \gamma_j A^j \triangleq g(A)$$
 which is a finite polynomial.
 
 Consider [[Matrix diagonalization|diagonalizable]] $A$ matrix, then, there exists a nonsingular matrix $T$ such that $T^{-1} A T = \Lambda$ where $\Lambda = \operatorname{diag}(\lambda_1...\lambda_n)$.

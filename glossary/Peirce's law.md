@@ -16,7 +16,8 @@ tags:
 
 ## Axiom
 
-**Pierce's law** is expressed as the following: _proposition_ $p$ must be true if there is a _proposition_ $q$ such that if _truth_ of $p$ follows from the _truth_ of "if $p$ then $q$", i.e. $$(p \implies q) \implies p \vdash p$$
+**Pierce's law** is expressed as the following: _proposition_ $p$ must be true if there is a _proposition_ $q$ such that if _truth_ of $p$ follows from the _truth_ of "if $p$ then $q$", i.e. 
+$$(p \implies q) \implies p \vdash p$$
 (holds in [[classical propositional logic]])
 
 ## Notes

@@ -17,7 +17,8 @@ tags:
 
 ### two-player formulation
 
-(original) Suppose two players in a lottery game. The first player purchases $A$ number lottery tickets, and the second player purchases $B$ number of tickets, for a total of $(A+B)$ tickets. Then the probability of $A$ winning the lottery is $$P_A = \frac{A}{A+B}$$
+(original) Suppose two players in a lottery game. The first player purchases $A$ number lottery tickets, and the second player purchases $B$ number of tickets, for a total of $(A+B)$ tickets. Then the probability of $A$ winning the lottery is 
+$$P_A = \frac{A}{A+B}$$
 
 (later formulations denote $A,B$ as "effort")
 

@@ -25,7 +25,7 @@ tags:
 This is a complexity class hierarchy, where $\mathbf{AC}^i$ consists of _Boolean circuits_ with depth $O(\log^i n)$ and polynomial number of unbounded _fan-in_ AND and OR gates. (_circuit complexity_)
 
 Total hierarchy of AC classes is defined as
-$${\mbox{AC}}=\bigcup _{i\geq 0}{\mbox{AC}}^{i}$$
+$${\text{AC}}=\bigcup _{i\geq 0}{\text{AC}}^{i}$$
 
 ## Examples
 

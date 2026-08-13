@@ -20,20 +20,24 @@ Suppose [[Bregman divergence]] centered in $y$ for distance generating function 
 
 ### Theorem
 
-Let $\varphi : \Omega \to \mathbb{R}$ be differentiable and $\mu$-strongly [[convex function|convex]] with respect to norm $\lVert \cdot \rVert$. For any $y \in \Omega$, function $x \mapsto D_\varphi (x \Vert y)$ is $\mu$-strongly convex with respect to $\lVert \cdot \rVert$, i.e. $$D_\varphi(x' \Vert y) \geq D_\varphi(x \Vert y) + \langle \nabla_x D_\varphi(x \Vert y), x'-x \rangle + \frac{\mu}{2} \lVert x' - x \rVert^2 \quad \forall x, x' \in \Omega$$
+Let $\varphi : \Omega \to \mathbb{R}$ be differentiable and $\mu$-strongly [[convex function|convex]] with respect to norm $\lVert \cdot \rVert$. For any $y \in \Omega$, function $x \mapsto D_\varphi (x \Vert y)$ is $\mu$-strongly convex with respect to $\lVert \cdot \rVert$, i.e.
+$$D_\varphi(x' \Vert y) \geq D_\varphi(x \Vert y) + \langle \nabla_x D_\varphi(x \Vert y), x'-x \rangle + \frac{\mu}{2} \lVert x' - x \rVert^2 \quad \forall x, x' \in \Omega$$
 
 ### Proximal step
 
-Define the _proximal step_ problem $$\operatorname{Prox}_\varphi (\eta \nabla f(x_t),x_t) := \arg \min_x \eta \langle \nabla f(x_t),x \rangle + D_\varphi(x \Vert x_t) \quad \text{s.t. } x \in \Omega $$
+Define the _proximal step_ problem
+$$\operatorname{Prox}_\varphi (\eta \nabla f(x_t),x_t) := \arg \min_x \eta \langle \nabla f(x_t),x \rangle + D_\varphi(x \Vert x_t) \quad \text{s.t. } x \in \Omega$$
 
 notes
 
 - is well-defined (solution exists and is unique)
-- sanity check: Euclidean DGF (distance-generating function) $\varphi(x) = \frac{1}{2} \lVert x \rVert_2^2$ recovers Euclidean [[projected gradient descent]] where $\Omega = \mathbb{R}^n$, i.e. $$\operatorname{Prox}_\varphi (\eta \nabla f(x),x) = \Pi_\Omega (x - \eta \nabla f(x)) \quad \forall x \in \Omega$$
+- sanity check: Euclidean DGF (distance-generating function) $\varphi(x) = \frac{1}{2} \lVert x \rVert_2^2$ recovers Euclidean [[projected gradient descent]] where $\Omega = \mathbb{R}^n$, i.e. 
+    $$\operatorname{Prox}_\varphi (\eta \nabla f(x),x) = \Pi_\Omega (x - \eta \nabla f(x)) \quad \forall x \in \Omega$$
 
 ### Mirror descent algorithm
 
-The **mirror descent** algorithm update is defined as $$x_{t+1} := \operatorname{Prox}_\varphi(\eta \nabla f(x_t),x_t)$$
+The **mirror descent** algorithm update is defined as 
+$$x_{t+1} := \operatorname{Prox}_\varphi(\eta \nabla f(x_t),x_t)$$
 
 ## Analysis
 

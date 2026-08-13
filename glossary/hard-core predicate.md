@@ -20,7 +20,8 @@ tags:
 Given a [[function]] $f: \{0,1\}^n \to \{0,1\}^m$, a [[predicate]] $h : \{0,1\}^n \to \{0,1\}$ is a **hard-core predicate** for $f$ if
 
 - $h$ is [[effectively computable|computable]] in [[class P|polynomial time]]
-- there is a [[negligible function]] $\nu(\cdot)$ such that for every [[class PPT|PPT]] adversary $\mathcal{A}$ and for every $n$, we have: $$\Pr[x \overset{\$}{\gets} \{0,1\}^n : \mathcal{A}(f(x)) = h(x)] \leq \frac{1}{2} + \nu(n)$$ (where $x \overset{\$}{\gets} S$ means 'choose $x$ *uniformly at random* from set $S$)
+- there is a [[negligible function]] $\nu(\cdot)$ such that for every [[class PPT|PPT]] adversary $\mathcal{A}$ and for every $n$, we have: 
+    $$\Pr[x \overset{\$}{\gets} \{0,1\}^n : \mathcal{A}(f(x)) = h(x)] \leq \frac{1}{2} + \nu(n)$$ (where $x \overset{\$}{\gets} S$ means 'choose $x$ *uniformly at random* from set $S$)
 
 (given $f(x)$, computationally bounded adversary who wants to figure out $h(x)$ cannot do much better than just randomly guessing $0$ or $1$ with equal probability)
 

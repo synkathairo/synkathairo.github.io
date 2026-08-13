@@ -52,7 +52,8 @@ To solve point query with error $\frac{\epsilon}{k}n$, set $m=\frac{2k}{\epsilon
 
 $t$ length $m$ arrays
 Estimate $f(v)$ with $\tilde{f}(v) = \min_{i∈[t]} A_i[h_i(v)]$.
-- for every $v$ and $i$ and $m=\frac{2k}{\epsilon}$, we know that with probability $\geq \frac{1}{2}$, $$f(v) \leq A_i [h_i(v)] \leq f(v) + \frac{\epsilon n}{k}$$
+- for every $v$ and $i$ and $m=\frac{2k}{\epsilon}$, we know that with probability $\geq \frac{1}{2}$, 
+    $$f(v) \leq A_i [h_i(v)] \leq f(v) + \frac{\epsilon n}{k}$$
 #incomplete
 
 ## See also

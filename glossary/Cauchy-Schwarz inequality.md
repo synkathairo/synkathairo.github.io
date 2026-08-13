@@ -16,7 +16,8 @@ tags:
 
 ## Inequality
 
-The **Cauchy-Schwartz inequality** states for all vectors $\mathbf{u}, \mathbf{v}$ of an [[inner product space]] (real [[vector space]] with inner product), $$\left|\langle \mathbf {u} ,\mathbf {v} \rangle \right|^{2}\leq \langle \mathbf {u} ,\mathbf {u} \rangle \cdot \langle \mathbf {v} ,\mathbf {v} \rangle$$
+The **Cauchy-Schwartz inequality** states for all vectors $\mathbf{u}, \mathbf{v}$ of an [[inner product space]] (real [[vector space]] with inner product), 
+$$\left|\langle \mathbf {u} ,\mathbf {v} \rangle \right|^{2}\leq \langle \mathbf {u} ,\mathbf {u} \rangle \cdot \langle \mathbf {v} ,\mathbf {v} \rangle$$
 
 ## Notes
 

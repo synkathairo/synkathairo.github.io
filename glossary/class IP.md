@@ -37,8 +37,12 @@ An **interactive proof system** (_IPS_) is a protocol between $P$ and $V$ where
 
 Require that
 
-1. (_completeness_) if both $P$ and $V$ follow the protocol and $x \in L$, then $$\Pr[V \text{ accepts } x] \geq \frac{2}{3}$$ i.e., $x \in L \Rightarrow \exists P \Pr[\mathtt{out}_V \langle V,P \rangle (x) = 1] \geq 2/3$
-2. (_soundness_) if $x \notin L$ and $V$ follows the protocol, then regardless of what $P$ does, $$\Pr[V \text{ rejects } x] \geq \frac{2}{3}$$ i.e., $x \notin L \Rightarrow \forall P \Pr[\mathtt{out}_V \langle V,P \rangle (x) = 1] \leq 2/3$
+1. (_completeness_) if both $P$ and $V$ follow the protocol and $x \in L$, then 
+    $$\Pr[V \text{ accepts } x] \geq \frac{2}{3}$$ 
+    i.e., $x \in L \Rightarrow \exists P \Pr[\mathtt{out}_V \langle V,P \rangle (x) = 1] \geq 2/3$
+2. (_soundness_) if $x \notin L$ and $V$ follows the protocol, then regardless of what $P$ does, 
+    $$\Pr[V \text{ rejects } x] \geq \frac{2}{3}$$ 
+    i.e., $x \notin L \Rightarrow \forall P \Pr[\mathtt{out}_V \langle V,P \rangle (x) = 1] \leq 2/3$
 
 (probabilities over choice of $m$-bit [[random variable]] $r \in_R \{0,1\}^m$ for interaction $\langle f,g \rangle (x)$ over $r$)
 

@@ -16,7 +16,8 @@ tags:
 
 ## Definition
 
-A process $(M_t)_{t \geq 0}$ is a **martingale** with regard to the [[filtration|filtration]] $(\mathscr{F}_t)_{t \geq 0}$ if for all $t \geq 0$, $M_t$ is $\mathscr{F}_t$-[[measurable function|measurable]] and integrable, and $$\mathbb{E}[M_t \vert \mathscr{F}_s] = M_s \quad \text{for all } 0 \leq s < t$$
+A process $(M_t)_{t \geq 0}$ is a **martingale** with regard to the [[filtration|filtration]] $(\mathscr{F}_t)_{t \geq 0}$ if for all $t \geq 0$, $M_t$ is $\mathscr{F}_t$-[[measurable function|measurable]] and integrable, and 
+$$\mathbb{E}[M_t \vert \mathscr{F}_s] = M_s \quad \text{for all } 0 \leq s < t$$
 (conditional [[expectation]])
 
 ## See also

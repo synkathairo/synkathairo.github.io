@@ -18,7 +18,8 @@ tags:
 
 ## Definition
 
-Suppose [[group|groups]] $G$ and $G'$, then a **homomorphism** is a [[function|map]] $\varphi: G \to G'$ such that for all $a,b \in G$, $$\varphi(ab)=\varphi(a)\varphi(b)$$
+Suppose [[group|groups]] $G$ and $G'$, then a **homomorphism** is a [[function|map]] $\varphi: G \to G'$ such that for all $a,b \in G$, 
+$$\varphi(ab)=\varphi(a)\varphi(b)$$
 
 ## Notes
 

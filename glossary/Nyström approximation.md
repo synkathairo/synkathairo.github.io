@@ -17,10 +17,12 @@ tags:
 
 ## Overview
 
-Suppose matrix $N\times N$ matrix, $A$, which is real symmetric or complex Hermitian, and [[positive semidefinite]]. Then, for an arbitrary $N \times k$ test matrix $\Omega$, define the **Nyström approximation** to be $$\hat{A}_\text{nys} = A \langle \Omega \rangle := A \Omega (\Omega^* A \Omega)^{\dagger} \Omega^* A$$
+Suppose matrix $N\times N$ matrix, $A$, which is real symmetric or complex Hermitian, and [[positive semidefinite]]. Then, for an arbitrary $N \times k$ test matrix $\Omega$, define the **Nyström approximation** to be 
+$$\hat{A}_\text{nys} = A \langle \Omega \rangle := A \Omega (\Omega^* A \Omega)^{\dagger} \Omega^* A$$
 (note: for a matrix $M$, can replace [[Moore-Penrose pseudoinverse]] $M^\dagger$ with $M^{-1}$ _matrix inverse_ if $M$ is invertible; $M^*$ denotes [[conjugate transpose]])
 
-or in terms of sketch matrix $Y = A \Omega$, $$A \langle \Omega \rangle = Y (\Omega^* Y)^{\dagger} Y^*$$
+or in terms of sketch matrix $Y = A \Omega$, 
+$$A \langle \Omega \rangle = Y (\Omega^* Y)^{\dagger} Y^*$$
 
 ## Notes
 

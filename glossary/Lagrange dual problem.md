@@ -20,7 +20,8 @@ tags:
 
 ## Definition
 
-Define the **Lagrange dual function** $g: \mathbb{R}^m \times \mathbb{R}^p \to \mathbb{R}$ as minimum value of the [[Lagrangian]] over $x$, i.e. for $\lambda \in \mathbb{R}^m$, $\nu \in \mathbb{R}^p$, $$g(\lambda, \nu) = \inf_{x \in \mathcal{D}} L(x, \lambda, \nu) = \inf_{x \in \mathcal{D}} \left( f_0(x) + \sum_{i=1}^m \lambda_i f_i(x) + \sum_{i=1}^p \nu_i h_i(x) \right)$$
+Define the **Lagrange dual function** $g: \mathbb{R}^m \times \mathbb{R}^p \to \mathbb{R}$ as minimum value of the [[Lagrangian]] over $x$, i.e. for $\lambda \in \mathbb{R}^m$, $\nu \in \mathbb{R}^p$, 
+$$g(\lambda, \nu) = \inf_{x \in \mathcal{D}} L(x, \lambda, \nu) = \inf_{x \in \mathcal{D}} \left( f_0(x) + \sum_{i=1}^m \lambda_i f_i(x) + \sum_{i=1}^p \nu_i h_i(x) \right)$$
 
 ## Notes
 

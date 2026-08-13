@@ -33,12 +33,13 @@ Describe a **mutation**, an individual in the population characterized by a part
 
 ### Mutation population game:
 
-|                                                                                       |      | **Population** |              |
-| ------------------------------------------------------------------------------------- | ---- | -------------- | ------------ |
-|                                                                                       |      | Dove ($y$)     | Hawk ($1-y$) |
-| **Mutation**                                                                          | Dove | $4, 4$         | $2, 8$       |
-|                                                                                       | Hawk | $8, 2$         | $1, 1$       |
-| The column player is the population, the row player as the mutation chooses its type. |
+|              |      | **Population** |              |
+| ------------ | ---- | -------------- | ------------ |
+|              |      | Dove ($y$)     | Hawk ($1-y$) |
+| **Mutation** | Dove | $4, 4$         | $2, 8$       |
+|              | Hawk | $8, 2$         | $1, 1$       |
+
+The column player is the population, the row player as the mutation chooses its type.
 
 Population is implementing a fixed mixed strategy \[$y$(Dove), $(1-y)$(Hawk)\], behaving with probability $y$ as a dove, $1-y$ as a hawk.
 
@@ -50,13 +51,14 @@ Expected payoff of a mutation from a random encounter is
 
 ### Equal payoffs
 
-|                                                                                                                                                              |      | **Population** |              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | -------------- | ------------ |
-|                                                                                                                                                              |      | Dove ($y$)     | Hawk ($1-y$) |
-| **Mutation**                                                                                                                                                 | Dove | $4, 4$         | $2, 2$       |
-|                                                                                                                                                              | Hawk | $2, 2$         | $2, 2$       |
-| In this case the dove strategy ($x^* = 1$) is an [[evolutionarily stable strategy]]:                                                                         |
-| $$(1-\epsilon) u_1(x, x^*) + \epsilon u_1(x,x) = y \cdot 2 + (1-y) \cdot 2 < y \cdot 4 + (1-y) \cdot 2 = (1-\epsilon) u_1(x^*, x^*) + \epsilon u_1(x^*, x)$$ |
+|              |      | **Population** |              |
+| ------------ | ---- | -------------- | ------------ |
+|              |      | Dove ($y$)     | Hawk ($1-y$) |
+| **Mutation** | Dove | $4, 4$         | $2, 2$       |
+|              | Hawk | $2, 2$         | $2, 2$       |
+
+In this case the dove strategy ($x^* = 1$) is an [[evolutionarily stable strategy]]:
+$$(1-\epsilon) u_1(x, x^*) + \epsilon u_1(x,x) = y \cdot 2 + (1-y) \cdot 2 < y \cdot 4 + (1-y) \cdot 2 = (1-\epsilon) u_1(x^*, x^*) + \epsilon u_1(x^*, x)$$
 | note that $\varepsilon$ represents the proportion of mutations                                                                                               |
 
 ## Notes

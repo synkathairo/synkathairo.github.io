@@ -17,7 +17,8 @@ tags:
 
 ## Lemma
 
-Suppose $f$ is an $m$-variate [[polynomial]] of [[degree]] exactly $d$ over [[field]] $\mathbb{F}$, where $f$ is not [[identically zero]]. Then, the number of zeros of $f$ is at most $d \cdot | \mathbb{F} |^{m-1}$, i.e. $$\Pr_{x \in \mathbb{F}^m} [f(x) = 0] \leq \frac{d}{|\mathbb{F}|}$$
+Suppose $f$ is an $m$-variate [[polynomial]] of [[degree]] exactly $d$ over [[field]] $\mathbb{F}$, where $f$ is not [[identically zero]]. Then, the number of zeros of $f$ is at most $d \cdot | \mathbb{F} |^{m-1}$, i.e. 
+$$\Pr_{x \in \mathbb{F}^m} [f(x) = 0] \leq \frac{d}{|\mathbb{F}|}$$
 
 ---
 

@@ -16,9 +16,11 @@ tags:
 
 ## Definition
 
-Define the **Shapley value** as the [[solution concept]] $\operatorname{Sh}$, for [[coalitional game]] $(N; v)$ where $N$ is the set of players and $v(N)$ is the _worth_ of the _grand coalition_ $N$, $$\operatorname{Sh}_i(N;v) := \frac{1}{n!}\sum_{\pi \in \Pi(N)} (v(P_i(\pi) \cup \{i\}) - v(P_i(\pi))), \quad \forall i \in N$$
+Define the **Shapley value** as the [[solution concept]] $\operatorname{Sh}$, for [[coalitional game]] $(N; v)$ where $N$ is the set of players and $v(N)$ is the _worth_ of the _grand coalition_ $N$, 
+$$\operatorname{Sh}_i(N;v) := \frac{1}{n!}\sum_{\pi \in \Pi(N)} (v(P_i(\pi) \cup \{i\}) - v(P_i(\pi))), \quad \forall i \in N$$
 
-Equivalently, $$\phi_i(v) = \sum_{\substack{S \subset N\\ i \in S}} \frac{(|S|-1)!(n-|S|)!}{n!}[v(S)-v(S-\{i\})]$$
+Equivalently, 
+$$\phi_i(v) = \sum_{\substack{S \subset N\\ i \in S}} \frac{(|S|-1)!(n-|S|)!}{n!}[v(S)-v(S-\{i\})]$$
 
 ## Notes
 

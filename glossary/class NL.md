@@ -22,7 +22,9 @@ $\mathbf{NL} =$ [[class NSPACE|NSPACE]]$(\log n)$
 
 ## Definition
 
-A [[decision problem|language]] $L$ is in $\mathbf{NL}$ if there exists a deterministic [[Turing machine|TM]] $M$ (the _verifier_) with additional special read-once input tape, and polynomial $p: \mathbb{N} \to \mathbb{N}$ such that for every $x \in \{0,1\}^*$, $$x \in L \iff \exists u \in \{0,1\}^{p(|x|)} \text{ s.t. } M(x,u) = 1$$ where $M(x,u)$ denotes output of $M$ where $x$ is placed on input tape, and $u$ is placed on special read-once tape, and $M$ uses at most $O(\log |x|)$ space on its read-write tapes for every input $x$.
+A [[decision problem|language]] $L$ is in $\mathbf{NL}$ if there exists a deterministic [[Turing machine|TM]] $M$ (the _verifier_) with additional special read-once input tape, and polynomial $p: \mathbb{N} \to \mathbb{N}$ such that for every $x \in \{0,1\}^*$, 
+$$x \in L \iff \exists u \in \{0,1\}^{p(|x|)} \text{ s.t. } M(x,u) = 1$$ 
+where $M(x,u)$ denotes output of $M$ where $x$ is placed on input tape, and $u$ is placed on special read-once tape, and $M$ uses at most $O(\log |x|)$ space on its read-write tapes for every input $x$.
 
 (read once head, certificate tape)
 

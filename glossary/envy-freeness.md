@@ -22,7 +22,8 @@ Each agent has a [[preference relation|preference]] over the goods in $M$, which
 
 Let an _allocation_ be a partition of the goods in $M$ into $n$ bundles (which may be represented as a column stochastic matrix).
 
-Describe an allocation as **envy-free** (EF) if for any two agents $i,k \in N$, $$v_i(x_i) \geq v_i(x_k)$$
+Describe an allocation as **envy-free** (EF) if for any two agents $i,k \in N$, 
+$$v_i(x_i) \geq v_i(x_k)$$
 
 (intuition: agent prefers own bundle the best, or not less than others)
 

@@ -1,4 +1,5 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import markdownIt from "markdown-it";
 import footnote from "markdown-it-footnote";
 import markdownItMathTemml from "markdown-it-math/temml";
 import wikilinksPlus from "markdown-it-wikilinks-plus";
@@ -7,6 +8,12 @@ export default function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["md", "markdown", "html", "liquid"]);
   eleventyConfig.addExtension("markdown", { key: "md" });
   eleventyConfig.addPlugin(syntaxHighlight);
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+  eleventyConfig.setLibrary("md", markdownIt(options));
   eleventyConfig.amendLibrary("md", (markdownIt) => {
     markdownIt
       .use(footnote)

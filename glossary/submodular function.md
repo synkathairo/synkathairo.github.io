@@ -32,7 +32,8 @@ where e.g. $\alpha_{i \gets 1}$ is the partial assignment derived from $\alpha$ 
 
 ## Definition (*submodular set function*)
 
-A set function $f: 2^V \to \mathbb{R}$, for $X, Y \subseteq V$, is called **submodular** if $$f(X) + f(Y) \geq f(X \cup Y) + f(X \cap Y)$$
+A set function $f: 2^V \to \mathbb{R}$, for $X, Y \subseteq V$, is called **submodular** if 
+$$f(X) + f(Y) \geq f(X \cup Y) + f(X \cap Y)$$
 
 ## See also
 

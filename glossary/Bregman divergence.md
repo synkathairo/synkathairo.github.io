@@ -19,7 +19,8 @@ tags:
 
 Given a _strictly_ [[convex function]] $h$, may define a _distance function_ based on how the function differs from its linear approximation:
 
-The **Bregman divergence** from $x$ to $y$ with respect to function $h$ is $$D_h(y \Vert x) := h(y) - h(x) - \langle \nabla h(x), y-x \rangle$$
+The **Bregman divergence** from $x$ to $y$ with respect to function $h$ is 
+$$D_h(y \Vert x) := h(y) - h(x) - \langle \nabla h(x), y-x \rangle$$
 
 The function $h$ may be called the _distance-generating function_ (DGF) for the divergence.
 

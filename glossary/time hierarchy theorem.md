@@ -15,7 +15,8 @@ tags:
 
 ## Theorem (_time hierarchy_)
 
-If $f,g$ are [[time-constructible function|time-constructible functions]] satisfying $f(n)\log f(x) = o(g(n))$, then $$\operatorname{DTIME}(f(n)) \subsetneq \operatorname{DTIME}(g(n))$$
+If $f,g$ are [[time-constructible function|time-constructible functions]] satisfying $f(n)\log f(x) = o(g(n))$, then 
+$$\operatorname{DTIME}(f(n)) \subsetneq \operatorname{DTIME}(g(n))$$
 where _time-constructible function_ $f$ means mapping $x \mapsto f(|x|)$ can be computed in $O(f(n))$ time.
 
 ([[class DTIME|DTIME]])
@@ -26,7 +27,8 @@ where _time-constructible function_ $f$ means mapping $x \mapsto f(|x|)$ can be 
 
 ## Theorem (_non-deterministic time hierarchy_)
 
-If $f,g$ are _time-constructible functions_ satisfying $f(n+1) = o(g(n))$, then $$\operatorname{NTIME}(f(n)) \subsetneq \operatorname{NTIME}(g(n))$$
+If $f,g$ are _time-constructible functions_ satisfying $f(n+1) = o(g(n))$, then 
+$$\operatorname{NTIME}(f(n)) \subsetneq \operatorname{NTIME}(g(n))$$
 
 ([[class NTIME|NTIME]])
 

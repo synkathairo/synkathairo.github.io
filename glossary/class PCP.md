@@ -38,7 +38,8 @@ Define a $(r(n), q(n))$-**PCP** _verifier_ (**PCP** system) on input string $x \
 
 All [[decision problem|languages]] $L \subseteq$ [[class NP|NP]] have a highly efficient _PCP_ verifier,
 
-i.e. there is a universal constant $q > 0$ such that $$\mathbf{NP} = \mathbf{PCP}(\log n,1)$$
+i.e. there is a universal constant $q > 0$ such that 
+$$\mathbf{NP} = \mathbf{PCP}(\log n,1)$$
 
 (or $\mathbf{NP} = \mathbf{PCP}(O(\log n), O(1))$ )
 

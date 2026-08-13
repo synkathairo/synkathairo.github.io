@@ -17,7 +17,8 @@ tags:
 
 ## Theorem
 
-Let $f : \Omega \to \mathbb{R}$ be a [[continuous function]] defined on a _nonempty_ and [[compact set]] $\Omega$. Then, there exists a _minimizer_ $x^* \in \Omega$ of $f$ on $\Omega$, that is $$f(x^*) \leq f(x) \quad \forall x \in \Omega$$
+Let $f : \Omega \to \mathbb{R}$ be a [[continuous function]] defined on a _nonempty_ and [[compact set]] $\Omega$. Then, there exists a _minimizer_ $x^* \in \Omega$ of $f$ on $\Omega$, that is 
+$$f(x^*) \leq f(x) \quad \forall x \in \Omega$$
 
 ---
 

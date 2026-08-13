@@ -31,7 +31,8 @@ A **standard (one-dimensional) Wiener process** (also called **Brownian motion**
 
 1. $B_0=0$
 2. (_independence of increments_) For all $0 < t_1 < ... < t_k$, [[random variable|random variables]] $(B_{t_1}, B_{t_2}-B_{t_1},...,B_{t_k}-B_{t_{k-1}})$ are [[mutual independence|mutually independent]].
-3. (_law of the increments_) For all $0 \leq s < t < \infty$, $$B_t - B_s \sim \mathcal{N}(0, (t-s) I_d)$$ ([[Gaussian distribution|normal distribution]])
+3. (_law of the increments_) For all $0 \leq s < t < \infty$, 
+    $$B_t - B_s \sim \mathcal{N}(0, (t-s) I_d)$$ ([[Gaussian distribution|normal distribution]])
 4. (_continuity of the paths_) Almost surely, $t \mapsto B_t$ is [[continuous function|continuous]]
 
 ## MATLAB realization

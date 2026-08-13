@@ -16,7 +16,9 @@ tags:
 
 ## Definition
 
-For an [[open set]] $U \subseteq \mathbb{R}^n$ a **Cᵏ-function** is a [[continuous function]] $f: U \to \mathbb{R}$ if all of its _partial derivatives_ of order at most $k$ exist and are _continuous_ on $U$, with $$\partial^\alpha f := \frac{\partial^{|\alpha|} f}{\partial x^\alpha} := \frac{\partial^{|\alpha|} f}{(\partial x^1)^{\alpha_1}...(\partial x^n)^{\alpha_n}}$$ where $| \alpha | = \alpha_1 + ... + \alpha_n \leq k$.
+For an [[open set]] $U \subseteq \mathbb{R}^n$ a **Cᵏ-function** is a [[continuous function]] $f: U \to \mathbb{R}$ if all of its _partial derivatives_ of order at most $k$ exist and are _continuous_ on $U$, with 
+$$\partial^\alpha f := \frac{\partial^{|\alpha|} f}{\partial x^\alpha} := \frac{\partial^{|\alpha|} f}{(\partial x^1)^{\alpha_1}...(\partial x^n)^{\alpha_n}}$$ 
+where $| \alpha | = \alpha_1 + ... + \alpha_n \leq k$.
 
 ---
 

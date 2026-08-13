@@ -119,6 +119,7 @@ random number generator is very large, approximately 16 * ((2^31) -
 <p><a
 href="https://sourceware.org/git/?p=glibc.git;a=blob;f=stdlib/random.c#l146">In
 the code</a> we observe the table:</p>
+
 ```c
 static int32_t randtbl[DEG_3 + 1] =
   {
@@ -132,6 +133,7 @@ static int32_t randtbl[DEG_3 + 1] =
     -205601318,
   };
 ```
+
 <p>Which such trinomials are utilized? <a
 href="https://sourceware.org/git/?p=glibc.git;a=blob;f=stdlib/random.c#l94">The
 code</a> details 4 types of RNGs, with <code>TYPE_0</code> being the
@@ -153,9 +155,11 @@ have been published of them</a> and they have been subject of study.</p>
 href="https://www.redhat.com/en/blog/understanding-random-number-generators-and-their-limitations-linux">method
 utilized by glibc</a> in <code>random_r()</code> involves the <a
 href="https://github.com/lattera/glibc/blob/master/stdlib/random_r.c#L364">formula</a>:</p>
+
 ```c
 int32_t val = ((state[0] * 1103515245U) + 12345U) & 0x7fffffff;
 ```
+
 <p>In the GNU man page is detailed the differences between
 <code>random()</code> and <code>random_r()</code>:
 <blockquote>The <code>random_r()</code> function is like <code>random(3)</code>, except

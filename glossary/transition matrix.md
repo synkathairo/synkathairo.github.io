@@ -37,7 +37,8 @@ $$\mathbf{x}(t) = \phi(t, t_0) \mathbf{x}(t_0)$$
 
 Given transition matrix $\phi(t,t_0)$, $A(t)$ can be evaluated as follows
 $$\dot{\mathbf{x}}(t) = \dot{\phi}(t,t_0)\mathbf{x}(t_0)$$
-Also, $$\dot{\mathbf{x}}(t) = A(t)\mathbf{x}(t)= A(t) \phi(t,t_0) \mathbf{x}(t_0)$$
+Also, 
+$$\dot{\mathbf{x}}(t) = A(t)\mathbf{x}(t)= A(t) \phi(t,t_0) \mathbf{x}(t_0)$$
 Furthermore,
 
 $$ \begin{aligned}

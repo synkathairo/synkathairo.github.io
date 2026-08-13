@@ -35,7 +35,10 @@ $$\operatorname{Var}\left( \sum_{i=1}^n X_i \right) = \sum_{i=1}^n \operatorname
 
 ## Sample covariance matrix
 
-for a _sample_ of data on _random variables_ we may define the **sample covariance matrix** as a $K$-by-$K$ matrix $\mathbf{Q} = [q_{jk}]$ where $$q_{jk} = \frac{1}{N-1}\sum_{i=1}^N (x_{ij}-\bar{x}_j)(x_{ik}-\bar{x}_k)$$ with $q_{jk}$ as estimate of _covariance_ between $j$-th and $k$-th variables underlying the data; we may also write $$\mathbf{Q} = \frac{1}{N-1}\sum_{i=1}^N (\mathbf{x}_i-\bar{\mathbf{x}})(\mathbf{x}_i-\bar{\mathbf{x}})^T$$
+for a _sample_ of data on _random variables_ we may define the **sample covariance matrix** as a $K$-by-$K$ matrix $\mathbf{Q} = [q_{jk}]$ where 
+$$q_{jk} = \frac{1}{N-1}\sum_{i=1}^N (x_{ij}-\bar{x}_j)(x_{ik}-\bar{x}_k)$$ 
+with $q_{jk}$ as estimate of _covariance_ between $j$-th and $k$-th variables underlying the data; we may also write 
+$$\mathbf{Q} = \frac{1}{N-1}\sum_{i=1}^N (\mathbf{x}_i-\bar{\mathbf{x}})(\mathbf{x}_i-\bar{\mathbf{x}})^T$$
 
 ## Notes
 

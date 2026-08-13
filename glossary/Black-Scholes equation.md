@@ -21,7 +21,9 @@ $$rS_t \frac{\partial C}{\partial S} + \frac{\partial C}{\partial t} + \frac{1}{
 
 ## Derivation
 
-Assume the stock follows [[geometric Brownian motion]], such that $$dS_t = \mu S_t \, dt + \sigma S_t \, dW_t$$ where $W_t$ is standard [[Wiener process|Brownian motion]], with constants $\mu$ (_percentage drift_) and $\sigma$ (_percentage volatility_).
+Assume the stock follows [[geometric Brownian motion]], such that 
+$$dS_t = \mu S_t \, dt + \sigma S_t \, dW_t$$ 
+where $W_t$ is standard [[Wiener process|Brownian motion]], with constants $\mu$ (_percentage drift_) and $\sigma$ (_percentage volatility_).
 
 Assume constant _interest rate_ such that $1$ unit of currency will be worth $B_t := \exp(rt)$ at time $t$. For value of _call option_ $C(S,t)$ at time $t$, by [[Itô lemma|Itô's lemma]], #incomplete
 

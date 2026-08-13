@@ -19,8 +19,11 @@ tags:
 
 Let $[a_{ij}]$ be an $n \times n$ scalar matrix, $n \geq 1$.
 
-If for any $n$-tuples of scalars $(\alpha_i)$, $(\beta_j)$, it holds that $$\left|\sum a_{ij} \alpha_i \beta_j \right| \leq \sup_i |\alpha_i| \sup_j |\beta_j|$$
-then for any [[Hilbert space]] $H$ and any $n$-tuples $(x_i)$, $(y_j)$ in $H$ we have $$\left|\sum a_{ij} \langle x_i, y_j \rangle \right| \leq K \sup \lVert x_i \rVert \sup \lVert y_j \rVert$$ where $K$ is a numerical constant.
+If for any $n$-tuples of scalars $(\alpha_i)$, $(\beta_j)$, it holds that 
+$$\left|\sum a_{ij} \alpha_i \beta_j \right| \leq \sup_i |\alpha_i| \sup_j |\beta_j|$$
+then for any [[Hilbert space]] $H$ and any $n$-tuples $(x_i)$, $(y_j)$ in $H$ we have 
+$$\left|\sum a_{ij} \langle x_i, y_j \rangle \right| \leq K \sup \lVert x_i \rVert \sup \lVert y_j \rVert$$ 
+where $K$ is a numerical constant.
 
 Denote the best $K$ valid for all $H$ and all $n$ as $K_G$. In the case of real scalars, $K_G^\mathbb{R}$, and in the case of complex scalars, $K_G^\mathbb{C}$, where it is known that $1 < K_G^\mathbb{C} < K_G^\mathbb{R} \leq 1.782$.
 

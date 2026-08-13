@@ -18,7 +18,8 @@ tags:
 
 ## Definition
 
-A **power mean** is a _mean_ of form $$M_p(a_1,a_2,...,a_n) \equiv \left(\frac{1}{n} \sum_{k=1}^n a_k^p\right)^{1/p}$$
+A **power mean** is a _mean_ of form 
+$$M_p(a_1,a_2,...,a_n) \equiv \left(\frac{1}{n} \sum_{k=1}^n a_k^p\right)^{1/p}$$
 where $p \in \mathbb{R}\setminus \{0\}$, and $a_k \geq 0$
 
 ## Notes

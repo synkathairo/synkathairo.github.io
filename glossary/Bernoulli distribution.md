@@ -18,11 +18,11 @@ tags:
 ## Definition
 
 $X$ [[random variable]] with Bernoulli distribution, then
-$\Pr(X = 1) = p=1-P(X=0)=1-q$
+$$\Pr(X = 1) = p=1-P(X=0)=1-q$$
 
 ## probability density function
 
-$$ f_n(k) = \binom{n}{k} p^k (1 - p)^{n-k}, \quad k \in \{0, 1, \ldots, n\} $$
+$$f_n(k) = \binom{n}{k} p^k (1 - p)^{n-k}, \quad k \in \{0, 1, \ldots, n\}$$
 
 ## See also
 

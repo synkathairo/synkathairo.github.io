@@ -18,10 +18,13 @@ tags:
 
 ## Definition
 
-Suppose function $f$ which is [[convex function|convex]] and [[differentiable function|differentiable]], where $\mathrm{dom} f = \mathbb{R}^n$. then any maximizer $x^*$ of $y^T x - f(x)$ satisfies $y = \nabla f(x^*)$, conversely, if $x^*$ satisfies $y = \nabla f(x^*)$, then $x^*$ maximizes $y^T x - f(x)$. Therefore, if $y = \nabla f(x^*)$, have $$f^*(y) = x^{*T} \nabla f(x^*) - f(x^*)$$
+Suppose function $f$ which is [[convex function|convex]] and [[differentiable function|differentiable]], where $\mathrm{dom} f = \mathbb{R}^n$. then any maximizer $x^*$ of $y^T x - f(x)$ satisfies $y = \nabla f(x^*)$, conversely, if $x^*$ satisfies $y = \nabla f(x^*)$, then $x^*$ maximizes $y^T x - f(x)$. Therefore, if $y = \nabla f(x^*)$, have 
+$$f^*(y) = x^{*T} \nabla f(x^*) - f(x^*)$$
 
-Or, let $z \in \mathbb{R}^n$ be arbitary, define $y = \nabla f (z)$, then $$f^*(y) = z^T \nabla f(z) - f(z)$$
-or simply, given function $f$, $$f^*(y) = \sup_{x \in \operatorname{dom}(f)} (y^T x - f(x))$$
+Or, let $z \in \mathbb{R}^n$ be arbitary, define $y = \nabla f (z)$, then 
+$$f^*(y) = z^T \nabla f(z) - f(z)$$
+or simply, given function $f$, 
+$$f^*(y) = \sup_{x \in \operatorname{dom}(f)} (y^T x - f(x))$$
 
 ## Notes
 
