@@ -39,6 +39,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("llms.txt");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi
       .getAll()

@@ -24,7 +24,8 @@ Suppose a _social preference relation_ satisfying [[von Neumann-Morgenstern util
 ## Definition
 
 may define as geometric mean of valuations of $n$ agents, i.e. 
-$$(\prod_{i=1}^n v_i(x_i))^{1/n}$$ whereas each agent $i$ has a bundle $x_i$ and assigns it a [[utility function|valuation]] which is [[monotone function|monotone]]
+$$(\prod_{i=1}^n v_i(x_i))^{1/n}$$ 
+whereas each agent $i$ has a bundle $x_i$ and assigns it a [[utility function|valuation]] which is [[monotone function|monotone]]
 
 ## Notes
 

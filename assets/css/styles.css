@@ -1,5 +1,5 @@
 :root {
-    --monospace-font-stack: "JuliaMono", "Maple Mono", "Maple Mono NF CN", "IBM Plex Mono", "Menlo", "Andale Mono", "Cascadia Code", monospace;
+    --monospace-font-stack: "IBM Plex Mono", "Maple Mono", "Maple Mono NF CN", "JuliaMono", "Menlo", "Andale Mono", "Cascadia Code", monospace;
     font-family: var(--monospace-font-stack);
 }
 body {
@@ -48,6 +48,7 @@ a {
 }
 #post-info:empty, #post-aliases.empty, #post-tag.empty {
     display: none;
+    height: 0;
 }
 #linkback {
     font-size: .8em;

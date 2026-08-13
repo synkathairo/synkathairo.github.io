@@ -6,7 +6,7 @@ latex: true
 
 # geodesic-optimization
 
-[\[github repo\]](https://github.com/synkathairo/geodesic-optimization)
+<time datetime="2024-05">May 2024</time> / [\[github repo\]](https://github.com/synkathairo/geodesic-optimization)
 
 Zhang and Sra describe methods for optimizing on first-order geodesically convex optimization[^1], which allow generalization to non-linear metric spaces. Also see Vishnoi's article[^2] which explains the topic at an introductory level.
 
