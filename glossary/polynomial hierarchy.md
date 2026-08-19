@@ -18,7 +18,8 @@ tags:
 ## Definition
 
 For $i \geq 1$, [[decision problem|language]] $L$ is in $\mathbf{\Sigma}_i^p$ if there exists a [[class P|polynomial time]] [[Turing machine|TM]] $M$ and _polynomial_ $q$ such that 
-$$x \in L \iff \exists u_{1} \in \{0,1\}^{q(|x|)} \forall u_2 \in \{0,1\}^{q(|x|)}... Q_i u_i \in \{0,1\}^{q(|x|)} M(x,u_1,...,u_i)=1$$ where $Q_i$ denotes ([[quantifier]]) $\forall$ or $\exists$ depending on whether $i$ is even or odd, respectively.
+$$x \in L \iff \exists u_{1} \in \{0,1\}^{q(|x|)} \forall u_2 \in \{0,1\}^{q(|x|)}... Q_i u_i \in \{0,1\}^{q(|x|)} M(x,u_1,...,u_i)=1$$ 
+where $Q_i$ denotes ([[quantifier]]) $\forall$ or $\exists$ depending on whether $i$ is even or odd, respectively.
 
 Then the **polynomial hierarchy** is the set $\mathbf{PH} = \cup_i \mathbf{\Sigma}_i^p$.
 
