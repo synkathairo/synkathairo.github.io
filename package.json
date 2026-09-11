@@ -8,7 +8,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-math": "^6.0.1",
-    "markdown-it-wikilinks-plus": "github:actuallysomecat/markdown-it-wikilinks-plus",
+    "markdown-it-wikilinks-plus": "github:synkathairo/markdown-it-wikilinks-plus",
     "temml": "^0.13.4"
   },
   "devDependencies": {

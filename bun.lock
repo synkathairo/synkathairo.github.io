@@ -8,7 +8,7 @@
         "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
         "markdown-it-footnote": "^4.0.0",
         "markdown-it-math": "^6.0.1",
-        "markdown-it-wikilinks-plus": "github:actuallysomecat/markdown-it-wikilinks-plus",
+        "markdown-it-wikilinks-plus": "github:synkathairo/markdown-it-wikilinks-plus",
         "temml": "^0.13.4",
       },
       "devDependencies": {
@@ -183,7 +183,7 @@
 
     "markdown-it-math": ["markdown-it-math@6.0.1", "", { "optionalDependencies": { "mathup": "^1.0.2", "temml": "^0.13.4" } }, "sha512-rtyAf+/yVLdD2Nrn+zXEnkLPIWPMVRrwwGr3eI6LoxW87BRPTx/Cmpjt1T5uc0pavH7HvGxCegmrpNHhpuJ8PA=="],
 
-    "markdown-it-wikilinks-plus": ["markdown-it-wikilinks-plus@github:actuallysomecat/markdown-it-wikilinks-plus#69e31fa", { "dependencies": { "extend": "^3.0.2", "proper-url-join": "^2.1.2", "sanitize-filename": "^1.6.3" } }, "actuallysomecat-markdown-it-wikilinks-plus-69e31fa", "sha512-5IEOco3HwH/AIFC6+Z67nbhcUP3Uj0hV/aTUcu7iAZ2XTUVIun4ElXhOWarv4B1RUPLR/AwhyJmDzdOoSEMZBw=="],
+    "markdown-it-wikilinks-plus": ["markdown-it-wikilinks-plus@github:synkathairo/markdown-it-wikilinks-plus#8f12056", { "dependencies": { "extend": "^3.0.2", "proper-url-join": "^2.1.2", "sanitize-filename": "^1.6.3" } }, "synkathairo-markdown-it-wikilinks-plus-8f12056", "sha512-3/66PFxPKKfCgzsjQfCG+T7iuaawybY0sUVBTZB5pWz14WuI2o19QcN5OFAq+wmfD5TsIiePy98aIfQnFpBxZQ=="],
 
     "mathup": ["mathup@1.0.2", "", { "bin": { "mathup": "bin/mathup.js" } }, "sha512-E9RCa/Zdr2KG2snIxwz1pmWLcJaq2mKHxM0rhqmeGFM7TDDIyZAd1oWhJEG1M4EsCvO57ygs2OTyhFdKXKh38A=="],
 
