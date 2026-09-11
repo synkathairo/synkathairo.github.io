@@ -5,11 +5,11 @@ title: "Charles Zhu's page - Projects"
 
 <!--## Projects-->
 
-[**Stability of Evolutionary Population Games**](https://github.com/synkathairo/evolutionary_game_strategies) (Oct 2024 - Dec 2024)
+[**Stability of Evolutionary Population Games**](https://github.com/synkathairo/evolutionary_game_strategies) (<time datetime="2024-10">Oct 2024</time> - <time datetime="2024-12">Dec 2024</time>)
 - Examined population games and evolutionary games using a game theoretic framework
 - Focused on stabilities of Nash equilibria and evolutionarily stable strategies (ESS) under pure and mixed-strategies using probability models, non-equilibrium behavior within bounds, asymptotic stability (e.g. Lyapunov stability), and numerical simulation of games
 
-**Comparison of Cortisol Secretion in Overweight and Healthy Weight Females** (Sept 2024 - Dec 2024)
+**Comparison of Cortisol Secretion in Overweight and Healthy Weight Females** (<time datetime="2024-09">Sept 2024</time> - <time datetime="2024-12">Dec 2024</time>)
 - Utilized a state-space model of cortisol secretion using tissue-based collection analysis, modeling adrenal, serum, and tissue diffusion of cortisol, under hypothesis of cortisol secretion as a point process
 - Used deconvolution and sparse recovery signal processing methods to estimate incidence of cortisol secretion events
 - Compared circadian and ultradian cortisol secretion patterns between overweight and healthy weight female patient cohorts, to demonstrate differences in hormone dynamics between the two groups

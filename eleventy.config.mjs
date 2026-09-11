@@ -3,9 +3,10 @@ import markdownIt from "markdown-it";
 import footnote from "markdown-it-footnote";
 import markdownItMathTemml from "markdown-it-math/temml";
 import wikilinksPlus from "markdown-it-wikilinks-plus";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 export default function (eleventyConfig) {
-  eleventyConfig.setTemplateFormats(["md", "markdown", "html", "liquid"]);
+  eleventyConfig.setTemplateFormats(["md", "markdown", "html", "liquid", "njk"]);
   eleventyConfig.addExtension("markdown", { key: "md" });
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.amendLibrary("md", (markdownIt) => {
@@ -65,5 +66,23 @@ export default function (eleventyConfig) {
 
       return data.permalink;
     };
+  });
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom", // or "rss", "json"
+    outputPath: "/blog/feed.xml",
+    collection: {
+      name: "posts", // iterate over `collections.posts`
+      limit: 10,     // 0 means no limit
+    },
+    metadata: {
+      language: "en",
+      title: "Charles Zhu's blog",
+      subtitle: "some thoughts",
+      base: "https://synkathairo.github.io/blog/",
+      author: {
+        name: "Charles Zhu",
+        email: "", // Optional
+      }
+    }
   });
 }

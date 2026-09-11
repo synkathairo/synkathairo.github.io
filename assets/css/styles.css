@@ -27,6 +27,13 @@ time {
 a {
     overflow-wrap: break-word;
     word-break: break-word;
+    color: #3D3B4F;
+}
+a:hover {
+    color: #FF4C00;
+    /*font-style: bold !important;*/
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
 }
 #navlist {
     list-style-type: none;
