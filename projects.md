@@ -23,3 +23,4 @@ title: "Charles Zhu's page - Projects"
 - [Youtube_playlist-no_login](https://github.com/synkathairo/Youtube_playlist-no_login) - a basic Chrome extension, conforming to the WebExtension API
 - [userstyles](https://github.com/synkathairo/userstyles) - miscellaneous user styles for CSS style manager e.g. [Stylus](https://github.com/openstyles/stylus)
 - [userscripts](https://github.com/synkathairo/userscripts) - miscellaneous user scripts
+- [muse-experiment](https://synkathairo.github.io/muse-experiment/) - miscellaneous (vibe-coded) demos covering topics such as physics, computer science etc., including 2D fluid simulation, cryptography zk proof, and FFT demonstration in rust/wasm
