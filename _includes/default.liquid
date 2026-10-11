@@ -10,11 +10,14 @@
 
 	<title>{{ title | escape }}</title>
 </head>
-<body>
+
+<body id="monad">
+<div id="universum">
 {%- unless nomenu -%}
     {% include "topcontent.html" %}
 {%- endunless -%}
 <!--<hr />-->
 {{ content }}
+</div>
 </body>
 </html>
