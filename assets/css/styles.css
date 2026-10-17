@@ -14,20 +14,22 @@
     --link-color: #3D3B4F;
     /*--link-color: light-dark(var(--link-color),oklch(from var(--link-color) calc(1 - l) c h));*/
     --link-hover-color: #FF4C00;
+    --link-hover-color-complement: #00b3ff;
     /*--link-hover-color: light-dark(var(--link-hover-color),oklch(from var(--link-hover-color) calc(1 - l) c h));*/
     --asterism-color: #D1D9E0;
 }
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
         --background-color: black;
         --font-color: white;
         --code-background-color: #d1d9e037;
         --time-background-color: #7f7f7f;
         --link-color: #C2C4B0;
-        --link-hover-color: #00b3ff;
+        /* --link-hover-color: #00b3ff; */
         --post-info-color: var(--time-background-color);
+        --asterism-color: #e0d8d17f;
     }
-}*/
+}
 body {
     background-color: var(--background-color);
     color: var(--font-color);
@@ -103,4 +105,8 @@ div#universum {
     border: 1px solid;
     padding: 10px;
     background: var(--background-color);
+}
+
+div#nous a:hover {
+    color: var(--link-hover-color-complement);
 }
